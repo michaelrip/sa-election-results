@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-11-05T13:20:58.991788Z",
+  "checked_at": "2026-11-05T13:22:55.796526Z",
   "status": "ok",
-  "new_eligible_items": 76,
+  "new_eligible_items": 77,
   "published_items": 10,
   "checks": [
     {
@@ -17,7 +17,7 @@
     {
       "query": "Johannesburg 2026 local government election when:3d",
       "status": "ok",
-      "eligible": 25
+      "eligible": 26
     },
     {
       "query": "South Africa municipal election 2026 results when:3d",
