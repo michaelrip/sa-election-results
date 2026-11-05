@@ -8,6 +8,19 @@ Enable GitHub Pages in **Settings → Pages**: select **Deploy from a branch**, 
 
 Intended website: https://michaelrip.github.io/sa-election-results/
 
+## November 2026 interface review
+
+The dashboard retains the same public URL and existing live ESP data feeds. Mobile and desktop improvements include:
+
+- **Active section navigation.** The persistent bottom News / Map / Votes / Wards dock highlights the section currently being viewed, with accessible `aria-current` and a stable four-section layout. It remains available in mobile and wider in-app browsers.
+- **Shareable city and ballot views.** Selecting a municipality or a Ward / PR / combined / district ballot updates `?city=...&ballot=...` on the current page without a reload. Sharing the link restores those choices, including the initial map municipality; ordinary links without parameters still open Cape Town with All local ballots. Other URL parameters are preserved.
+- **More precise ward search.** A bare number such as `12`, `Ward 12`, or `W 12` matches ward 12 exactly instead of also matching wards 112 etc. The Clear search button only appears when the search box contains text, and the result count is contextual.
+- **News progress.** The swipeable news carousel displays the current headline number and number of items, and its existing arrow buttons still reflect the available scroll range.
+- **Less scrolling.** The long repetitive source explanations are consolidated into one accessible **About the data and sources** disclosure, while the essential ESP/IEC distinction remains prominent beside vote results. The Cape Town-only seat-majority context now sits directly after city vote cards, rather than below the ward search.
+- **Less disruptive map refresh.** When an automatic update contains unchanged ward names and boundaries, the map's ward picker is not reconstructed, preserving focus and selection. Jump-to-ward scrolling respects reduced-motion settings.
+
+The lightweight `.github/workflows/ui-check.yml` runs `tests/test_dashboard_ui.py` and Node JavaScript syntax checks when frontend files change. It checks IDs and navigation targets, share-state code, mobile controls, news position and source integrity without changing live election data.
+
 ## Manual refresh and persistent navigation
 
 The **Refresh** button checks the newest `results.json` published to GitHub Pages. It now gives an immediate checking state and then explicitly confirms whether a newer published snapshot was loaded, whether the publication is unchanged, or whether the network request failed. An unchanged result after pressing Refresh is not a broken button: **upstream ESP/IEC-derived imports run on the GitHub Actions schedule (roughly every 15 minutes)**, and the button does **not** force those upstream sources to update. The message shows the latest published snapshot and any recently failed source checks from `feed-status.json`. Failed network requests preserve the last downloaded figures.
