@@ -1,0 +1,39 @@
+{
+  "updated_at": null,
+  "source": "No verified automated feed configured",
+  "metros": {
+    "Cape Town": {
+      "status": "Awaiting verified data",
+      "ballot_type": null,
+      "districts_reported": null,
+      "districts_total": null,
+      "parties": [],
+      "seats": [],
+      "wards": [],
+      "snapshot_at": null,
+      "source_url": null
+    },
+    "Tshwane": {
+      "status": "Awaiting verified data",
+      "ballot_type": null,
+      "districts_reported": null,
+      "districts_total": null,
+      "parties": [],
+      "seats": [],
+      "wards": [],
+      "snapshot_at": null,
+      "source_url": null
+    },
+    "Johannesburg": {
+      "status": "Awaiting verified data",
+      "ballot_type": null,
+      "districts_reported": null,
+      "districts_total": null,
+      "parties": [],
+      "seats": [],
+      "wards": [],
+      "snapshot_at": null,
+      "source_url": null
+    }
+  }
+}
