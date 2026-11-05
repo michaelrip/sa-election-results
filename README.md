@@ -8,6 +8,12 @@ Enable GitHub Pages in **Settings → Pages**: select **Deploy from a branch**, 
 
 Intended website: https://michaelrip.github.io/sa-election-results/
 
+## Interactive metro maps
+
+The dashboard starts with three interactive OpenStreetMap/Leaflet maps: Cape Town, Tshwane and Johannesburg. Each supports pan/zoom, a centre marker with the current preliminary ward-ballot summary, a reset control, and a button to jump to the chosen metro's ward list. The layout adapts to mobile screens. Street maps are **not** presented as electoral boundary polygons or a party-by-ward choropleth; for official 2026 boundaries, the dashboard links to the Municipal Demarcation Board's [Know Your Wards map](https://arcg.is/jOKyf0).
+
+Map tiles and the Leaflet JavaScript library are loaded from external services; the text-based results and ward search remain available if maps fail to load.
+
 ## Automated data
 
 GitHub Actions checks ESP's public 2026 local-election pages every **15 minutes**, and the browser reloads the published `results.json` every five minutes. The source is **IEC-derived through ESP**, **not** a direct official IEC API or a certified IEC declaration.
