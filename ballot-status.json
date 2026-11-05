@@ -1,40 +1,38 @@
 {
-  "checked_at": "2026-11-05T19:12:03.758211+00:00",
+  "checked_at": "2026-11-05T20:04:45.572011+00:00",
   "source": "ESP individual 2026 PR and DC 40% ballot pages",
   "checks": {
     "Cape Town": {
       "pr": {
         "status": "ok",
-        "valid_votes": 493082,
-        "snapshot_at": "2026-11-05T19:05:00+00:00"
+        "valid_votes": 510672,
+        "snapshot_at": "2026-11-05T19:55:00+00:00"
       }
     },
     "Tshwane": {
       "pr": {
         "status": "ok",
-        "valid_votes": 433132,
-        "snapshot_at": "2026-11-05T19:04:00+00:00"
+        "valid_votes": 461150,
+        "snapshot_at": "2026-11-05T19:55:00+00:00"
       }
     },
     "Johannesburg": {
       "pr": {
         "status": "ok",
-        "valid_votes": 405922,
-        "snapshot_at": "2026-11-05T19:04:00+00:00"
+        "valid_votes": 459226,
+        "snapshot_at": "2026-11-05T19:55:00+00:00"
       }
     },
     "Hermanus": {
       "pr": {
-        "status": "ok",
-        "valid_votes": 34570,
-        "snapshot_at": "2026-11-05T14:34:00+00:00"
+        "status": "unavailable",
+        "detail": "go.esp.info: HTTP Error 503: Service Unavailable; esp.info: HTTP Error 503: Service Unavailable; zero.esp.info: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is n"
       },
       "dc": {
-        "status": "ok",
-        "valid_votes": 33815,
-        "snapshot_at": "2026-11-05T14:34:00+00:00"
+        "status": "unavailable",
+        "detail": "go.esp.info: HTTP Error 503: Service Unavailable; esp.info: HTTP Error 503: Service Unavailable; zero.esp.info: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is n"
       }
     }
   },
-  "status": "ok"
+  "status": "partial"
 }
