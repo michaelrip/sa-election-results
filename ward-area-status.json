@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-11-05T09:22:51.020828+00:00",
+  "status": "ok",
+  "checks": {
+    "Cape Town": {
+      "status": "ok",
+      "wards_named": 118,
+      "source_url": "https://theledgersa.com/metros/cape-town/elections/2026/"
+    },
+    "Tshwane": {
+      "status": "ok",
+      "wards_named": 107,
+      "source_url": "https://theledgersa.com/metros/tshwane/elections/2026/"
+    },
+    "Johannesburg": {
+      "status": "ok",
+      "wards_named": 135,
+      "source_url": "https://theledgersa.com/metros/johannesburg/elections/2026/"
+    }
+  },
+  "areas_updated": true
+}
