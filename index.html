@@ -360,28 +360,55 @@ function mergeWardDetails(snapshot,details){
  }
 }
 let latestLoad=0;
+function showRefreshMessage(message, state='') {
+ const feedback=el('refresh-feedback');
+ if(!feedback)return;
+ feedback.className='refresh-feedback'+(state?' is-'+state:'');
+ feedback.textContent=message;
+}
 async function loadOptionalJSON(path){
  try{
   const response=await fetch(path+'?ts='+Date.now(),{cache:'no-store'});
   return response.ok?await response.json():null;
  }catch(_){return null}
 }
-async function load(){
+// Clicking Refresh checks the newest GitHub Pages result, rather than
+// claiming to force an IEC or ESP source update between scheduled imports.
+async function load({manual=false}={}){
  const request=++latestLoad;
+ const refreshButton=el('refresh');
+ const oldSnapshot=data&&data.updated_at||null;
+ const wasLoaded=Boolean(data&&data.metros&&Object.keys(data.metros).length);
+ if(manual){
+  refreshButton.disabled=true;
+  refreshButton.textContent='Checking…';
+  refreshButton.setAttribute('aria-busy','true');
+  showRefreshMessage('Checking the latest published election results…','checking');
+ }
  try{
   const response=await fetch('./results.json?ts='+Date.now(),{cache:'no-store'});
   if(!response.ok)throw Error('HTTP '+response.status);
   const fresh=await response.json();
   if(request!==latestLoad)return;
-  // Show the latest count as soon as it arrives instead of delaying all
-  // visible results while supplementary ward and 2021 data downloads.
+  if(!fresh||!fresh.metros||!fresh.updated_at)throw Error('Published result file was incomplete');
+  // Publish the main count immediately, while ward metadata arrives separately.
   data=fresh;
   render();
   el('error').textContent='';
-  const [areas,details,oldResults]=await Promise.all([
+  const checkedAt=date(new Date().toISOString());
+  if(manual){
+   const changed=!wasLoaded||fresh.updated_at!==oldSnapshot;
+   showRefreshMessage(changed
+    ?'Checked '+checkedAt+'. Latest published figures loaded (snapshot: '+date(fresh.updated_at)+').'
+    :'Checked '+checkedAt+'. No newer results are published yet (snapshot: '+date(fresh.updated_at)+'). The source feed runs about every 15 minutes.');
+  }else if(!wasLoaded){
+   showRefreshMessage('Results checked '+checkedAt+'. Source snapshot: '+date(fresh.updated_at)+'. Refresh checks for newly published figures.');
+  }
+  const [areas,details,oldResults,feedHealth]=await Promise.all([
    loadOptionalJSON('./ward-areas.json'),
    loadOptionalJSON('./ward-details.json'),
-   loadOptionalJSON('./history-2021.json')
+   loadOptionalJSON('./history-2021.json'),
+   manual?loadOptionalJSON('./feed-status.json'):Promise.resolve(null)
   ]);
   if(request!==latestLoad)return;
   if(areas&&areas.metros)wardAreas=areas;
@@ -389,10 +416,25 @@ async function load(){
   if(oldResults&&oldResults.year===2021&&oldResults.ballot_type==='Ward'&&oldResults.metros)history2021=oldResults;
   data=fresh;
   render();
+  if(manual&&feedHealth&&feedHealth.checks){
+   const failed=Object.entries(feedHealth.checks).filter(([,item])=>item&&item.status==='error').map(([name])=>name);
+   if(failed.length){
+    showRefreshMessage(el('refresh-feedback').textContent+
+     ' Latest automatic source check had an issue with '+failed.join(', ')+
+     '; their last validated figures are still displayed.','error');
+   }
+  }
  }catch(error){
   if(request!==latestLoad)return;
-  el('error').textContent='Unable to load results: '+error.message;
-  if(!data||!data.metros||!Object.keys(data.metros).length)render();
+  el('error').textContent='Unable to check results: '+error.message;
+  if(manual)showRefreshMessage('Could not check for newer results. Your last downloaded figures remain on screen. Check your connection and try again.','error');
+  if(!wasLoaded)render();
+ }finally{
+  if(manual){
+   refreshButton.disabled=false;
+   refreshButton.textContent='Refresh';
+   refreshButton.removeAttribute('aria-busy');
+  }
  }
 }
 
@@ -401,7 +443,7 @@ window.onMetroMapSelect=name=>selectMetro(name,true);
 el('metro').onchange=()=>selectMetro(el('metro').value);
 el('wardSearch').oninput=()=>{wardVisibleLimit=24;renderWards()};
 el('clear').onclick=()=>{el('wardSearch').value='';wardVisibleLimit=24;renderWards();el('wardSearch').focus()};
-el('wardMore').onclick=()=>{wardVisibleLimit+=24;renderWards()};el('refresh').onclick=load;el('share').onclick=async()=>{try{if(navigator.share)await navigator.share({title:document.title,url:location.href});else{await navigator.clipboard.writeText(location.href);el('share').textContent='Copied!'}}catch(e){}};load();setInterval(()=>{if(!document.hidden)load()},300000);
+el('wardMore').onclick=()=>{wardVisibleLimit+=24;renderWards()};el('refresh').onclick=()=>load({manual:true});el('share').onclick=async()=>{try{if(navigator.share)await navigator.share({title:document.title,url:location.href});else{await navigator.clipboard.writeText(location.href);el('share').textContent='Copied!'}}catch(e){}};load();setInterval(()=>{if(!document.hidden)load()},300000);
 
 /* Headlines are external publisher reporting, not IEC-certified figures. */
 function newsDate(item){
