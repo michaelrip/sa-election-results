@@ -154,7 +154,7 @@ def parse_csv(payload: bytes, city: str, year: int) -> dict:
             continue  # never mix PR ballot with ward ballot
         raw_muni = " ".join(get("MUNICIPALITY").lower().split())
         if raw_muni not in aliases:
-            raise ImportErrorIEC("Downloaded report is for a different municipality")
+            raise ImportErrorIEC("Downloaded report is for a different municipality: " + repr(raw_muni[:80]))
         ward = ward_number(get("WARD"), nwards)
         district = get("VOTINGDISTRICT")
         if not re.fullmatch(r"\d{6,12}", district):
