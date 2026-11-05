@@ -1,55 +1,52 @@
 {
-  "checked_at": "2026-11-05T20:05:20.402644+00:00",
+  "checked_at": "2026-11-05T20:49:22.683120+00:00",
   "metros": {
     "Cape Town": {
-      "cached": 72,
-      "enriched": 3,
+      "cached": 73,
+      "enriched": 19,
       "not_reported": 21,
       "pending": 0,
-      "errors": 22,
+      "errors": 5,
       "example_errors": [
-        "HTTP Error 503: Service Unavailable",
-        "HTTP Error 503: Service Unavailable",
-        "HTTP Error 503: Service Unavailable"
+        "Fewer than two ranked ballot rows",
+        "Unrecognised or repeated party among first three",
+        "Unrecognised or repeated party among first three"
       ],
-      "top_three_available": 75
+      "top_three_available": 92
     },
     "Tshwane": {
-      "cached": 54,
-      "enriched": 2,
-      "not_reported": 26,
+      "cached": 52,
+      "enriched": 26,
+      "not_reported": 27,
       "pending": 0,
-      "errors": 25,
+      "errors": 2,
       "example_errors": [
-        "HTTP Error 503: Service Unavailable",
-        "HTTP Error 504: Gateway Timeout",
-        "HTTP Error 503: Service Unavailable"
+        "Unrecognised or repeated party among first three",
+        "Unrecognised or repeated party among first three"
       ],
-      "top_three_available": 56
+      "top_three_available": 78
     },
     "Johannesburg": {
       "cached": 73,
-      "enriched": 9,
-      "not_reported": 38,
+      "enriched": 16,
+      "not_reported": 40,
       "pending": 0,
-      "errors": 15,
+      "errors": 6,
       "example_errors": [
-        "HTTP Error 503: Service Unavailable",
+        "Unrecognised or repeated party among first three",
         "Unrecognised or repeated party among first three",
         "HTTP Error 503: Service Unavailable"
       ],
-      "top_three_available": 82
+      "top_three_available": 89
     },
     "Hermanus": {
       "cached": 0,
-      "enriched": 0,
+      "enriched": 1,
       "not_reported": 14,
       "pending": 0,
-      "errors": 1,
-      "example_errors": [
-        "HTTP Error 504: Gateway Timeout"
-      ],
-      "top_three_available": 0
+      "errors": 0,
+      "example_errors": [],
+      "top_three_available": 1
     }
   },
   "status": "partial",
