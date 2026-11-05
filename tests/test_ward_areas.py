@@ -27,9 +27,9 @@ class WardAreaTests(unittest.TestCase):
             {"1": "Bellville, Milnerton, Parow", "2": "Bellville, Parow"},
         )
 
-    def test_requires_places_table_header(self):
-        with self.assertRaisesRegex(ValueError, "Covers parts of"):
-            parse_ward_areas(PAGE.replace("Covers parts of", "Leading party"), 2)
+    def test_requires_every_ward_section(self):
+        with self.assertRaisesRegex(ValueError, "Every ward"):
+            parse_ward_areas(PAGE.replace("<h2>Every ward</h2>", "<h2>Old wards</h2>"), 2)
 
     def test_refuses_incomplete_coverage(self):
         with self.assertRaisesRegex(ValueError, "Expected 3"):
@@ -37,7 +37,9 @@ class WardAreaTests(unittest.TestCase):
 
     def test_rejects_duplicate_conflicting_labels(self):
         page = PAGE.replace(
-            "</table>", "<tr><td>Ward 1</td><td>Another place</td></tr></table>", 1
+            "<td>Bellville, Parow</td></tr>",
+            "<td>Bellville, Parow</td></tr><tr><td>Ward 1</td><td>Another place</td></tr>",
+            1,
         )
         with self.assertRaisesRegex(ValueError, "Conflicting"):
             parse_ward_areas(page, 2)
