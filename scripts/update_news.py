@@ -47,7 +47,7 @@ LOCAL_TERMS = re.compile(
     r"johannesburg|joburg|soweto|IEC|ANC|DA|ActionSA|EFF|"
     r"local govt|local government)\b", re.I
 )
-MAX_STORIES = 6
+MAX_STORIES = 10
 MAX_AGE = timedelta(days=5)
 
 
