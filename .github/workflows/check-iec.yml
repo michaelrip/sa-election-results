@@ -25,5 +25,21 @@ jobs:
           git add results.json feed-status.json
           if ! git diff --cached --quiet; then
             git commit -m "Update verified-source three-metro results"
-            git push
+            # Keep remote changes; replay only the generated report commit.
+            # Retry in case another update lands during the push.
+            for attempt in 1 2 3 4 5; do
+              git fetch origin main
+              if ! git rebase origin/main; then
+                echo "Rebase conflict: refusing to overwrite remote results."
+                git rebase --abort || true
+                exit 1
+              fi
+              if git push origin HEAD:main; then
+                exit 0
+              fi
+              echo "Push raced with another commit; retrying ($attempt/5)."
+              sleep 2
+            done
+            echo "Could not publish after 5 attempts."
+            exit 1
           fi
