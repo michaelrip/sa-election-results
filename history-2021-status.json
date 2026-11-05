@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-11-05T11:06:29.417644+00:00",
+  "checked_at": "2026-11-05T12:04:28.391783+00:00",
   "status": "ok",
   "checks": {
     "Cape Town": {
       "metro_status": "ok",
       "metro_error": null,
-      "wards_cached": 0,
-      "wards_downloaded": 118,
+      "wards_cached": 118,
+      "wards_downloaded": 0,
       "wards_error": 0,
       "sample_errors": [],
       "wards_available": 118,
@@ -15,8 +15,8 @@
     "Tshwane": {
       "metro_status": "ok",
       "metro_error": null,
-      "wards_cached": 0,
-      "wards_downloaded": 107,
+      "wards_cached": 107,
+      "wards_downloaded": 0,
       "wards_error": 0,
       "sample_errors": [],
       "wards_available": 107,
@@ -25,13 +25,23 @@
     "Johannesburg": {
       "metro_status": "ok",
       "metro_error": null,
-      "wards_cached": 0,
-      "wards_downloaded": 135,
+      "wards_cached": 135,
+      "wards_downloaded": 0,
       "wards_error": 0,
       "sample_errors": [],
       "wards_available": 135,
       "wards_expected": 135
+    },
+    "Hermanus": {
+      "metro_status": "ok",
+      "metro_error": null,
+      "wards_cached": 0,
+      "wards_downloaded": 0,
+      "wards_error": 0,
+      "sample_errors": [],
+      "wards_available": 0,
+      "wards_expected": 15
     }
   },
-  "warning": "2021 ward percentages are matched to the current 2026 ward's voting districts; missing parties are unknown, never zero."
+  "warning": "2021 ward percentages are matched to the current 2026 ward's voting districts; Overstrand currently has 2021 municipality totals only; missing parties are unknown, never zero."
 }

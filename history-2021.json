@@ -1,7 +1,7 @@
 {
   "year": 2021,
   "ballot_type": "Ward",
-  "checked_at": "2026-11-05T11:06:29.417644+00:00",
+  "checked_at": "2026-11-05T12:04:28.391783+00:00",
   "notes": "Wards use voting districts matched to 2026 boundaries; historic 2021 shares can be incomplete where districts changed.",
   "metros": {
     "Cape Town": {
@@ -22,6 +22,7 @@
         "CAPEXIT": 0.6,
         "UDM": 0.3,
         "ATM": 0.1,
+        "LAND": 0.0,
         "IFP": 0.0
       },
       "source_url": "https://go.esp.info/elections/local/2021/western-cape/city-of-cape-town",
@@ -1793,6 +1794,7 @@
         "IFP": 0.1,
         "UDM": 0.1,
         "Al Jama-ah": 0.1,
+        "LAND": 0.0,
         "CCC": 0.0
       },
       "source_url": "https://go.esp.info/elections/local/2021/gauteng/city-of-tshwane",
@@ -3402,7 +3404,8 @@
         "GOOD": 0.4,
         "ATM": 0.4,
         "UDM": 0.2,
-        "DOP": 0.1
+        "DOP": 0.1,
+        "LAND": 0.1
       },
       "source_url": "https://go.esp.info/elections/local/2021/gauteng/city-of-johannesburg",
       "comparison": "Completed 2021 local-election ward ballot, whole municipality",
@@ -5413,6 +5416,26 @@
           "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
         }
       }
+    },
+    "Hermanus": {
+      "ballot_type": "Ward",
+      "year": 2021,
+      "valid_votes": 34703,
+      "parties": {
+        "DA": 63.7,
+        "ANC": 15.6,
+        "LAND": 7.5,
+        "FF+": 5.5,
+        "EFF": 2.6,
+        "ACDP": 2.3,
+        "Independent": 0.7,
+        "CAPEXIT": 0.6,
+        "GOOD": 0.5,
+        "PA": 0.1
+      },
+      "source_url": "https://go.esp.info/elections/local/2021/western-cape/overstrand",
+      "comparison": "Completed 2021 local-election ward ballot, whole municipality",
+      "wards": {}
     }
   }
 }
