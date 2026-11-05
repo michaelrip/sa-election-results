@@ -1,0 +1,46 @@
+{
+  "updated_at": "2026-11-05T16:35:00Z",
+  "source": "ESP (ElectionSePush), IEC-derived provisional 2026 ward ballot",
+  "source_url": "https://sepush.co.za/elections/local/2026",
+  "districts_reported": 12466,
+  "districts_total": 23696,
+  "valid_votes": 6396271,
+  "parties": [
+    {
+      "name": "ANC",
+      "share": 31.6
+    },
+    {
+      "name": "DA",
+      "share": 26.2
+    },
+    {
+      "name": "MK",
+      "share": 7.9
+    },
+    {
+      "name": "EFF",
+      "share": 5.8
+    },
+    {
+      "name": "IFP",
+      "share": 3.9
+    },
+    {
+      "name": "ActionSA",
+      "share": 3.9
+    },
+    {
+      "name": "FF+",
+      "share": 3.6
+    },
+    {
+      "name": "PA",
+      "share": 3
+    },
+    {
+      "name": "SACP",
+      "share": 2.6
+    }
+  ]
+}
