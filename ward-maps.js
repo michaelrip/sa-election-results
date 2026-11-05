@@ -233,7 +233,7 @@
         metroSelect.value = city;
         search.value = 'ward ' + number;
         renderWards();
-        const detail = explorer.querySelector('details.ward');
+        const detail = explorer.querySelector('details.ward[data-ward-number="' + number + '"]');
         if (detail) detail.open = true;
         explorer.scrollIntoView({behavior: 'smooth', block: 'start'});
       }
