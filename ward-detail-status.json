@@ -1,44 +1,44 @@
 {
-  "checked_at": "2026-11-05T12:01:28.623289+00:00",
+  "checked_at": "2026-11-05T12:03:12.381704+00:00",
   "metros": {
     "Cape Town": {
-      "cached": 84,
-      "enriched": 0,
-      "not_reported": 26,
+      "cached": 73,
+      "enriched": 11,
+      "not_reported": 24,
       "pending": 0,
-      "errors": 8,
+      "errors": 10,
       "example_errors": [
-        "HTTP Error 500: Internal Server Error",
-        "HTTP Error 500: Internal Server Error",
-        "HTTP Error 500: Internal Server Error"
+        "Ward page district count differs from metro summary",
+        "Ward page district count differs from metro summary",
+        "Unrecognised or repeated party among first three"
       ],
       "top_three_available": 84
     },
     "Tshwane": {
-      "cached": 57,
-      "enriched": 0,
-      "not_reported": 46,
+      "cached": 45,
+      "enriched": 17,
+      "not_reported": 38,
+      "pending": 0,
+      "errors": 7,
+      "example_errors": [
+        "Ward page district count differs from metro summary",
+        "Ward page district count differs from metro summary",
+        "Ward page district count differs from metro summary"
+      ],
+      "top_three_available": 62
+    },
+    "Johannesburg": {
+      "cached": 61,
+      "enriched": 21,
+      "not_reported": 49,
       "pending": 0,
       "errors": 4,
       "example_errors": [
-        "HTTP Error 500: Internal Server Error",
-        "HTTP Error 500: Internal Server Error",
-        "HTTP Error 500: Internal Server Error"
+        "Unrecognised or repeated party among first three",
+        "Unrecognised or repeated party among first three",
+        "Unrecognised or repeated party among first three"
       ],
-      "top_three_available": 57
-    },
-    "Johannesburg": {
-      "cached": 74,
-      "enriched": 0,
-      "not_reported": 56,
-      "pending": 0,
-      "errors": 5,
-      "example_errors": [
-        "HTTP Error 500: Internal Server Error",
-        "HTTP Error 500: Internal Server Error",
-        "HTTP Error 500: Internal Server Error"
-      ],
-      "top_three_available": 74
+      "top_three_available": 82
     }
   },
   "status": "partial",

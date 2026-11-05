@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-05T12:01:29.194314+00:00",
+  "checked_at": "2026-11-05T12:03:19.689239+00:00",
   "status": "ok",
   "checks": {
     "Cape Town": {
@@ -15,6 +15,11 @@
     "Johannesburg": {
       "status": "ok",
       "wards_named": 135,
+      "from_cache": true
+    },
+    "Hermanus": {
+      "status": "ok",
+      "wards_named": 15,
       "from_cache": true
     }
   },
