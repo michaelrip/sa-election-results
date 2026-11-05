@@ -399,11 +399,22 @@ async function load({manual=false}={}){
   showRefreshMessage('Checking the latest published election results…','checking');
  }
  try{
-  const response=await fetch('./results.json?ts='+Date.now(),{cache:'no-store'});
-  if(!response.ok)throw Error('HTTP '+response.status);
-  const fresh=await response.json();
+  const directCandidate=await loadOptionalJSON('./results-iec.json');
+  const directAvailable=directCandidate&&directCandidate.source_verified===true&&
+   directCandidate.source_type==='iec_public_csv'&&directCandidate.election_year===2026&&
+   directCandidate.metros&&metros.every(city=>Array.isArray(directCandidate.metros[city]?.wards));
+  let fresh;
+  if(directAvailable)fresh=directCandidate;
+  else if(data.source_verified===true&&data.source_type==='iec_public_csv')fresh=data;
+  else{
+   const response=await fetch('./results.json?ts='+Date.now(),{cache:'no-store'});
+   if(!response.ok)throw Error('HTTP '+response.status);
+   fresh=await response.json();
+  }
   if(request!==latestLoad)return;
   if(!fresh||!fresh.metros||!fresh.updated_at)throw Error('Published result file was incomplete');
+  const direct=fresh.source_type==='iec_public_csv'&&fresh.source_verified===true;
+  if(direct&&data.source_type!=='iec_public_csv')history2021={metros:{}};
   // Publish the main count immediately, while ward metadata arrives separately.
   data=fresh;
   render();
@@ -412,21 +423,22 @@ async function load({manual=false}={}){
   if(manual){
    const changed=!wasLoaded||fresh.updated_at!==oldSnapshot;
    showRefreshMessage(changed
-    ?'Checked '+checkedAt+'. Latest published figures loaded (snapshot: '+date(fresh.updated_at)+').'
-    :'Checked '+checkedAt+'. No newer results are published yet (snapshot: '+date(fresh.updated_at)+'). The source feed runs about every 15 minutes.');
+    ?'Checked '+checkedAt+'. Latest '+(direct?'official IEC report':'IEC-derived ESP')+' figures loaded (checked: '+date(fresh.updated_at)+').'
+    :'Checked '+checkedAt+'. No newer '+(direct?'official IEC report':'IEC-derived ESP')+' figures are published yet (checked: '+date(fresh.updated_at)+').');
   }else if(!wasLoaded){
-   showRefreshMessage('Results checked '+checkedAt+'. Source snapshot: '+date(fresh.updated_at)+'. Refresh checks for newly published figures.');
+   showRefreshMessage('Figures checked '+checkedAt+'. Source: '+(direct?'official IEC report':'IEC-derived ESP, direct IEC pending')+'. Refresh checks for newly published results.');
   }
   const [areas,details,oldResults,feedHealth]=await Promise.all([
    loadOptionalJSON('./ward-areas.json'),
-   loadOptionalJSON('./ward-details.json'),
-   loadOptionalJSON('./history-2021.json'),
-   manual?loadOptionalJSON('./feed-status.json'):Promise.resolve(null)
+   direct?Promise.resolve(null):loadOptionalJSON('./ward-details.json'),
+   loadOptionalJSON(direct?'./history-iec-2021.json':'./history-2021.json'),
+   manual?loadOptionalJSON(direct?'./iec-source-status.json':'./feed-status.json'):Promise.resolve(null)
   ]);
   if(request!==latestLoad)return;
   if(areas&&areas.metros)wardAreas=areas;
   if(details&&details.metros)mergeWardDetails(fresh,details);
-  if(oldResults&&oldResults.year===2021&&oldResults.ballot_type==='Ward'&&oldResults.metros)history2021=oldResults;
+  if(oldResults&&oldResults.year===2021&&oldResults.ballot_type==='Ward'&&oldResults.metros&&
+   (!direct||oldResults.source_verified===true))history2021=oldResults;
   data=fresh;
   render();
   if(manual&&feedHealth&&feedHealth.checks){
