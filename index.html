@@ -316,6 +316,28 @@ main{padding-bottom:calc(105px + env(safe-area-inset-bottom))}
 </nav>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script>
 const metros=['Cape Town','Tshwane','Johannesburg','Hermanus'],el=id=>document.getElementById(id),esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])),num=v=>typeof v==='number'&&Number.isFinite(v),votesValid=v=>Number.isSafeInteger(v)&&v>=0,voteFmt=v=>votesValid(v)?new Intl.NumberFormat('en-ZA').format(v):'—',pct=v=>num(v)?v.toFixed(1)+'%':'—',date=s=>{if(!s)return 'Not available';const d=new Date(s);return Number.isNaN(+d)?'Invalid timestamp':new Intl.DateTimeFormat('en-ZA',{dateStyle:'medium',timeStyle:'short',timeZone:'Africa/Johannesburg'}).format(d)+' SAST'};let data={metros:{}};let wardAreas={metros:{}};let history2021={metros:{}};let selectedMetro='Cape Town';let selectedBallot='all';let partyBallots={metros:{}};let wardVisibleLimit=24;
+// A shared URL can open the exact municipality and ballot the sender viewed.
+try{
+ const query=new URL(location.href).searchParams;
+ const city=query.get('city'),ballot=query.get('ballot');
+ if(metros.includes(city))selectedMetro=city;
+ if(['all','pr','ward','dc'].includes(ballot))selectedBallot=ballot;
+ if(selectedBallot==='dc'&&selectedMetro!=='Hermanus')selectedBallot='all';
+}catch(_){}
+window.initialMetro=selectedMetro;
+el('metro').value=selectedMetro;
+el('cape-majority').hidden=selectedMetro!=='Cape Town';
+document.querySelectorAll('[data-vote-metro]').forEach(button=>
+ button.setAttribute('aria-pressed',String(button.getAttribute('data-vote-metro')===selectedMetro)));
+function updateShareableView(){
+ try{
+  const url=new URL(location.href);
+  url.searchParams.set('city',selectedMetro);
+  url.searchParams.set('ballot',selectedBallot);
+  if(window.history&&window.history.replaceState)
+   window.history.replaceState(null,'',url.pathname+url.search+url.hash);
+ }catch(_){}
+}
 function historicShares(metro,wardNumber=null){
  const city=history2021&&history2021.metros&&history2021.metros[metro];
  if(!city)return {};
@@ -385,6 +407,7 @@ function selectBallot(mode){
  if(mode==='dc'&&selectedMetro!=='Hermanus')return;
  selectedBallot=mode;
  renderMetroCard();
+ updateShareableView();
 }
 function renderMetroCard(){
  const cards=el('cards');
@@ -491,6 +514,7 @@ function selectMetro(name,fromMap=false){
  const wardMetro=el('metro');
  if(wardMetro)wardMetro.value=name;
  if(changed&&el('wardSearch')){el('wardSearch').value='';wardVisibleLimit=24;}
+ if(changed)updateShareableView();
  renderMetroSelection();
  if(changed&&window.metroWardMaps&&!fromMap&&window.metroWardMaps.selectMetro)window.metroWardMaps.selectMetro(name);
  if(typeof renderWards==='function')renderWards();
