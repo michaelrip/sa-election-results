@@ -16,6 +16,24 @@ The four-link bottom navigation (**News, Map, Votes, Wards**) is visible at both
 
 For source robustness, the importer accepts the ward-ballot heading with or without a decorative question mark. If one ESP hostname omits the detailed ward-ballot table, it checks the alternate ESP hostname; the alternate source must still satisfy the existing municipality, date, party-vote and district-count validation. It never substitutes a vote-share estimate for ballot counts.
 
+## Official IEC data transition
+
+**Status (5 November 2026): Partial.** All four municipality-wide **2021 ward-ballot comparisons are now fetched directly from the IEC's public downloadable CSVs** and saved in `history-iec-2021.json`. Their provenance is in `iec-history-status.json`. The 2026 live vote cards are still **IEC-derived through ESP** until a complete 2026 direct IEC source has passed validation; the site explicitly labels the current source and does not silently relabel it.
+
+The IEC provides [municipal election results downloads](https://results.elections.org.za/home/Downloads/ME-Results) and a [results API](https://api.elections.org.za/) (which needs IEC-issued credentials). Official public party-result CSVs use:
+
+`https://results.elections.org.za/home/LGEPublicReports/<event-ID>/Downloadable%20Party%20Results/<province>/<municipality>.csv`
+
+The source-validated 2021 event ID is `1091`. **The current 2026 public-report ID and public availability have not yet been confirmed**; the repository does not guess an election ID. To activate automated public IEC 2026 CSV ingestion when the official report is published:
+
+1. Verify that the official IEC download page offers 2026 **Downloadable Party Results** CSV for all four municipalities (CPT, TSH, JHB and WC032/Overstrand), and identify the correct 2026 electoral event/report ID from the IEC URL. No source guessing.
+2. In **GitHub → Settings → Secrets and variables → Actions → Variables**, add `IEC_2026_EVENT_ID` (the IEC *public report event ID*, not an account/password). Run **Actions → Check direct IEC 2026 public election reports → Run workflow**.
+3. The importer downloads directly from `results.elections.org.za`, validates that every location contains actual **Ward** ballot party votes, and publishes `results-iec.json` **only after all four areas pass**. The browser automatically prefers this verified file and no longer merges ESP ward details or historical matched ward shares into the IEC-only results. When the reports are not available, it keeps displaying the existing correctly attributed results and records a source status in `iec-source-status.json`.
+
+Implementation: `scripts/import_iec_reports.py`, `scripts/import_iec_history.py`, `tests/test_iec_direct.py`, and workflows `update-direct-iec.yml` and `update-direct-iec-history.yml`. The parser computes party percentages only from integer vote counts in IEC CSV and never mixes **PR** with **Ward** ballots or fabricates voting-district denominators/timestamps. IEC 2021 municipality figures are preferred even during the transition. Existing matched 2021 ward comparisons from The Ledger remain separately attributable until direct IEC ward-history data with comparable boundaries can be built.
+
+**Map boundaries and journalism are different sources:** the 2026 ward polygons are from the official Municipal Demarcation Board; geographic area descriptions may come from the municipality or The Ledger; headlines are from credited news publishers. These are not IEC election counts and should not be represented as such. This site is not an official IEC service.
+
 ## Mobile usability improvements
 
 Mobile screens (up to 760 px wide) load `mobile.css` after the main styles. The live website URL does not change. Recent changes include:
