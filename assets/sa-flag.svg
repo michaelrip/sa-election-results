@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600" role="img" aria-label="South African flag inspired background">
+<rect width="900" height="300" fill="#de3831"/>
+<rect y="300" width="900" height="300" fill="#002395"/>
+<path d="M-20 -25 354 300H940 M-20 625 354 300H940" fill="none" stroke="#fff" stroke-width="142" stroke-linejoin="round"/>
+<path d="M-20 -25 354 300H940 M-20 625 354 300H940" fill="none" stroke="#007a4d" stroke-width="100" stroke-linejoin="round"/>
+<path d="M0 70 0 530 362 300Z" fill="#ffb612"/>
+<path d="M0 130 0 470 278 300Z" fill="#000"/>
+</svg>
