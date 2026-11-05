@@ -460,7 +460,7 @@ function renderMetroCard(){
   selected=all;
   label='All local council ballots · Ward + PR';
   explanation='Ballot-paper totals from the ward-candidate and municipal party-list ballots. These are NOT distinct people, and the combined percentages are NOT council-seat projections.';
-  if(!all)warning='A verified, reasonably synchronized PR and ward snapshot is needed to combine the ballots. The last validated ward result remains available under Ward vote.';
+  if(!all)warning=name==='Hermanus'&&!pr?'Overstrand municipal PR votes are currently missing from the verified source data. Ward + PR cannot be calculated safely. Select Ward vote for the latest verified ward count; the Overberg district PR ballot is a separate election and must not be substituted.':'A verified, reasonably synchronized PR and ward snapshot is needed to combine the ballots. The last validated ward result remains available under Ward vote.';
   if(all)src=[['Ward ballot',m.source_url],['Municipal PR ballot',pr.source_url]];
  }
  const valid=selected&&votesValid(selected.valid_votes);
