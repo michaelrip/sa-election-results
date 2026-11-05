@@ -8,7 +8,8 @@
   const spec = {
     'Cape Town': {slug: 'cape-town', count: 118, query: 'Cape Town', centre: [-33.925, 18.5], zoom: 10},
     'Tshwane': {slug: 'tshwane', count: 107, query: 'Tshwane', centre: [-25.75, 28.23], zoom: 10},
-    'Johannesburg': {slug: 'johannesburg', count: 135, query: 'Johannesburg', centre: [-26.20, 28.05], zoom: 10}
+    'Johannesburg': {slug: 'johannesburg', count: 135, query: 'Johannesburg', centre: [-26.20, 28.05], zoom: 10},
+    'Hermanus': {slug: 'overstrand', count: 15, query: 'Overstrand', centre: [-34.4200, 19.2420], zoom: 10}
   };
   const endpoints = [
     'https://services7.arcgis.com/oeoyTUJC8HEeYsRB/arcgis/rest/services/MDBWards2026/FeatureServer/0/query',
@@ -145,6 +146,7 @@
       opacity: 0.96
     };
   }
+  function areaLabel() {return city === 'Hermanus' ? 'Hermanus / Overstrand Municipality' : city;}
   function wardTitle(number) {
     const area = areaAt(number);
     return 'Ward ' + number + (area ? ' · ' + area : '');
