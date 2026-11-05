@@ -84,6 +84,16 @@
       .sort(function (a, b) {return b.share - a.share;})[0];
     return lead || null;
   }
+  function wardHistory(number) {
+    const previous = typeof history2021 !== 'undefined' && history2021 && history2021.metros && history2021.metros[city];
+    const row = previous && previous.wards && previous.wards[String(number)];
+    return row && row.year === 2021 && row.ballot_type === 'Ward' ? row : null;
+  }
+  function historicalPct(number, party) {
+    const row = wardHistory(number);
+    const pct = row && row.parties && row.parties[party];
+    return Number.isFinite(pct) && pct >= 0 && pct <= 100 ? pct.toFixed(1) + '%' : '';
+  }
   function progressAt(number) {
     const ward = wardAt(number);
     const result = ward && /^(\d+)\s+of\s+(\d+)\s+districts/i.exec(String(ward.reporting || ''));
@@ -119,7 +129,7 @@
       .filter(function (p) {return p && typeof p.name === 'string' && Number.isFinite(p.share) && p.share >= 0 && p.share <= 100;})
       .sort(function (a,b) {return b.share - a.share;}).slice(0,3) : [];
     return '<strong>' + safe(wardTitle(number)) + '</strong>' +
-      (ranked.length ? ranked.map(function (p, i) {return '<br>' + (i+1) + '. ' + safe(p.name) + ' ' + p.share.toFixed(1) + '%';}).join('')
+      (ranked.length ? ranked.map(function (p, i) {const past=historicalPct(number,p.name);return '<br>' + (i+1) + '. ' + safe(p.name) + ' ' + p.share.toFixed(1) + '%' + (past ? ' <small>(2021: ' + past + ')</small>' : '');}).join('')
         : '<br>No reported ward-ballot results yet') +
       (result && result.reporting ? '<br>' + safe(result.reporting) : '') +
       '<br><small>Tap for top-three details</small>';
@@ -214,6 +224,7 @@
     const snapshot = detailStamp && !Number.isNaN(Date.parse(detailStamp))
       ? new Intl.DateTimeFormat('en-ZA', {dateStyle: 'medium', timeStyle: 'short', timeZone: 'Africa/Johannesburg'}).format(new Date(detailStamp)) + ' SAST'
       : 'Not available';
+    const historical = wardHistory(number);
     const ranked = ward && Array.isArray(ward.parties) ? ward.parties
       .filter(function (p) {return p && typeof p.name === 'string' && Number.isFinite(p.share) && p.share >= 0 && p.share <= 100;})
       .sort(function (a,b) {return b.share-a.share;}).slice(0,3) : [];
@@ -221,10 +232,12 @@
       const accent = palette[p.name] || '#b879bb';
       const votes = Number.isSafeInteger(p.votes) && p.votes >= 0
         ? new Intl.NumberFormat('en-ZA').format(p.votes) + ' votes' : '';
+      const previousShare = historicalPct(number, p.name);
       return '<div class="ward-map-party-row">' +
         '<div class="ward-map-party-line"><span class="ward-map-rank">' + (index+1) + '</span>' +
         '<span class="ward-map-party-name">' + safe(p.name) + '</span>' +
-        '<strong>' + p.share.toFixed(1) + '%</strong></div>' +
+        '<span class="ward-map-share-pair"><strong>' + p.share.toFixed(1) + '%</strong>' +
+        (previousShare ? '<small class="history-share">(2021: ' + previousShare + ')</small>' : '') + '</span></div>' +
         '<div class="ward-map-party-track"><span style="width:' + p.share + '%;background:' + accent + '"></span></div>' +
         (votes ? '<div class="ward-map-party-votes">' + safe(votes) + '</div>' : '') +
         '</div>';
@@ -243,6 +256,9 @@
         : '') +
       '<div class="ward-map-stat"><span>Counting progress</span><strong>' + safe(reporting) + '</strong></div>' +
       '<div class="ward-map-stat"><span>Last source snapshot</span><strong>' + safe(snapshot) + '</strong></div>' +
+      (historical && Number.isInteger(historical.matched_districts) && Number.isInteger(historical.districts_in_2026_ward)
+        ? '<p class="ward-map-note">2021 brackets are matched historic ward-ballot votes in ' + historical.matched_districts + '/' + historical.districts_in_2026_ward + ' current ward voting districts, not necessarily the old ward boundary.</p>'
+        : '') +
       '<p class="ward-map-note">Preliminary ward-ballot votes are not final declared councillors or council seats.</p>' +
       '<button type="button" class="ward-map-view" id="ward-map-jump">See ward in results list</button>' +
       (source ? '<a class="ward-map-source" href="' + safe(source) + '" target="_blank" rel="noopener">View original ward result source</a>' : '');
