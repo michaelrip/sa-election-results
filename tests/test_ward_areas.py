@@ -6,7 +6,12 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from update_ward_areas import parse_ward_areas
 
-PAGE = """<!doctype html><html><body><h2>Every ward</h2>
+PAGE = """<!doctype html><html><body>
+<h2>Provisional ward results</h2>
+<table><tr><th>Ward</th><th>Leading party</th></tr>
+<tr><td>Ward 1</td><td>Not yet counted</td></tr>
+<tr><td>Ward 2</td><td>DA</td></tr></table>
+<h2>Every ward</h2>
 <table>
 <tr><th>Ward</th><th>Covers parts of</th></tr>
 <tr><td><a href='/wards-2026/1/'>Ward 1</a></td><td>Bellville, Milnerton, Parow</td></tr>
@@ -21,6 +26,10 @@ class WardAreaTests(unittest.TestCase):
             parse_ward_areas(PAGE, 2),
             {"1": "Bellville, Milnerton, Parow", "2": "Bellville, Parow"},
         )
+
+    def test_requires_places_table_header(self):
+        with self.assertRaisesRegex(ValueError, "Covers parts of"):
+            parse_ward_areas(PAGE.replace("Covers parts of", "Leading party"), 2)
 
     def test_refuses_incomplete_coverage(self):
         with self.assertRaisesRegex(ValueError, "Expected 3"):
