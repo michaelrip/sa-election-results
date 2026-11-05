@@ -1,0 +1,50 @@
+name: Import direct official IEC 2021 municipal comparisons
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/import_iec_history.py'
+      - 'scripts/import_iec_reports.py'
+      - 'tests/test_iec_direct.py'
+      - '.github/workflows/update-direct-iec-history.yml'
+  schedule:
+    - cron: '26 3 * * 1'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: iec-history-source
+  cancel-in-progress: false
+jobs:
+  iec-history:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check official IEC CSV validation
+        run: python -m unittest discover -s tests -p 'test_iec_direct.py' -v
+      - name: Import only valid 2021 public IEC municipal Ward ballot files
+        run: |
+          python scripts/import_iec_history.py || echo "IEC files unavailable; no historic output replaced"
+      - name: Publish verified 2021 IEC comparisons or status
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add iec-history-status.json
+          if [ -f history-iec-2021.json ]; then git add history-iec-2021.json; fi
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh official IEC 2021 municipal comparisons"
+            for attempt in 1 2 3 4 5; do
+              git fetch origin main
+              if ! git rebase origin/main; then
+                git rebase --abort || true
+                exit 1
+              fi
+              if git push origin HEAD:main; then exit 0; fi
+              sleep 3
+            done
+            exit 1
+          fi
