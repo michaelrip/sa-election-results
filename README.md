@@ -16,23 +16,24 @@ The four-link bottom navigation (**News, Map, Votes, Wards**) is visible at both
 
 For source robustness, the importer accepts the ward-ballot heading with or without a decorative question mark. If one ESP hostname omits the detailed ward-ballot table, it checks the alternate ESP hostname; the alternate source must still satisfy the existing municipality, date, party-vote and district-count validation. It never substitutes a vote-share estimate for ballot counts.
 
-## Official IEC data transition
+## Sources: ESP for live 2026, IEC for historical comparisons
 
-**Status (5 November 2026): Partial.** All four municipality-wide **2021 ward-ballot comparisons are now fetched directly from the IEC's public downloadable CSVs** and saved in `history-iec-2021.json`. Their provenance is in `iec-history-status.json`. The 2026 live vote cards are still **IEC-derived through ESP** until a complete 2026 direct IEC source has passed validation; the site explicitly labels the current source and does not silently relabel it.
+**Live 2026 election results remain sourced through ESP's IEC-derived public election pages.** The website does not automatically switch to direct IEC 2026 reports; `.github/workflows/update-direct-iec.yml` is manual-only, solely as a technical diagnostic. Results, source labels and source URLs continue to identify ESP honestly. Automatic imports run every 15 minutes through `.github/workflows/check-iec.yml`.
 
-The IEC provides [municipal election results downloads](https://results.elections.org.za/home/Downloads/ME-Results) and a [results API](https://api.elections.org.za/) (which needs IEC-issued credentials). Official public party-result CSVs use:
+The four 2021 municipality-wide Ward-ballot comparisons use directly verified official IEC CSVs (`history-iec-2021.json`); historical ward area comparisons remain separate because voting-district boundaries may have changed. Non-election sources are distinct: Municipal Demarcation Board boundaries, municipality/The Ledger geographic descriptions, and attributed news headlines. This is an independent dashboard, not an IEC service.
 
-`https://results.elections.org.za/home/LGEPublicReports/<event-ID>/Downloadable%20Party%20Results/<province>/<municipality>.csv`
+## PR, Ward, combined and district ballot views
 
-The source-validated 2021 event ID is `1091`. **The current 2026 public-report ID and public availability have not yet been confirmed**; the repository does not guess an election ID. To activate automated public IEC 2026 CSV ingestion when the official report is published:
+All city vote cards have a four-way ballot selector (three choices for metros):
 
-1. Verify that the official IEC download page offers 2026 **Downloadable Party Results** CSV for all four municipalities (CPT, TSH, JHB and WC032/Overstrand), and identify the correct 2026 electoral event/report ID from the IEC URL. No source guessing.
-2. In **GitHub → Settings → Secrets and variables → Actions → Variables**, add `IEC_2026_EVENT_ID` (the IEC *public report event ID*, not an account/password). Run **Actions → Check direct IEC 2026 public election reports → Run workflow**.
-3. The importer downloads directly from `results.elections.org.za`, validates that every location contains actual **Ward** ballot party votes, and publishes `results-iec.json` **only after all four areas pass**. The browser automatically prefers this verified file and no longer merges ESP ward details or historical matched ward shares into the IEC-only results. When the reports are not available, it keeps displaying the existing correctly attributed results and records a source status in `iec-source-status.json`.
+- **All local ballots (default):** for each party, add actual counted **Ward + municipal PR** votes, then divide by total valid Ward + PR ballot papers. Both vote counts and residual unlisted parties/candidates are included in the denominator. This reports **ballot papers, not unique voters**, and is **not** a prediction of seats. If the two source snapshots differ by more than 90 minutes, the combined figure is suppressed rather than mixing incompatible partial counts.
+- **PR · Party vote:** each party's actual proportional-representation votes and percentage on the separate municipal PR ballot. The simplest direct view of voting for parties rather than ward candidates.
+- **Ward vote:** each party's reported ward-candidate votes; independent candidates may also receive ward votes. Source-verified 2021 Ward ballot percentages are shown in brackets only in this view.
+- **District PR (Hermanus/Overstrand only):** a third, separate ballot electing representation on the **Overberg district council**. This ballot is explicitly excluded from the two-ballot local-council combined view because it elects a different council.
 
-Implementation: `scripts/import_iec_reports.py`, `scripts/import_iec_history.py`, `tests/test_iec_direct.py`, and workflows `update-direct-iec.yml` and `update-direct-iec-history.yml`. The parser computes party percentages only from integer vote counts in IEC CSV and never mixes **PR** with **Ward** ballots or fabricates voting-district denominators/timestamps. IEC 2021 municipality figures are preferred even during the transition. Existing matched 2021 ward comparisons from The Ledger remain separately attributable until direct IEC ward-history data with comparable boundaries can be built.
+`scripts/update_party_ballots.py` fetches actual numbered party-vote rows from ESP's `?ballot=pr` and `?ballot=dc` pages; results are published in `ballots.json` and diagnostics in `ballot-status.json`. No party counts are reverse-engineered from rounded percentages. Unrecognised/unlisted candidate votes are grouped as **Other/unlisted** using the verified source ballot total minus individually recognised vote counts. The importer validates the municipality, 2026 year, timestamp, vote totals and shares, and retains recent validated cached figures only when live source checks are temporarily unavailable.
 
-**Map boundaries and journalism are different sources:** the 2026 ward polygons are from the official Municipal Demarcation Board; geographic area descriptions may come from the municipality or The Ledger; headlines are from credited news publishers. These are not IEC election counts and should not be represented as such. This site is not an official IEC service.
+The existing interactive ward map remains colour-coded by **Ward** ballot. Individual ward result cards and map panels also link to their original ESP Ward and PR ballot pages, without claiming that the PR ballot elects a ward councillor. Source status and refresh messages track both Ward and PR updates.
 
 ## Mobile usability improvements
 
@@ -53,7 +54,7 @@ No source counts, vote percentages, 2021 historical comparisons, maps or publish
 
 The **Vote details by city** section displays **one municipality at a time** instead of stacking all four municipality party cards. A four-option city selector switches Cape Town, Tshwane, Johannesburg or Hermanus / Overstrand without a page reload. The selected city synchronizes with the 2026 interactive map and searchable ward list in both directions.
 
-The overview highlights voting-district progress and sourced valid ward-ballot vote totals, with the top five party results visible. Remaining reported parties are available in an accessible **Show more parties** expander. Bracketed 2021 ward-ballot comparisons remain available next to the corresponding current percentages. The header includes a **View votes by city** shortcut to the section, and the Cape Town-only DA majority watch is hidden when another metro is selected. The choice persists across the dashboard's regular data refreshes (within the current page visit).
+The overview shows voting-district progress and the selected ballot's sourced valid votes, with the top five parties/groups visible and a ballot-type switcher above it. Remaining reported parties are available in an accessible **Show more parties** expander. Bracketed 2021 ward-ballot comparisons remain available next to the corresponding current percentages. The header includes a **View votes by city** shortcut to the section, and the Cape Town-only DA majority watch is hidden when another metro is selected. The choice persists across the dashboard's regular data refreshes (within the current page visit).
 
 ## Hermanus / Overstrand (fourth location)
 
@@ -65,7 +66,7 @@ The 2026 map uses the **15 official Overstrand ward polygons** from the Municipa
 
 The site title and sharing title are **Mzanzi Key Metro Watch**. Its background uses a locally hosted South African flag vector (`assets/sa-flag.svg`) behind a dark overlay, preserving contrast and legibility on phones.
 
-Each metro card shows **valid ward-ballot votes counted** when the ESP source publishes that value. The party rows show **actual party vote counts** when those votes appear as individually sourced, mathematically consistent vote rows. Numbers are stored as integers in `results.json` under `metros[city].valid_votes` and `metros[city].parties[].votes`. Figures are refreshed by the existing importer.
+Each city card shows **valid votes for the selected ballot(s)** when the ESP source publishes that count. The party rows show **actual party vote counts** where sourced and verified by ballot type; the combined view adds the Ward and municipal PR paper ballots rather than treating them as unique voters. Numbers are stored as integers in `results.json` under `metros[city].valid_votes` and `metros[city].parties[].votes`. Figures are refreshed by the existing importer.
 
 **No vote numbers are estimated from rounded party percentages.** If the source contains only percentages, the corresponding party vote count is shown as unavailable. Individual ward vote totals are not currently available from the ward summary feed and remain unreported, rather than fabricated. These ward-ballot figures are not PR ballot totals or final seat allocations.
 
