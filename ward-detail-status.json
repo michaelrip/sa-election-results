@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-05T12:07:03.712552+00:00",
+  "checked_at": "2026-11-05T12:09:22.073624+00:00",
   "metros": {
     "Cape Town": {
       "cached": 85,
@@ -28,8 +28,8 @@
       "top_three_available": 62
     },
     "Johannesburg": {
-      "cached": 82,
-      "enriched": 1,
+      "cached": 83,
+      "enriched": 0,
       "not_reported": 48,
       "pending": 0,
       "errors": 4,
@@ -42,16 +42,14 @@
     },
     "Hermanus": {
       "cached": 1,
-      "enriched": 0,
+      "enriched": 4,
       "not_reported": 9,
       "pending": 0,
-      "errors": 5,
+      "errors": 1,
       "example_errors": [
-        "Unrecognised or repeated party among first three",
-        "Unrecognised or repeated party among first three",
-        "Wrong municipality on source page"
+        "Unrecognised or repeated party among first three"
       ],
-      "top_three_available": 1
+      "top_three_available": 5
     }
   },
   "status": "partial",

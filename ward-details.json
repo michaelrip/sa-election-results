@@ -1,6 +1,6 @@
 {
   "source": "Individual ESP 2026 ward-ballot pages (IEC-derived; provisional)",
-  "checked_at": "2026-11-05T12:07:03.712552+00:00",
+  "checked_at": "2026-11-05T12:09:22.073624+00:00",
   "metros": {
     "Cape Town": {
       "5": {
@@ -5311,6 +5311,98 @@
         "reporting": "1 of 4 districts",
         "source_at": "2026-11-05T11:33:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/western-cape/overstrand/ward-4"
+      },
+      "5": {
+        "parties": [
+          {
+            "name": "ANC",
+            "share": 51.1,
+            "votes": 560
+          },
+          {
+            "name": "DA",
+            "share": 18.5,
+            "votes": 203
+          },
+          {
+            "name": "LAND",
+            "share": 12.8,
+            "votes": 140
+          }
+        ],
+        "valid_votes": 1095,
+        "reporting": "1 of 2 districts",
+        "source_at": "2026-11-05T11:33:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/western-cape/overstrand/ward-5"
+      },
+      "6": {
+        "parties": [
+          {
+            "name": "ANC",
+            "share": 40.8,
+            "votes": 580
+          },
+          {
+            "name": "LAND",
+            "share": 38.0,
+            "votes": 539
+          },
+          {
+            "name": "DA",
+            "share": 7.2,
+            "votes": 102
+          }
+        ],
+        "valid_votes": 1420,
+        "reporting": "1 of 2 districts",
+        "source_at": "2026-11-05T11:27:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/western-cape/overstrand/ward-6"
+      },
+      "10": {
+        "parties": [
+          {
+            "name": "DA",
+            "share": 71.7,
+            "votes": 2502
+          },
+          {
+            "name": "FF+",
+            "share": 14.8,
+            "votes": 515
+          },
+          {
+            "name": "ANC",
+            "share": 7.5,
+            "votes": 260
+          }
+        ],
+        "valid_votes": 3488,
+        "reporting": "1 of 3 districts",
+        "source_at": "2026-11-05T11:27:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/western-cape/overstrand/ward-10"
+      },
+      "11": {
+        "parties": [
+          {
+            "name": "DA",
+            "share": 72.5,
+            "votes": 2181
+          },
+          {
+            "name": "FF+",
+            "share": 16.8,
+            "votes": 505
+          },
+          {
+            "name": "ANC",
+            "share": 3.7,
+            "votes": 110
+          }
+        ],
+        "valid_votes": 3008,
+        "reporting": "1 of 5 districts",
+        "source_at": "2026-11-05T11:26:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/western-cape/overstrand/ward-11"
       }
     }
   }
