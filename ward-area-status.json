@@ -1,22 +1,22 @@
 {
-  "checked_at": "2026-11-05T09:33:21.109125+00:00",
+  "checked_at": "2026-11-05T10:17:32.612723+00:00",
   "status": "ok",
   "checks": {
     "Cape Town": {
       "status": "ok",
       "wards_named": 118,
-      "from_cache": false
+      "from_cache": true
     },
     "Tshwane": {
       "status": "ok",
       "wards_named": 107,
-      "from_cache": false
+      "from_cache": true
     },
     "Johannesburg": {
       "status": "ok",
       "wards_named": 135,
-      "from_cache": false
+      "from_cache": true
     }
   },
-  "areas_updated": true
+  "areas_updated": false
 }
