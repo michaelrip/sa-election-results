@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-05T12:03:09.059313+00:00",
+  "checked_at": "2026-11-05T12:03:46.508029+00:00",
   "source": "ESP public pages (IEC-derived, unofficial; not direct IEC API)",
   "checks": {
     "Cape Town": {
@@ -27,6 +27,6 @@
       "snapshot_at": "2026-11-05T11:47:00+00:00"
     }
   },
-  "results_updated": true,
+  "results_updated": false,
   "status": "ok"
 }
