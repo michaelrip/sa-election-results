@@ -32,6 +32,18 @@ The normal `results.json` metro summary contains only each ward's leading party.
 
 The browser merges ward details only if they still match the current summary and are no more than 24 hours old. If a ward has only its verified leading party or its detailed page cannot be validated, the UI **shows only available parties and says the rest are pending**. It never fills second or third place using metro estimates or outdated data. Tests: `tests/test_ward_top_three.py`.
 
+## 2021 percentages in brackets
+
+The current 2026 ward-ballot percentage is emphasized on every metro party card, ward card and ward-map drill-down. If a **sourced 2021 ward-ballot percentage** exists for the same party, it appears in muted brackets, for example **59.6% (2021: 57.8%)**.
+
+The source is kept separately in `history-2021.json` and imported using `scripts/update_history_2021.py` with regression tests `tests/test_history_2021.py`. An independent weekly workflow (`.github/workflows/update-history-2021.yml`) checks the underlying historical sources:
+
+- **Metro shares:** complete 2021 local-election *ward-ballot* results, via ESP's IEC-derived 2021 metro pages.
+- **Ward shares:** the 2021 ward-ballot votes of voting districts now included in each **2026 ward**, from The Ledger SA individual `wards-2026/` pages. These are **not necessarily the official 2021 ward-area boundaries**, and new or changed voting districts may have no 2021 match. The importer retains how many districts were matched.
+- Percentages are compared **only against the same ballot type**, and a party absent from the published 2021 top shares is **unknown, never zero**. Current 2026 values remain preliminary, so no percentage-point swing is presented as final.
+
+The browser loads historical data alongside current results; if historical data is missing, the brackets are omitted without affecting current election results. The map and ward cards explain the boundary difference.
+
 ## Interactive 2026 ward map
 
 The page opens with one large interactive map and three metro tabs: **Cape Town (118 wards), Tshwane (107), and Johannesburg (135)**. The map uses validated 2026 polygons from the [Municipal Demarcation Board's MDBWards2026 ArcGIS service](https://services7.arcgis.com/oeoyTUJC8HEeYsRB/arcgis/rest/services/MDBWards2026/FeatureServer/0).
