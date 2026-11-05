@@ -17,6 +17,7 @@ SOURCES = {
     "Cape Town": ("cape-town", 118),
     "Tshwane": ("tshwane", 107),
     "Johannesburg": ("johannesburg", 135),
+    "Hermanus": ("overstrand", 15),
 }
 SITE = "https://theledgersa.com/metros/{metro}/wards-2026/{ward}/"
 OUTPUT = Path("ward-areas.json")
