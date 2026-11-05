@@ -1,12 +1,20 @@
-# SA Metro Election Watch
+# Mzanzi Key Metro Watch
 
-Mobile-friendly public dashboard for Cape Town, Tshwane and Johannesburg: preliminary municipal ward-ballot vote shares, district-counting progress, and ward drill-down.
+Mobile-friendly public dashboard with a South African flag-inspired background for Cape Town, Tshwane and Johannesburg: preliminary municipal ward-ballot results, sourced vote counts, district-counting progress, and ward drill-down.
 
 ## Website
 
 Enable GitHub Pages in **Settings → Pages**: select **Deploy from a branch**, **main**, and **/(root)**, then Save.
 
 Intended website: https://michaelrip.github.io/sa-election-results/
+
+## Theme and vote totals
+
+The site title and sharing title are **Mzanzi Key Metro Watch**. Its background uses a locally hosted South African flag vector (`assets/sa-flag.svg`) behind a dark overlay, preserving contrast and legibility on phones.
+
+Each metro card shows **valid ward-ballot votes counted** when the ESP source publishes that value. The party rows show **actual party vote counts** when those votes appear as individually sourced, mathematically consistent vote rows. Numbers are stored as integers in `results.json` under `metros[city].valid_votes` and `metros[city].parties[].votes`. Figures are refreshed by the existing importer.
+
+**No vote numbers are estimated from rounded party percentages.** If the source contains only percentages, the corresponding party vote count is shown as unavailable. Individual ward vote totals are not currently available from the ward summary feed and remain unreported, rather than fabricated. These ward-ballot figures are not PR ballot totals or final seat allocations.
 
 ## Sourced election headlines
 
