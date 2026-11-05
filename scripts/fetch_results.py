@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT="https://go.esp.info/elections/local/2026/"
 ALT_ROOT="https://esp.info/elections/local/2026/"
 WARD_BALLOT_HEADER=re.compile(r"\bWard ballot\s*\??\s*[·•]?\s*([\d\s]+)\s+valid votes\b",re.I)
-CITIES={"Cape Town":("western-cape/city-of-cape-town",829,118),"Tshwane":("gauteng/city-of-tshwane",796,107),"Johannesburg":("gauteng/city-of-johannesburg",862,135),"Hermanus":("western-cape/overstrand",37,15)}
+CITIES={"Cape Town":("western-cape/city-of-cape-town",829,118),"Tshwane":("gauteng/city-of-tshwane",796,107),"Johannesburg":("gauteng/city-of-johannesburg",862,135),"Hermanus":("western-cape/overstrand",37,15),"Nelson Mandela Bay":("eastern-cape/nelson-mandela-bay",268,60)}
 ALIASES={"DA":"DA","ANC":"ANC","EFF":"EFF","ActionSA":"ActionSA","PA":"PA","VF PLUS":"FF+","MKP":"MK","IFP":"IFP","GOOD":"GOOD","ACDP":"ACDP","ALJAMA":"Al Jama-ah","RISE":"RISE","H.O.I.":"H.O.I."}
 class Text(HTMLParser):
  def __init__(self):
@@ -39,7 +39,7 @@ def get(url):
 def parse(city,slug,total,nwards,now):
  url=ROOT+slug
  s=get(url)
- municipality="Overstrand" if city=="Hermanus" else "City of "+city
+ municipality="Overstrand" if city=="Hermanus" else "Nelson Mandela Bay" if city=="Nelson Mandela Bay" else "City of "+city
  if municipality not in s or "2026" not in s:raise ValueError("Unexpected page identity")
  # If the public ESP alias temporarily returns only the summary without its
  # detailed ward-ballot table, try the other official ESP hostname. Do not
@@ -83,7 +83,7 @@ def parse(city,slug,total,nwards,now):
  if not start:raise ValueError("Ward ballot header missing")
  votes=int(re.sub(r"\D","",start.group(1)))
  tail=s[start.end():]
- end=re.search(r"\b(?:How did City of|How did Overstrand|Wards\s*[·•]|About these figures)\b",tail)
+ end=re.search(r"\b(?:How did City of|How did Overstrand|How did Nelson Mandela Bay|Wards\s*[·•]|About these figures)\b",tail)
  section=tail[:end.start()] if end else tail[:16000]
  # Read source party votes without relying on <ol> numbers (HTML adds those
  # visually, but HTMLParser does not see them). Also recognise full party names,
@@ -148,7 +148,7 @@ def parse(city,slug,total,nwards,now):
   if 1<=n<=nwards and 0<reported<=den and 0<=float(w.group(5))<=100:
    ward_rows[n]={"number":n,"status":"Partly counted","ballot_type":"Ward","reporting":str(reported)+" of "+str(den)+" districts","winner":ALIASES[w.group(4)],"parties":[{"name":ALIASES[w.group(4)],"share":float(w.group(5))}],"snapshot_at":stamp.isoformat(),"source_url":url+"/ward-"+str(n)}
  wards=[ward_rows.get(i,{"number":i,"status":"Not yet reported","ballot_type":"Ward","reporting":"Not yet reported","parties":[],"snapshot_at":stamp.isoformat(),"source_url":url+"/ward-"+str(i)}) for i in range(1,nwards+1)]
- return {"status":"Preliminary · IEC-derived via ESP","municipality":"Overstrand Local Municipality" if city=="Hermanus" else None,"ballot_type":"Ward","districts_reported":count,"districts_total":denom,"valid_votes":votes,"parties":parties,"seats":[],"wards":wards,"snapshot_at":stamp.isoformat(),"source_url":url},len(ward_rows)
+ return {"status":"Preliminary · IEC-derived via ESP","municipality":"Overstrand Local Municipality" if city=="Hermanus" else "Nelson Mandela Bay Metropolitan Municipality" if city=="Nelson Mandela Bay" else None,"ballot_type":"Ward","districts_reported":count,"districts_total":denom,"valid_votes":votes,"parties":parties,"seats":[],"wards":wards,"snapshot_at":stamp.isoformat(),"source_url":url},len(ward_rows)
 def main():
  now=datetime.now(timezone.utc)
  path=Path("results.json");data=json.loads(path.read_text());data.setdefault("metros",{})
