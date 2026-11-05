@@ -1,0 +1,34 @@
+{
+  "checked_at": null,
+  "source": "Initially curated links to published reporting; automated refresh checks Google News RSS",
+  "articles": [
+    {
+      "title": "Tshwane mayoral candidates brace for possibility of another coalition government",
+      "publisher": "Eyewitness News",
+      "url": "https://www.ewn.co.za/tshwane-mayoral-candidates-brace-for-possibility-of-another-coalition-government/",
+      "published_date": "2026-11-05",
+      "metro": "Tshwane"
+    },
+    {
+      "title": "Simmers confident DA has done work needed to retain Cape Town",
+      "publisher": "Eyewitness News",
+      "url": "https://www.ewn.co.za/2026/11/05/simmers-confident-da-has-done-work-needed-to-retain-cape-town",
+      "published_date": "2026-11-05",
+      "metro": "Cape Town"
+    },
+    {
+      "title": "Johannesburg’s water challenges cast a shadow over election day",
+      "publisher": "SABC News",
+      "url": "https://elections.sabcnews.com/election-news/article/johannesburgs-water-challenges-cast-a-shadow-over-election-day/",
+      "published_date": "2026-11-04",
+      "metro": "Johannesburg"
+    },
+    {
+      "title": "ANC support falls sharply in early South Africa municipal election results",
+      "publisher": "Reuters",
+      "url": "https://www.reuters.com/world/africa/south-africas-anc-32-vote-with-12-votes-counted-municipal-election-2026-11-05/",
+      "published_date": "2026-11-05",
+      "metro": "South Africa"
+    }
+  ]
+}
