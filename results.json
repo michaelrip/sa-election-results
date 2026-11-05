@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T09:12:09.787480+00:00",
+  "updated_at": "2026-11-05T09:24:39.328731+00:00",
   "source": "Provisional IEC-derived ward-ballot results via ESP (unofficial)",
   "metros": {
     "Cape Town": {
@@ -4663,16 +4663,10 @@
         },
         {
           "number": 134,
-          "status": "Partly counted",
+          "status": "Not yet reported",
           "ballot_type": "Ward",
-          "reporting": "1 of 5 districts",
-          "winner": "ActionSA",
-          "parties": [
-            {
-              "name": "ActionSA",
-              "share": 30.0
-            }
-          ],
+          "reporting": "Not yet reported",
+          "parties": [],
           "snapshot_at": "2026-11-05T09:04:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-134"
         },

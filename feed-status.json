@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-05T09:22:47.913817+00:00",
+  "checked_at": "2026-11-05T09:24:39.328731+00:00",
   "source": "ESP public pages (IEC-derived, unofficial; not direct IEC API)",
   "checks": {
     "Cape Town": {
@@ -17,10 +17,10 @@
     "Johannesburg": {
       "status": "ok",
       "districts_reported": 108,
-      "wards_with_data": 68,
+      "wards_with_data": 67,
       "snapshot_at": "2026-11-05T09:04:00+00:00"
     }
   },
-  "results_updated": false,
+  "results_updated": true,
   "status": "ok"
 }
