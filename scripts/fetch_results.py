@@ -113,8 +113,8 @@ def parse(city,slug,total,nwards,now):
  for w in re.finditer(r"Ward\s+(\d{1,3})\s+(\d+)\s+of\s+(\d+)\s+voting districts in\s+(DA|ANC|ActionSA|EFF|PA|IFP|MKP|VF PLUS|GOOD|ACDP|RISE)\s+(\d{1,3}\.\d)%",ward_section.group(1)):
   n,reported,den=int(w.group(1)),int(w.group(2)),int(w.group(3))
   if 1<=n<=nwards and 0<reported<=den and 0<=float(w.group(5))<=100:
-   ward_rows[n]={"number":n,"status":"Partly counted","ballot_type":"Ward","reporting":str(reported)+" of "+str(den)+" districts","winner":ALIASES[w.group(4)],"parties":[{"name":ALIASES[w.group(4)],"share":float(w.group(5))}],"snapshot_at":stamp.isoformat(),"source_url":url}
- wards=[ward_rows.get(i,{"number":i,"status":"Not yet reported","ballot_type":"Ward","reporting":"Not yet reported","parties":[],"snapshot_at":stamp.isoformat(),"source_url":url}) for i in range(1,nwards+1)]
+   ward_rows[n]={"number":n,"status":"Partly counted","ballot_type":"Ward","reporting":str(reported)+" of "+str(den)+" districts","winner":ALIASES[w.group(4)],"parties":[{"name":ALIASES[w.group(4)],"share":float(w.group(5))}],"snapshot_at":stamp.isoformat(),"source_url":url+"/ward-"+str(n)}
+ wards=[ward_rows.get(i,{"number":i,"status":"Not yet reported","ballot_type":"Ward","reporting":"Not yet reported","parties":[],"snapshot_at":stamp.isoformat(),"source_url":url+"/ward-"+str(i)}) for i in range(1,nwards+1)]
  return {"status":"Preliminary · IEC-derived via ESP","ballot_type":"Ward","districts_reported":count,"districts_total":denom,"parties":parties,"seats":[],"wards":wards,"snapshot_at":stamp.isoformat(),"source_url":url},len(ward_rows)
 def main():
  now=datetime.now(timezone.utc)
