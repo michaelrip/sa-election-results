@@ -850,7 +850,7 @@ document.addEventListener('visibilitychange',()=>{
 @media(max-width:480px){.national-party-row{grid-template-columns:72px minmax(0,1fr) 55px;gap:7px;font-size:12px}}
 </style>
 <script>
-(async function(){
+async function refreshNationalPanel(){
  const summary=document.getElementById('national-summary'),bars=document.getElementById('national-party-bars'),source=document.getElementById('national-source');
  try{
   const response=await fetch('./national-results.json?ts='+Date.now(),{cache:'no-store'});
@@ -871,9 +871,11 @@ document.addEventListener('visibilitychange',()=>{
    row.append(label,track,value);bars.appendChild(row);
   });
   const a=document.createElement('a');a.href='https://sepush.co.za/elections/local/2026';a.target='_blank';a.rel='noopener noreferrer';a.textContent='View latest national count at ESP';
-  source.textContent='Historical snapshot, not a live feed. Figures may have changed. Source: ';
+  source.textContent='Automatically checked every 15 minutes; latest validated published snapshot. Source: ';
   source.appendChild(a);
  }catch(e){summary.textContent='National snapshot could not be loaded. Check the source for current figures.';}
-})();
+}
+refreshNationalPanel();
+setInterval(refreshNationalPanel, 15 * 60 * 1000);
 </script>
 </body></html>
