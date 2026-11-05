@@ -1,22 +1,22 @@
 {
-  "checked_at": "2026-11-05T09:24:41.389690+00:00",
-  "status": "partial",
+  "checked_at": "2026-11-05T09:29:00.623084+00:00",
+  "status": "ok",
   "checks": {
     "Cape Town": {
-      "status": "error",
-      "detail": "2026 'Ward | Covers parts of' table was not found",
+      "status": "ok",
+      "wards_named": 118,
       "source_url": "https://theledgersa.com/metros/cape-town/elections/2026/"
     },
     "Tshwane": {
-      "status": "error",
-      "detail": "2026 'Ward | Covers parts of' table was not found",
+      "status": "ok",
+      "wards_named": 107,
       "source_url": "https://theledgersa.com/metros/tshwane/elections/2026/"
     },
     "Johannesburg": {
-      "status": "error",
-      "detail": "2026 'Ward | Covers parts of' table was not found",
+      "status": "ok",
+      "wards_named": 135,
       "source_url": "https://theledgersa.com/metros/johannesburg/elections/2026/"
     }
   },
-  "areas_updated": false
+  "areas_updated": true
 }
