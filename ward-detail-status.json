@@ -1,48 +1,48 @@
 {
-  "checked_at": "2026-11-05T15:26:52.394864+00:00",
+  "checked_at": "2026-11-05T16:34:03.083483+00:00",
   "metros": {
     "Cape Town": {
-      "cached": 85,
-      "enriched": 3,
-      "not_reported": 20,
+      "cached": 70,
+      "enriched": 22,
+      "not_reported": 22,
       "pending": 0,
-      "errors": 10,
+      "errors": 4,
       "example_errors": [
-        "Ward page district count differs from metro summary",
+        "Unrecognised or repeated party among first three",
+        "Unrecognised or repeated party among first three",
+        "Unrecognised or repeated party among first three"
+      ],
+      "top_three_available": 92
+    },
+    "Tshwane": {
+      "cached": 40,
+      "enriched": 37,
+      "not_reported": 24,
+      "pending": 0,
+      "errors": 6,
+      "example_errors": [
+        "Fewer than two ranked ballot rows",
         "Ward page district count differs from metro summary",
         "Unrecognised or repeated party among first three"
       ],
-      "top_three_available": 88
-    },
-    "Tshwane": {
-      "cached": 63,
-      "enriched": 1,
-      "not_reported": 27,
-      "pending": 0,
-      "errors": 16,
-      "example_errors": [
-        "Ward page district count differs from metro summary",
-        "Ward page district count differs from metro summary",
-        "Ward page district count differs from metro summary"
-      ],
-      "top_three_available": 64
+      "top_three_available": 77
     },
     "Johannesburg": {
-      "cached": 82,
-      "enriched": 5,
-      "not_reported": 40,
+      "cached": 71,
+      "enriched": 28,
+      "not_reported": 32,
       "pending": 0,
-      "errors": 8,
+      "errors": 4,
       "example_errors": [
         "Unrecognised or repeated party among first three",
         "Unrecognised or repeated party among first three",
         "Ward page district count differs from metro summary"
       ],
-      "top_three_available": 87
+      "top_three_available": 99
     },
     "Hermanus": {
-      "cached": 4,
-      "enriched": 1,
+      "cached": 5,
+      "enriched": 0,
       "not_reported": 9,
       "pending": 0,
       "errors": 1,
