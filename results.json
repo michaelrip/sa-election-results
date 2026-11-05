@@ -92,7 +92,7 @@
         },
         {
           "name": "H.O.I.",
-          "share": 0.0,
+          "share": 0,
           "votes": 226
         }
       ],
@@ -146,7 +146,7 @@
           "parties": [
             {
               "name": "DA",
-              "share": 54.0
+              "share": 54
             }
           ],
           "snapshot_at": "2026-11-05T22:48:00+00:00",
@@ -206,7 +206,7 @@
           "parties": [
             {
               "name": "DA",
-              "share": 83.0
+              "share": 83
             }
           ],
           "snapshot_at": "2026-11-05T22:48:00+00:00",
@@ -755,7 +755,7 @@
           "parties": [
             {
               "name": "DA",
-              "share": 40.0
+              "share": 40
             }
           ],
           "snapshot_at": "2026-11-05T22:48:00+00:00",
@@ -1112,7 +1112,7 @@
           "parties": [
             {
               "name": "DA",
-              "share": 55.0
+              "share": 55
             }
           ],
           "snapshot_at": "2026-11-05T22:48:00+00:00",
@@ -1208,7 +1208,7 @@
           "parties": [
             {
               "name": "DA",
-              "share": 53.0
+              "share": 53
             }
           ],
           "snapshot_at": "2026-11-05T22:48:00+00:00",
@@ -1355,7 +1355,7 @@
           "parties": [
             {
               "name": "ANC",
-              "share": 54.0
+              "share": 54
             }
           ],
           "snapshot_at": "2026-11-05T22:48:00+00:00",
@@ -1673,7 +1673,7 @@
           "parties": [
             {
               "name": "DA",
-              "share": 66.0
+              "share": 66
             }
           ],
           "snapshot_at": "2026-11-05T22:48:00+00:00",
@@ -1758,7 +1758,7 @@
         },
         {
           "name": "EFF",
-          "share": 6.0,
+          "share": 6,
           "votes": 30840
         },
         {
@@ -1813,7 +1813,7 @@
         },
         {
           "name": "CCC",
-          "share": 0.0,
+          "share": 0,
           "votes": 76
         }
       ],
@@ -1828,7 +1828,7 @@
           "parties": [
             {
               "name": "DA",
-              "share": 59.0
+              "share": 59
             }
           ],
           "snapshot_at": "2026-11-05T22:52:00+00:00",
@@ -1963,7 +1963,7 @@
           "parties": [
             {
               "name": "ANC",
-              "share": 28.0
+              "share": 28
             }
           ],
           "snapshot_at": "2026-11-05T22:52:00+00:00",
@@ -2200,7 +2200,7 @@
           "parties": [
             {
               "name": "ANC",
-              "share": 40.0
+              "share": 40
             }
           ],
           "snapshot_at": "2026-11-05T22:52:00+00:00",
@@ -2671,7 +2671,7 @@
           "parties": [
             {
               "name": "ActionSA",
-              "share": 37.0
+              "share": 37
             }
           ],
           "snapshot_at": "2026-11-05T22:52:00+00:00",
@@ -2725,7 +2725,7 @@
           "parties": [
             {
               "name": "DA",
-              "share": 73.0
+              "share": 73
             }
           ],
           "snapshot_at": "2026-11-05T22:52:00+00:00",
@@ -2764,7 +2764,7 @@
           "parties": [
             {
               "name": "DA",
-              "share": 77.0
+              "share": 77
             }
           ],
           "snapshot_at": "2026-11-05T22:52:00+00:00",
@@ -2878,7 +2878,7 @@
           "parties": [
             {
               "name": "ActionSA",
-              "share": 40.0
+              "share": 40
             }
           ],
           "snapshot_at": "2026-11-05T22:52:00+00:00",
@@ -3181,7 +3181,7 @@
           "parties": [
             {
               "name": "DA",
-              "share": 51.0
+              "share": 51
             }
           ],
           "snapshot_at": "2026-11-05T22:52:00+00:00",
@@ -3302,7 +3302,7 @@
         },
         {
           "name": "MK",
-          "share": 5.0,
+          "share": 5,
           "votes": 26839
         },
         {
@@ -3327,7 +3327,7 @@
         },
         {
           "name": "ATM",
-          "share": 1.0,
+          "share": 1,
           "votes": 5378
         },
         {
@@ -3357,7 +3357,7 @@
         },
         {
           "name": "CCC",
-          "share": 0.0,
+          "share": 0,
           "votes": 147
         }
       ],
@@ -3513,7 +3513,7 @@
           "parties": [
             {
               "name": "ANC",
-              "share": 31.0
+              "share": 31
             }
           ],
           "snapshot_at": "2026-11-05T22:52:00+00:00",
@@ -3768,7 +3768,7 @@
           "parties": [
             {
               "name": "ActionSA",
-              "share": 34.0
+              "share": 34
             }
           ],
           "snapshot_at": "2026-11-05T22:52:00+00:00",
@@ -3828,7 +3828,7 @@
           "parties": [
             {
               "name": "IFP",
-              "share": 30.0
+              "share": 30
             }
           ],
           "snapshot_at": "2026-11-05T22:52:00+00:00",
@@ -3867,7 +3867,7 @@
           "parties": [
             {
               "name": "IFP",
-              "share": 63.0
+              "share": 63
             }
           ],
           "snapshot_at": "2026-11-05T22:52:00+00:00",
@@ -4026,7 +4026,7 @@
           "parties": [
             {
               "name": "ANC",
-              "share": 29.0
+              "share": 29
             }
           ],
           "snapshot_at": "2026-11-05T22:52:00+00:00",
@@ -4131,7 +4131,7 @@
           "parties": [
             {
               "name": "EFF",
-              "share": 28.0
+              "share": 28
             }
           ],
           "snapshot_at": "2026-11-05T22:52:00+00:00",
@@ -4431,7 +4431,7 @@
           "parties": [
             {
               "name": "DA",
-              "share": 31.0
+              "share": 31
             }
           ],
           "snapshot_at": "2026-11-05T22:52:00+00:00",
@@ -4635,7 +4635,7 @@
           "parties": [
             {
               "name": "DA",
-              "share": 61.0
+              "share": 61
             }
           ],
           "snapshot_at": "2026-11-05T22:52:00+00:00",
@@ -4830,7 +4830,7 @@
           "parties": [
             {
               "name": "ActionSA",
-              "share": 28.0
+              "share": 28
             }
           ],
           "snapshot_at": "2026-11-05T22:52:00+00:00",
@@ -5145,7 +5145,7 @@
           "parties": [
             {
               "name": "ActionSA",
-              "share": 30.0
+              "share": 30
             }
           ],
           "snapshot_at": "2026-11-05T22:52:00+00:00",
@@ -5180,12 +5180,12 @@
       "parties": [
         {
           "name": "DA",
-          "share": 60.0,
+          "share": 60,
           "votes": 25383
         },
         {
           "name": "ANC",
-          "share": 14.0,
+          "share": 14,
           "votes": 5932
         },
         {
@@ -5215,7 +5215,7 @@
         },
         {
           "name": "ATM",
-          "share": 1.0,
+          "share": 1,
           "votes": 424
         },
         {
@@ -5375,6 +5375,560 @@
       ],
       "snapshot_at": "2026-11-05T20:15:00+00:00",
       "source_url": "https://go.esp.info/elections/local/2026/western-cape/overstrand"
+    },
+    "Nelson Mandela Bay": {
+      "status": "Awaiting first validated IEC-derived ESP import",
+      "municipality": "Nelson Mandela Bay Metropolitan Municipality",
+      "ballot_type": "Ward",
+      "districts_reported": 0,
+      "districts_total": 268,
+      "valid_votes": null,
+      "parties": [],
+      "seats": [],
+      "wards": [
+        {
+          "number": 1,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-1"
+        },
+        {
+          "number": 2,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-2"
+        },
+        {
+          "number": 3,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-3"
+        },
+        {
+          "number": 4,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-4"
+        },
+        {
+          "number": 5,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-5"
+        },
+        {
+          "number": 6,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-6"
+        },
+        {
+          "number": 7,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-7"
+        },
+        {
+          "number": 8,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-8"
+        },
+        {
+          "number": 9,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-9"
+        },
+        {
+          "number": 10,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-10"
+        },
+        {
+          "number": 11,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-11"
+        },
+        {
+          "number": 12,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-12"
+        },
+        {
+          "number": 13,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-13"
+        },
+        {
+          "number": 14,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-14"
+        },
+        {
+          "number": 15,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-15"
+        },
+        {
+          "number": 16,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-16"
+        },
+        {
+          "number": 17,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-17"
+        },
+        {
+          "number": 18,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-18"
+        },
+        {
+          "number": 19,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-19"
+        },
+        {
+          "number": 20,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-20"
+        },
+        {
+          "number": 21,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-21"
+        },
+        {
+          "number": 22,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-22"
+        },
+        {
+          "number": 23,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-23"
+        },
+        {
+          "number": 24,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-24"
+        },
+        {
+          "number": 25,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-25"
+        },
+        {
+          "number": 26,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-26"
+        },
+        {
+          "number": 27,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-27"
+        },
+        {
+          "number": 28,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-28"
+        },
+        {
+          "number": 29,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-29"
+        },
+        {
+          "number": 30,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-30"
+        },
+        {
+          "number": 31,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-31"
+        },
+        {
+          "number": 32,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-32"
+        },
+        {
+          "number": 33,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-33"
+        },
+        {
+          "number": 34,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-34"
+        },
+        {
+          "number": 35,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-35"
+        },
+        {
+          "number": 36,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-36"
+        },
+        {
+          "number": 37,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-37"
+        },
+        {
+          "number": 38,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-38"
+        },
+        {
+          "number": 39,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-39"
+        },
+        {
+          "number": 40,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-40"
+        },
+        {
+          "number": 41,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-41"
+        },
+        {
+          "number": 42,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-42"
+        },
+        {
+          "number": 43,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-43"
+        },
+        {
+          "number": 44,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-44"
+        },
+        {
+          "number": 45,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-45"
+        },
+        {
+          "number": 46,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-46"
+        },
+        {
+          "number": 47,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-47"
+        },
+        {
+          "number": 48,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-48"
+        },
+        {
+          "number": 49,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-49"
+        },
+        {
+          "number": 50,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-50"
+        },
+        {
+          "number": 51,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-51"
+        },
+        {
+          "number": 52,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-52"
+        },
+        {
+          "number": 53,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-53"
+        },
+        {
+          "number": 54,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-54"
+        },
+        {
+          "number": 55,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-55"
+        },
+        {
+          "number": 56,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-56"
+        },
+        {
+          "number": 57,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-57"
+        },
+        {
+          "number": 58,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-58"
+        },
+        {
+          "number": 59,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-59"
+        },
+        {
+          "number": 60,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-60"
+        }
+      ],
+      "snapshot_at": null,
+      "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay"
     }
   }
 }
