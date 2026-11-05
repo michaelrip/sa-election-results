@@ -2,6 +2,12 @@
    Desktop styling remains in index.html; this file focuses on touch screens. */
 .map-legend-toggle{display:none}
 .map-drag-toggle[hidden],.ward-more[hidden]{display:none!important}
+.ward-map-popup .leaflet-popup-content a.ward-quick-link{
+ display:flex;align-items:center;justify-content:center;min-height:44px;
+ margin-top:11px;padding:9px 12px;background:#185b83;border-radius:8px;
+ color:#fff!important;font-size:13px;font-weight:750;text-decoration:none
+}
+.ward-map-popup .leaflet-popup-content a.ward-quick-link:focus-visible{outline:3px solid #185b83;outline-offset:3px}
 .ward-more{display:block;min-height:48px;width:100%;margin:14px 0 0;border-color:#759cbb;background:#1e466d}
 .mobile-quick-nav{display:none}
 #news-heading,#metro-maps,#metro-votes,#ward-explorer,#ward-map-detail{scroll-margin-top:16px}
