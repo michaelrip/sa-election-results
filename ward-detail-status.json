@@ -1,42 +1,42 @@
 {
-  "checked_at": "2026-11-05T11:16:22.029233+00:00",
+  "checked_at": "2026-11-05T12:01:28.623289+00:00",
   "metros": {
     "Cape Town": {
-      "cached": 48,
-      "enriched": 36,
+      "cached": 84,
+      "enriched": 0,
       "not_reported": 26,
       "pending": 0,
       "errors": 8,
       "example_errors": [
-        "Ward page district count differs from metro summary",
-        "Unrecognised or repeated party among first three",
-        "Unrecognised or repeated party among first three"
+        "HTTP Error 500: Internal Server Error",
+        "HTTP Error 500: Internal Server Error",
+        "HTTP Error 500: Internal Server Error"
       ],
       "top_three_available": 84
     },
     "Tshwane": {
-      "cached": 56,
-      "enriched": 1,
+      "cached": 57,
+      "enriched": 0,
       "not_reported": 46,
       "pending": 0,
       "errors": 4,
       "example_errors": [
-        "Ward breakdown does not match latest metro leader or reporting",
-        "Ward ballot votes are not available",
-        "Ward page district count differs from metro summary"
+        "HTTP Error 500: Internal Server Error",
+        "HTTP Error 500: Internal Server Error",
+        "HTTP Error 500: Internal Server Error"
       ],
       "top_three_available": 57
     },
     "Johannesburg": {
-      "cached": 56,
-      "enriched": 18,
+      "cached": 74,
+      "enriched": 0,
       "not_reported": 56,
       "pending": 0,
       "errors": 5,
       "example_errors": [
-        "Unrecognised or repeated party among first three",
-        "Unrecognised or repeated party among first three",
-        "Ward page district count differs from metro summary"
+        "HTTP Error 500: Internal Server Error",
+        "HTTP Error 500: Internal Server Error",
+        "HTTP Error 500: Internal Server Error"
       ],
       "top_three_available": 74
     }
