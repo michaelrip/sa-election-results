@@ -237,7 +237,16 @@ main{padding-bottom:calc(105px + env(safe-area-inset-bottom))}
  .news-header .news-controls{flex-wrap:wrap}
  .source-details>summary strong{font-size:15px}
 }
-</style><link rel="stylesheet" href="./mobile.css?v=20261105-refresh-nav2"></head><body>
+
+/* Defensive mobile fix if a shared-link browser still caches older styles. */
+.ward-map-back{display:none}
+@media(max-width:760px),(pointer:coarse){
+ #ward-detail-map .leaflet-popup.ward-map-popup{display:none!important}
+ .ward-map-back{display:flex;align-items:center;justify-content:center;
+  width:max-content;max-width:100%;min-height:44px;margin:0 0 12px auto;
+  padding:9px 14px;font-size:13px;background:#254b70}
+}
+</style><link rel="stylesheet" href="./mobile.css?v=20261105-map-panel-fix"></head><body>
 <header><div class="eyebrow">SOUTH AFRICA · 2026 MUNICIPAL RESULTS</div><h1>Mzanzi Key Metro Watch</h1><p>Cape Town · Tshwane · Johannesburg · Hermanus / Overstrand. Preliminary ward, municipal PR and district PR results sourced through ESP, with interactive ward maps.</p><div class="toolbar"><span id="status" class="pill warn">Checking data…</span><span id="updated" class="small">No source update yet</span><a href="#metro-votes" class="header-votes-link">View votes by city</a><button id="refresh" type="button" aria-label="Check for newly published election results">Refresh</button><button id="share">Share link</button></div><p id="refresh-feedback" class="refresh-feedback" role="status" aria-live="polite" aria-atomic="true">Refresh checks the latest published results; source updates are scheduled approximately every 15 minutes.</p></header>
 <main><p id="error" role="alert"></p>
 <section class="news-section" aria-labelledby="news-heading">
@@ -823,4 +832,4 @@ setInterval(()=>{if(!document.hidden)loadNews()},2*60*1000);
 document.addEventListener('visibilitychange',()=>{
  if(!document.hidden){load();loadNews()}
 });
-</script><script src="./ward-maps.js"></script></body></html>
+</script><script src="./ward-maps.js?v=20261105-map-panel-fix"></script></body></html>
