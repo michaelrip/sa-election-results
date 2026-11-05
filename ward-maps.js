@@ -458,8 +458,8 @@
           layer.on('mouseout', function () {layer.setStyle(styleFor(feature));});
           layer.on('click', function () {
             if (layer.getTooltip()) layer.closeTooltip();
-            chooseWard(id, false);
-            scrollWardPanelIntoView();
+            // Keep the map visible and zoom into the tapped ward instead of jumping down the page.
+            chooseWard(id, true);
           });
         }
       }).addTo(map);
