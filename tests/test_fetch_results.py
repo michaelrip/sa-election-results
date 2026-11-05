@@ -61,6 +61,22 @@ class ScrapingTests(unittest.TestCase):
         self.assertGreater(len(metro["parties"]), 0)
         self.assertTrue(all("votes" not in p for p in metro["parties"]))
 
+    def test_overstrand_no_results_are_not_invented(self):
+        sample = """<html><body><h1>Overstrand</h1><p>2026</p>
+        <p>No results, yet</p><div>Overstrand 0 of 37 voting districts in
+        0 of 15 wards complete</div><h2>Wards · 15</h2>
+        <p>IEC data last fetched 26 Oct 2026, 17:33 SAST.</p></body></html>"""
+        p = feed.Text()
+        p.feed(sample)
+        with patch.object(feed, "get", return_value=" ".join(" ".join(p.parts).split())):
+            metro, reported = feed.parse("Hermanus", "western-cape/overstrand", 37, 15, NOW)
+        self.assertEqual(reported, 0)
+        self.assertEqual(metro["districts_total"], 37)
+        self.assertIsNone(metro["valid_votes"])
+        self.assertIsNone(metro["snapshot_at"])
+        self.assertEqual(len(metro["wards"]), 15)
+        self.assertFalse(metro["parties"])
+
     def test_invalid_district_total_rejected(self):
         txt = feed.Text()
         txt.feed(SAMPLE.replace("1 of 829 voting", "1 of 828 voting"))
