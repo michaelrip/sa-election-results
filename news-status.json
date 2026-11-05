@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-11-05T10:33:02.658344Z",
+  "checked_at": "2026-11-05T10:35:03.842328Z",
   "status": "ok",
-  "new_eligible_items": 66,
+  "new_eligible_items": 67,
   "published_items": 6,
   "checks": [
     {
@@ -12,7 +12,7 @@
     {
       "query": "Tshwane Pretoria 2026 local government election when:3d",
       "status": "ok",
-      "eligible": 6
+      "eligible": 7
     },
     {
       "query": "Johannesburg 2026 local government election when:3d",

@@ -1,14 +1,14 @@
 {
-  "checked_at": "2026-11-05T10:33:02.658344Z",
+  "checked_at": "2026-11-05T10:35:03.842328Z",
   "source": "Publisher-attributed headlines discovered through Google News RSS",
   "feed_status": "ok",
   "articles": [
     {
-      "title": "IEC captures 25% of Western Cape ballots",
-      "publisher": "EWN",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1tS0NDSjhCbmNEQkMyR3M0MVFFaXlyM2g1Zkk5Qlk1QzFhcldGamtHNzd4X1hXcFJsZnFheGpUcE15MUNvdm9MNjhXQmVDY3dab2QtS25ObE5tMVFwYzN2RGcxVEU4b2pIRHlXNERWcGpUSkt5UWI4S0FJRUs?oc=5",
-      "published_at": "2026-11-05T09:11:15Z",
-      "published_date": "2026-11-05",
+      "title": "Cape Town election 2026: Leaders focus on housing, crime and service delivery",
+      "publisher": "IOL",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNQUpHOFJiR0c2YS1ZWDVySmJDcFNETVZuTGtWZmx5MHdBMFhKWnNCY1hCVTBJeEpBQWpFOWRIQXNpVHlBZGtEcnFGT0xvUGl2NVZlMW5oVnFaSFVSWnQybkFBTldGbWRYUTBZWHhhXzJrcTZFWldkaUV5Q3p1QUZQSU16Y25zbm9NRzl1QVNpSmc1d3N2T2U1eURUTERqQW8tTUswYV9veWpOWXljeUVmRUVGVQ?oc=5",
+      "published_at": "2026-11-04T19:00:00Z",
+      "published_date": "2026-11-04",
       "metro": "Cape Town"
     },
     {
@@ -36,18 +36,18 @@
       "metro": "South Africa"
     },
     {
-      "title": "ANC narrowly leads DA in early South Africa municipal election results",
-      "publisher": "The Citizen",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQRWxlNlVuSHhhS2RObGtmdkJ4X2syWVdVLWk1S0pjUUxKSGpqWVM5dTVUMENScFM0ZUlNeUkzeHFJT1B2N1M5bWVVZjBoZ21XajZpNEFpYnRSTThxN0tycWRzWDJEOVJMdVVmMjEta0hIaW1uUjRlcEpfMFJ2VmE3WlNtaW9zXzJlblZoTXp1N01YbHFCcVBCNDRQM21oTlNQV1V0clkwbWREWEFLV3NKOWczNm4tVS1aXzNoWGw5Tk1qOXZYa1BR?oc=5",
-      "published_at": "2026-11-05T08:32:28Z",
+      "title": "IEC captures 25% of Western Cape ballots",
+      "publisher": "EWN",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1tS0NDSjhCbmNEQkMyR3M0MVFFaXlyM2g1Zkk5Qlk1QzFhcldGamtHNzd4X1hXcFJsZnFheGpUcE15MUNvdm9MNjhXQmVDY3dab2QtS25ObE5tMVFwYzN2RGcxVEU4b2pIRHlXNERWcGpUSkt5UWI4S0FJRUs?oc=5",
+      "published_at": "2026-11-05T09:11:15Z",
       "published_date": "2026-11-05",
       "metro": "South Africa"
     },
     {
-      "title": "LIVE | IEC gives update as vote counting continues",
-      "publisher": "eNCA",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPcEdrSkdfdllKTjExaC03bFZOcGd4MjFfVGM1OTZwRnNMTlMzNG5QcFBVZVpsMHNSVTZIbDRKdHQycWttLXB5VVBFMGRlY1pMZ1NWSUpLeXh4bDlOVGswV3N6bzU4X25ZVXBwN1pKR0p6OXRxaFBfM3duWXFETFlkQWFad1pTRzM1MEI4bjhJWEx0ckct?oc=5",
-      "published_at": "2026-11-05T08:01:31Z",
+      "title": "ANC narrowly leads DA in early South Africa municipal election results",
+      "publisher": "The Citizen",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQRWxlNlVuSHhhS2RObGtmdkJ4X2syWVdVLWk1S0pjUUxKSGpqWVM5dTVUMENScFM0ZUlNeUkzeHFJT1B2N1M5bWVVZjBoZ21XajZpNEFpYnRSTThxN0tycWRzWDJEOVJMdVVmMjEta0hIaW1uUjRlcEpfMFJ2VmE3WlNtaW9zXzJlblZoTXp1N01YbHFCcVBCNDRQM21oTlNQV1V0clkwbWREWEFLV3NKOWczNm4tVS1aXzNoWGw5Tk1qOXZYa1BR?oc=5",
+      "published_at": "2026-11-05T08:32:28Z",
       "published_date": "2026-11-05",
       "metro": "South Africa"
     }
