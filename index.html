@@ -16,7 +16,7 @@ function renderWards(){
  const metro=el('metro').value,q=el('wardSearch').value.trim().toLowerCase();
  const m=(data.metros||{})[metro]||{},wards=Array.isArray(m.wards)?m.wards:[],areas=(wardAreas.metros||{})[metro]||{};
  const nameOf=w=>String(areas[String(w.number)]||'').trim();
- const filtered=wards.filter(w=>String(w.number??'').toLowerCase().includes(q)||nameOf(w).toLowerCase().includes(q)).sort((a,b)=>Number(a.number)-Number(b.number));
+ const filtered=wards.filter(w=>String(w.number??'').toLowerCase().includes(q)||('ward '+w.number).includes(q)||nameOf(w).toLowerCase().includes(q)).sort((a,b)=>(nameOf(a)||('Ward '+a.number)).localeCompare(nameOf(b)||('Ward '+b.number),'en',{sensitivity:'base'})||Number(a.number)-Number(b.number));
  el('wardCount').textContent=wards.length?filtered.length+' of '+wards.length+' wards':'Ward-level data not yet connected';
  el('wards').innerHTML=filtered.length?filtered.slice(0,150).map(w=>{
   const name=nameOf(w);
