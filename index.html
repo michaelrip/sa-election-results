@@ -302,29 +302,111 @@ function parties(list,showVotes=false,historical={},maxItems=10){
  }).join('')
  :'<p class="empty">No reported party shares available.</p>'
 }
+function verifiedSupplement(row){
+ return row&&votesValid(row.valid_votes)&&row.valid_votes>0&&
+ Array.isArray(row.parties)&&row.parties.length>0&&
+ row.parties.every(p=>p&&typeof p.name==='string'&&num(p.share)&&p.share>=0&&p.share<=100&&votesValid(p.votes))&&
+ row.parties.reduce((sum,p)=>sum+p.votes,0)<=row.valid_votes;
+}
+function ballotDetails(city){
+ return partyBallots&&partyBallots.metros&&partyBallots.metros[city]||{};
+}
+function combinedBallots(ward,pr){
+ if(!verifiedSupplement(pr)||!verifiedSupplement(ward))return null;
+ const wardTime=Date.parse(ward.snapshot_at||''),prTime=Date.parse(pr.snapshot_at||'');
+ if(!Number.isFinite(wardTime)||!Number.isFinite(prTime)||Math.abs(wardTime-prTime)>90*60000)return null;
+ const n=ward.valid_votes+pr.valid_votes;
+ if(!votesValid(n)||n<=0)return null;
+ const sums=new Map();
+ for(const b of [ward,pr])for(const row of b.parties)
+  sums.set(row.name,(sums.get(row.name)||0)+row.votes);
+ const counted=Array.from(sums.values()).reduce((v,n)=>v+n,0);
+ if(counted>n)return null;
+ const rows=Array.from(sums,([name,votes])=>({name,votes,share:100*votes/n}));
+ if(n-counted>0)rows.push({name:'Other / unlisted candidates & parties',votes:n-counted,share:100*(n-counted)/n});
+ rows.sort((a,b)=>b.votes-a.votes);
+ return {valid_votes:n,parties:rows,snapshot_at:ward.snapshot_at,pr_snapshot_at:pr.snapshot_at};
+}
+function selectBallot(mode){
+ if(!['all','pr','ward','dc'].includes(mode))return;
+ if(mode==='dc'&&selectedMetro!=='Hermanus')return;
+ selectedBallot=mode;
+ renderMetroCard();
+}
 function renderMetroCard(){
- const expanded=el('cards').querySelector('.city-more-results')?.open||false;
- const name=selectedMetro,m=(data.metros||{})[name]||{},a=m.districts_reported,b=m.districts_total,valid=Number.isInteger(a)&&Number.isInteger(b)&&a>=0&&b>0&&a<=b,p=valid?100*a/b:null;
-const ordered=Array.isArray(m.parties)?m.parties.filter(x=>x&&num(x.share)&&x.share>=0&&x.share<=100).sort((a,b)=>b.share-a.share):[];
-const first=ordered.slice(0,5),remaining=ordered.slice(5);
-const past=historicShares(name);
-el('cards').innerHTML='<article class="card city-result-card"><div class="city-result-overview">'+
- '<div class="city-result-heading"><h3>'+esc(name)+'</h3><span class="small">2026 · preliminary ward ballot</span></div>'+
- (name==='Hermanus'?'<p class="city-result-subtext">Overstrand Local Municipality · includes Hermanus, Gansbaai and Kleinmond. Results cover the whole municipality.</p>':'')+
- '<div class="city-result-subtext">'+esc(m.status||'Awaiting verified data')+'</div>'+
- (valid?'<div class="big">'+pct(p)+'</div><div class="small">Voting districts reporting: '+a+' / '+b+'</div>'+
- '<div class="track"><div class="fill" style="width:'+p+'%"></div></div>':
- '<div class="small">Voting districts with ward-ballot results: '+(Number.isInteger(a)?a:'Not verified')+'. Total expected not in this IEC report.</div>')+
- '<div class="vote-total"><span class="vote-label">Valid ward-ballot votes counted</span><strong>'+voteFmt(m.valid_votes)+'</strong></div>'+
- '<div class="small">'+(data.source_type==='iec_public_csv'?'Official report checked: '+esc(date(data.download_checked_at)):'Source snapshot: '+esc(date(m.snapshot_at)))+'</div>'+
- '<p class="city-seats-note">Council seats: '+(Array.isArray(m.seats)&&m.seats.length?m.seats.map(x=>esc(x.name)+': '+esc(x.count)).join(' · '):'Not yet allocated or verified')+'</p>'+
- (m.source_url?'<p class="city-result-subtext"><a href="'+esc(m.source_url)+'" target="_blank" rel="noopener noreferrer">Metro results source</a></p>':'')+
- '</div><div class="city-result-parties"><h3>Leading parties</h3>'+
- '<p class="city-result-subtext">Vote share today <span class="history-share">(2021 in brackets)</span> · actual votes counted beneath each party.</p>'+
- parties(first,true,past)+
- (remaining.length?'<details class="city-more-results"><summary>Show '+remaining.length+' more parties</summary>'+parties(remaining,true,past,remaining.length)+'</details>':'')+
- '</div></article>';
- if(expanded){const more=el('cards').querySelector('.city-more-results');if(more)more.open=true}
+ const cards=el('cards');
+ const expanded=cards.querySelector('.city-more-results')?.open||false;
+ const name=selectedMetro,m=(data.metros||{})[name]||{},extra=ballotDetails(name);
+ const pr=verifiedSupplement(extra.pr)?extra.pr:null,dc=verifiedSupplement(extra.dc)?extra.dc:null;
+ const all=combinedBallots(m,pr);
+ if(selectedBallot==='dc'&&name!=='Hermanus')selectedBallot='all';
+ document.querySelectorAll('[data-ballot-mode]').forEach(button=>{
+  const mode=button.getAttribute('data-ballot-mode');
+  button.hidden=mode==='dc'&&name!=='Hermanus';
+  button.setAttribute('aria-pressed',String(selectedBallot===mode));
+ });
+ let mode=selectedBallot,selected=null,warning='',label='',explanation='',src=[];
+ if(mode==='pr'){
+  selected=pr;
+  label='PR party-list ballot';
+  explanation='Votes for a political party on this municipal council. This is the clearest separate measure of party-list support; it is not the final council-seat percentage.';
+  if(!pr)warning='PR results have not yet been verified from ESP for this municipality. Choose Ward vote to see the latest candidate ballots.';
+  if(pr)src=[['PR ballot',pr.source_url]];
+ }else if(mode==='dc'){
+  selected=dc;
+  label='Overberg district PR ballot';
+  explanation='A separate vote for the Overberg district council, not the Overstrand local council. Excluded from the local-council combined figures.';
+  if(!dc)warning='District PR results have not yet been verified from ESP.';
+  if(dc)src=[['District PR',dc.source_url]];
+ }else if(mode==='ward'){
+  selected=m;label='Ward candidate ballot';
+  explanation='Votes for ward councillor candidates, including party candidates and independents. 2021 brackets refer to this same ballot type.';
+  if(m.source_url)src=[['Ward ballot',m.source_url]];
+ }else{
+  selected=all;
+  label='All local council ballots · Ward + PR';
+  explanation='Ballot-paper totals from the ward-candidate and municipal party-list ballots. These are NOT distinct people, and the combined percentages are NOT council-seat projections.';
+  if(!all)warning='A verified, reasonably synchronized PR and ward snapshot is needed to combine the ballots. The last validated ward result remains available under Ward vote.';
+  if(all)src=[['Ward ballot',m.source_url],['Municipal PR ballot',pr.source_url]];
+ }
+ const valid=selected&&votesValid(selected.valid_votes);
+ const partyRows=valid&&Array.isArray(selected.parties)?[...selected.parties]:[];
+ // A source sometimes names only part of the long ballot. Show the true
+ // residual of counted valid votes under an explicit "other" label, not an
+ // invented party total or an omission from the denominator.
+ if(valid&&mode!=='all'){
+  const named=partyRows.reduce((acc,row)=>acc+(votesValid(row.votes)?row.votes:0),0);
+  const missing=selected.valid_votes-named;
+  if(missing>0&&missing<=selected.valid_votes)
+   partyRows.push({name:mode==='ward'?'Other / unlisted candidates & parties':'Other / unlisted parties',share:100*missing/selected.valid_votes,votes:missing});
+ }
+ const ordered=partyRows.filter(x=>x&&num(x.share)&&x.share>=0&&x.share<=100).sort((a,b)=>b.share-a.share);
+ const a=m.districts_reported,b=m.districts_total,progress=Number.isInteger(a)&&Number.isInteger(b)&&a>=0&&b>0&&a<=b,p=progress?100*a/b:null;
+ const past=mode==='ward'?historicShares(name):{};
+ const modeLabel=mode==='pr'?'PR':mode==='dc'?'District PR':mode==='ward'?'Ward':'Ward + PR';
+ const top=ordered.slice(0,5),remaining=ordered.slice(5);
+ const asAt=selected?.snapshot_at?date(selected.snapshot_at):'Not available';
+ cards.innerHTML='<article class="card city-result-card"><div class="city-result-overview">'+
+  '<div class="city-result-heading"><h3>'+esc(name)+'</h3><span class="small">2026 · preliminary · '+esc(modeLabel)+'</span></div>'+
+  (name==='Hermanus'?'<p class="city-result-subtext">Overstrand Local Municipality · Hermanus, Gansbaai and Kleinmond</p>':'')+
+  '<div class="city-result-subtext">'+esc(m.status||'Awaiting verified data')+'</div>'+
+  '<div class="city-result-subtext">'+esc(label)+'</div>'+
+  '<div class="ballot-key-total"><span>'+esc(mode==='all'?'Valid local-council ballot papers (Ward + PR)':mode==='dc'?'Valid district PR ballot papers':mode==='pr'?'Valid municipal PR ballot papers':'Valid ward ballot papers')+'</span>'+
+  '<strong>'+voteFmt(valid?selected.valid_votes:null)+'</strong><small>'+(mode==='all'?'Sum of two ballot types, not individual voters':'From the '+esc(modeLabel)+' results published via ESP')+'</small></div>'+
+  (progress?'<p class="small">Ward voting districts reporting: '+a+' / '+b+' ('+pct(p)+')</p><div class="track"><div class="fill" style="width:'+p+'%"></div></div>':
+  '<p class="small">Ward voting-district progress not verified</p>')+
+  '<p class="ballot-detail">'+esc(explanation)+'</p>'+
+  (valid?'<p class="small">Ballot snapshot: '+esc(asAt)+'</p>':'')+
+  (mode==='all'&&valid?'<p class="small">PR snapshot: '+esc(date(all.pr_snapshot_at))+'</p>':'')+
+  (warning?'<p class="ballot-warning">'+esc(warning)+'</p>':'')+
+  (src.length?'<div class="ballot-source-line">'+src.map(([caption,url])=>url&&/^https:\/\//.test(url)?'<a href="'+esc(url)+'" target="_blank" rel="noopener noreferrer">'+esc(caption)+' source</a>':'').filter(Boolean).join(' · ')+'</div>':'')+
+  '<p class="city-seats-note">Council seats: '+(Array.isArray(m.seats)&&m.seats.length?m.seats.map(x=>esc(x.name)+': '+esc(x.count)).join(' · '):'Not yet allocated or verified')+'</p>'+
+  '</div><div class="city-result-parties"><h3>'+esc(mode==='all'?'Parties across ward + PR ballots':'Parties · '+label)+'</h3>'+
+  '<p class="city-result-subtext">'+esc(mode==='ward'?'2021 ward-ballot percentages in brackets, where known.':mode==='all'?'Party totals count both local ballot papers and may differ between the two ballots.':'Party percentages are of valid votes on this ballot only.')+'</p>'+
+  (valid?parties(top,true,past):'<p class="empty">No verified '+esc(modeLabel)+' party counts available from ESP yet.</p>')+
+  (remaining.length?'<details class="city-more-results"><summary>Show '+remaining.length+' more parties / groups</summary>'+parties(remaining,true,past,remaining.length)+'</details>':'')+
+  '</div></article>';
+ if(expanded){const more=cards.querySelector('.city-more-results');if(more)more.open=true}
 }
 function render(){const ts=Date.parse(data.updated_at||''),age=(Date.now()-ts)/60000,recent=Number.isFinite(age)&&age>=0&&age<60;
  const direct=data.source_type==='iec_public_csv'&&data.source_verified===true;
