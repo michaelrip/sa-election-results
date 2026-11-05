@@ -129,8 +129,11 @@ header h1{color:#fff;text-shadow:0 2px 18px rgba(0,0,0,.45)}
  .metro-vote-switcher button{font-size:13px;padding:11px 5px}
 }
 @media(max-width:375px){.metro-vote-switcher button{font-size:12px;padding:10px 3px}}
+.header-votes-link{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:9px 12px;border:1px solid #80c8ff;border-radius:10px;color:#fff;background:#156046;text-decoration:none;font-size:13px;font-weight:750}
+.header-votes-link:hover{background:#1a805c}
+#metro-votes{scroll-margin-top:15px}
 </style></head><body>
-<header><div class="eyebrow">SOUTH AFRICA · 2026 METRO RESULTS</div><h1>Mzanzi Key Metro Watch</h1><p>Cape Town · Tshwane · Johannesburg. Preliminary IEC-derived ward-ballot results, with source links and ward-by-ward drill-down.</p><div class="toolbar"><span id="status" class="pill warn">Checking data…</span><span id="updated" class="small">No source update yet</span><button id="refresh">Refresh</button><button id="share">Share link</button></div></header>
+<header><div class="eyebrow">SOUTH AFRICA · 2026 METRO RESULTS</div><h1>Mzanzi Key Metro Watch</h1><p>Cape Town · Tshwane · Johannesburg. Preliminary IEC-derived ward-ballot results, with source links and ward-by-ward drill-down.</p><div class="toolbar"><span id="status" class="pill warn">Checking data…</span><span id="updated" class="small">No source update yet</span><a href="#metro-votes" class="header-votes-link">View votes by city</a><button id="refresh">Refresh</button><button id="share">Share link</button></div></header>
 <main><p id="error" role="alert"></p>
 <section class="news-section" aria-labelledby="news-heading">
  <div class="news-header">
@@ -238,7 +241,7 @@ function selectMetro(name,fromMap=false){
  if(wardMetro)wardMetro.value=name;
  if(changed&&el('wardSearch'))el('wardSearch').value='';
  renderMetroSelection();
- if(window.metroWardMaps&&!fromMap&&window.metroWardMaps.selectMetro)window.metroWardMaps.selectMetro(name);
+ if(changed&&window.metroWardMaps&&!fromMap&&window.metroWardMaps.selectMetro)window.metroWardMaps.selectMetro(name);
  if(typeof renderWards==='function')renderWards();
 }
 function renderMetroSelection(){
