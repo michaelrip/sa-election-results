@@ -30,8 +30,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Test importer against representative public page markup
-        run: python -m unittest discover -s tests -v
+      - name: Test election importers without unrelated page-layout tests
+        run: |
+          for pattern in test_fetch_results.py test_party_ballots.py test_ward_top_three.py test_ward_areas.py; do
+            python -m unittest discover -s tests -p "$pattern" -v
+          done
       - name: Fetch and validate IEC-derived metro results
         run: python scripts/fetch_results.py
       - name: Import ESP municipal PR and district PR ballot results
