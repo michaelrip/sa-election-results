@@ -8,6 +8,14 @@ Enable GitHub Pages in **Settings → Pages**: select **Deploy from a branch**, 
 
 Intended website: https://michaelrip.github.io/sa-election-results/
 
+## Sourced election headlines
+
+The website displays a scrollable, mobile-friendly news strip **above the ward map**, including publisher names, dates, direct story links where available, and topical labels for Cape Town, Tshwane, Johannesburg and national election coverage.
+
+`news.json` provides up to six attributed news links. `scripts/update_news.py` checks recent Google News RSS search feeds on an hourly GitHub Actions schedule (`.github/workflows/update-news.yml`), filters for relevant recent articles from established newsrooms, removes duplicates and prioritises at least one story for each metro where available. `news-status.json` records feed errors and accepted story counts. The browser rechecks `news.json` every 15 minutes. Older headlines are labelled by publication date, not presented as breaking news.
+
+News reporting is **independent journalism, not certified IEC election data**. Feed failures retain recent previously sourced links instead of inventing headlines. Tests are in `tests/test_news.py`.
+
 ## Interactive 2026 ward map
 
 The page opens with one large interactive map and three metro tabs: **Cape Town (118 wards), Tshwane (107), and Johannesburg (135)**. The map uses validated 2026 polygons from the [Municipal Demarcation Board's MDBWards2026 ArcGIS service](https://services7.arcgis.com/oeoyTUJC8HEeYsRB/arcgis/rest/services/MDBWards2026/FeatureServer/0).
