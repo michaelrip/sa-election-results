@@ -1,8 +1,48 @@
 {
-  "checked_at": "2026-11-05T17:37:35.098554Z",
+  "checked_at": "2026-11-05T21:35:29.011964Z",
   "source": "Publisher-attributed headlines discovered through Google News RSS",
   "feed_status": "ok",
   "articles": [
+    {
+      "title": "DA projected to win 79% in Ramaphosa and Malema’s Joburg home ward",
+      "publisher": "Daily Maverick",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPaTNvZXZMdjJ2YTRHUktzWUhkUTNCSm9VQXdtR2pYdlFBRXBuWVRJVUdhWDFEcGNiT0hJSWxUYjJTSkR2cXJQME9CbWllbU9GMV9FaWN4M0hMTnRzWUY5eGFqUFV2MmNJRThIdGF3Z3VlYXJHXy1PZlc3UjJQZ2QwcnBqU2VGWkhsRTdMb3lRbTFiam5la3dQQ2V3dHFEUm9UcnREUTBQTjRMdTdRVzVGYl9rNFJSZHc?oc=5",
+      "published_at": "2026-11-05T20:16:47Z",
+      "published_date": "2026-11-05",
+      "metro": "Johannesburg"
+    },
+    {
+      "title": "ActionSA eyes coalition talks after emerging as leading party in Laingsburg",
+      "publisher": "EWN",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNemJEQ1VTVnVGdGh2Z3BZc2NzNWE3V1BVaVZIeEZHc3IyVU5NbDdRUGp6MlMwbC14NV9UWVZqenZGVHBibnkxYWVJUkhIZWlKTlk0QmpXUDNHRVFQcEFjOVUzUkJUeUJLXzZMM0NYRkh4dGF0YXlOUWhVdmNJaEJJSXZyNjhOYS1DaVRWbi1CU3BWVGZCM3FtbUpYYXd0NWU2QWhPS1VyR2RJZVI1?oc=5",
+      "published_at": "2026-11-05T19:48:11Z",
+      "published_date": "2026-11-05",
+      "metro": "South Africa"
+    },
+    {
+      "title": "Northern Cape leads election results capture as IEC says more than 60% processed",
+      "publisher": "TimesLIVE",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNRnQ1eFJfOGFkRTJ2cG1UQ19IZ2FGR3dJVld1cWlRbVpTYmhiT3ZPQjVuQl9ycllSQ0Yyd3AzRjNteWdjdHhBallVQ3p3VzRFYUVLazlrV0p5ZE9DaEFIbHRNSlZzVDdud25aUEh4dERNdEJIRTItdUJrY1hjZTZSaTdDRHdvSWlKT04xekhlODZMNFpIbzVDdVhyN2x4bGNjSWF1bi01dlpRM3J1UlpYWUVhdzJPcXV2cHFUaTlrZ1FKYWJGai1zQzZKTnV3THRvb3pV?oc=5",
+      "published_at": "2026-11-05T17:37:13Z",
+      "published_date": "2026-11-05",
+      "metro": "South Africa"
+    },
+    {
+      "title": "DA takes majority control of at least four councils in Western Cape, 13 hung still and counting",
+      "publisher": "TimesLIVE",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQTWFfZmtkcnpUUUwwdHg5TFNoMVNqam02TGtxUVA2VVNWUHNoVnRTMmpocjlKRF9QNk9wc3RURVRzNTlROVgtQ0FWYWJzaFQ3NHR2cU41YXRaaU82dVhyYkk2Ulk5THl3RkJoUGxLWFdacWtaTHZ5Y1kyOXM3NVgyYktWb0IyNjF6S3BzVUNGa0xqdHRqcjNVbzdoYkM0akVaQUdLRjVDZnFhZzZtLWZDYjZTUFlvaGtpQ1J0cUVLUUVvYWt2NXhjb3RKUFhtR0RxWWFKTlVFMHNka1lqcmgyREs4UXJ5TUNyU19BQWZyOA?oc=5",
+      "published_at": "2026-11-05T17:01:48Z",
+      "published_date": "2026-11-05",
+      "metro": "South Africa"
+    },
+    {
+      "title": "IEC says more than 60% of election results captured as collation continues",
+      "publisher": "IOL",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOajZ0M1phYjV1WnNqTEVpaERwdlkzYTJhbVBTRllVV1hSOF9hUjVCbWg3M0o3Y3JfMGRka3dzZ2hxeWJrdWtVNHFQZ2lJU0xxaVJ6QzRJT3dmQTlYUzd4ODFrbXhxYXk5VFgtTm9qRktfcUFWLWIzZ0sxNS1VcGIySElZaVlwLVViZFhkSUlGR3NJcmdQV0pfSVFHM1FqSWc2TXA5UlhkMFdwZUhYY0t0NQ?oc=5",
+      "published_at": "2026-11-05T16:43:00Z",
+      "published_date": "2026-11-05",
+      "metro": "South Africa"
+    },
     {
       "title": "GOOD accuses DA of undermining IEC with early Cape Town victory claim",
       "publisher": "IOL",
@@ -12,28 +52,12 @@
       "metro": "Cape Town"
     },
     {
-      "title": "DA leads Tshwane municipal race as ActionSA gains ground",
-      "publisher": "The Citizen",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPb2hnY0x6SXFnUGl3cGtGRWJrNk16bUdybm9XUDFJVWdqak9SNFdDS3AxV1VRNDVJSWdUWGZqbE00aG0ybkVhZlI5djlsZzRhN0I3eE8xd01qVGdqd2I5TE9fWm9qdXlUWjJndUhtbGNWakp0Uk04NzZCN1h6QW41eGY2b19jN1dkei1lWGZWODRhRllnQ21hZ21yaGRpaXh2QnZMc0c2UXZiYl9xT3I4dmJ0YmcwV0NWLXFoUFAwQkNqV3pnWFEteQ?oc=5",
-      "published_at": "2026-11-05T13:03:17Z",
-      "published_date": "2026-11-05",
-      "metro": "Tshwane"
-    },
-    {
       "title": "Zille feeling ‘positive’ as DA leads Joburg while vote counting continues",
       "publisher": "TimesLIVE",
       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQSVZJQVdTeDF5SmZzRS12cVJpUjFTczNyRzVFb3lQcXVvemlnMHhQd3ZERkdJSjFOVFpwQUJfVTVMa1VmR0pSdW1HM0Npc2p1SzB4T3RzNFRhWEdxdHdoVVJIa2dtbGEwYktuNmU0VG9nMU5CaTA2VDFUMGF6aUNfNmlPTUtzc1NrZjcwTmRPWENRLVFZOTdyYkxmTUFqOWt5c0dlcWJyYmQ3VzRVWnk3THFBUnN0TWxKUVBaRVNXV3h2T3NVOGdSM05Ob0pyWGpH?oc=5",
       "published_at": "2026-11-05T14:54:09Z",
       "published_date": "2026-11-05",
       "metro": "Johannesburg"
-    },
-    {
-      "title": "IEC says more than 60% of election results captured as collation continues",
-      "publisher": "IOL",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9KTjg4RG15c1VUUUJOVm4zZk9PbGd1UXc0OXppcDZobXl2RE1kUFY0UUlfQUVPTjhZdjBMcU0xYmh1anNUS1QwcGlLRFFxSktfX3hnem13?oc=5",
-      "published_at": "2026-11-05T16:43:00Z",
-      "published_date": "2026-11-05",
-      "metro": "South Africa"
     },
     {
       "title": "WATCH | South Africa’s election results continue to take shape",
@@ -52,34 +76,10 @@
       "metro": "South Africa"
     },
     {
-      "title": "IEC captures over 60% of Zululand election results",
-      "publisher": "SABC News",
-      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFA1UjZwZlpsWjZGMktPR2ZGZ2JZM1BoYzA3akFvT3dfTDFncnlVcllJZ2lZV3Zndzk1V1lCTW5xMzIwQnFBSnNCZE5ZcXBCdjF1dmxWSFYwZw?oc=5",
-      "published_at": "2026-11-05T14:14:30Z",
-      "published_date": "2026-11-05",
-      "metro": "South Africa"
-    },
-    {
       "title": "LGE2026: 65% of Western Cape election results captured, IEC says",
       "publisher": "IOL",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdmdsbVZyWngtSW0ydzdBV2VhczVWejJuZ3hYWjJoWmFFQTh6SHJVbkxCdDhDekt6QXBkTURBMTdwQkF0SUdoVXphVTM0anBtLWE4aW5nVzk3RWtxazRvd2E4WGozbk5CMUNnd2Q0VG9YTXBNZ2VRTG5JYXpqalRMZ1ZmM3gwNDBYVGttREpldmRFR2tJR1IwR18xYUJBam5F?oc=5",
-      "published_at": "2026-11-05T13:50:41Z",
-      "published_date": "2026-11-05",
-      "metro": "South Africa"
-    },
-    {
-      "title": "Local government election turnout tops 2021 level",
-      "publisher": "eNCA",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPQXJsQzFIUjRBWlJHNWlBYlcyOUtMczZ6aW5FazdiOXRSdXd6REdVNXMtakkyaWZzdEV2OUFiZmt1LWlsR3VTYW9SVlhhSWFhMlZHYWpTNndyc3JWOVp6MXFHc0VXdjlWaUFlT1Q1MVltTWZzeHk5OTNpTXVvTnVOdg?oc=5",
-      "published_at": "2026-11-05T13:41:24Z",
-      "published_date": "2026-11-05",
-      "metro": "South Africa"
-    },
-    {
-      "title": "ANC loses outright majority in Makana, setting stage for coalition talks",
-      "publisher": "EWN",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNS1Iwckp0c3V1bU50TldhUUpVdm5aYzZKMVV6RmlOaTFVYVRmNFplZi1RWEZFUENSUWRHc2VsY0tUUVh5dkxidmZDbEtrMTRNWVdiM1pwZ2NxSzVVOFloYzVkMDZ2S1MtMkpnV3RGbnpvWXRDODAtQ0JFOWhNLWZmNTdJaWhyR2V2MGxndmVSR0pwSm9lYTVRWTQ3OExTMlZNOTR0dGtwMA?oc=5",
-      "published_at": "2026-11-05T12:37:11Z",
+      "published_at": "2026-11-05T14:22:46Z",
       "published_date": "2026-11-05",
       "metro": "South Africa"
     }
