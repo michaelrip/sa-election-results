@@ -115,10 +115,14 @@
   function tipFor(number) {
     const lead = leadAt(number);
     const result = wardAt(number);
+    const ranked = result && Array.isArray(result.parties) ? result.parties
+      .filter(function (p) {return p && typeof p.name === 'string' && Number.isFinite(p.share) && p.share >= 0 && p.share <= 100;})
+      .sort(function (a,b) {return b.share - a.share;}).slice(0,3) : [];
     return '<strong>' + safe(wardTitle(number)) + '</strong>' +
-      '<br>' + (lead ? 'Leading: ' + safe(lead.name) + ' ' + lead.share.toFixed(1) + '%' : 'No reported ward-ballot lead yet') +
+      (ranked.length ? ranked.map(function (p, i) {return '<br>' + (i+1) + '. ' + safe(p.name) + ' ' + p.share.toFixed(1) + '%';}).join('')
+        : '<br>No reported ward-ballot results yet') +
       (result && result.reporting ? '<br>' + safe(result.reporting) : '') +
-      '<br><small>Click for full ward details</small>';
+      '<br><small>Tap for top-three details</small>';
   }
   function validateGeoJSON(value, name) {
     const expected = spec[name].count;
@@ -203,25 +207,43 @@
   function panelFor(number) {
     const ward = wardAt(number);
     const name = areaAt(number);
-    const lead = leadAt(number);
     const progress = progressAt(number);
     const reporting = ward && ward.reporting && progress !== 'none' ? ward.reporting : 'Not yet reported';
     const source = ward && typeof ward.source_url === 'string' && /^https:\/\//.test(ward.source_url) ? ward.source_url : '';
-    const snapshot = ward && ward.snapshot_at && !Number.isNaN(Date.parse(ward.snapshot_at))
-      ? new Intl.DateTimeFormat('en-ZA', {dateStyle: 'medium', timeStyle: 'short', timeZone: 'Africa/Johannesburg'}).format(new Date(ward.snapshot_at)) + ' SAST'
+    const detailStamp = ward && ward.detail_at || ward && ward.snapshot_at;
+    const snapshot = detailStamp && !Number.isNaN(Date.parse(detailStamp))
+      ? new Intl.DateTimeFormat('en-ZA', {dateStyle: 'medium', timeStyle: 'short', timeZone: 'Africa/Johannesburg'}).format(new Date(detailStamp)) + ' SAST'
       : 'Not available';
+    const ranked = ward && Array.isArray(ward.parties) ? ward.parties
+      .filter(function (p) {return p && typeof p.name === 'string' && Number.isFinite(p.share) && p.share >= 0 && p.share <= 100;})
+      .sort(function (a,b) {return b.share-a.share;}).slice(0,3) : [];
+    const partyRows = ranked.map(function (p, index) {
+      const accent = palette[p.name] || '#b879bb';
+      const votes = Number.isSafeInteger(p.votes) && p.votes >= 0
+        ? new Intl.NumberFormat('en-ZA').format(p.votes) + ' votes' : '';
+      return '<div class="ward-map-party-row">' +
+        '<div class="ward-map-party-line"><span class="ward-map-rank">' + (index+1) + '</span>' +
+        '<span class="ward-map-party-name">' + safe(p.name) + '</span>' +
+        '<strong>' + p.share.toFixed(1) + '%</strong></div>' +
+        '<div class="ward-map-party-track"><span style="width:' + p.share + '%;background:' + accent + '"></span></div>' +
+        (votes ? '<div class="ward-map-party-votes">' + safe(votes) + '</div>' : '') +
+        '</div>';
+    }).join('');
     els.side.innerHTML =
       '<div class="ward-map-subtitle">' + safe(city) + ' · 2026 ward</div>' +
       '<h3>Ward ' + number + '</h3>' +
       '<p class="ward-map-area">' + safe(name || 'Area description unavailable') + '</p>' +
-      '<div class="ward-map-leader">' +
-        '<span class="ward-map-dot" style="background:' + colourAt(number) + '"></span>' +
-        '<div><span class="small">Preliminary ward-ballot lead</span><strong>' +
-        (lead ? safe(lead.name) + ' · ' + lead.share.toFixed(1) + '%' : 'No results yet') +
-        '</strong></div></div>' +
+      '<h4 class="ward-map-parties-title">Top 3 · ward ballot</h4>' +
+      (partyRows || '<p class="ward-map-note">No reported ward-ballot results yet.</p>') +
+      (ranked.length > 0 && ranked.length < 3
+        ? '<p class="ward-map-note">Additional parties will appear when this ward\'s results are validated. The leader shown is provisional.</p>'
+        : '') +
+      (ward && Number.isSafeInteger(ward.valid_votes) && ward.valid_votes >= 0
+        ? '<div class="ward-map-stat"><span>Valid ward-ballot votes</span><strong>' + new Intl.NumberFormat('en-ZA').format(ward.valid_votes) + '</strong></div>'
+        : '') +
       '<div class="ward-map-stat"><span>Counting progress</span><strong>' + safe(reporting) + '</strong></div>' +
       '<div class="ward-map-stat"><span>Last source snapshot</span><strong>' + safe(snapshot) + '</strong></div>' +
-      '<p class="ward-map-note">These results show only the reported leading party. Partial counts are not final ward winners or council seats.</p>' +
+      '<p class="ward-map-note">Preliminary ward-ballot votes are not final declared councillors or council seats.</p>' +
       '<button type="button" class="ward-map-view" id="ward-map-jump">See ward in results list</button>' +
       (source ? '<a class="ward-map-source" href="' + safe(source) + '" target="_blank" rel="noopener">View original ward result source</a>' : '');
     const action = document.getElementById('ward-map-jump');
