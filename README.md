@@ -8,11 +8,18 @@ Enable GitHub Pages in **Settings → Pages**: select **Deploy from a branch**, 
 
 Intended website: https://michaelrip.github.io/sa-election-results/
 
-## Interactive metro maps
+## Interactive 2026 ward map
 
-The dashboard starts with three interactive OpenStreetMap/Leaflet maps: Cape Town, Tshwane and Johannesburg. Each supports pan/zoom, a centre marker with the current preliminary ward-ballot summary, a reset control, and a button to jump to the chosen metro's ward list. The layout adapts to mobile screens. Street maps are **not** presented as electoral boundary polygons or a party-by-ward choropleth; for official 2026 boundaries, the dashboard links to the Municipal Demarcation Board's [Know Your Wards map](https://arcg.is/jOKyf0).
+The page opens with one large interactive map and three metro tabs: **Cape Town (118 wards), Tshwane (107), and Johannesburg (135)**. The map uses validated 2026 polygons from the [Municipal Demarcation Board's MDBWards2026 ArcGIS service](https://services7.arcgis.com/oeoyTUJC8HEeYsRB/arcgis/rest/services/MDBWards2026/FeatureServer/0).
 
-Map tiles and the Leaflet JavaScript library are loaded from external services; the text-based results and ward search remain available if maps fail to load.
+- **Leading party** mode colours each ward by the current reported leader on the ward ballot. Grey means no result yet. These are **preliminary leaders, not declared councillors or final ward winners**.
+- **Counting progress** mode shades wards by complete/partial/no reported district counts.
+- Select any shaded ward to display its number, suburb/area labels, reported leading party, vote share, count progress and source timestamp. Open the same ward in the searchable result list.
+- A metro switcher, ward/suburb selector, full-area reset and hover labels work across desktop and mobile screens.
+- The shapes live under `ward-boundaries/*.geojson` and are verified against the exact 2026 ward-number set before publication. The workflow `.github/workflows/update-ward-maps.yml` checks the MDB source and refreshes them.
+- `ward-maps.js` handles the Leaflet drill-down. If a GeoJSON file is temporarily unavailable, it also tries the MDB ArcGIS service in the browser, and provides a clear error message if the service cannot be reached.
+
+Map boundaries are **not** inferred from suburb-name strings. Neighbourhood descriptions come from the separate `ward-areas.json` file and are secondary labels only. Vote reporting remains independently sourced through ESP and shown with its own timestamp. Map tiles are provided by OpenStreetMap and may not load when offline.
 
 ## Automated data
 
