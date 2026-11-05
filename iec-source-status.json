@@ -1,0 +1,7 @@
+{
+  "checked_at": "2026-11-05T12:41:28.983610+00:00",
+  "source": "Direct official IEC downloadable Ward-ballot CSVs",
+  "status": "not_configured",
+  "checks": {},
+  "note": "The IEC 2026 local-government public-report electoral event ID has not been configured. Live ESP results are not re-labelled."
+}
