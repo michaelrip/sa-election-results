@@ -35,7 +35,7 @@ NAME_TO_CODE = {
     "Build One South Africa": "BOSA", "South African Communist Party": "SACP",
     "Democratic People's Alternative": "DPA", "Pan Africanist Congress of Azania": "PAC",
     "Cape Independence Party": "CAPEXIT", "Truth and Solidarity Movement": "TRUTH",
-    "Independent": "Independent",
+    "Independent": "Independent", "Land Party": "LAND", "LAND": "LAND",
     "VF PLUS": "FF+", "ALJAMA": "Al Jama-ah", "MKP": "MK",
     "GOOD": "GOOD", "DA": "DA", "ANC": "ANC", "PA": "PA", "EFF": "EFF",
     "IFP": "IFP", "ACDP": "ACDP", "RISE": "RISE",
@@ -113,7 +113,8 @@ def valid_candidate(current: dict, detail: dict, now: datetime) -> bool:
 def parse_ward_page(source: str, metro: str, number: int, current: dict, now: datetime) -> dict:
     if not re.search(r"\bWard\s+" + re.escape(str(number)) + r"\b", source):
         raise ValueError("Wrong ward page identity")
-    if metro not in source and ("City of " + metro) not in source:
+    municipality = "Overstrand" if metro == "Hermanus" else metro
+    if municipality not in source and ("City of " + municipality) not in source:
         raise ValueError("Wrong municipality on source page")
     fetched_at = source_time(source, now)
     header = HEADER_PATTERN.search(source)
