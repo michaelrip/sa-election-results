@@ -24,6 +24,14 @@ The website displays a scrollable, mobile-friendly news strip **above the ward m
 
 News reporting is **independent journalism, not certified IEC election data**. Feed failures retain recent previously sourced links instead of inventing headlines. Tests are in `tests/test_news.py`.
 
+## Top-three parties in every ward drill-down
+
+The election map and expandable ward cards show the **top three parties on the 2026 ward ballot**, with reported vote shares and actual vote counts whenever independently validated. This is not an estimate based on metro-wide results.
+
+The normal `results.json` metro summary contains only each ward's leading party. `scripts/update_ward_details.py` collects the individual ESP ward-ballot pages, validates the first three ranked rows and vote counts, and checks that each detail matches its metro summary's leader, percentage and number of voting districts reported. It writes `ward-details.json` and a transparent `ward-detail-status.json` report. The main updater runs this after each metro feed refresh, with an upper limit of 180 new ward page requests per cycle to avoid overloading the source. Cached details are reused where the summary has not changed.
+
+The browser merges ward details only if they still match the current summary and are no more than 24 hours old. If a ward has only its verified leading party or its detailed page cannot be validated, the UI **shows only available parties and says the rest are pending**. It never fills second or third place using metro estimates or outdated data. Tests: `tests/test_ward_top_three.py`.
+
 ## Interactive 2026 ward map
 
 The page opens with one large interactive map and three metro tabs: **Cape Town (118 wards), Tshwane (107), and Johannesburg (135)**. The map uses validated 2026 polygons from the [Municipal Demarcation Board's MDBWards2026 ArcGIS service](https://services7.arcgis.com/oeoyTUJC8HEeYsRB/arcgis/rest/services/MDBWards2026/FeatureServer/0).
