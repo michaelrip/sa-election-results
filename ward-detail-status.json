@@ -1,47 +1,47 @@
 {
-  "checked_at": "2026-11-05T20:49:22.683120+00:00",
+  "checked_at": "2026-11-05T21:27:43.119611+00:00",
   "metros": {
     "Cape Town": {
-      "cached": 73,
-      "enriched": 19,
+      "cached": 91,
+      "enriched": 1,
       "not_reported": 21,
       "pending": 0,
       "errors": 5,
       "example_errors": [
-        "Fewer than two ranked ballot rows",
         "Unrecognised or repeated party among first three",
-        "Unrecognised or repeated party among first three"
+        "Unrecognised or repeated party among first three",
+        "Fewer than two ranked ballot rows"
       ],
       "top_three_available": 92
     },
     "Tshwane": {
-      "cached": 52,
-      "enriched": 26,
-      "not_reported": 27,
+      "cached": 73,
+      "enriched": 6,
+      "not_reported": 26,
       "pending": 0,
       "errors": 2,
       "example_errors": [
         "Unrecognised or repeated party among first three",
         "Unrecognised or repeated party among first three"
       ],
-      "top_three_available": 78
+      "top_three_available": 79
     },
     "Johannesburg": {
-      "cached": 73,
-      "enriched": 16,
+      "cached": 84,
+      "enriched": 8,
       "not_reported": 40,
       "pending": 0,
-      "errors": 6,
+      "errors": 3,
       "example_errors": [
         "Unrecognised or repeated party among first three",
         "Unrecognised or repeated party among first three",
-        "HTTP Error 503: Service Unavailable"
+        "Unrecognised or repeated party among first three"
       ],
-      "top_three_available": 89
+      "top_three_available": 92
     },
     "Hermanus": {
-      "cached": 0,
-      "enriched": 1,
+      "cached": 1,
+      "enriched": 0,
       "not_reported": 14,
       "pending": 0,
       "errors": 0,

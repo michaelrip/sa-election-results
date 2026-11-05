@@ -1,82 +1,82 @@
 {
-  "updated_at": "2026-11-05T20:49:15.300017+00:00",
+  "updated_at": "2026-11-05T21:27:38.472489+00:00",
   "source": "IEC-derived via ESP: separate validated ballot pages",
   "metros": {
     "Cape Town": {
       "pr": {
         "ballot_type": "PR",
         "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town?ballot=pr",
-        "snapshot_at": "2026-11-05T20:45:00+00:00",
-        "valid_votes": 524725,
+        "snapshot_at": "2026-11-05T21:23:00+00:00",
+        "valid_votes": 527643,
         "parties": [
           {
             "name": "DA",
-            "votes": 323314,
+            "votes": 324831,
             "share": 61.6
           },
           {
             "name": "ANC",
-            "votes": 51860,
+            "votes": 51998,
             "share": 9.9
           },
           {
-            "name": "FF+",
-            "votes": 18656,
+            "name": "PA",
+            "votes": 18830,
             "share": 3.6
           },
           {
-            "name": "PA",
-            "votes": 18463,
-            "share": 3.5
+            "name": "FF+",
+            "votes": 18736,
+            "share": 3.6
           },
           {
             "name": "CCC",
-            "votes": 15490,
+            "votes": 15592,
             "share": 3.0
           },
           {
             "name": "EFF",
-            "votes": 14818,
+            "votes": 14925,
             "share": 2.8
           },
           {
             "name": "ActionSA",
-            "votes": 14144,
+            "votes": 14283,
             "share": 2.7
           },
           {
             "name": "GOOD",
-            "votes": 13916,
+            "votes": 14070,
             "share": 2.7
           },
           {
             "name": "Al Jama-ah",
-            "votes": 13656,
+            "votes": 13834,
             "share": 2.6
           },
           {
             "name": "ACDP",
-            "votes": 7115,
+            "votes": 7140,
             "share": 1.4
           },
           {
             "name": "UDM",
-            "votes": 4173,
+            "votes": 4179,
             "share": 0.8
           },
           {
             "name": "ARA",
-            "votes": 3443,
+            "votes": 3453,
             "share": 0.7
           },
           {
             "name": "ATM",
-            "votes": 3141,
+            "votes": 3152,
             "share": 0.6
           },
           {
             "name": "CMC",
-            "votes": 2983,
+            "votes": 3005,
             "share": 0.6
           },
           {
@@ -86,27 +86,27 @@
           },
           {
             "name": "BOSA",
-            "votes": 2046,
+            "votes": 2054,
             "share": 0.4
           },
           {
             "name": "PMC",
-            "votes": 1927,
+            "votes": 1935,
             "share": 0.4
           },
           {
             "name": "SACP",
-            "votes": 1700,
+            "votes": 1703,
             "share": 0.3
           },
           {
             "name": "PAC",
-            "votes": 1085,
+            "votes": 1086,
             "share": 0.2
           },
           {
             "name": "CAPEXIT",
-            "votes": 990,
+            "votes": 991,
             "share": 0.2
           },
           {
@@ -116,7 +116,7 @@
           },
           {
             "name": "COPE",
-            "votes": 598,
+            "votes": 602,
             "share": 0.1
           },
           {
@@ -126,7 +126,7 @@
           },
           {
             "name": "H.O.I.",
-            "votes": 303,
+            "votes": 304,
             "share": 0.1
           },
           {
@@ -141,7 +141,7 @@
           },
           {
             "name": "IFP",
-            "votes": 267,
+            "votes": 269,
             "share": 0.1
           },
           {
@@ -151,7 +151,7 @@
           },
           {
             "name": "NFP",
-            "votes": 130,
+            "votes": 131,
             "share": 0.0
           },
           {
@@ -165,7 +165,7 @@
             "share": 0.0
           }
         ],
-        "unlisted_votes": 6143,
+        "unlisted_votes": 6176,
         "note": "Other/unlisted votes equal source total minus individually validated named party votes."
       }
     },
@@ -173,102 +173,102 @@
       "pr": {
         "ballot_type": "PR",
         "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane?ballot=pr",
-        "snapshot_at": "2026-11-05T20:45:00+00:00",
-        "valid_votes": 473035,
+        "snapshot_at": "2026-11-05T21:23:00+00:00",
+        "valid_votes": 484551,
         "parties": [
           {
             "name": "DA",
-            "votes": 162230,
-            "share": 34.3
+            "votes": 163682,
+            "share": 33.8
           },
           {
             "name": "ActionSA",
-            "votes": 111718,
-            "share": 23.6
+            "votes": 115405,
+            "share": 23.8
           },
           {
             "name": "ANC",
-            "votes": 95326,
-            "share": 20.2
+            "votes": 98993,
+            "share": 20.4
           },
           {
             "name": "FF+",
-            "votes": 35577,
-            "share": 7.5
+            "votes": 35757,
+            "share": 7.4
           },
           {
             "name": "EFF",
-            "votes": 26030,
-            "share": 5.5
+            "votes": 27032,
+            "share": 5.6
           },
           {
             "name": "MK",
-            "votes": 8902,
-            "share": 1.9
+            "votes": 9501,
+            "share": 2.0
           },
           {
             "name": "SACP",
-            "votes": 4778,
+            "votes": 4835,
             "share": 1.0
           },
           {
             "name": "RISE",
-            "votes": 2398,
+            "votes": 2436,
             "share": 0.5
           },
           {
             "name": "PA",
-            "votes": 2239,
+            "votes": 2285,
             "share": 0.5
           },
           {
             "name": "ACDP",
-            "votes": 1817,
+            "votes": 1863,
             "share": 0.4
           },
           {
             "name": "ATM",
-            "votes": 1682,
+            "votes": 1722,
             "share": 0.4
           },
           {
             "name": "AIC",
-            "votes": 1544,
+            "votes": 1596,
             "share": 0.3
           },
           {
             "name": "IFP",
-            "votes": 988,
+            "votes": 1000,
             "share": 0.2
           },
           {
             "name": "PAC",
-            "votes": 951,
+            "votes": 962,
             "share": 0.2
           },
           {
             "name": "BOSA",
-            "votes": 846,
+            "votes": 886,
             "share": 0.2
           },
           {
             "name": "Al Jama-ah",
-            "votes": 361,
+            "votes": 366,
             "share": 0.1
           },
           {
             "name": "COPE",
-            "votes": 297,
+            "votes": 299,
             "share": 0.1
           },
           {
             "name": "ARA",
-            "votes": 231,
+            "votes": 239,
             "share": 0.0
           },
           {
             "name": "OD",
-            "votes": 179,
+            "votes": 187,
             "share": 0.0
           },
           {
@@ -278,26 +278,26 @@
           },
           {
             "name": "NFP",
-            "votes": 94,
+            "votes": 97,
             "share": 0.0
           },
           {
             "name": "UIM",
-            "votes": 65,
+            "votes": 66,
             "share": 0.0
           },
           {
             "name": "LAND",
-            "votes": 57,
+            "votes": 59,
             "share": 0.0
           },
           {
             "name": "CCC",
-            "votes": 47,
+            "votes": 48,
             "share": 0.0
           }
         ],
-        "unlisted_votes": 14570,
+        "unlisted_votes": 15127,
         "note": "Other/unlisted votes equal source total minus individually validated named party votes."
       }
     },
@@ -305,102 +305,102 @@
       "pr": {
         "ballot_type": "PR",
         "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg?ballot=pr",
-        "snapshot_at": "2026-11-05T20:45:00+00:00",
-        "valid_votes": 475519,
+        "snapshot_at": "2026-11-05T21:23:00+00:00",
+        "valid_votes": 484304,
         "parties": [
           {
             "name": "DA",
-            "votes": 189998,
-            "share": 40.0
+            "votes": 192949,
+            "share": 39.8
           },
           {
             "name": "ANC",
-            "votes": 80551,
-            "share": 16.9
+            "votes": 82201,
+            "share": 17.0
           },
           {
             "name": "ActionSA",
-            "votes": 80375,
-            "share": 16.9
+            "votes": 81474,
+            "share": 16.8
           },
           {
             "name": "EFF",
-            "votes": 32935,
+            "votes": 33403,
             "share": 6.9
           },
           {
             "name": "MK",
-            "votes": 24647,
-            "share": 5.2
+            "votes": 24823,
+            "share": 5.1
           },
           {
             "name": "FF+",
-            "votes": 10720,
+            "votes": 10903,
             "share": 2.3
           },
           {
             "name": "RISE",
-            "votes": 10580,
+            "votes": 10848,
             "share": 2.2
           },
           {
             "name": "IFP",
-            "votes": 9381,
-            "share": 2.0
+            "votes": 9430,
+            "share": 1.9
           },
           {
             "name": "ATM",
-            "votes": 5664,
+            "votes": 5714,
             "share": 1.2
           },
           {
             "name": "PA",
-            "votes": 4412,
-            "share": 0.9
+            "votes": 4803,
+            "share": 1.0
           },
           {
             "name": "ACDP",
-            "votes": 3493,
-            "share": 0.7
+            "votes": 4352,
+            "share": 0.9
           },
           {
             "name": "Al Jama-ah",
-            "votes": 3270,
+            "votes": 3444,
             "share": 0.7
           },
           {
             "name": "BOSA",
-            "votes": 2141,
-            "share": 0.5
+            "votes": 2146,
+            "share": 0.4
           },
           {
             "name": "SACP",
-            "votes": 1899,
+            "votes": 1914,
             "share": 0.4
           },
           {
             "name": "PMC",
-            "votes": 1335,
+            "votes": 1473,
             "share": 0.3
           },
           {
             "name": "AIC",
-            "votes": 917,
+            "votes": 938,
             "share": 0.2
           },
           {
             "name": "PAC",
-            "votes": 789,
+            "votes": 834,
             "share": 0.2
           },
           {
             "name": "COPE",
-            "votes": 480,
+            "votes": 488,
             "share": 0.1
           },
           {
             "name": "LAND",
-            "votes": 176,
+            "votes": 180,
             "share": 0.0
           },
           {
@@ -410,17 +410,17 @@
           },
           {
             "name": "NFP",
-            "votes": 140,
+            "votes": 141,
             "share": 0.0
           },
           {
             "name": "OHM",
-            "votes": 104,
+            "votes": 107,
             "share": 0.0
           },
           {
             "name": "ARA",
-            "votes": 84,
+            "votes": 86,
             "share": 0.0
           },
           {
@@ -430,11 +430,11 @@
           },
           {
             "name": "CCC",
-            "votes": 69,
+            "votes": 76,
             "share": 0.0
           }
         ],
-        "unlisted_votes": 11110,
+        "unlisted_votes": 11328,
         "note": "Other/unlisted votes equal source total minus individually validated named party votes."
       }
     },
