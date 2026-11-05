@@ -40,7 +40,7 @@
     return;
   }
   const touchMode = typeof window.matchMedia === 'function' && window.matchMedia('(pointer: coarse)').matches;
-  let city = 'Cape Town';
+  let city = window.initialMetro && spec[window.initialMetro] ? window.initialMetro : 'Cape Town';
   let mode = 'leading';
   let selectedNumber = null;
   let polygonLayer = null;
