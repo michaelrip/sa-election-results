@@ -283,18 +283,32 @@ function historicShares(metro,wardNumber=null){
  const row=wardNumber===null?city:((city.wards||{})[String(wardNumber)]||{});
  return row&&row.ballot_type==='Ward'&&row.year===2021&&row.parties&&typeof row.parties==='object'?row.parties:{};
 }
+function historicBallotShares(metro,mode){
+ const city=history2021?.metros?.[metro];
+ if(!city||history2021.year!==2021||history2021.source_verified!==true)return {};
+ let ballot;
+ if(mode==='ward')return historicShares(metro);
+ if(mode==='pr')ballot=city.pr;
+ else if(mode==='all')ballot=city.combined;
+ else return {};
+ const correct=mode==='pr'?'PR':'Ward + PR';
+ if(!ballot||ballot.year!==2021||ballot.ballot_type!==correct||
+   !ballot.parties||typeof ballot.parties!=='object'||
+   !Number.isSafeInteger(ballot.valid_votes)||ballot.valid_votes<=0)return {};
+ return ballot.parties;
+}
 function historicCoverage(metro,wardNumber){
  const city=history2021&&history2021.metros&&history2021.metros[metro];
  const row=city&&city.wards&&city.wards[String(wardNumber)];
  return row&&Number.isInteger(row.matched_districts)&&Number.isInteger(row.districts_in_2026_ward)
     ?row.matched_districts+'/'+row.districts_in_2026_ward:null;
 }
-function parties(list,showVotes=false,historical={},maxItems=10){
+function parties(list,showVotes=false,historical={},maxItems=10,comparisonLabel='Ward'){
  return Array.isArray(list)&&list.length
  ?list.filter(p=>p&&num(p.share)&&p.share>=0&&p.share<=100).sort((a,b)=>b.share-a.share).slice(0,maxItems).map(p=>{
   const old=historical&&historical[p.name];
   const past=(num(old)&&old>=0&&old<=100)
-    ?'<span class="history-share" title="2021 ward-ballot percentage">(2021: '+pct(old)+')</span>':'';
+    ?'<span class="history-share" title="2021 '+esc(comparisonLabel)+' ballot percentage">(2021: '+pct(old)+')</span>':'';
   return '<div class="party"><div class="partyline"><span>'+esc(p.name)+'</span><span class="share-pair"><strong>'+pct(p.share)+'</strong>'+past+'</span></div>'+
   (votesValid(p.votes)?'<div class="party-votes">'+voteFmt(p.votes)+' votes counted</div>':
     (showVotes?'<div class="party-votes missing">Votes not available from source</div>':''))+
@@ -382,7 +396,8 @@ function renderMetroCard(){
  }
  const ordered=partyRows.filter(x=>x&&num(x.share)&&x.share>=0&&x.share<=100).sort((a,b)=>b.share-a.share);
  const a=m.districts_reported,b=m.districts_total,progress=Number.isInteger(a)&&Number.isInteger(b)&&a>=0&&b>0&&a<=b,p=progress?100*a/b:null;
- const past=mode==='ward'?historicShares(name):{};
+ const past=historicBallotShares(name,mode);
+ const historicLabel=mode==='pr'?'municipal PR':mode==='all'?'Ward + municipal PR':'Ward';
  const modeLabel=mode==='pr'?'PR':mode==='dc'?'District PR':mode==='ward'?'Ward':'Ward + PR';
  const top=ordered.slice(0,5),remaining=ordered.slice(5);
  const asAt=selected?.snapshot_at?date(selected.snapshot_at):'Not available';
@@ -402,9 +417,14 @@ function renderMetroCard(){
   (src.length?'<div class="ballot-source-line">'+src.map(([caption,url])=>url&&/^https:\/\//.test(url)?'<a href="'+esc(url)+'" target="_blank" rel="noopener noreferrer">'+esc(caption)+' source</a>':'').filter(Boolean).join(' · ')+'</div>':'')+
   '<p class="city-seats-note">Council seats: '+(Array.isArray(m.seats)&&m.seats.length?m.seats.map(x=>esc(x.name)+': '+esc(x.count)).join(' · '):'Not yet allocated or verified')+'</p>'+
   '</div><div class="city-result-parties"><h3>'+esc(mode==='all'?'Parties across ward + PR ballots':'Parties · '+label)+'</h3>'+
-  '<p class="city-result-subtext">'+esc(mode==='ward'?'2021 ward-ballot percentages in brackets, where known.':mode==='all'?'Party totals count both local ballot papers and may differ between the two ballots.':'Party percentages are of valid votes on this ballot only.')+'</p>'+
-  (valid?parties(top,true,past):'<p class="empty">No verified '+esc(modeLabel)+' party counts available from ESP yet.</p>')+
-  (remaining.length?'<details class="city-more-results"><summary>Show '+remaining.length+' more parties / groups</summary>'+parties(remaining,true,past,remaining.length)+'</details>':'')+
+  '<p class="city-result-subtext">'+esc(
+   mode==='ward'?'2021 Ward percentages appear in brackets where available.':
+   mode==='pr'?'2021 municipal PR percentages appear in brackets where available.':
+   mode==='all'?'Brackets show 2021 Ward + municipal PR share calculated from actual votes on both ballots, not an average of percentages.':
+   'Separate district council ballot; no matching 2021 district comparison is included.'
+  )+' 2021 is final; 2026 is preliminary.</p>'+
+  (valid?parties(top,true,past,10,historicLabel):'<p class="empty">No verified '+esc(modeLabel)+' party counts available from ESP yet.</p>')+
+  (remaining.length?'<details class="city-more-results"><summary>Show '+remaining.length+' more parties / groups</summary>'+parties(remaining,true,past,remaining.length,historicLabel)+'</details>':'')+
   '</div></article>';
  if(expanded){const more=cards.querySelector('.city-more-results');if(more)more.open=true}
 }
