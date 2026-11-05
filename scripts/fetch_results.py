@@ -91,7 +91,7 @@ def parse(city,slug,total,nwards,now):
   if not party or party in [p["name"] for p in parties]:continue
   if not 0<=share<=100 or ballot_count>votes:continue
   if abs(100*ballot_count/max(votes,1)-share)>0.21:continue
-  parties.append({"name":party,"share":share})
+  parties.append({"name":party,"share":share,"votes":ballot_count})
  # When vote rows are unavailable, accept only the explicitly labelled ward
  # ballot summary. These are source shares, not estimates or invented totals.
  if not parties:
@@ -105,6 +105,10 @@ def parse(city,slug,total,nwards,now):
      parties.append({"name":party,"share":share})
    if sum(p["share"] for p in parties)>100.4:
     parties=[]
+ # Never publish a collection of party votes that exceeds all valid ward-ballot votes.
+ # Unknown parties can be omitted; published vote counts must be verbatim and consistent.
+ if sum(p.get("votes",0) for p in parties)>votes:
+  raise ValueError("Party vote totals exceed source valid ward-ballot votes")
  parties.sort(key=lambda p:-p["share"])
  if count and not parties:raise ValueError("Party vote rows could not be validated")
  ward_section=re.search(r"Wards\s*[·•]\s*"+str(nwards)+r"\b(.*?)(?:About these figures|$)",s)
@@ -115,7 +119,7 @@ def parse(city,slug,total,nwards,now):
   if 1<=n<=nwards and 0<reported<=den and 0<=float(w.group(5))<=100:
    ward_rows[n]={"number":n,"status":"Partly counted","ballot_type":"Ward","reporting":str(reported)+" of "+str(den)+" districts","winner":ALIASES[w.group(4)],"parties":[{"name":ALIASES[w.group(4)],"share":float(w.group(5))}],"snapshot_at":stamp.isoformat(),"source_url":url+"/ward-"+str(n)}
  wards=[ward_rows.get(i,{"number":i,"status":"Not yet reported","ballot_type":"Ward","reporting":"Not yet reported","parties":[],"snapshot_at":stamp.isoformat(),"source_url":url+"/ward-"+str(i)}) for i in range(1,nwards+1)]
- return {"status":"Preliminary · IEC-derived via ESP","ballot_type":"Ward","districts_reported":count,"districts_total":denom,"parties":parties,"seats":[],"wards":wards,"snapshot_at":stamp.isoformat(),"source_url":url},len(ward_rows)
+ return {"status":"Preliminary · IEC-derived via ESP","ballot_type":"Ward","districts_reported":count,"districts_total":denom,"valid_votes":votes,"parties":parties,"seats":[],"wards":wards,"snapshot_at":stamp.isoformat(),"source_url":url},len(ward_rows)
 def main():
  now=datetime.now(timezone.utc)
  path=Path("results.json");data=json.loads(path.read_text());data.setdefault("metros",{})
