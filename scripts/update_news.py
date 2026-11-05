@@ -32,7 +32,7 @@ TRUSTED = {
     "sowetanlive", "city press", "the outlier",
 }
 CITY_TERMS = {
-    "Cape Town": ("cape town", "western cape"),
+    "Cape Town": ("cape town", "city of cape town"),
     "Tshwane": ("tshwane", "pretoria"),
     "Johannesburg": ("johannesburg", "joburg", "soweto"),
 }
@@ -117,7 +117,7 @@ def parse_rss(xml_bytes: bytes, now: datetime) -> list[dict]:
             "url": url,
             "published_at": dt.isoformat().replace("+00:00", "Z"),
             "published_date": dt.date().isoformat(),
-            "metro": choose_metro(topic),
+            "metro": choose_metro(title),
         })
     return articles
 
