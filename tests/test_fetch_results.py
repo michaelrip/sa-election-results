@@ -33,11 +33,33 @@ class ScrapingTests(unittest.TestCase):
         with patch.object(feed, "get", return_value=source):
             metro, found = feed.parse(*ARGS)
         self.assertEqual(metro["districts_reported"], 1)
-        self.assertEqual(metro["parties"][0], {"name": "DA", "share": 41.8})
-        self.assertEqual(metro["parties"][1], {"name": "PA", "share": 36.4})
+        self.assertEqual(metro["valid_votes"], 729)
+        self.assertEqual(metro["parties"][0], {"name": "DA", "share": 41.8, "votes": 305})
+        self.assertEqual(metro["parties"][1], {"name": "PA", "share": 36.4, "votes": 265})
         self.assertEqual(found, 1)
         self.assertEqual(metro["wards"][30]["winner"], "DA")
         self.assertEqual(metro["wards"][0]["status"], "Not yet reported")
+
+    def test_inconsistent_party_votes_not_published(self):
+        txt = feed.Text()
+        txt.feed(SAMPLE.replace("Democratic Alliance 305 41.8%", "Democratic Alliance 425 41.8%"))
+        with patch.object(feed, "get", return_value=" ".join(" ".join(txt.parts).split())):
+            metro, _ = feed.parse(*ARGS)
+        self.assertNotIn("DA", [party["name"] for party in metro["parties"]])
+        self.assertEqual(metro["valid_votes"], 729)
+        self.assertTrue(all(isinstance(p.get("votes"), int) for p in metro["parties"]))
+
+    def test_summary_only_vote_shares_are_not_fake_counts(self):
+        txt = feed.Text()
+        sample = SAMPLE.replace(
+            '<ol><li><img alt="DA"/> Democratic Alliance 305 41.8%</li>\n<li><img alt="PA"/> Patriotic Alliance 265 36.4%</li>\n<li><img alt="ANC"/> African National Congress 20 2.7%</li></ol>',
+            '<p>No individual party vote counts published.</p>'
+        )
+        txt.feed(sample)
+        with patch.object(feed, "get", return_value=" ".join(" ".join(txt.parts).split())):
+            metro, _ = feed.parse(*ARGS)
+        self.assertGreater(len(metro["parties"]), 0)
+        self.assertTrue(all("votes" not in p for p in metro["parties"]))
 
     def test_invalid_district_total_rejected(self):
         txt = feed.Text()
