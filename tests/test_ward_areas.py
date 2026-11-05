@@ -1,49 +1,45 @@
-"""Offline regression tests for 2026 ward-area tables."""
+"""Offline regression tests for 2026 individual ward-page labels."""
 import sys
 import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-from update_ward_areas import parse_ward_areas
+from update_ward_areas import parse_ward_label, valid_existing
 
 PAGE = """<!doctype html><html><body>
-<h2>Provisional ward results</h2>
-<table><tr><th>Ward</th><th>Leading party</th></tr>
-<tr><td>Ward 1</td><td>Not yet counted</td></tr>
-<tr><td>Ward 2</td><td>DA</td></tr></table>
-<h2>Every ward</h2>
-<table>
-<tr><th>Ward</th><th>Covers parts of</th></tr>
-<tr><td><a href='/wards-2026/1/'>Ward 1</a></td><td>Bellville, Milnerton, Parow</td></tr>
-<tr><td><a href='/wards-2026/2/'>Ward 2</a></td><td>Bellville, Parow</td></tr>
-</table>
-<h2>Ward by-elections since 2021</h2>
-<table><tr><td>25 Mar 2026</td><td>104</td><td>ANC</td></tr></table>
+<nav>2026 election · Ward 1</nav>
+<h1>Ward 1</h1>
+<p>Covers parts of Bellville, Milnerton, Parow.</p>
+<h2>Election-night status</h2>
+<div>Ward 1 — Not yet counted. DA 41.8%</div>
+<h2>Places in this ward</h2>
+<li>Bellville: Loevenstein</li>
+<li>Milnerton: Plattekloof Glen, Monte Vista</li>
 </body></html>"""
 
 class WardAreaTests(unittest.TestCase):
-    def test_extracts_places_and_ignores_unrelated_tables(self):
+    def test_uses_area_description_not_votes(self):
         self.assertEqual(
-            parse_ward_areas(PAGE, 2),
-            {"1": "Bellville, Milnerton, Parow", "2": "Bellville, Parow"},
+            parse_ward_label(PAGE, 1), "Bellville, Milnerton, Parow"
         )
 
-    def test_requires_every_ward_section(self):
-        with self.assertRaisesRegex(ValueError, "Every ward"):
-            parse_ward_areas(PAGE.replace("<h2>Every ward</h2>", "<h2>Old wards</h2>"), 2)
+    def test_validates_ward_identity(self):
+        with self.assertRaisesRegex(ValueError, "Wrong ward"):
+            parse_ward_label(PAGE, 2)
 
-    def test_refuses_incomplete_coverage(self):
-        with self.assertRaisesRegex(ValueError, "Expected 3"):
-            parse_ward_areas(PAGE, 3)
+    def test_requires_geographic_description(self):
+        with self.assertRaisesRegex(ValueError, "description unavailable"):
+            parse_ward_label(PAGE.replace("Covers parts of", "Election status for"), 1)
 
-    def test_rejects_duplicate_conflicting_labels(self):
-        page = PAGE.replace(
-            "<td>Bellville, Parow</td></tr>",
-            "<td>Bellville, Parow</td></tr><tr><td>Ward 1</td><td>Another place</td></tr>",
-            1,
-        )
-        with self.assertRaisesRegex(ValueError, "Conflicting"):
-            parse_ward_areas(page, 2)
+    def test_rejects_vote_status_labels(self):
+        with self.assertRaisesRegex(ValueError, "Vote results"):
+            parse_ward_label(PAGE.replace("Bellville, Milnerton, Parow", "Not yet counted"), 1)
+
+    def test_rejects_old_bogus_area_mapping(self):
+        self.assertFalse(valid_existing({"1": "Not yet counted – –"}, 1))
+        self.assertFalse(valid_existing({"1": "DA 75.3% 67.3%"}, 1))
+        self.assertTrue(valid_existing({"1": "Bellville, Milnerton, Parow"}, 1))
+
 
 if __name__ == "__main__":
     unittest.main()
