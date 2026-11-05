@@ -1,0 +1,384 @@
+/* Interactive 2026 municipal ward map. Boundary data: MDB 2026.
+ * Vote shares: ESP's preliminary IEC-derived ward ballot via results.json.
+ * A leading party here is NOT a declared winning councillor.
+ */
+(function () {
+  'use strict';
+
+  const spec = {
+    'Cape Town': {slug: 'cape-town', count: 118, query: 'Cape Town', centre: [-33.925, 18.5], zoom: 10},
+    'Tshwane': {slug: 'tshwane', count: 107, query: 'Tshwane', centre: [-25.75, 28.23], zoom: 10},
+    'Johannesburg': {slug: 'johannesburg', count: 135, query: 'Johannesburg', centre: [-26.20, 28.05], zoom: 10}
+  };
+  const endpoints = [
+    'https://services7.arcgis.com/oeoyTUJC8HEeYsRB/arcgis/rest/services/MDBWards2026/FeatureServer/0/query',
+    'https://hips-gis.health.gov.za/server/rest/services/Hosted/MDB_Wards_2026/FeatureServer/0/query'
+  ];
+  const palette = {
+    'ANC': '#32b567', 'DA': '#2386e5', 'EFF': '#e24c63', 'ActionSA': '#20b6b0',
+    'PA': '#e6a144', 'FF+': '#b882e9', 'MK': '#8094e2',
+    'IFP': '#e2c35a', 'GOOD': '#e581c9', 'ACDP': '#7c85f7',
+    'Al Jama-ah': '#7bb5a0', 'CCC': '#d6ac76', 'UDM': '#c07abf',
+    'BOSA': '#87acda'
+  };
+  const unknown = '#8897a8';
+  const statusColors = {complete: '#39b99c', partial: '#e6ae45', none: '#8897a8'};
+  const els = {
+    map: document.getElementById('ward-detail-map'),
+    side: document.getElementById('ward-map-detail'),
+    status: document.getElementById('ward-map-status'),
+    legend: document.getElementById('ward-map-legend'),
+    choice: document.getElementById('map-ward-select'),
+    mode: document.getElementById('map-mode'),
+    reset: document.getElementById('map-reset')
+  };
+  if (!els.map || !els.side || typeof L === 'undefined') {
+    if (els.status) els.status.textContent = 'Interactive map unavailable. The results and ward list below remain available.';
+    return;
+  }
+  let city = 'Cape Town';
+  let mode = 'leading';
+  let selectedNumber = null;
+  let polygonLayer = null;
+  let polygonByWard = {};
+  let loadVersion = 0;
+  const cache = {};
+  const inFlight = {};
+
+  const map = L.map(els.map, {
+    preferCanvas: true,
+    scrollWheelZoom: false,
+    tap: true,
+    zoomControl: true
+  }).setView(spec[city].centre, spec[city].zoom);
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(map);
+
+  function safe(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+      return {'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c];
+    });
+  }
+  function metro() {
+    return (typeof data !== 'undefined' && data && data.metros && data.metros[city]) || {};
+  }
+  function wardAreasFor(name) {
+    return (typeof wardAreas !== 'undefined' && wardAreas && wardAreas.metros && wardAreas.metros[name]) || {};
+  }
+  function listOfWards() {
+    return Array.isArray(metro().wards) ? metro().wards : [];
+  }
+  function wardAt(number) {
+    return listOfWards().find(function (w) {return Number(w.number) === Number(number);}) || null;
+  }
+  function areaAt(number) {
+    return String(wardAreasFor(city)[String(number)] || '').trim();
+  }
+  function leadAt(number) {
+    const ward = wardAt(number);
+    if (!ward || !Array.isArray(ward.parties)) return null;
+    const lead = ward.parties
+      .filter(function (p) {return p && typeof p.name === 'string' && Number.isFinite(p.share) && p.share >= 0 && p.share <= 100;})
+      .sort(function (a, b) {return b.share - a.share;})[0];
+    return lead || null;
+  }
+  function progressAt(number) {
+    const ward = wardAt(number);
+    const result = ward && /^(\d+)\s+of\s+(\d+)\s+districts/i.exec(String(ward.reporting || ''));
+    if (!result) return 'none';
+    const done = Number(result[1]), total = Number(result[2]);
+    if (!total || !done) return 'none';
+    return done >= total ? 'complete' : 'partial';
+  }
+  function colourAt(number) {
+    if (mode === 'reporting') return statusColors[progressAt(number)];
+    const lead = leadAt(number);
+    return lead ? (palette[lead.name] || '#b879bb') : unknown;
+  }
+  function styleFor(feature) {
+    const number = Number(feature.properties.ward);
+    const active = number === selectedNumber;
+    return {
+      color: active ? '#fff' : '#21334a',
+      weight: active ? 3.2 : 1.05,
+      fillColor: colourAt(number),
+      fillOpacity: active ? 0.87 : 0.69,
+      opacity: 0.96
+    };
+  }
+  function wardTitle(number) {
+    const area = areaAt(number);
+    return 'Ward ' + number + (area ? ' · ' + area : '');
+  }
+  function tipFor(number) {
+    const lead = leadAt(number);
+    const result = wardAt(number);
+    return '<strong>' + safe(wardTitle(number)) + '</strong>' +
+      '<br>' + (lead ? 'Leading: ' + safe(lead.name) + ' ' + lead.share.toFixed(1) + '%' : 'No reported ward-ballot lead yet') +
+      (result && result.reporting ? '<br>' + safe(result.reporting) : '') +
+      '<br><small>Click for full ward details</small>';
+  }
+  function validateGeoJSON(value, name) {
+    const expected = spec[name].count;
+    if (!value || value.type !== 'FeatureCollection' || !Array.isArray(value.features)) {
+      throw new Error('No valid 2026 ward boundary dataset returned.');
+    }
+    const found = new Set();
+    const features = value.features.map(function (feature) {
+      const p = feature && feature.properties || {};
+      const id = Number(p.ward != null ? p.ward : (p.WardNo != null ? p.WardNo : p.wardno));
+      const g = feature && feature.geometry;
+      if (!Number.isInteger(id) || id < 1 || id > expected || found.has(id) ||
+          !g || !['Polygon', 'MultiPolygon'].includes(g.type) || !Array.isArray(g.coordinates) || !g.coordinates.length) {
+        throw new Error('Source ward shapes do not match 2026 ward identifiers.');
+      }
+      found.add(id);
+      if (p.MUNICNAME && !String(p.MUNICNAME).toLowerCase().includes(spec[name].query.toLowerCase())) {
+        throw new Error('Boundary source returned a different municipality.');
+      }
+      return {type: 'Feature', properties: {ward: id}, geometry: g};
+    });
+    if (found.size !== expected) throw new Error('Only ' + found.size + ' of ' + expected + ' ward boundaries were returned.');
+    return {type: 'FeatureCollection', features: features};
+  }
+  async function requestJSON(url) {
+    const response = await fetch(url, {cache: 'no-store'});
+    if (!response.ok) throw new Error('HTTP ' + response.status);
+    return response.json();
+  }
+  async function loadGeoJSON(name) {
+    if (cache[name]) return cache[name];
+    if (inFlight[name]) return inFlight[name];
+    inFlight[name] = (async function () {
+      let lastError;
+      try {
+        const local = await requestJSON('./ward-boundaries/' + spec[name].slug + '.geojson');
+        const verified = validateGeoJSON(local, name);
+        cache[name] = verified;
+        return verified;
+      } catch (error) {
+        lastError = error;
+      }
+      // Fallback while Pages is deploying its local validated boundary copy.
+      const parameters = new URLSearchParams({
+        where: "MUNICNAME LIKE '%" + spec[name].query + "%'",
+        outFields: 'WardNo,WardID,MUNICNAME',
+        outSR: '4326',
+        geometryPrecision: '5',
+        maxAllowableOffset: '0.00015',
+        returnGeometry: 'true',
+        f: 'geojson'
+      });
+      for (const endpoint of endpoints) {
+        try {
+          const geojson = await requestJSON(endpoint + '?' + parameters.toString());
+          const verified = validateGeoJSON(geojson, name);
+          cache[name] = verified;
+          return verified;
+        } catch (error) {
+          lastError = error;
+        }
+      }
+      throw lastError || new Error('2026 ward boundaries could not be loaded');
+    })();
+    try {
+      return await inFlight[name];
+    } finally {
+      delete inFlight[name];
+    }
+  }
+  function showMapMessage(message) {
+    els.status.textContent = message;
+  }
+  function repaint() {
+    if (!polygonLayer) return;
+    polygonLayer.eachLayer(function (layer) {
+      layer.setStyle(styleFor(layer.feature));
+      const number = layer.feature.properties.ward;
+      if (layer.getTooltip()) layer.setTooltipContent(tipFor(number));
+    });
+  }
+  function panelFor(number) {
+    const ward = wardAt(number);
+    const name = areaAt(number);
+    const lead = leadAt(number);
+    const progress = progressAt(number);
+    const reporting = ward && ward.reporting && progress !== 'none' ? ward.reporting : 'Not yet reported';
+    const source = ward && typeof ward.source_url === 'string' && /^https:\/\//.test(ward.source_url) ? ward.source_url : '';
+    const snapshot = ward && ward.snapshot_at && !Number.isNaN(Date.parse(ward.snapshot_at))
+      ? new Intl.DateTimeFormat('en-ZA', {dateStyle: 'medium', timeStyle: 'short', timeZone: 'Africa/Johannesburg'}).format(new Date(ward.snapshot_at)) + ' SAST'
+      : 'Not available';
+    els.side.innerHTML =
+      '<div class="ward-map-subtitle">' + safe(city) + ' · 2026 ward</div>' +
+      '<h3>Ward ' + number + '</h3>' +
+      '<p class="ward-map-area">' + safe(name || 'Area description unavailable') + '</p>' +
+      '<div class="ward-map-leader">' +
+        '<span class="ward-map-dot" style="background:' + colourAt(number) + '"></span>' +
+        '<div><span class="small">Preliminary ward-ballot lead</span><strong>' +
+        (lead ? safe(lead.name) + ' · ' + lead.share.toFixed(1) + '%' : 'No results yet') +
+        '</strong></div></div>' +
+      '<div class="ward-map-stat"><span>Counting progress</span><strong>' + safe(reporting) + '</strong></div>' +
+      '<div class="ward-map-stat"><span>Last source snapshot</span><strong>' + safe(snapshot) + '</strong></div>' +
+      '<p class="ward-map-note">These results show only the reported leading party. Partial counts are not final ward winners or council seats.</p>' +
+      '<button type="button" class="ward-map-view" id="ward-map-jump">See ward in results list</button>' +
+      (source ? '<a class="ward-map-source" href="' + safe(source) + '" target="_blank" rel="noopener">View original ward result source</a>' : '');
+    const action = document.getElementById('ward-map-jump');
+    if (action) action.addEventListener('click', function () {
+      const metroSelect = document.getElementById('metro');
+      const search = document.getElementById('wardSearch');
+      const explorer = document.getElementById('ward-explorer');
+      if (metroSelect && search && explorer && typeof renderWards === 'function') {
+        metroSelect.value = city;
+        search.value = 'ward ' + number;
+        renderWards();
+        const detail = explorer.querySelector('details.ward');
+        if (detail) detail.open = true;
+        explorer.scrollIntoView({behavior: 'smooth', block: 'start'});
+      }
+    });
+  }
+  function resetPanel() {
+    els.side.innerHTML = '<div class="ward-map-subtitle">' + safe(city) +
+      ' · 2026 ward map</div><h3>Select a ward</h3>' +
+      '<p>Tap a coloured area on the map, or choose a ward above, to see its reported vote share and counting progress.</p>' +
+      '<p class="ward-map-note">Grey = no reported result yet. All party leads are preliminary.</p>';
+  }
+  function chooseWard(number, shouldZoom) {
+    const layer = polygonByWard[Number(number)];
+    if (!layer) return;
+    selectedNumber = Number(number);
+    els.choice.value = String(number);
+    repaint();
+    if (shouldZoom) {
+      const bounds = layer.getBounds();
+      if (bounds && bounds.isValid()) map.fitBounds(bounds, {padding: [35, 35], maxZoom: 14, animate: true});
+    }
+    layer.bringToFront();
+    panelFor(selectedNumber);
+  }
+  function updateChoices() {
+    const previouslySelected = selectedNumber;
+    let choices = '<option value="">Choose a ward to zoom into…</option>';
+    const areas = wardAreasFor(city);
+    for (let n = 1; n <= spec[city].count; n++) {
+      choices += '<option value="' + n + '">Ward ' + n +
+        (areas[String(n)] ? ' · ' + safe(areas[String(n)]) : '') + '</option>';
+    }
+    els.choice.innerHTML = choices;
+    els.choice.value = previouslySelected != null ? String(previouslySelected) : '';
+  }
+  function updateTabs() {
+    document.querySelectorAll('[data-ward-map-metro]').forEach(function (button) {
+      const name = button.getAttribute('data-ward-map-metro');
+      const isActive = name === city;
+      button.setAttribute('aria-selected', String(isActive));
+      button.tabIndex = isActive ? 0 : -1;
+      const m = (typeof data !== 'undefined' && data.metros && data.metros[name]) || {};
+      const num = Array.isArray(m.wards) ? m.wards.filter(function (w) {return Array.isArray(w.parties) && w.parties.length;}).length : null;
+      const count = spec[name].count;
+      const counter = button.querySelector('.map-metro-count');
+      if (counter) counter.textContent = num != null ? num + ' of ' + count + ' wards reporting' : count + ' wards';
+    });
+  }
+  function updateLegend() {
+    if (mode === 'reporting') {
+      els.legend.innerHTML =
+        '<span class="map-legend-item"><i style="background:' + statusColors.complete + '"></i>Fully reported</span>' +
+        '<span class="map-legend-item"><i style="background:' + statusColors.partial + '"></i>Partly reported</span>' +
+        '<span class="map-legend-item"><i style="background:' + unknown + '"></i>Not reported</span>';
+      return;
+    }
+    const seen = new Set();
+    listOfWards().forEach(function (w) {
+      const lead = leadAt(w.number);
+      if (lead) seen.add(lead.name);
+    });
+    let html = Array.from(seen).sort(function (a, b) {return a.localeCompare(b);}).map(function (party) {
+      return '<span class="map-legend-item"><i style="background:' + (palette[party] || '#b879bb') +
+        '"></i>' + safe(party) + '</span>';
+    }).join('');
+    html += '<span class="map-legend-item"><i style="background:' + unknown + '"></i>Not reported</span>';
+    els.legend.innerHTML = html;
+  }
+  async function showCity(name) {
+    if (!spec[name]) return;
+    const thisRequest = ++loadVersion;
+    city = name;
+    selectedNumber = null;
+    if (polygonLayer) map.removeLayer(polygonLayer);
+    polygonLayer = null;
+    polygonByWard = {};
+    resetPanel();
+    updateTabs();
+    updateChoices();
+    updateLegend();
+    showMapMessage('Loading 2026 ward boundaries for ' + name + '…');
+    map.setView(spec[name].centre, spec[name].zoom, {animate: false});
+    try {
+      const polygons = await loadGeoJSON(name);
+      if (thisRequest !== loadVersion) return;
+      const polygonsLayer = L.geoJSON(polygons, {
+        style: styleFor,
+        onEachFeature: function (feature, layer) {
+          const id = Number(feature.properties.ward);
+          polygonByWard[id] = layer;
+          layer.bindTooltip(tipFor(id), {sticky: true, direction: 'top', className: 'ward-map-tooltip'});
+          layer.on('mouseover', function () {
+            if (id !== selectedNumber) layer.setStyle({color: '#ffffff', weight: 2.5, fillOpacity: .85});
+            layer.bringToFront();
+          });
+          layer.on('mouseout', function () {layer.setStyle(styleFor(feature));});
+          layer.on('click', function () {chooseWard(id, false);});
+        }
+      }).addTo(map);
+      polygonLayer = polygonsLayer;
+      map.fitBounds(polygonLayer.getBounds(), {padding: [15, 15], animate: false});
+      showMapMessage(spec[name].count + ' validated 2026 ward boundaries · tap a ward to drill down. The ward ballot figures update automatically.');
+      repaint();
+    } catch (error) {
+      if (thisRequest !== loadVersion) return;
+      showMapMessage('Ward boundaries could not load: ' + error.message + '. You can still use the ward results list below.');
+      els.side.innerHTML = '<h3>Map temporarily unavailable</h3><p>Ward-by-ward voting figures remain available in the searchable list below.</p>';
+    }
+  }
+  function refresh() {
+    updateTabs();
+    updateLegend();
+    updateChoices();
+    repaint();
+    if (selectedNumber != null) panelFor(selectedNumber);
+  }
+  document.querySelectorAll('[data-ward-map-metro]').forEach(function (button) {
+    button.addEventListener('click', function () {showCity(button.getAttribute('data-ward-map-metro'));});
+    button.addEventListener('keydown', function (event) {
+      if (event.key !== 'ArrowRight' && event.key !== 'ArrowLeft') return;
+      event.preventDefault();
+      const names = Object.keys(spec), index = names.indexOf(city);
+      const direction = event.key === 'ArrowRight' ? 1 : -1;
+      const next = names[(index + direction + names.length) % names.length];
+      showCity(next);
+      document.querySelector('[data-ward-map-metro="' + next + '"]').focus();
+    });
+  });
+  els.choice.addEventListener('change', function () {
+    if (els.choice.value) chooseWard(Number(els.choice.value), true);
+  });
+  els.mode.addEventListener('change', function () {
+    mode = els.mode.value === 'reporting' ? 'reporting' : 'leading';
+    updateLegend();
+    repaint();
+    if (selectedNumber != null) panelFor(selectedNumber);
+  });
+  els.reset.addEventListener('click', function () {
+    selectedNumber = null;
+    els.choice.value = '';
+    repaint();
+    resetPanel();
+    if (polygonLayer) map.fitBounds(polygonLayer.getBounds(), {padding: [15, 15]});
+    else map.setView(spec[city].centre, spec[city].zoom);
+  });
+  window.metroWardMaps = {refresh: refresh, selectMetro: showCity};
+  showCity(city);
+})();
