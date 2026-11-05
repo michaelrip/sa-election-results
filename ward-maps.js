@@ -40,6 +40,19 @@
     return;
   }
   const touchMode = typeof window.matchMedia === 'function' && window.matchMedia('(pointer: coarse)').matches;
+  // In narrow/mobile layouts the readable results already have their own
+  // full-width panel immediately below the map. Large Leaflet popups hide the
+  // map, its controls and the panel (particularly in iOS in-app browsers).
+  function compactWardMode() {
+    return touchMode || (typeof window.matchMedia === 'function' &&
+      window.matchMedia('(max-width: 760px)').matches);
+  }
+  function scrollWardPanelIntoView() {
+    if (!compactWardMode() || !els.side.scrollIntoView) return;
+    const reduceMotion = typeof window.matchMedia === 'function' &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    els.side.scrollIntoView({behavior: reduceMotion ? 'auto' : 'smooth', block: 'start'});
+  }
   let city = window.initialMetro && spec[window.initialMetro] ? window.initialMetro : 'Cape Town';
   let mode = 'leading';
   let selectedNumber = null;
@@ -288,6 +301,7 @@
         '</div>';
     }).join('');
     els.side.innerHTML =
+      '<button type="button" class="ward-map-back" id="ward-map-back" aria-label="Return to the ward map">↑ Back to map</button>' +
       '<div class="ward-map-subtitle">' + safe(city) + ' · 2026 ward</div>' +
       '<h3>Ward ' + number + '</h3>' +
       '<p class="ward-map-area">' + safe(name || 'Area description unavailable') + '</p>' +
@@ -308,6 +322,12 @@
       '<button type="button" class="ward-map-view" id="ward-map-jump">See ward in results list</button>' +
       (source ? '<a class="ward-map-source" href="' + safe(source) + '" target="_blank" rel="noopener noreferrer">Ward ballot source</a>' +
         '<a class="ward-map-source" href="' + safe(source + '?ballot=pr') + '" target="_blank" rel="noopener noreferrer">View this ward’s PR ballot on ESP</a>' : '');
+    const backToMap = document.getElementById('ward-map-back');
+    if (backToMap) backToMap.addEventListener('click', function () {
+      const reduceMotion = window.matchMedia &&
+        window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      els.map.scrollIntoView({behavior: reduceMotion ? 'auto' : 'smooth', block: 'start'});
+    });
     const action = document.getElementById('ward-map-jump');
     if (action) action.addEventListener('click', function () {
       const metroSelect = document.getElementById('metro');
@@ -418,17 +438,19 @@
         onEachFeature: function (feature, layer) {
           const id = Number(feature.properties.ward);
           polygonByWard[id] = layer;
-          if (!touchMode) layer.bindTooltip(tipFor(id), {sticky: true, direction: 'top', className: 'ward-map-tooltip'});
-          // A tap opens a larger, auto-panning popup rather than forcing people to
-          // read the narrow hover tooltip. Leave the full results panel in place.
-          layer.bindPopup(tipFor(id, true), {
-            className: 'ward-map-popup',
-            maxWidth: 370,
-            minWidth: Math.max(180, Math.min(300, map.getSize().x - 75)),
-            autoPan: true,
-            autoPanPadding: [14, 14],
-            closeButton: true
-          });
+          if (!compactWardMode()) {
+            layer.bindTooltip(tipFor(id), {sticky: true, direction: 'top', className: 'ward-map-tooltip'});
+            // Only spacious desktop maps need a popup; on phones the complete
+            // accessible detail panel below the map is easier to read.
+            layer.bindPopup(tipFor(id, true), {
+              className: 'ward-map-popup',
+              maxWidth: 300,
+              minWidth: 220,
+              autoPan: true,
+              autoPanPadding: [24, 24],
+              closeButton: true
+            });
+          }
           layer.on('mouseover', function () {
             if (id !== selectedNumber) layer.setStyle({color: '#ffffff', weight: 2.5, fillOpacity: .85});
             layer.bringToFront();
@@ -437,13 +459,16 @@
           layer.on('click', function () {
             if (layer.getTooltip()) layer.closeTooltip();
             chooseWard(id, false);
+            scrollWardPanelIntoView();
           });
         }
       }).addTo(map);
       polygonLayer = polygonsLayer;
       map.fitBounds(polygonLayer.getBounds(), {padding: [15, 15], animate: false});
-      showMapMessage(spec[name].count + ' validated 2026 ward boundaries · tap a ward to drill down.' +
-        (touchMode ? ' To scroll the page, dragging starts off; tap Move map when you want to pan.' : ' Ward-ballot figures update automatically.'));
+      showMapMessage(spec[name].count + ' validated 2026 ward boundaries · ' +
+        (compactWardMode() ? 'Tap a ward to see its readable breakdown below the map.' :
+        'Click or hover over a ward to inspect its results.') +
+        (touchMode ? ' Move map enables dragging when needed.' : ''));
       repaint();
     } catch (error) {
       if (thisRequest !== loadVersion) return;
@@ -471,7 +496,10 @@
     });
   });
   els.choice.addEventListener('change', function () {
-    if (els.choice.value) chooseWard(Number(els.choice.value), true);
+    if (els.choice.value) {
+      chooseWard(Number(els.choice.value), true);
+      scrollWardPanelIntoView();
+    }
   });
   els.mode.addEventListener('change', function () {
     mode = els.mode.value === 'reporting' ? 'reporting' : 'leading';
