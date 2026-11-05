@@ -188,6 +188,25 @@ main{padding-bottom:calc(105px + env(safe-area-inset-bottom))}
 .data-provenance{margin:5px 0 12px;padding:9px 12px;border-left:4px solid #ffb612;
  background:rgba(22,41,65,.94);border-radius:5px;font-size:12px;line-height:1.5;color:#d7e6f5}
 .data-provenance.iec-direct{border-left-color:#4bdfab}
+
+/* Clear ballot-type selection and provenance on compact phones. */
+.ballot-switcher{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:11px 0 12px}
+.ballot-switcher button{min-width:0;min-height:46px;background:#1e3957;border:1px solid #557694;color:#edf4fc;padding:9px 6px;font-size:13px;font-weight:700;line-height:1.3}
+.ballot-switcher button[aria-pressed=true]{background:#166b55;border-color:#91e6bb;box-shadow:inset 0 -3px #ffb612}
+.ballot-switcher button[hidden]{display:none}
+.ballot-explainer{margin:0 0 13px;border:1px solid rgba(158,184,208,.38);border-radius:9px;padding:5px 12px;background:rgba(22,41,64,.9)}
+.ballot-explainer summary{min-height:42px;display:flex;align-items:center;color:#bfe3fc;font-size:13px;font-weight:750;cursor:pointer}
+.ballot-explainer p{font-size:13px;line-height:1.6;color:#d3e4f3;margin:6px 0 11px}
+.ballot-detail{color:#bdcfe0;font-size:12px;line-height:1.5;margin:10px 0}
+.ballot-detail strong{color:#e0ecfb}
+.ballot-source-line{font-size:11px;margin:8px 0;line-height:1.4}
+.ballot-source-line a{color:#a8deff;text-decoration:underline}
+.ballot-warning{font-size:12px;line-height:1.5;margin:8px 0 0;padding:9px 11px;background:rgba(255,182,18,.09);border-left:3px solid #ffb612;color:#e7d6b7}
+.ballot-key-total{display:flex;flex-direction:column;gap:3px;margin:13px 0 16px;padding:13px;border:1px solid rgba(255,182,18,.43);background:rgba(0,122,77,.15);border-radius:11px}
+.ballot-key-total span{font-size:12px;font-weight:650;color:#d2e5dc}
+.ballot-key-total strong{font-size:clamp(25px,4vw,32px);font-variant-numeric:tabular-nums;letter-spacing:.01em}
+.ballot-key-total small{font-size:11px;color:#c8d9e6}
+@media(max-width:760px){.ballot-switcher{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.ballot-switcher button{font-size:12px;min-height:48px;padding:9px 4px}}
 </style><link rel="stylesheet" href="./mobile.css?v=20261105-refresh-nav2"></head><body>
 <header><div class="eyebrow">SOUTH AFRICA · 2026 MUNICIPAL RESULTS</div><h1>Mzanzi Key Metro Watch</h1><p>Cape Town · Tshwane · Johannesburg · Hermanus / Overstrand. Preliminary IEC-derived ward-ballot results, with source links and ward-by-ward drill-down.</p><div class="toolbar"><span id="status" class="pill warn">Checking data…</span><span id="updated" class="small">No source update yet</span><a href="#metro-votes" class="header-votes-link">View votes by city</a><button id="refresh" type="button" aria-label="Check for newly published election results">Refresh</button><button id="share">Share link</button></div><p id="refresh-feedback" class="refresh-feedback" role="status" aria-live="polite" aria-atomic="true">Refresh checks the latest published results; source updates are scheduled approximately every 15 minutes.</p></header>
 <main><p id="error" role="alert"></p>
@@ -229,14 +248,21 @@ main{padding-bottom:calc(105px + env(safe-area-inset-bottom))}
 </section>
 
 <section class="metro-votes-section" id="metro-votes" aria-labelledby="metro-votes-heading">
-<div class="metro-summary-head"><span class="eyebrow">ELECTION RESULTS</span><h2 id="metro-votes-heading">Vote details by city</h2><p class="small">Choose one municipality to see its latest ward-ballot votes and parties. Figures in brackets show the 2021 ward ballot.</p></div>
+<div class="metro-summary-head"><span class="eyebrow">ELECTION RESULTS</span><h2 id="metro-votes-heading">All municipal votes by city</h2><p class="small">Switch between the party-list PR vote, ward-candidate vote, and their combined ballot totals. PR is the clearest direct measure of party-list support; combined totals count ballot papers, not unique voters.</p></div>
 <div class="metro-vote-switcher" role="group" aria-label="Choose a municipality for vote details">
 <button type="button" data-vote-metro="Cape Town" aria-pressed="true">Cape Town</button>
 <button type="button" data-vote-metro="Tshwane" aria-pressed="false">Tshwane</button>
 <button type="button" data-vote-metro="Johannesburg" aria-pressed="false">Johannesburg</button>
 <button type="button" data-vote-metro="Hermanus" aria-pressed="false">Hermanus</button>
 </div>
-<p id="data-provenance" class="data-provenance" role="status" aria-live="polite">Source: IEC-derived figures via ESP. Direct IEC official reports are being connected; the source is not yet switched.</p>
+<div class="ballot-switcher" role="group" aria-label="Which ballot results to display">
+<button type="button" data-ballot-mode="all" aria-pressed="true">All local ballots</button>
+<button type="button" data-ballot-mode="pr" aria-pressed="false">PR · Party vote</button>
+<button type="button" data-ballot-mode="ward" aria-pressed="false">Ward vote</button>
+<button type="button" data-ballot-mode="dc" aria-pressed="false" hidden>District PR</button>
+</div>
+<p id="data-provenance" class="data-provenance" role="status" aria-live="polite">Live 2026 ward, party-list PR and Overstrand district PR ballots: IEC-derived via ESP.</p>
+<details class="ballot-explainer"><summary>What do PR and all votes mean?</summary><p><strong>PR (proportional representation)</strong> is the ballot where you vote for a political party's share of your municipal council. The <strong>ward ballot</strong> chooses your ward councillor, who may be a party candidate or an independent.</p><p><strong>All local ballots</strong> adds the valid ward ballots and municipal PR ballots so you can compare party vote totals across both local council ballots. It is a count of ballot papers, <strong>not unique people, turnout, council seats or a seat forecast</strong>. One voter can vote on both. Overstrand also has a separate <strong>district PR ballot</strong> for the Overberg district council; those votes are not mixed with municipal council votes.</p></details>
 <div id="cards" aria-label="Selected city's live election results" aria-live="polite"></div>
 </section>
 <section class="panel" id="ward-explorer"><h2>Explore results by ward</h2><p>Choose a metro, then search by suburb, area or ward number. Area names describe places covered by the ward, not official ward names. Tap for party results, ballot type, reporting status and source.</p><div class="ward-tools"><label><span class="small">Find a suburb, area or ward</span><input id="wardSearch" type="search" inputmode="search" placeholder="e.g. Bellville or Ward 12" autocomplete="off"></label><label><span class="small">Metro</span><select id="metro"><option value="Cape Town">Cape Town</option><option value="Tshwane">Tshwane</option><option value="Johannesburg">Johannesburg</option><option value="Hermanus">Hermanus / Overstrand</option></select></label></div><div class="flex"><span id="wardCount" class="small" role="status"></span><button id="clear" type="button">Clear search</button></div><div id="wards" class="ward-list"></div><button type="button" id="wardMore" class="ward-more" hidden>Show more wards</button></section>
@@ -250,7 +276,7 @@ main{padding-bottom:calc(105px + env(safe-area-inset-bottom))}
  <a href="#ward-explorer"><span class="nav-icon" aria-hidden="true">🔎</span>Wards</a>
 </nav>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script>
-const metros=['Cape Town','Tshwane','Johannesburg','Hermanus'],el=id=>document.getElementById(id),esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])),num=v=>typeof v==='number'&&Number.isFinite(v),votesValid=v=>Number.isSafeInteger(v)&&v>=0,voteFmt=v=>votesValid(v)?new Intl.NumberFormat('en-ZA').format(v):'—',pct=v=>num(v)?v.toFixed(1)+'%':'—',date=s=>{if(!s)return 'Not available';const d=new Date(s);return Number.isNaN(+d)?'Invalid timestamp':new Intl.DateTimeFormat('en-ZA',{dateStyle:'medium',timeStyle:'short',timeZone:'Africa/Johannesburg'}).format(d)+' SAST'};let data={metros:{}};let wardAreas={metros:{}};let history2021={metros:{}};let selectedMetro='Cape Town';let wardVisibleLimit=24;
+const metros=['Cape Town','Tshwane','Johannesburg','Hermanus'],el=id=>document.getElementById(id),esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])),num=v=>typeof v==='number'&&Number.isFinite(v),votesValid=v=>Number.isSafeInteger(v)&&v>=0,voteFmt=v=>votesValid(v)?new Intl.NumberFormat('en-ZA').format(v):'—',pct=v=>num(v)?v.toFixed(1)+'%':'—',date=s=>{if(!s)return 'Not available';const d=new Date(s);return Number.isNaN(+d)?'Invalid timestamp':new Intl.DateTimeFormat('en-ZA',{dateStyle:'medium',timeStyle:'short',timeZone:'Africa/Johannesburg'}).format(d)+' SAST'};let data={metros:{}};let wardAreas={metros:{}};let history2021={metros:{}};let selectedMetro='Cape Town';let selectedBallot='all';let partyBallots={metros:{}};let wardVisibleLimit=24;
 function historicShares(metro,wardNumber=null){
  const city=history2021&&history2021.metros&&history2021.metros[metro];
  if(!city)return {};
