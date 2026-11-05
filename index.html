@@ -209,13 +209,40 @@ main{padding-bottom:calc(105px + env(safe-area-inset-bottom))}
 .ballot-key-total strong{font-size:clamp(25px,4vw,32px);font-variant-numeric:tabular-nums;letter-spacing:.01em}
 .ballot-key-total small{font-size:11px;color:#c8d9e6}
 @media(max-width:760px){.ballot-switcher{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.ballot-switcher button{font-size:12px;min-height:48px;padding:9px 4px}}
+
+/* Compact, scannable controls for the news carousel and technical source notes. */
+.news-position{min-width:46px;text-align:center;white-space:nowrap;color:#c6d8e9;
+ font-size:12px;font-weight:750;font-variant-numeric:tabular-nums}
+.mobile-quick-nav a.is-active,.mobile-quick-nav a[aria-current="location"]{
+ background:#284e72;color:#fff;box-shadow:inset 0 3px #ffb612;
+ border-radius:9px
+}
+.source-details{margin-top:18px}
+.source-details>summary{display:flex;align-items:center;justify-content:space-between;
+ gap:12px;cursor:pointer;list-style:none;min-height:51px;color:#f0f7ff}
+.source-details>summary::-webkit-details-marker{display:none}
+.source-details>summary strong{font-size:17px}
+.source-details>summary small{display:block;color:#bed1e5;font-size:12px;font-weight:400;
+ line-height:1.5;margin-top:3px}
+.source-details>summary::after{content:"＋";font-size:23px;color:#b6d9f5;flex:0 0 auto}
+.source-details[open]>summary::after{content:"−"}
+.source-details>summary:focus-visible{outline:3px solid #8bc8ff;outline-offset:4px}
+.source-details-body{border-top:1px solid #38526f;margin-top:12px;padding-top:10px}
+.source-details-body p{font-size:13px;line-height:1.65;margin:10px 0}
+.source-links{display:flex;flex-wrap:wrap;gap:5px 16px;padding-top:6px}
+.source-links a{display:inline-flex;align-items:center;min-height:44px;font-size:13px}
+@media(max-width:760px){
+ .news-position{min-width:38px;font-size:11px}
+ .news-header .news-controls{flex-wrap:wrap}
+ .source-details>summary strong{font-size:15px}
+}
 </style><link rel="stylesheet" href="./mobile.css?v=20261105-refresh-nav2"></head><body>
 <header><div class="eyebrow">SOUTH AFRICA · 2026 MUNICIPAL RESULTS</div><h1>Mzanzi Key Metro Watch</h1><p>Cape Town · Tshwane · Johannesburg · Hermanus / Overstrand. Preliminary ward, municipal PR and district PR results sourced through ESP, with interactive ward maps.</p><div class="toolbar"><span id="status" class="pill warn">Checking data…</span><span id="updated" class="small">No source update yet</span><a href="#metro-votes" class="header-votes-link">View votes by city</a><button id="refresh" type="button" aria-label="Check for newly published election results">Refresh</button><button id="share">Share link</button></div><p id="refresh-feedback" class="refresh-feedback" role="status" aria-live="polite" aria-atomic="true">Refresh checks the latest published results; source updates are scheduled approximately every 15 minutes.</p></header>
 <main><p id="error" role="alert"></p>
 <section class="news-section" aria-labelledby="news-heading">
  <div class="news-header">
   <div><span class="eyebrow">ELECTION NEWS</span><h2 id="news-heading">Key headlines</h2><p>Reporting from independent newsrooms. Sources checked about every 10 minutes; open any story at its publisher.</p></div>
-  <div class="news-controls"><button type="button" id="news-check" aria-label="Check for recently published headlines">Check news</button><button type="button" id="news-prev" aria-label="Previous headlines">‹</button><button type="button" id="news-next" aria-label="Next headlines">›</button></div>
+  <div class="news-controls"><button type="button" id="news-check" aria-label="Check for recently published headlines">Check news</button><output id="news-position" class="news-position" aria-label="Headline position">—</output><button type="button" id="news-prev" aria-label="Previous headlines">‹</button><button type="button" id="news-next" aria-label="Next headlines">›</button></div>
  </div>
  <div class="news-feed" id="news-feed" aria-live="polite"><p class="news-empty">Loading recent election headlines…</p></div>
  <p class="news-status" id="news-status">Headlines are separate from official election results.</p>
@@ -224,7 +251,7 @@ main{padding-bottom:calc(105px + env(safe-area-inset-bottom))}
 
 <section id="metro-maps" class="ward-map-section" aria-labelledby="map-heading">
  <div class="ward-map-heading">
-  <div><span class="eyebrow">2026 MUNICIPAL WARD MAPS</span><h2 id="map-heading">Explore results on the map</h2><p>Choose a metro or Hermanus / Overstrand, then tap a ward to see its results. Zoom in, move around or jump to a ward by name.</p></div>
+  <div><span class="eyebrow">2026 MUNICIPAL WARD MAPS</span><h2 id="map-heading">Explore results on the map</h2><p>Choose a municipality, then tap a ward to see its results. Zoom in, move around or jump to a ward by name.</p></div>
   <span class="map-head-tag">375 wards · 3 metros + Overstrand</span>
  </div>
  <div class="map-metro-tabs" role="tablist" aria-label="Choose a municipality">
@@ -267,12 +294,21 @@ main{padding-bottom:calc(105px + env(safe-area-inset-bottom))}
 <details class="ballot-explainer"><summary>What do PR and all votes mean?</summary><p><strong>PR (proportional representation)</strong> is the ballot where you vote for a political party's share of your municipal council. The <strong>ward ballot</strong> chooses your ward councillor, who may be a party candidate or an independent.</p><p><strong>All local ballots</strong> adds the valid ward ballots and municipal PR ballots so you can compare party vote totals across both local council ballots. It is a count of ballot papers, <strong>not unique people, turnout, council seats or a seat forecast</strong>. One voter can vote on both. Overstrand also has a separate <strong>district PR ballot</strong> for the Overberg district council; those votes are not mixed with municipal council votes.</p></details>
 <div id="cards" aria-label="Selected city's live election results" aria-live="polite"></div>
 </section>
-<section class="panel" id="ward-explorer"><h2>Explore results by ward</h2><p>Choose a metro, then search by suburb, area or ward number. Area names describe places covered by the ward, not official ward names. Tap for party results, ballot type, reporting status and source.</p><div class="ward-tools"><label><span class="small">Find a suburb, area or ward</span><input id="wardSearch" type="search" inputmode="search" placeholder="e.g. Bellville or Ward 12" autocomplete="off"></label><label><span class="small">Metro</span><select id="metro"><option value="Cape Town">Cape Town</option><option value="Tshwane">Tshwane</option><option value="Johannesburg">Johannesburg</option><option value="Hermanus">Hermanus / Overstrand</option></select></label></div><div class="flex"><span id="wardCount" class="small" role="status"></span><button id="clear" type="button">Clear search</button></div><div id="wards" class="ward-list"></div><button type="button" id="wardMore" class="ward-more" hidden>Show more wards</button></section>
 <section class="panel" id="cape-majority"><h2>Cape Town: DA majority watch</h2><p id="majority">Awaiting verified data. A council majority depends on final seat allocation, not an early vote share.</p></section>
-<section class="panel"><h2>Official IEC election results</h2><p>Live 2026 Ward, municipal PR and (for Overstrand) district PR ballot totals are imported from ESP's IEC-derived election pages. The site will stay with ESP for live updates. Historical 2021 municipality-wide comparisons come from official IEC reports. This is an independent dashboard, not an IEC declaration.</p><div class="flex"><a href="https://results.elections.org.za/" target="_blank" rel="noopener noreferrer">Official IEC results dashboard</a><a href="https://results.elections.org.za/home/Downloads/ME-Results" target="_blank" rel="noopener noreferrer">IEC municipal CSV and Excel downloads</a><a href="https://api.elections.org.za/" target="_blank" rel="noopener noreferrer">IEC developer API access</a></div></section>
-<section class="panel"><h2>Sources and reliability</h2><p>This independent dashboard publishes live 2026 Ward, municipal party-list PR and Overstrand district PR vote totals through ESP's IEC-derived public pages, refreshed by GitHub Actions. <strong>2026 results remain sourced through ESP; no automatic direct-IEC switchover is active. 2021 municipality Ward-ballot comparison percentages use official IEC reports.</strong> Each ballot is shown separately, and the All local ballots view adds Ward and municipal PR valid ballot papers—<strong>not individual voters or a seat projection</strong>. Overstrand's district council ballot is never mixed into local council figures. Suburb and place labels are sourced from <a href="https://theledgersa.com/elections/2026/" target="_blank" rel="noopener">The Ledger SA's 2026 ward-area lists</a>; these are geographic descriptions, not official IEC ward names. Missing results are shown as unavailable, not estimated. Voting districts reporting are not the same as ballots counted. 2021 comparisons shown in brackets are historical ward-ballot percentages. Metro comparisons use completed 2021 results; 2026 ward comparisons use the voting districts matched to current ward boundaries and may omit new or split districts. A missing historical party share is not treated as zero. Vote counts are displayed only when sourced and validated, never derived from rounded percentages. The selected total is valid ballot papers of the selected type, not a count of unique voters. Ward-level top-three party percentages and vote counts are imported only from the individual ESP ward-ballot pages when they match the metro result. If the source is unavailable or no longer matches, only the verified leader is shown. Percentages are for the ward ballot; PR ballots and final council seats are different.</p><a href="https://results.elections.org.za/" target="_blank" rel="noopener">Official IEC results portal</a></section><p class="foot">All source timestamps shown in South Africa Standard Time (SAST, UTC+2). Not affiliated with the IEC.</p></main>
+<section class="panel" id="ward-explorer"><h2>Explore results by ward</h2><p>Choose a municipality, then search by suburb, area or ward number. You can type just a number (for example, 12) to find that exact ward. Area names describe places covered by the ward, not official ward names. Tap for party results, ballot type, reporting status and source.</p><div class="ward-tools"><label><span class="small">Find a suburb, area or ward</span><input id="wardSearch" type="search" inputmode="search" placeholder="e.g. Ward 12, Bellville or Sandbaai" autocomplete="off"></label><label><span class="small">Municipality</span><select id="metro"><option value="Cape Town">Cape Town</option><option value="Tshwane">Tshwane</option><option value="Johannesburg">Johannesburg</option><option value="Hermanus">Hermanus / Overstrand</option></select></label></div><div class="flex"><span id="wardCount" class="small" role="status"></span><button id="clear" type="button">Clear search</button></div><div id="wards" class="ward-list"></div><button type="button" id="wardMore" class="ward-more" hidden>Show more wards</button></section>
+
+<details class="panel source-details" id="about-data">
+ <summary><span><strong>About the data and sources</strong><small>How to read the vote totals, 2021 comparisons and maps</small></span></summary>
+ <div class="source-details-body">
+  <p><strong>2026 election votes:</strong> Preliminary Ward, municipal PR and Overstrand district PR results are imported from ESP’s IEC-derived public pages. This is an independent dashboard, not an official IEC declaration. The <strong>All local ballots</strong> view adds valid Ward + municipal PR ballot papers, not unique voters or a council-seat forecast.</p>
+  <p><strong>2021 comparisons:</strong> Municipal Ward, PR and Ward + PR percentages come from official IEC historical CSV reports and are shown in brackets for the matching ballot type. Individual 2026-area ward comparisons use 2021 voting districts matched by The Ledger and may omit new or split districts. A party not listed historically is unknown, not zero.</p>
+  <p><strong>Maps and reporting:</strong> The ward polygons are from the Municipal Demarcation Board, and suburb labels are descriptive geographical names. Counting districts is not the same as total ballots counted. Party leaders and ward-candidate results remain preliminary; final council seats depend on official allocation.</p>
+  <div class="source-links"><a href="https://results.elections.org.za/" target="_blank" rel="noopener noreferrer">Official IEC results</a><a href="https://results.elections.org.za/home/Downloads/ME-Results" target="_blank" rel="noopener noreferrer">IEC historical reports</a><a href="https://theledgersa.com/elections/2026/" target="_blank" rel="noopener noreferrer">Ward area descriptions</a></div>
+ </div>
+</details>
+<p class="foot">All source timestamps shown in South Africa Standard Time (SAST, UTC+2). Not affiliated with the IEC.</p></main>
 <nav class="mobile-quick-nav" aria-label="Jump to page sections">
- <a href="#news-heading"><span class="nav-icon" aria-hidden="true">📰</span>News</a>
+ <a href="#news-heading" class="is-active" aria-current="location"><span class="nav-icon" aria-hidden="true">📰</span>News</a>
  <a href="#metro-maps"><span class="nav-icon" aria-hidden="true">🗺️</span>Map</a>
  <a href="#metro-votes"><span class="nav-icon" aria-hidden="true">📊</span>Votes</a>
  <a href="#ward-explorer"><span class="nav-icon" aria-hidden="true">🔎</span>Wards</a>
