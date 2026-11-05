@@ -53,33 +53,58 @@ class TableRows(HTMLParser):
             self.cell.append(data)
 
 
+class EveryWardSection(HTMLParser):
+    """Text within the 2026 'Every ward' heading only.
+
+    The same page has an earlier ward-results section, which must never
+    provide place labels.
+    """
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.in_h2 = False
+        self.heading = []
+        self.collect = False
+        self.parts = []
+        self.ignore = 0
+
+    def handle_starttag(self, tag, attrs):
+        if tag in ("script", "style", "noscript"):
+            self.ignore += 1
+        if self.ignore:
+            return
+        if tag == "h2":
+            self.in_h2 = True
+            self.heading = []
+
+    def handle_endtag(self, tag):
+        if tag in ("script", "style", "noscript"):
+            self.ignore = max(0, self.ignore - 1)
+        if tag == "h2" and self.in_h2:
+            title = " ".join("".join(self.heading).split()).lower()
+            self.collect = title.startswith("every ward")
+            self.in_h2 = False
+
+    def handle_data(self, text):
+        if self.ignore:
+            return
+        if self.in_h2:
+            self.heading.append(text)
+        elif self.collect and text.strip():
+            self.parts.append(text.strip())
+
+
 def parse_ward_areas(html, expected):
-    parser = TableRows()
+    parser = EveryWardSection()
     parser.feed(html)
-    # Pages also contain a provisional vote-results table with rows like
-    # "Ward 1 | Not yet counted". Never mistake those for area descriptions.
-    # Only read the table headed "Ward | Covers parts of".
-    start = next(
-        (
-            index + 1
-            for index, row in enumerate(parser.rows)
-            if len(row) >= 2
-            and row[0].strip().lower() == "ward"
-            and "covers parts of" in row[1].strip().lower()
-        ),
-        None,
-    )
-    if start is None:
-        raise ValueError("2026 'Ward | Covers parts of' table was not found")
+    body = " ".join(" ".join(parser.parts).split())
+    if not body:
+        raise ValueError("2026 'Every ward' section was not found")
+    markers = list(re.finditer(r"\bWard\s+(\d{1,3})\b", body, flags=re.I))
     areas = {}
-    for cells in parser.rows[start:]:
-        if len(cells) < 2:
-            continue
-        match = re.fullmatch(r"Ward\s+(\d{1,3})", cells[0], flags=re.I)
-        if not match:
-            continue
-        number = int(match.group(1))
-        label = cells[1].strip()
+    for index, marker in enumerate(markers):
+        number = int(marker.group(1))
+        stop = markers[index + 1].start() if index + 1 < len(markers) else len(body)
+        label = body[marker.end():stop].strip()
         if not 1 <= number <= expected or not 2 <= len(label) <= 250:
             continue
         if label.lower() in {
@@ -94,7 +119,10 @@ def parse_ward_areas(html, expected):
             raise ValueError(f"Conflicting area labels for ward {number}")
         areas[str(number)] = label
     if len(areas) != expected:
-        raise ValueError(f"Expected {expected} 2026 ward labels, found {len(areas)}")
+        raise ValueError(
+            f"Expected {expected} 2026 ward labels, found {len(areas)}; "
+            f"section chars {len(body)}; examples {list(areas.items())[:2]}"
+        )
     return {str(n): areas[str(n)] for n in range(1, expected + 1)}
 
 
