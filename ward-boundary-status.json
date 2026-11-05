@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-05T10:18:57.742574+00:00",
+  "checked_at": "2026-11-05T12:03:06.441265+00:00",
   "source": "Municipal Demarcation Board 2026 ward boundaries (ArcGIS)",
   "status": "ok",
   "checks": {
@@ -8,20 +8,27 @@
       "wards": 118,
       "source": "https://services7.arcgis.com/oeoyTUJC8HEeYsRB/arcgis/rest/services/MDBWards2026/FeatureServer/0",
       "bytes": 160918,
-      "updated": true
+      "updated": false
     },
     "Tshwane": {
       "status": "ok",
       "wards": 107,
       "source": "https://services7.arcgis.com/oeoyTUJC8HEeYsRB/arcgis/rest/services/MDBWards2026/FeatureServer/0",
       "bytes": 126052,
-      "updated": true
+      "updated": false
     },
     "Johannesburg": {
       "status": "ok",
       "wards": 135,
       "source": "https://services7.arcgis.com/oeoyTUJC8HEeYsRB/arcgis/rest/services/MDBWards2026/FeatureServer/0",
       "bytes": 141590,
+      "updated": false
+    },
+    "Hermanus": {
+      "status": "ok",
+      "wards": 15,
+      "source": "https://services7.arcgis.com/oeoyTUJC8HEeYsRB/arcgis/rest/services/MDBWards2026/FeatureServer/0",
+      "bytes": 80750,
       "updated": true
     }
   }
