@@ -5,6 +5,8 @@ from datetime import datetime,timezone,timedelta
 from pathlib import Path
 
 ROOT="https://go.esp.info/elections/local/2026/"
+ALT_ROOT="https://esp.info/elections/local/2026/"
+WARD_BALLOT_HEADER=re.compile(r"\bWard ballot\s*\??\s*[·•]?\s*([\d\s]+)\s+valid votes\b",re.I)
 CITIES={"Cape Town":("western-cape/city-of-cape-town",829,118),"Tshwane":("gauteng/city-of-tshwane",796,107),"Johannesburg":("gauteng/city-of-johannesburg",862,135),"Hermanus":("western-cape/overstrand",37,15)}
 ALIASES={"DA":"DA","ANC":"ANC","EFF":"EFF","ActionSA":"ActionSA","PA":"PA","VF PLUS":"FF+","MKP":"MK","IFP":"IFP","GOOD":"GOOD","ACDP":"ACDP","ALJAMA":"Al Jama-ah","RISE":"RISE","H.O.I.":"H.O.I."}
 class Text(HTMLParser):
@@ -39,6 +41,19 @@ def parse(city,slug,total,nwards,now):
  s=get(url)
  municipality="Overstrand" if city=="Hermanus" else "City of "+city
  if municipality not in s or "2026" not in s:raise ValueError("Unexpected page identity")
+ # If the public ESP alias temporarily returns only the summary without its
+ # detailed ward-ballot table, try the other official ESP hostname. Do not
+ # invent results from percentages: the alternative must still pass all
+ # municipality, district, timestamp and per-party-vote validations below.
+ if not WARD_BALLOT_HEADER.search(s):
+  alt_url=ALT_ROOT+slug
+  try:
+   alternate=get(alt_url)
+   if municipality in alternate and "2026" in alternate and WARD_BALLOT_HEADER.search(alternate):
+    s=alternate
+    url=alt_url
+  except (OSError,ValueError,TimeoutError):
+   pass
  m=re.search(re.escape(municipality)+r"\s+(\d+)\s+of\s+(\d+)\s+voting districts in",s)
  if not m:raise ValueError("Metro voting-district count missing")
  count,denom=map(int,m.groups())
@@ -64,7 +79,7 @@ def parse(city,slug,total,nwards,now):
   except ValueError:pass
  if stamp is None or stamp>now+timedelta(minutes=10) or now-stamp>timedelta(hours=24):raise ValueError("IEC timestamp invalid or stale")
  # Parse party votes from the actual numbered rows, bounded by the Wards section.
- start=re.search(r"Ward ballot\s*\?\s*[·•]?\s*([\d\s]+)\s+valid votes",s)
+ start=WARD_BALLOT_HEADER.search(s)
  if not start:raise ValueError("Ward ballot header missing")
  votes=int(re.sub(r"\D","",start.group(1)))
  tail=s[start.end():]
