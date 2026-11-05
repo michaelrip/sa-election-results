@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-05T15:27:22.237964Z",
+  "checked_at": "2026-11-05T16:34:17.566914Z",
   "source": "Publisher-attributed headlines discovered through Google News RSS",
   "feed_status": "ok",
   "articles": [
@@ -7,7 +7,7 @@
       "title": "GOOD accuses DA of undermining IEC with early Cape Town victory claim",
       "publisher": "IOL",
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQnZTakhHd3dlNERMQW5Uc3J2bU15UW5lU05jdjNzSFdwcFRRQWNDTmdPNF9OVUdsX290NEh6Z3BPUkJzRWY1bHZKeGRQelNhcHA4QU1tcVJNYk9veWFrcDQ4Sk00T3dMM1Nyd2FMQTB1TEZGSU92OVhibWpnM1JhTHRiZjJLdmZQeVc0ZGUyMTB1czNOY19xQWU5bWd6UmFDNm5BVlY5MVAyVmc?oc=5",
-      "published_at": "2026-11-05T13:56:14Z",
+      "published_at": "2026-11-05T14:20:04Z",
       "published_date": "2026-11-05",
       "metro": "Cape Town"
     },
@@ -26,6 +26,14 @@
       "published_at": "2026-11-05T14:54:09Z",
       "published_date": "2026-11-05",
       "metro": "Johannesburg"
+    },
+    {
+      "title": "WATCH | South Africa’s election results continue to take shape",
+      "publisher": "Business Day",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPakRoend4Q3lQZ1p6bzRESDZKMm1rUjZpbGJjV2dSeVd2b05XbFZPZW9CSzRZLVZUc0U2eGFpaHZ1bXZleHR5bWJKTjFWNEdRYlNvNUJja0l6SldTLWYxTk9tMG42R0prZGw5eVc0czE1RVdNSUhSV2l1RnFqMHFLTHJtZnQ3NDZqZ0E5bTREVVM0eGtWbnBILW5PZ0FJV1QtQmdsdXNUWGs0UQ?oc=5",
+      "published_at": "2026-11-05T14:47:51Z",
+      "published_date": "2026-11-05",
+      "metro": "South Africa"
     },
     {
       "title": "Parties cautiously optimistic as vote-counting continues in South Africa’s metros",
@@ -74,14 +82,6 @@
       "published_at": "2026-11-05T11:47:11Z",
       "published_date": "2026-11-05",
       "metro": "South Africa"
-    },
-    {
-      "title": "DA declares early victory in Cape Town as Hill-Lewis predicts 58% of vote",
-      "publisher": "Business Day",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNQmxNcFBRU3pyZWFmYll5TU1OaWlrQUgtRkR3UXZucVJ5SW1Rc2I1RWJLbGlBMlNnVks1VTRQTkRSZFl1X0tVd1U1RFFZXy1SUVpfaHZZRzJzTHJjT2dDSFc1OTFJNjFCaW02d0NybWVwNG5JU2UxeXNIbDJhcEdQMWhJNXczRERaX0Z5cDk0dk5UajRhMWJDazJxQU00XzlJR21CNkRHWURoMmY3T1RYd09SS3BIdlZySDM4?oc=5",
-      "published_at": "2026-11-05T11:41:18Z",
-      "published_date": "2026-11-05",
-      "metro": "Cape Town"
     }
   ]
 }
