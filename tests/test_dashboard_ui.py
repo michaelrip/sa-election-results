@@ -88,6 +88,20 @@ class DashboardUITests(unittest.TestCase):
         self.assertLess(HTML.index('id="cape-majority"'),
                         HTML.index('id="ward-explorer"'))
 
+    def test_mobile_map_uses_full_width_result_panel_not_leaflet_popup(self):
+        self.assertIn("function compactWardMode()", MAP)
+        self.assertIn("if (!compactWardMode()) {", MAP)
+        self.assertIn("layer.bindPopup(tipFor(id, true)", MAP)
+        self.assertIn("chooseWard(id, false);\n            scrollWardPanelIntoView();", MAP)
+        self.assertIn("function scrollWardPanelIntoView()", MAP)
+        self.assertIn("els.side.scrollIntoView(", MAP)
+        self.assertIn('id="ward-map-back"', MAP)
+        self.assertIn("els.map.scrollIntoView(", MAP)
+        self.assertIn("#ward-detail-map .leaflet-popup.ward-map-popup{display:none!important}", MOBILE)
+        self.assertIn("@media(max-width:760px),(pointer:coarse)", MOBILE)
+        self.assertIn("ward-maps.js?v=20261105-map-panel-fix", HTML)
+        self.assertIn("mobile.css?v=20261105-map-panel-fix", HTML)
+
     def test_mobile_css_balanced_and_minimum_touch_targets(self):
         css = re.sub(r"/\*[\s\S]*?\*/", "", MOBILE)
         self.assertEqual(css.count("{"), css.count("}"))
