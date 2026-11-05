@@ -64,6 +64,12 @@ class TopThreeTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "Ward ballot votes"):
             parse_ward_page(visible(wrong), "Cape Town", 31, WARD, NOW)
 
+    def test_overstrand_ward_page_uses_municipality_name(self):
+        raw = visible(SAMPLE.replace("City of Cape Town", "Overstrand").replace("Ward 31", "Ward 3"))
+        ward = {**WARD, "number": 3, "source_url": "https://go.esp.info/elections/local/2026/western-cape/overstrand/ward-3"}
+        result = parse_ward_page(raw, "Hermanus", 3, ward, NOW)
+        self.assertEqual(len(result["parties"]), 3)
+
     def test_rejects_wrong_ward(self):
         with self.assertRaisesRegex(ValueError, "Wrong ward"):
             parse_ward_page(visible(SAMPLE), "Cape Town", 32, WARD, NOW)
