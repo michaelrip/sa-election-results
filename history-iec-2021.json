@@ -3,7 +3,7 @@
   "ballot_type": "Ward",
   "source": "IEC direct public 2021 ward and municipal PR ballot CSV reports",
   "source_verified": true,
-  "checked_at": "2026-11-05T13:12:52.931727+00:00",
+  "checked_at": "2026-11-05T13:13:16.457327+00:00",
   "notes": "Whole-municipality Ward and municipal PR votes. Ward+PR counts ballot papers, not unique voters. District PR excluded; 2021 ward boundaries are not directly comparable with 2026 wards.",
   "metros": {
     "Cape Town": {
