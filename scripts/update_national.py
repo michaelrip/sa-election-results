@@ -120,8 +120,12 @@ def main():
                 previous_stamp.replace("Z", "+00:00")
             ):
                 raise ValueError("Source timestamp regressed")
-            if incoming != existing:
-                DEST.write_text(json.dumps(incoming, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+            # Always write the verified payload, even if an earlier run published a status
+            # without the corresponding national-results.json change.
+            DEST.write_text(json.dumps(incoming, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+            published = json.loads(DEST.read_text(encoding="utf-8"))
+            if published["districts_reported"] != incoming["districts_reported"] or published["updated_at"] != incoming["updated_at"]:
+                raise ValueError("National results write verification failed")
             status.update(status="ok", source_url=url,
                           districts_reported=incoming["districts_reported"],
                           source_updated_at=incoming["updated_at"])
