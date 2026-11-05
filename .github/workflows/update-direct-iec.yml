@@ -1,14 +1,5 @@
-name: Check direct IEC 2026 public election reports
+name: Manual IEC public CSV diagnostic (not live feed)
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'scripts/import_iec_reports.py'
-      - 'scripts/import_iec_history.py'
-      - 'tests/test_iec_direct.py'
-      - '.github/workflows/update-direct-iec.yml'
-  schedule:
-    - cron: '14,44 * * * *'
   workflow_dispatch:
 permissions:
   contents: write
