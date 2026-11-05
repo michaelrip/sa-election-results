@@ -43,9 +43,38 @@
 @media(max-width:950px){.ward-map-layout{grid-template-columns:1fr 255px}}
 @media(max-width:750px){.ward-map-layout{grid-template-columns:1fr}.ward-detail-map{height:430px}.ward-map-detail{min-height:130px}.map-metro-tabs button{padding:11px 8px}.map-metro-tabs button strong{font-size:13px}.map-metro-count{font-size:11px!important}}
 @media(max-width:500px){.ward-map-section{padding:13px}.ward-detail-map{height:400px}.map-head-tag{display:none}.map-metro-tabs{gap:5px}.map-metro-tabs button strong{font-size:12px}.map-metro-tabs button .map-metro-count{font-size:10px!important}.map-clear-button{width:100%}}
+
+/* Source-attributed news strip above the election map. */
+.news-section{margin:0 0 22px}
+.news-header{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;margin:0 0 11px}
+.news-header h2{font-size:clamp(20px,3vw,25px);margin:3px 0}
+.news-header p{margin:4px 0 0;font-size:13px}
+.news-controls{display:flex;align-items:center;gap:7px}
+.news-controls button{min-height:38px;min-width:40px;padding:6px 10px;font-size:21px;background:#213b5c}
+.news-controls button:disabled{opacity:.4;cursor:default}
+.news-feed{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 24px)/3);gap:12px;overflow-x:auto;scroll-behavior:smooth;scroll-snap-type:x mandatory;scrollbar-width:thin;padding:2px 0 9px;overscroll-behavior-x:contain}
+.news-story{scroll-snap-align:start;display:flex;flex-direction:column;background:#1a2a43;border:1px solid #3a506d;border-radius:14px;padding:16px;min-height:156px}
+.news-story:focus-within{border-color:#8bc8ff}
+.news-story .news-topic{color:#9fc9eb;font-size:11px;font-weight:800;letter-spacing:.045em;text-transform:uppercase;margin:0 0 10px}
+.news-story a{display:block;font-size:15px;line-height:1.4;color:#f2f7ff;font-weight:750;text-decoration:none}
+.news-story a:hover{text-decoration:underline;color:#a8d9ff}
+.news-story .news-meta{margin-top:auto;padding-top:15px;color:#b4c9df;font-size:12px;line-height:1.35}
+.news-status{font-size:12px;color:#b4c8dd;min-height:18px;margin:2px 0 0}
+.news-empty{background:#1a2a43;padding:17px;border-radius:12px;color:#c7d4e4}
+@media(max-width:900px){.news-feed{grid-auto-columns:calc((100% - 12px)/2)}}
+@media(max-width:590px){.news-feed{grid-auto-columns:85%}.news-story{min-height:155px}}
 </style></head><body>
 <header><div class="eyebrow">SOUTH AFRICA · MUNICIPAL RESULTS</div><h1>Three Metro Watch</h1><p>Cape Town · Tshwane · Johannesburg. Preliminary IEC-derived ward-ballot results, with source links and ward-by-ward drill-down.</p><div class="toolbar"><span id="status" class="pill warn">Checking data…</span><span id="updated" class="small">No source update yet</span><button id="refresh">Refresh</button><button id="share">Share link</button></div></header>
 <main><p id="error" role="alert"></p>
+<section class="news-section" aria-labelledby="news-heading">
+ <div class="news-header">
+  <div><span class="eyebrow">ELECTION NEWS</span><h2 id="news-heading">Key headlines</h2><p>Reporting from independent newsrooms. Open a story to read it at the source.</p></div>
+  <div class="news-controls"><button type="button" id="news-prev" aria-label="Previous headlines">‹</button><button type="button" id="news-next" aria-label="Next headlines">›</button></div>
+ </div>
+ <div class="news-feed" id="news-feed" aria-live="polite"><p class="news-empty">Loading recent election headlines…</p></div>
+ <p class="news-status" id="news-status">Headlines are separate from official election results.</p>
+</section>
+
 
 <section id="metro-maps" class="ward-map-section" aria-labelledby="map-heading">
  <div class="ward-map-heading">
@@ -95,4 +124,59 @@ function renderWards(){
 }
 async function load(){try{const r=await fetch('./results.json?ts='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);data=await r.json();try{const a=await fetch('./ward-areas.json?ts='+Date.now(),{cache:'no-store'});if(a.ok)wardAreas=await a.json()}catch(_){}render();el('error').textContent=''}catch(e){el('error').textContent='Unable to load results: '+e.message;render()}}
 el('metro').onchange=renderWards;el('wardSearch').oninput=renderWards;el('clear').onclick=()=>{el('wardSearch').value='';renderWards()};el('refresh').onclick=load;el('share').onclick=async()=>{try{if(navigator.share)await navigator.share({title:document.title,url:location.href});else{await navigator.clipboard.writeText(location.href);el('share').textContent='Copied!'}}catch(e){}};load();setInterval(load,300000);
+
+/* Headlines are external publisher reporting, not IEC-certified figures. */
+function newsDate(item){
+ if(item.published_at){
+  const d=new Date(item.published_at);
+  if(Number.isFinite(+d))return new Intl.DateTimeFormat('en-ZA',{dateStyle:'medium',timeStyle:'short',timeZone:'Africa/Johannesburg'}).format(d)+' SAST';
+ }
+ if(/^\d{4}-\d{2}-\d{2}$/.test(item.published_date||'')){
+  const d=new Date(item.published_date+'T12:00:00Z');
+  if(Number.isFinite(+d))return new Intl.DateTimeFormat('en-ZA',{dateStyle:'medium',timeZone:'Africa/Johannesburg'}).format(d);
+ }
+ return 'Date not available';
+}
+function renderNews(payload){
+ const articles=Array.isArray(payload.articles)?payload.articles:[];
+ const allowed=new Set(['Cape Town','Tshwane','Johannesburg','South Africa']);
+ const filtered=articles.filter(a=>a&&typeof a.title==='string'&&a.title.length>10&&typeof a.publisher==='string'&&typeof a.url==='string'&&/^https:\/\//i.test(a.url)&&allowed.has(a.metro));
+ const now=Date.now();
+ const current=filtered.filter(a=>{
+  const d=Date.parse(a.published_at||a.published_date||'');
+  return Number.isFinite(d)&&d<=now+86400000&&now-d<=5*86400000;
+ }).slice(0,6);
+ el('news-feed').innerHTML=current.length?current.map(a=>
+  '<article class="news-story"><p class="news-topic">'+esc(a.metro)+'</p>'+
+  '<a href="'+esc(a.url)+'" target="_blank" rel="noopener noreferrer">'+esc(a.title)+'</a>'+
+  '<div class="news-meta">'+esc(a.publisher)+' · '+esc(newsDate(a))+'</div></article>'
+ ).join(''):'<p class="news-empty">No recent, source-attributed election headlines are available. Check SABC News or Reuters for current coverage.</p>';
+ const checked=Date.parse(payload.checked_at||'');
+ const age=now-checked;
+ const fresh=Number.isFinite(age)&&age>=0&&age<4*3600000;
+ let text='News articles are independent reporting, not IEC declarations.';
+ if(fresh)text+=' Feed checked '+date(payload.checked_at)+'.';
+ else if(Number.isFinite(age)&&age>=0)text+=' Headline feed has not been refreshed recently.';
+ else text+=' Automatic headline updates are being connected.';
+ if(payload.feed_status==='unavailable')text+=' Latest feed check unavailable; showing previously sourced stories.';
+ el('news-status').textContent=text;
+ const many=current.length>3;
+ el('news-prev').disabled=!many;
+ el('news-next').disabled=!many;
+}
+async function loadNews(){
+ try{
+  const response=await fetch('./news.json?ts='+Date.now(),{cache:'no-store'});
+  if(!response.ok)throw Error('HTTP '+response.status);
+  renderNews(await response.json());
+ }catch(e){
+  el('news-status').textContent='Could not refresh news headlines. Election results remain available.';
+  el('news-feed').innerHTML='<p class="news-empty">News currently unavailable. See <a href="https://elections.sabcnews.com/election-news/" target="_blank" rel="noopener noreferrer">SABC election news</a>.</p>';
+ }
+}
+const newsStrip=el('news-feed');
+el('news-prev').onclick=()=>newsStrip.scrollBy({left:-Math.max(260,newsStrip.clientWidth*.85),behavior:'smooth'});
+el('news-next').onclick=()=>newsStrip.scrollBy({left:Math.max(260,newsStrip.clientWidth*.85),behavior:'smooth'});
+loadNews();
+setInterval(loadNews,15*60*1000);
 </script><script src="./ward-maps.js"></script></body></html>
