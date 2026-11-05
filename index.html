@@ -331,13 +331,49 @@ function mergeWardDetails(snapshot,details){
   }
  }
 }
-async function load(){try{const r=await fetch('./results.json?ts='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);const fresh=await r.json();try{const a=await fetch('./ward-areas.json?ts='+Date.now(),{cache:'no-store'});if(a.ok)wardAreas=await a.json()}catch(_){}try{const d=await fetch('./ward-details.json?ts='+Date.now(),{cache:'no-store'});if(d.ok)mergeWardDetails(fresh,await d.json())}catch(_){}try{const h=await fetch('./history-2021.json?ts='+Date.now(),{cache:'no-store'});if(h.ok){const past=await h.json();if(past&&past.year===2021&&past.ballot_type==='Ward'&&past.metros)history2021=past}}catch(_){}data=fresh;render();el('error').textContent=''}catch(e){el('error').textContent='Unable to load results: '+e.message;render()}}
+let latestLoad=0;
+async function loadOptionalJSON(path){
+ try{
+  const response=await fetch(path+'?ts='+Date.now(),{cache:'no-store'});
+  return response.ok?await response.json():null;
+ }catch(_){return null}
+}
+async function load(){
+ const request=++latestLoad;
+ try{
+  const response=await fetch('./results.json?ts='+Date.now(),{cache:'no-store'});
+  if(!response.ok)throw Error('HTTP '+response.status);
+  const fresh=await response.json();
+  if(request!==latestLoad)return;
+  // Show the latest count as soon as it arrives instead of delaying all
+  // visible results while supplementary ward and 2021 data downloads.
+  data=fresh;
+  render();
+  el('error').textContent='';
+  const [areas,details,oldResults]=await Promise.all([
+   loadOptionalJSON('./ward-areas.json'),
+   loadOptionalJSON('./ward-details.json'),
+   loadOptionalJSON('./history-2021.json')
+  ]);
+  if(request!==latestLoad)return;
+  if(areas&&areas.metros)wardAreas=areas;
+  if(details&&details.metros)mergeWardDetails(fresh,details);
+  if(oldResults&&oldResults.year===2021&&oldResults.ballot_type==='Ward'&&oldResults.metros)history2021=oldResults;
+  data=fresh;
+  render();
+ }catch(error){
+  if(request!==latestLoad)return;
+  el('error').textContent='Unable to load results: '+error.message;
+  if(!data||!data.metros||!Object.keys(data.metros).length)render();
+ }
+}
+
 document.querySelectorAll('[data-vote-metro]').forEach(button=>button.addEventListener('click',()=>selectMetro(button.getAttribute('data-vote-metro'))));
 window.onMetroMapSelect=name=>selectMetro(name,true);
 el('metro').onchange=()=>selectMetro(el('metro').value);
 el('wardSearch').oninput=()=>{wardVisibleLimit=24;renderWards()};
 el('clear').onclick=()=>{el('wardSearch').value='';wardVisibleLimit=24;renderWards();el('wardSearch').focus()};
-el('wardMore').onclick=()=>{wardVisibleLimit+=24;renderWards()};el('refresh').onclick=load;el('share').onclick=async()=>{try{if(navigator.share)await navigator.share({title:document.title,url:location.href});else{await navigator.clipboard.writeText(location.href);el('share').textContent='Copied!'}}catch(e){}};load();setInterval(load,300000);
+el('wardMore').onclick=()=>{wardVisibleLimit+=24;renderWards()};el('refresh').onclick=load;el('share').onclick=async()=>{try{if(navigator.share)await navigator.share({title:document.title,url:location.href});else{await navigator.clipboard.writeText(location.href);el('share').textContent='Copied!'}}catch(e){}};load();setInterval(()=>{if(!document.hidden)load()},300000);
 
 /* Headlines are external publisher reporting, not IEC-certified figures. */
 function newsDate(item){
@@ -403,5 +439,8 @@ el('news-next').onclick=()=>newsStrip.scrollBy({left:Math.max(220,newsStrip.clie
 newsStrip.addEventListener('scroll',updateNewsArrows,{passive:true});
 window.addEventListener('resize',updateNewsArrows);
 loadNews();
-setInterval(loadNews,15*60*1000);
+setInterval(()=>{if(!document.hidden)loadNews()},15*60*1000);
+document.addEventListener('visibilitychange',()=>{
+ if(!document.hidden){load();loadNews()}
+});
 </script><script src="./ward-maps.js"></script></body></html>
