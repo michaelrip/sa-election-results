@@ -185,6 +185,9 @@ main{padding-bottom:calc(105px + env(safe-area-inset-bottom))}
  .mobile-quick-nav{left:0;right:0;width:100%;transform:none;border-radius:0}
  .refresh-feedback{font-size:11px;margin-top:9px}
 }
+.data-provenance{margin:5px 0 12px;padding:9px 12px;border-left:4px solid #ffb612;
+ background:rgba(22,41,65,.94);border-radius:5px;font-size:12px;line-height:1.5;color:#d7e6f5}
+.data-provenance.iec-direct{border-left-color:#4bdfab}
 </style><link rel="stylesheet" href="./mobile.css?v=20261105-refresh-nav2"></head><body>
 <header><div class="eyebrow">SOUTH AFRICA · 2026 MUNICIPAL RESULTS</div><h1>Mzanzi Key Metro Watch</h1><p>Cape Town · Tshwane · Johannesburg · Hermanus / Overstrand. Preliminary IEC-derived ward-ballot results, with source links and ward-by-ward drill-down.</p><div class="toolbar"><span id="status" class="pill warn">Checking data…</span><span id="updated" class="small">No source update yet</span><a href="#metro-votes" class="header-votes-link">View votes by city</a><button id="refresh" type="button" aria-label="Check for newly published election results">Refresh</button><button id="share">Share link</button></div><p id="refresh-feedback" class="refresh-feedback" role="status" aria-live="polite" aria-atomic="true">Refresh checks the latest published results; source updates are scheduled approximately every 15 minutes.</p></header>
 <main><p id="error" role="alert"></p>
@@ -233,6 +236,7 @@ main{padding-bottom:calc(105px + env(safe-area-inset-bottom))}
 <button type="button" data-vote-metro="Johannesburg" aria-pressed="false">Johannesburg</button>
 <button type="button" data-vote-metro="Hermanus" aria-pressed="false">Hermanus</button>
 </div>
+<p id="data-provenance" class="data-provenance" role="status" aria-live="polite">Source: IEC-derived figures via ESP. Direct IEC official reports are being connected; the source is not yet switched.</p>
 <div id="cards" aria-label="Selected city's live election results" aria-live="polite"></div>
 </section>
 <section class="panel" id="ward-explorer"><h2>Explore results by ward</h2><p>Choose a metro, then search by suburb, area or ward number. Area names describe places covered by the ward, not official ward names. Tap for party results, ballot type, reporting status and source.</p><div class="ward-tools"><label><span class="small">Find a suburb, area or ward</span><input id="wardSearch" type="search" inputmode="search" placeholder="e.g. Bellville or Ward 12" autocomplete="off"></label><label><span class="small">Metro</span><select id="metro"><option value="Cape Town">Cape Town</option><option value="Tshwane">Tshwane</option><option value="Johannesburg">Johannesburg</option><option value="Hermanus">Hermanus / Overstrand</option></select></label></div><div class="flex"><span id="wardCount" class="small" role="status"></span><button id="clear" type="button">Clear search</button></div><div id="wards" class="ward-list"></div><button type="button" id="wardMore" class="ward-more" hidden>Show more wards</button></section>
@@ -282,10 +286,11 @@ el('cards').innerHTML='<article class="card city-result-card"><div class="city-r
  '<div class="city-result-heading"><h3>'+esc(name)+'</h3><span class="small">2026 · preliminary ward ballot</span></div>'+
  (name==='Hermanus'?'<p class="city-result-subtext">Overstrand Local Municipality · includes Hermanus, Gansbaai and Kleinmond. Results cover the whole municipality.</p>':'')+
  '<div class="city-result-subtext">'+esc(m.status||'Awaiting verified data')+'</div>'+
- '<div class="big">'+pct(p)+'</div><div class="small">Voting districts reporting: '+(valid?a+' / '+b:'Not verified')+'</div>'+
- '<div class="track"><div class="fill" style="width:'+(p||0)+'%"></div></div>'+
+ (valid?'<div class="big">'+pct(p)+'</div><div class="small">Voting districts reporting: '+a+' / '+b+'</div>'+
+ '<div class="track"><div class="fill" style="width:'+p+'%"></div></div>':
+ '<div class="small">Voting districts with ward-ballot results: '+(Number.isInteger(a)?a:'Not verified')+'. Total expected not in this IEC report.</div>')+
  '<div class="vote-total"><span class="vote-label">Valid ward-ballot votes counted</span><strong>'+voteFmt(m.valid_votes)+'</strong></div>'+
- '<div class="small">Source snapshot: '+esc(date(m.snapshot_at))+'</div>'+
+ '<div class="small">'+(data.source_type==='iec_public_csv'?'Official report checked: '+esc(date(data.download_checked_at)):'Source snapshot: '+esc(date(m.snapshot_at)))+'</div>'+
  '<p class="city-seats-note">Council seats: '+(Array.isArray(m.seats)&&m.seats.length?m.seats.map(x=>esc(x.name)+': '+esc(x.count)).join(' · '):'Not yet allocated or verified')+'</p>'+
  (m.source_url?'<p class="city-result-subtext"><a href="'+esc(m.source_url)+'" target="_blank" rel="noopener noreferrer">Metro results source</a></p>':'')+
  '</div><div class="city-result-parties"><h3>Leading parties</h3>'+
@@ -295,7 +300,15 @@ el('cards').innerHTML='<article class="card city-result-card"><div class="city-r
  '</div></article>';
  if(expanded){const more=el('cards').querySelector('.city-more-results');if(more)more.open=true}
 }
-function render(){const ts=Date.parse(data.updated_at||''),age=(Date.now()-ts)/60000,recent=Number.isFinite(age)&&age>=0&&age<60;el('status').className='pill '+(recent?'ok':'warn');el('status').textContent=recent?'Recent preliminary source snapshot':'NO RECENT SOURCE SNAPSHOT';el('updated').textContent='Data timestamp: '+date(data.updated_at);
+function render(){const ts=Date.parse(data.updated_at||''),age=(Date.now()-ts)/60000,recent=Number.isFinite(age)&&age>=0&&age<60;
+ const direct=data.source_type==='iec_public_csv'&&data.source_verified===true;
+ el('status').className='pill '+(recent?'ok':'warn');
+ el('status').textContent=direct?(recent?'Direct IEC report loaded':'IEC report may be outdated'):(recent?'IEC-derived via ESP · preliminary':'ESP snapshot may be outdated');
+ el('updated').textContent=(direct?'IEC report checked: ':'ESP snapshot checked: ')+date(data.updated_at);
+ const prov=el('data-provenance');
+ if(prov){prov.className='data-provenance'+(direct?' iec-direct':'');
+ prov.textContent=direct?'Election votes: official IEC CSV, downloaded directly. Ward-ballot votes only. Counting totals and IEC capture time are not supplied in the public CSV; news and MDB boundaries remain separate.':
+ 'Election votes: IEC-derived via independent ESP (NOT directly sourced from IEC). Direct-IEC reporting will switch on only when all four official IEC municipal CSV reports pass validation.';}
 renderMetroCard();
 if(window.metroWardMaps&&window.metroWardMaps.refresh)window.metroWardMaps.refresh();const ct=(data.metros||{})['Cape Town']||{},da=(ct.parties||[]).find(p=>p.name==='DA');el('majority').textContent=da?'DA '+pct(da.share)+' on the '+(ct.ballot_type||'reported')+' ballot. This is not a final seat-majority projection.':'Awaiting verified Cape Town figures. A council majority requires more than half the final council seats.';renderWards()}
 function selectMetro(name,fromMap=false){
