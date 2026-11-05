@@ -124,7 +124,10 @@
   }
   function progressAt(number) {
     const ward = wardAt(number);
-    const result = ward && /^(\d+)\s+of\s+(\d+)\s+districts/i.exec(String(ward.reporting || ''));
+    const reportingText=String(ward && ward.reporting || '');
+    const direct=/^(\d+)\s+voting districts with votes/i.exec(reportingText);
+    if (direct) return Number(direct[1]) > 0 ? 'partial' : 'none';
+    const result = /^(\d+)\s+of\s+(\d+)\s+districts/i.exec(reportingText);
     if (!result) return 'none';
     const done = Number(result[1]), total = Number(result[2]);
     if (!total || !done) return 'none';
