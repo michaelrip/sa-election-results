@@ -5,7 +5,7 @@ from datetime import datetime,timezone,timedelta
 from pathlib import Path
 
 ROOT="https://go.esp.info/elections/local/2026/"
-CITIES={"Cape Town":("western-cape/city-of-cape-town",829,118),"Tshwane":("gauteng/city-of-tshwane",796,107),"Johannesburg":("gauteng/city-of-johannesburg",862,135)}
+CITIES={"Cape Town":("western-cape/city-of-cape-town",829,118),"Tshwane":("gauteng/city-of-tshwane",796,107),"Johannesburg":("gauteng/city-of-johannesburg",862,135),"Hermanus":("western-cape/overstrand",37,15)}
 ALIASES={"DA":"DA","ANC":"ANC","EFF":"EFF","ActionSA":"ActionSA","PA":"PA","VF PLUS":"FF+","MKP":"MK","IFP":"IFP","GOOD":"GOOD","ACDP":"ACDP","ALJAMA":"Al Jama-ah","RISE":"RISE","H.O.I.":"H.O.I."}
 class Text(HTMLParser):
  def __init__(self):
@@ -37,11 +37,25 @@ def get(url):
 def parse(city,slug,total,nwards,now):
  url=ROOT+slug
  s=get(url)
- if "City of "+city not in s or "2026" not in s:raise ValueError("Unexpected page identity")
- m=re.search(r"City of "+re.escape(city)+r"\s+(\d+)\s+of\s+(\d+)\s+voting districts in",s)
+ municipality="Overstrand" if city=="Hermanus" else "City of "+city
+ if municipality not in s or "2026" not in s:raise ValueError("Unexpected page identity")
+ m=re.search(re.escape(municipality)+r"\s+(\d+)\s+of\s+(\d+)\s+voting districts in",s)
  if not m:raise ValueError("Metro voting-district count missing")
  count,denom=map(int,m.groups())
  if denom!=total or not 0<=count<=total:raise ValueError("Metro voting-district count invalid")
+ # Overstrand's authenticated tracker currently reports zero districts; never
+ # imply an IEC snapshot or invent votes while awaiting its first result.
+ if city=="Hermanus" and count==0:
+  if not re.search(r"Wards\s*[·•]\s*"+str(nwards)+r"\b",s):
+   raise ValueError("Overstrand 2026 ward count missing")
+  wards=[{"number":i,"status":"Not yet reported","ballot_type":"Ward",
+          "reporting":"Not yet reported","parties":[],"snapshot_at":None,
+          "source_url":url+"/ward-"+str(i)} for i in range(1,nwards+1)]
+  return {"status":"Awaiting verified Overstrand results · IEC-derived via ESP",
+          "municipality":"Overstrand Local Municipality",
+          "ballot_type":"Ward","districts_reported":0,"districts_total":denom,
+          "valid_votes":None,"parties":[],"seats":[],"wards":wards,
+          "snapshot_at":None,"source_url":url},0
  tm=re.search(r"IEC data last fetched\s+(\d{1,2}\s+\w+\s+2026,\s*\d{2}:\d{2})\s*SAST",s)
  if not tm:raise ValueError("IEC source timestamp missing")
  stamp=None
@@ -54,7 +68,7 @@ def parse(city,slug,total,nwards,now):
  if not start:raise ValueError("Ward ballot header missing")
  votes=int(re.sub(r"\D","",start.group(1)))
  tail=s[start.end():]
- end=re.search(r"\b(?:How did City of|Wards\s*[·•]|About these figures)\b",tail)
+ end=re.search(r"\b(?:How did City of|How did Overstrand|Wards\s*[·•]|About these figures)\b",tail)
  section=tail[:end.start()] if end else tail[:16000]
  # Read source party votes without relying on <ol> numbers (HTML adds those
  # visually, but HTMLParser does not see them). Also recognise full party names,
@@ -119,7 +133,7 @@ def parse(city,slug,total,nwards,now):
   if 1<=n<=nwards and 0<reported<=den and 0<=float(w.group(5))<=100:
    ward_rows[n]={"number":n,"status":"Partly counted","ballot_type":"Ward","reporting":str(reported)+" of "+str(den)+" districts","winner":ALIASES[w.group(4)],"parties":[{"name":ALIASES[w.group(4)],"share":float(w.group(5))}],"snapshot_at":stamp.isoformat(),"source_url":url+"/ward-"+str(n)}
  wards=[ward_rows.get(i,{"number":i,"status":"Not yet reported","ballot_type":"Ward","reporting":"Not yet reported","parties":[],"snapshot_at":stamp.isoformat(),"source_url":url+"/ward-"+str(i)}) for i in range(1,nwards+1)]
- return {"status":"Preliminary · IEC-derived via ESP","ballot_type":"Ward","districts_reported":count,"districts_total":denom,"valid_votes":votes,"parties":parties,"seats":[],"wards":wards,"snapshot_at":stamp.isoformat(),"source_url":url},len(ward_rows)
+ return {"status":"Preliminary · IEC-derived via ESP","municipality":"Overstrand Local Municipality" if city=="Hermanus" else None,"ballot_type":"Ward","districts_reported":count,"districts_total":denom,"valid_votes":votes,"parties":parties,"seats":[],"wards":wards,"snapshot_at":stamp.isoformat(),"source_url":url},len(ward_rows)
 def main():
  now=datetime.now(timezone.utc)
  path=Path("results.json");data=json.loads(path.read_text());data.setdefault("metros",{})
