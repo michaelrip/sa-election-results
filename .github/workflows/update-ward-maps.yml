@@ -1,4 +1,4 @@
-name: Refresh 2026 metro ward boundaries
+name: Refresh 2026 municipal ward boundaries
 on:
   push:
     branches: [main]
@@ -56,7 +56,7 @@ jobs:
           python - <<'PY'
           import json
           from pathlib import Path
-          expected = {"cape-town":118, "tshwane":107, "johannesburg":135}
+          expected = {"cape-town":118, "tshwane":107, "johannesburg":135, "overstrand":15}
           for slug, count in expected.items():
               p = Path("ward-boundaries") / (slug + ".geojson")
               if not p.exists(): raise SystemExit(f"Missing {p}")
