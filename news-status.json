@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-11-05T23:10:10.885285Z",
+  "checked_at": "2026-11-05T23:17:36.957349Z",
   "status": "ok",
-  "new_eligible_items": 77,
+  "new_eligible_items": 76,
   "published_items": 10,
   "checks": [
     {
@@ -22,7 +22,7 @@
     {
       "query": "South Africa municipal election 2026 results when:3d",
       "status": "ok",
-      "eligible": 24
+      "eligible": 23
     },
     {
       "query": "Hermanus Overstrand 2026 municipal election results when:3d",
