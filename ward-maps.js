@@ -30,12 +30,15 @@
     legend: document.getElementById('ward-map-legend'),
     choice: document.getElementById('map-ward-select'),
     mode: document.getElementById('map-mode'),
-    reset: document.getElementById('map-reset')
+    reset: document.getElementById('map-reset'),
+    drag: document.getElementById('map-drag-toggle'),
+    legendToggle: document.getElementById('map-legend-toggle')
   };
   if (!els.map || !els.side || typeof L === 'undefined') {
     if (els.status) els.status.textContent = 'Interactive map unavailable. The results and ward list below remain available.';
     return;
   }
+  const touchMode = typeof window.matchMedia === 'function' && window.matchMedia('(pointer: coarse)').matches;
   let city = 'Cape Town';
   let mode = 'leading';
   let selectedNumber = null;
@@ -55,6 +58,30 @@
     maxZoom: 19,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
   }).addTo(map);
+
+  // Mobile screens default to page scrolling, rather than accidentally
+  // dragging the map. Tapping a ward still opens its results immediately.
+  if (touchMode && els.drag && map.dragging) {
+    map.dragging.disable();
+    els.drag.hidden = false;
+    els.drag.addEventListener('click', function () {
+      const enabled = map.dragging.enabled();
+      if (enabled) map.dragging.disable();
+      else map.dragging.enable();
+      const nowEnabled = map.dragging.enabled();
+      els.drag.setAttribute('aria-pressed', String(nowEnabled));
+      els.drag.textContent = nowEnabled ? 'Done moving map' : 'Move map';
+      els.drag.setAttribute('aria-label', nowEnabled
+        ? 'Stop moving the map by dragging' : 'Enable moving the map by dragging');
+    });
+  }
+  if (els.legendToggle) {
+    els.legendToggle.addEventListener('click', function () {
+      const expanded = els.legend.classList.toggle('is-visible');
+      els.legendToggle.setAttribute('aria-expanded', String(expanded));
+      els.legendToggle.textContent = expanded ? 'Hide map colour key ▴' : 'Show map colour key ▾';
+    });
+  }
 
   function safe(s) {
     return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
@@ -122,7 +149,7 @@
     const area = areaAt(number);
     return 'Ward ' + number + (area ? ' · ' + area : '');
   }
-  function tipFor(number) {
+  function tipFor(number, showDetailsLink = false) {
     const result = wardAt(number);
     const area = areaAt(number);
     const ranked = result && Array.isArray(result.parties) ? result.parties
@@ -142,7 +169,9 @@
       (area ? '<div class="ward-quick-area">' + safe(area) + '</div>' : '') +
       '<div class="ward-quick-parties">' + ranking + '</div>' +
       (result && result.reporting ? '<div class="ward-quick-status">' + safe(result.reporting) + '</div>' : '') +
-      '<div class="ward-quick-hint">Full ward details appear below the map</div></div>';
+      (showDetailsLink
+        ? '<a href="#ward-map-detail" class="ward-quick-link">See full ward breakdown</a>'
+        : '<div class="ward-quick-hint">Tap the ward for full results</div>') + '</div>';
   }
   function validateGeoJSON(value, name) {
     const expected = spec[name].count;
@@ -222,7 +251,7 @@
       layer.setStyle(styleFor(layer.feature));
       const number = layer.feature.properties.ward;
       if (layer.getTooltip()) layer.setTooltipContent(tipFor(number));
-      if (layer.getPopup()) layer.setPopupContent(tipFor(number));
+      if (layer.getPopup()) layer.setPopupContent(tipFor(number, true));
     });
   }
   function panelFor(number) {
@@ -374,10 +403,10 @@
         onEachFeature: function (feature, layer) {
           const id = Number(feature.properties.ward);
           polygonByWard[id] = layer;
-          layer.bindTooltip(tipFor(id), {sticky: true, direction: 'top', className: 'ward-map-tooltip'});
+          if (!touchMode) layer.bindTooltip(tipFor(id), {sticky: true, direction: 'top', className: 'ward-map-tooltip'});
           // A tap opens a larger, auto-panning popup rather than forcing people to
           // read the narrow hover tooltip. Leave the full results panel in place.
-          layer.bindPopup(tipFor(id), {
+          layer.bindPopup(tipFor(id, true), {
             className: 'ward-map-popup',
             maxWidth: 370,
             minWidth: Math.max(180, Math.min(300, map.getSize().x - 75)),
@@ -391,14 +420,15 @@
           });
           layer.on('mouseout', function () {layer.setStyle(styleFor(feature));});
           layer.on('click', function () {
-            layer.closeTooltip();
+            if (layer.getTooltip()) layer.closeTooltip();
             chooseWard(id, false);
           });
         }
       }).addTo(map);
       polygonLayer = polygonsLayer;
       map.fitBounds(polygonLayer.getBounds(), {padding: [15, 15], animate: false});
-      showMapMessage(spec[name].count + ' validated 2026 ward boundaries · tap a ward to drill down. The ward ballot figures update automatically.');
+      showMapMessage(spec[name].count + ' validated 2026 ward boundaries · tap a ward to drill down.' +
+        (touchMode ? ' To scroll the page, dragging starts off; tap Move map when you want to pan.' : ' Ward-ballot figures update automatically.'));
       repaint();
     } catch (error) {
       if (thisRequest !== loadVersion) return;
