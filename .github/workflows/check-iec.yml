@@ -7,7 +7,7 @@ on:
       - 'tests/test_fetch_results.py'
       - '.github/workflows/check-iec.yml'
   schedule:
-    - cron: '17 * * * *'
+    - cron: '7,22,37,52 * * * *'
   workflow_dispatch:
 permissions:
   contents: write
