@@ -5,7 +5,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-from update_news import parse_rss, select_stories, choose_metro
+from update_news import parse_rss, select_stories, choose_metro, MAX_STORIES
 
 NOW = datetime(2026, 11, 5, 12, tzinfo=timezone.utc)
 RSS = b"""<?xml version="1.0" encoding="UTF-8"?>
@@ -48,6 +48,24 @@ class NewsImporterTests(unittest.TestCase):
         selection = select_stories(a + [cape, a[0]], NOW)
         self.assertEqual(len(selection), 3)
         self.assertEqual({s["metro"] for s in selection}, {"Cape Town", "Tshwane", "Johannesburg"})
+
+    def test_ten_recent_headlines_keep_city_balance(self):
+        self.assertEqual(MAX_STORIES, 10)
+        first = parse_rss(RSS, NOW)[0]
+        articles = []
+        for n in range(15):
+            articles.append({
+                **first,
+                "title": f"South African municipal election story number {n} with party votes",
+                "url": f"https://news.google.com/rss/articles/newer-{n}",
+                "metro": "South Africa",
+            })
+        by_city = {**first, "title": "Cape Town municipal vote tally grows",
+                   "metro": "Cape Town"}
+        chosen = select_stories(articles + [by_city], NOW)
+        self.assertEqual(len(chosen), 10)
+        self.assertEqual(len({x["title"] for x in chosen}), 10)
+        self.assertIn("Cape Town", {x["metro"] for x in chosen})
 
     def test_bad_links_and_stale_articles_rejected(self):
         a = parse_rss(RSS, NOW)[0]
