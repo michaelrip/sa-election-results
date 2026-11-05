@@ -1,0 +1,46 @@
+name: Dashboard UI regression checks
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'mobile.css'
+      - 'ward-maps.js'
+      - 'tests/test_dashboard_ui.py'
+      - '.github/workflows/ui-check.yml'
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'mobile.css'
+      - 'ward-maps.js'
+      - 'tests/test_dashboard_ui.py'
+      - '.github/workflows/ui-check.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  ui-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify dashboard UI structure and mobile controls
+        run: python -m unittest discover -s tests -p 'test_dashboard_ui.py' -v
+      - name: Check map and inline dashboard JavaScript syntax
+        run: |
+          node --check ward-maps.js
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          html = Path("index.html").read_text(encoding="utf-8")
+          snippets = re.findall(r"<script(?![^>]*src=)[^>]*>(.*?)</script>", html, re.S|re.I)
+          if not snippets:
+              raise SystemExit("Missing dashboard inline JavaScript")
+          for index, source in enumerate(snippets):
+              if source.strip():
+                  Path(f"/tmp/dashboard-inline-{index}.js").write_text(source, encoding="utf-8")
+          PY
+          for file in /tmp/dashboard-inline-*.js; do node --check "$file"; done
