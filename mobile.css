@@ -44,7 +44,7 @@
   .ward-map-heading{gap:6px}
   .ward-map-heading h2{font-size:22px}
   .ward-map-heading p{font-size:13px;line-height:1.45;margin:6px 0 12px}
-  .map-metro-tabs{grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;margin-bottom:11px}
+  .map-metro-tabs{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;margin-bottom:11px}
   .map-metro-tabs button{padding:10px 5px;align-items:center;text-align:center;min-height:50px}
   .map-metro-tabs button strong{font-size:clamp(11px,3.05vw,14px);overflow-wrap:normal;letter-spacing:-.015em}
   .map-metro-tabs button .map-metro-count{font-size:10px!important}
@@ -76,7 +76,7 @@
   .map-source-note,.map-footnote{font-size:11px;line-height:1.55}
   .metro-votes-section{margin-top:16px}
   .metro-summary-head h2{font-size:22px}
-  .metro-vote-switcher{gap:5px}
+  .metro-vote-switcher{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px
   .metro-vote-switcher button{min-height:48px;font-size:clamp(11px,3.2vw,14px);padding:10px 3px}
   .city-result-card{grid-template-columns:minmax(0,1fr);gap:12px;padding:14px}
   .city-result-heading h3{font-size:21px}
@@ -120,7 +120,7 @@
   #ward-explorer,#metro-votes,#metro-maps,#news-heading,#ward-map-detail{scroll-margin-top:12px}
 }
 @media(max-width:390px){
-  .map-metro-tabs button .map-metro-count{display:none}
+  .map-metro-tabs button .map-metro-count{font-size:10px!important}
   .map-metro-tabs button{min-height:46px}
   .news-header p{max-width:195px}
   .ward-map-popup .leaflet-popup-content{margin:10px 11px}
