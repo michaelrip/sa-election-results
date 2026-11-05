@@ -1,4 +1,4 @@
-"""Download and validate 2026 municipal ward geometries for the three metros.
+"""Download and validate 2026 municipal ward geometries for the three metros and Overstrand local municipality.
 
 Source: MDBWards2026 ArcGIS FeatureServer (Municipal Demarcation Board dataset).
 Never publish incomplete or mismatched geometries. Store only ward id + geometry;
@@ -23,6 +23,7 @@ METROS = {
     "Cape Town": ("cape-town", "Cape Town", 118),
     "Tshwane": ("tshwane", "Tshwane", 107),
     "Johannesburg": ("johannesburg", "Johannesburg", 135),
+    "Hermanus": ("overstrand", "Overstrand", 15),
 }
 OUTDIR = Path("ward-boundaries")
 STATUS = Path("ward-boundary-status.json")
