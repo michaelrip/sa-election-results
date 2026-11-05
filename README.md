@@ -8,6 +8,12 @@ Enable GitHub Pages in **Settings → Pages**: select **Deploy from a branch**, 
 
 Intended website: https://michaelrip.github.io/sa-election-results/
 
+## Mobile-friendly city selection
+
+The **Vote details by city** section displays **one metro at a time** instead of stacking all three metro party cards. A three-button city selector switches Cape Town, Tshwane, or Johannesburg without a page reload. The selected city synchronizes with the 2026 interactive map and searchable ward list in both directions.
+
+The overview highlights voting-district progress and sourced valid ward-ballot vote totals, with the top five party results visible. Remaining reported parties are available in an accessible **Show more parties** expander. Bracketed 2021 ward-ballot comparisons remain available next to the corresponding current percentages. The header includes a **View votes by city** shortcut to the section, and the Cape Town-only DA majority watch is hidden when another metro is selected. The choice persists across the dashboard's regular data refreshes (within the current page visit).
+
 ## Theme and vote totals
 
 The site title and sharing title are **Mzanzi Key Metro Watch**. Its background uses a locally hosted South African flag vector (`assets/sa-flag.svg`) behind a dark overlay, preserving contrast and legibility on phones.
