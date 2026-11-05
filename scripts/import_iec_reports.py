@@ -153,7 +153,14 @@ def parse_csv(payload: bytes, city: str, year: int) -> dict:
         if normalized(get("BALLOTTYPE")) != "WARD":
             continue  # never mix PR ballot with ward ballot
         raw_muni = " ".join(get("MUNICIPALITY").lower().split())
-        if raw_muni not in aliases:
+        # IEC's public CSV identifies a municipality as "JHB - City of
+        # Johannesburg" rather than just "JHB" or its formal name.
+        if " - " in raw_muni:
+            code, name = raw_muni.split(" - ", 1)
+            valid_municipality = code == muni.lower() and name in aliases
+        else:
+            valid_municipality = raw_muni in aliases
+        if not valid_municipality:
             raise ImportErrorIEC("Downloaded report is for a different municipality: " + repr(raw_muni[:80]))
         ward = ward_number(get("WARD"), nwards)
         district = get("VOTINGDISTRICT")
