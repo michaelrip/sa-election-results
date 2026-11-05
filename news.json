@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-05T14:29:42.157746Z",
+  "checked_at": "2026-11-05T15:27:22.237964Z",
   "source": "Publisher-attributed headlines discovered through Google News RSS",
   "feed_status": "ok",
   "articles": [
@@ -20,18 +20,34 @@
       "metro": "Tshwane"
     },
     {
-      "title": "Helen Zille alleges IEC interference after ballot papers run out in Joburg ward",
-      "publisher": "The Citizen",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQVFBSN0p5LWVOTVhEa0o3YWthaDIwMk1XdnVHUFg5czZBTjZqcW1OY0ViUEw1TF81WVVWOVB0aHIxbGRETW9hV2c4N2xWZF9IdVZ6bWpXTHRmZnkwWEFUSWxUSWczbS1Od2s5Q09JbDhxRFc5OFJHdmU0RDRNWTBFTWtMdTNGUVBVeEhsWTBMeHVfOGx4Zy1nUWdORmktczdmV0tnWWdEbXhKemVTTFNlTzdCb2tfOVRjbGxHMHBlMDBfQUNWVEx2NGU4bnItSU9sZTdv?oc=5",
-      "published_at": "2026-11-05T09:09:34Z",
+      "title": "Zille feeling ‘positive’ as DA leads Joburg while vote counting continues",
+      "publisher": "TimesLIVE",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQSVZJQVdTeDF5SmZzRS12cVJpUjFTczNyRzVFb3lQcXVvemlnMHhQd3ZERkdJSjFOVFpwQUJfVTVMa1VmR0pSdW1HM0Npc2p1SzB4T3RzNFRhWEdxdHdoVVJIa2dtbGEwYktuNmU0VG9nMU5CaTA2VDFUMGF6aUNfNmlPTUtzc1NrZjcwTmRPWENRLVFZOTdyYkxmTUFqOWt5c0dlcWJyYmQ3VzRVWnk3THFBUnN0TWxKUVBaRVNXV3h2T3NVOGdSM05Ob0pyWGpH?oc=5",
+      "published_at": "2026-11-05T14:54:09Z",
       "published_date": "2026-11-05",
       "metro": "Johannesburg"
+    },
+    {
+      "title": "Parties cautiously optimistic as vote-counting continues in South Africa’s metros",
+      "publisher": "EWN",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOS1V4RVNRMHRxLUpmMmF6dGw3aGNGQ3pxSDdnMXBoLW1sRG5aTnpLcmNJY3hFUWJJRDM3QXczVm90OTFnTGRWVVNEYWpHMlBERERzNnA3TkR5aHhpUnMxb0hYY2dXLW1yTlNyLVJ1OVlEU19pZFRYRGlXZFFZOTZvX1lUc1ZOUkIxQ1prY1FqQjlqSnk4VkY3NG1nZ0xMTzQ3WUkxeW5LUElQWTEwMDZwdXFDUGY?oc=5",
+      "published_at": "2026-11-05T14:47:14Z",
+      "published_date": "2026-11-05",
+      "metro": "South Africa"
+    },
+    {
+      "title": "IEC captures over 60% of Zululand election results",
+      "publisher": "SABC News",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFA1UjZwZlpsWjZGMktPR2ZGZ2JZM1BoYzA3akFvT3dfTDFncnlVcllJZ2lZV3Zndzk1V1lCTW5xMzIwQnFBSnNCZE5ZcXBCdjF1dmxWSFYwZw?oc=5",
+      "published_at": "2026-11-05T14:14:30Z",
+      "published_date": "2026-11-05",
+      "metro": "South Africa"
     },
     {
       "title": "LGE2026: 65% of Western Cape election results captured, IEC says",
       "publisher": "IOL",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdmdsbVZyWngtSW0ydzdBV2VhczVWejJuZ3hYWjJoWmFFQTh6SHJVbkxCdDhDekt6QXBkTURBMTdwQkF0SUdoVXphVTM0anBtLWE4aW5nVzk3RWtxazRvd2E4WGozbk5CMUNnd2Q0VG9YTXBNZ2VRTG5JYXpqalRMZ1ZmM3gwNDBYVGttREpldmRFR2tJR1IwR18xYUJBam5F?oc=5",
-      "published_at": "2026-11-05T13:50:00Z",
+      "published_at": "2026-11-05T13:50:41Z",
       "published_date": "2026-11-05",
       "metro": "South Africa"
     },
@@ -66,22 +82,6 @@
       "published_at": "2026-11-05T11:41:18Z",
       "published_date": "2026-11-05",
       "metro": "Cape Town"
-    },
-    {
-      "title": "Mantashe says ANC's electoral decline is a sign of South Africa's maturing democracy",
-      "publisher": "EWN",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQazZIbFdHNERmMWxmal9yT2tUSXRFaklCa2tMRUIwaS1sbEM5bHk5NjQ5S3k3Vl9HLW04dDI5Xy1hbDlIYkNIelE2RmZpRE1sZzhZYXRxWlkzb2tRQXltOVlEV0NhMjlrWGFxcW1JbTlCRkF4X1VLZUlPaE1uWW1hSm1ldXdQcy0xdTN6S3dEaWl6LXVOTGR4aEp1Vm4yV3JLYzEtekVQM0pCanYxdzdLS1FPWlcxQQ?oc=5",
-      "published_at": "2026-11-05T11:37:11Z",
-      "published_date": "2026-11-05",
-      "metro": "South Africa"
-    },
-    {
-      "title": "IEC: 15.9 million voters participated in 2026 elections",
-      "publisher": "eNCA",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxORlkzZ21VV2JHNVNwU2duZEp3Nkluck1PUGpJZXR1V21EbmlUaFRUcTNobm8zdFhIMG1yYmZ0WjFSTUgweHBKdmRPejdHLWxkM0c0VjZzZzBEVXlTMnl3cFdXVUVXZndRTWdWejJIdmRnOHJ4UU1rd3o4WXBmSFJEd0dyTk1YTzZOYlAyT0dpWE1YdzgyMjFRLTczaw?oc=5",
-      "published_at": "2026-11-05T10:52:19Z",
-      "published_date": "2026-11-05",
-      "metro": "South Africa"
     }
   ]
 }
