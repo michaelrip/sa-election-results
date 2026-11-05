@@ -80,6 +80,8 @@
 .news-controls{display:flex;align-items:center;gap:7px}
 .news-controls button{min-height:38px;min-width:40px;padding:6px 10px;font-size:21px;background:#213b5c}
 .news-controls button:disabled{opacity:.4;cursor:default}
+.news-controls #news-check{font-size:12px;line-height:1.25;font-weight:750;min-height:44px;padding:8px 12px;white-space:nowrap}
+.news-controls #news-check:disabled{opacity:.65;cursor:progress}
 .news-feed{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 24px)/3);gap:12px;overflow-x:auto;scroll-behavior:smooth;scroll-snap-type:x mandatory;scrollbar-width:thin;padding:2px 0 9px;overscroll-behavior-x:contain}
 .news-story{scroll-snap-align:start;display:flex;flex-direction:column;background:#1a2a43;border:1px solid #3a506d;border-radius:14px;padding:16px;min-height:156px}
 .news-story:focus-within{border-color:#8bc8ff}
@@ -212,8 +214,8 @@ main{padding-bottom:calc(105px + env(safe-area-inset-bottom))}
 <main><p id="error" role="alert"></p>
 <section class="news-section" aria-labelledby="news-heading">
  <div class="news-header">
-  <div><span class="eyebrow">ELECTION NEWS</span><h2 id="news-heading">Key headlines</h2><p>Reporting from independent newsrooms. Open a story to read it at the source.</p></div>
-  <div class="news-controls"><button type="button" id="news-prev" aria-label="Previous headlines">‹</button><button type="button" id="news-next" aria-label="Next headlines">›</button></div>
+  <div><span class="eyebrow">ELECTION NEWS</span><h2 id="news-heading">Key headlines</h2><p>Reporting from independent newsrooms. Sources checked about every 10 minutes; open any story at its publisher.</p></div>
+  <div class="news-controls"><button type="button" id="news-check" aria-label="Check for recently published headlines">Check news</button><button type="button" id="news-prev" aria-label="Previous headlines">‹</button><button type="button" id="news-next" aria-label="Next headlines">›</button></div>
  </div>
  <div class="news-feed" id="news-feed" aria-live="polite"><p class="news-empty">Loading recent election headlines…</p></div>
  <p class="news-status" id="news-status">Headlines are separate from official election results.</p>
@@ -611,7 +613,7 @@ window.onMetroMapSelect=name=>selectMetro(name,true);
 el('metro').onchange=()=>selectMetro(el('metro').value);
 el('wardSearch').oninput=()=>{wardVisibleLimit=24;renderWards()};
 el('clear').onclick=()=>{el('wardSearch').value='';wardVisibleLimit=24;renderWards();el('wardSearch').focus()};
-el('wardMore').onclick=()=>{wardVisibleLimit+=24;renderWards()};el('refresh').onclick=()=>load({manual:true});el('share').onclick=async()=>{try{if(navigator.share)await navigator.share({title:document.title,url:location.href});else{await navigator.clipboard.writeText(location.href);el('share').textContent='Copied!'}}catch(e){}};load();setInterval(()=>{if(!document.hidden)load()},300000);
+el('wardMore').onclick=()=>{wardVisibleLimit+=24;renderWards()};el('refresh').onclick=()=>{load({manual:true});loadNews({manual:true})};el('share').onclick=async()=>{try{if(navigator.share)await navigator.share({title:document.title,url:location.href});else{await navigator.clipboard.writeText(location.href);el('share').textContent='Copied!'}}catch(e){}};load();setInterval(()=>{if(!document.hidden)load()},300000);
 
 /* Headlines are external publisher reporting, not IEC-certified figures. */
 function newsDate(item){
@@ -641,43 +643,71 @@ function renderNews(payload){
  const current=filtered.filter(a=>{
   const d=Date.parse(a.published_at||a.published_date||'');
   return Number.isFinite(d)&&d<=now+86400000&&now-d<=5*86400000;
- }).slice(0,6);
+ }).slice(0,10);
+ const nextFingerprint=current.map(a=>[a.url,a.published_at,a.title].join('|')).join('||');
  const previousOffset=el('news-feed').scrollLeft;
+ if(nextFingerprint!==lastNewsFingerprint){
  el('news-feed').innerHTML=current.length?current.map(a=>
   '<article class="news-story"><p class="news-topic">'+esc(a.metro)+'</p>'+
   '<a href="'+esc(a.url)+'" target="_blank" rel="noopener noreferrer">'+esc(a.title)+'</a>'+
   '<div class="news-meta">'+esc(a.publisher)+' · '+esc(newsDate(a))+'</div></article>'
  ).join(''):'<p class="news-empty">No recent, source-attributed election headlines are available. Check SABC News or Reuters for current coverage.</p>';
+ lastNewsFingerprint=nextFingerprint;
+ el('news-feed').scrollLeft=previousOffset;
+ }
  const checked=Date.parse(payload.checked_at||'');
  const age=now-checked;
- const fresh=Number.isFinite(age)&&age>=0&&age<4*3600000;
+ const fresh=Number.isFinite(age)&&age>=0&&age<90*60000;
  let text='News articles are independent reporting, not IEC declarations.';
  if(fresh)text+=' Feed checked '+date(payload.checked_at)+'.';
  else if(Number.isFinite(age)&&age>=0)text+=' Headline feed has not been refreshed recently.';
  else text+=' Automatic headline updates are being connected.';
  if(payload.feed_status==='unavailable')text+=' Latest feed check unavailable; showing previously sourced stories.';
  el('news-status').textContent=text;
- el('news-feed').scrollLeft=previousOffset;
  updateNewsArrows();
 }
-async function loadNews(){
+let lastNewsFingerprint=null;
+let latestNewsRequest=0;
+async function loadNews({manual=false}={}){
+ const request=++latestNewsRequest;
+ const checkButton=el('news-check');
+ const before=lastNewsFingerprint;
+ if(manual){
+  checkButton.disabled=true;
+  checkButton.textContent='Checking…';
+  el('news-status').textContent='Checking the most recently published news feed…';
+ }
  try{
   const response=await fetch('./news.json?ts='+Date.now(),{cache:'no-store'});
   if(!response.ok)throw Error('HTTP '+response.status);
-  renderNews(await response.json());
+  const payload=await response.json();
+  if(request!==latestNewsRequest)return;
+  renderNews(payload);
+  if(manual){
+   el('news-status').textContent+=(before!==null&&lastNewsFingerprint!==before
+    ?' New or changed published headlines loaded.'
+    :' No newer headlines in the published feed yet.');
+  }
  }catch(e){
-  el('news-status').textContent='Could not refresh news headlines. Election results remain available.';
-  el('news-feed').innerHTML='<p class="news-empty">News currently unavailable. See <a href="https://elections.sabcnews.com/election-news/" target="_blank" rel="noopener noreferrer">SABC election news</a>.</p>';
-  updateNewsArrows();
+  if(request!==latestNewsRequest)return;
+  el('news-status').textContent='Could not check for newer headlines. '+(lastNewsFingerprint===null?
+   'No news feed has loaded yet.':'Previously loaded articles remain visible.');
+  if(lastNewsFingerprint===null){
+   el('news-feed').innerHTML='<p class="news-empty">News currently unavailable. See <a href="https://elections.sabcnews.com/election-news/" target="_blank" rel="noopener noreferrer">SABC election news</a>.</p>';
+   updateNewsArrows();
+  }
+ }finally{
+  if(manual){checkButton.disabled=false;checkButton.textContent='Check news';}
  }
 }
 const newsStrip=el('news-feed');
 el('news-prev').onclick=()=>newsStrip.scrollBy({left:-Math.max(220,newsStrip.clientWidth*.85),behavior:reducedMotion()?'auto':'smooth'});
 el('news-next').onclick=()=>newsStrip.scrollBy({left:Math.max(220,newsStrip.clientWidth*.85),behavior:reducedMotion()?'auto':'smooth'});
+el('news-check').onclick=()=>loadNews({manual:true});
 newsStrip.addEventListener('scroll',updateNewsArrows,{passive:true});
 window.addEventListener('resize',updateNewsArrows);
 loadNews();
-setInterval(()=>{if(!document.hidden)loadNews()},15*60*1000);
+setInterval(()=>{if(!document.hidden)loadNews()},2*60*1000);
 document.addEventListener('visibilitychange',()=>{
  if(!document.hidden){load();loadNews()}
 });
