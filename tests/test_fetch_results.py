@@ -77,6 +77,37 @@ class ScrapingTests(unittest.TestCase):
         self.assertEqual(len(metro["wards"]), 15)
         self.assertFalse(metro["parties"])
 
+    def test_optional_question_mark_in_ward_ballot_header(self):
+        txt = feed.Text()
+        txt.feed(SAMPLE.replace("Ward ballot ? · 729 valid votes", "Ward ballot · 729 valid votes"))
+        with patch.object(feed, "get", return_value=" ".join(" ".join(txt.parts).split())):
+            metro, reported = feed.parse(*ARGS)
+        self.assertEqual(metro["valid_votes"], 729)
+        self.assertEqual(reported, 1)
+
+    def test_missing_table_uses_other_esp_host_after_full_validation(self):
+        first = feed.Text()
+        first.feed(SAMPLE.replace("Ward ballot ? · 729 valid votes", "Ballot table temporarily unavailable"))
+        second = feed.Text()
+        second.feed(SAMPLE)
+        texts = [" ".join(" ".join(first.parts).split()), " ".join(" ".join(second.parts).split())]
+        with patch.object(feed, "get", side_effect=texts) as request:
+            metro, _ = feed.parse(*ARGS)
+        self.assertEqual(request.call_count, 2)
+        self.assertEqual(metro["valid_votes"], 729)
+        self.assertEqual(metro["parties"][0]["votes"], 305)
+        self.assertTrue(metro["source_url"].startswith("https://esp.info/"))
+
+    def test_fallback_rejects_wrong_municipality(self):
+        first = feed.Text()
+        first.feed(SAMPLE.replace("Ward ballot ? · 729 valid votes", "Ballot table temporarily unavailable"))
+        second = feed.Text()
+        second.feed(SAMPLE.replace("City of Cape Town", "City of Tshwane"))
+        texts = [" ".join(" ".join(first.parts).split()), " ".join(" ".join(second.parts).split())]
+        with patch.object(feed, "get", side_effect=texts):
+            with self.assertRaisesRegex(ValueError, "Ward ballot header missing"):
+                feed.parse(*ARGS)
+
     def test_invalid_district_total_rejected(self):
         txt = feed.Text()
         txt.feed(SAMPLE.replace("1 of 829 voting", "1 of 828 voting"))
