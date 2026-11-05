@@ -37,7 +37,35 @@
 .map-legend-item i{display:inline-block;width:12px;height:12px;border:1px solid #dde9f8;border-radius:3px}
 .map-footnote{margin:11px 2px 3px;color:#bad5ed;font-size:13px;line-height:1.5}
 .map-source-note{margin:10px 2px 1px;font-size:12px;line-height:1.5;color:#b7cadf}
-.ward-map-tooltip{font-size:12px;max-width:280px;white-space:normal}
+/* Spacious ward hover preview and an adaptive tap popup. Both wrap long party and suburb names. */
+.leaflet-tooltip.ward-map-tooltip{
+  box-sizing:border-box;width:min(330px,calc(100vw - 44px));max-width:calc(100vw - 44px);
+  padding:12px 14px;white-space:normal;overflow-wrap:anywhere;
+  font-size:13px;line-height:1.45;box-shadow:0 8px 24px rgba(0,0,0,.2)
+}
+.ward-map-popup .leaflet-popup-content-wrapper{border-radius:13px;box-shadow:0 10px 32px rgba(0,0,0,.3)}
+.ward-map-popup .leaflet-popup-content{
+  box-sizing:border-box;width:min(340px,calc(100vw - 84px))!important;
+  max-width:calc(100vw - 84px);margin:14px 16px;
+  white-space:normal;overflow-wrap:anywhere;line-height:1.5
+}
+.ward-quick-preview{font-size:13px;color:#203047;min-width:0;line-height:1.45}
+.ward-quick-title{font-size:16px;font-weight:800;color:#16293e;margin-bottom:3px}
+.ward-quick-area{font-size:12px;color:#465a70;margin:0 0 11px;overflow-wrap:anywhere}
+.ward-quick-parties{display:grid;gap:8px}
+.ward-quick-party{display:flex;align-items:baseline;justify-content:space-between;gap:8px;border-bottom:1px solid #dde5ec;padding-bottom:7px;min-width:0}
+.ward-quick-name{flex:1 1 auto;min-width:0;overflow-wrap:anywhere;font-weight:650}
+.ward-quick-value{display:flex;flex:0 0 auto;flex-direction:column;align-items:flex-end;text-align:right;gap:2px;max-width:45%}
+.ward-quick-value strong{font-size:13px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.ward-quick-value small{font-size:11px;font-weight:500;color:#5d7186;white-space:nowrap}
+.ward-quick-status{font-size:12px;color:#465a70;margin-top:9px}
+.ward-quick-hint{font-size:11px;color:#657a8e;margin-top:9px}
+.ward-quick-empty{font-size:12px;color:#526478;margin:4px 0}
+@media(max-width:400px){
+ .leaflet-tooltip.ward-map-tooltip{width:min(290px,calc(100vw - 32px));max-width:calc(100vw - 32px);padding:10px 11px}
+ .ward-map-popup .leaflet-popup-content{width:min(290px,calc(100vw - 76px))!important;max-width:calc(100vw - 76px);margin:11px 12px}
+ .ward-quick-value small{font-size:10px}
+}
 .ward-detail-map .leaflet-control-attribution{font-size:10px}
 .ward-detail-map .leaflet-control-container a{color:#246caa}
 @media(max-width:950px){.ward-map-layout{grid-template-columns:1fr 255px}}
