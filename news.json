@@ -1,8 +1,16 @@
 {
-  "checked_at": "2026-11-05T21:35:29.011964Z",
+  "checked_at": "2026-11-05T22:21:16.653535Z",
   "source": "Publisher-attributed headlines discovered through Google News RSS",
   "feed_status": "ok",
   "articles": [
+    {
+      "title": "LIVE | LGE 2026: ANC under pressure as DA closes gap to just six points in election count",
+      "publisher": "IOL",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQempoZmQzY09wb1Fwb3FkRDNhT3h3NXZIWUtwaVBmYnhHQTZoQ25YOExaNWRwRVM1WVpDNTFqZHdPMFZFNmdnVVdscVkzN2ttMVJHWTlWLVJzVjZYcnBMdHJTOGVrTU83OUNINXJZd2VwcFJrUUswUDVyVS1lUG0yTUpYNjdJZExoXy1WUGRaMEdrZEo3TE5rdWphNnVSZE96MnQzNURNSEM3dkRvV0pwWFFLRUNJNzhxY3pLQk91enV4QWhJZzNzTkRZWWVNYTFo?oc=5",
+      "published_at": "2026-11-05T20:31:05Z",
+      "published_date": "2026-11-05",
+      "metro": "South Africa"
+    },
     {
       "title": "DA projected to win 79% in Ramaphosa and Malema’s Joburg home ward",
       "publisher": "Daily Maverick",
@@ -20,10 +28,34 @@
       "metro": "South Africa"
     },
     {
+      "title": "IEC targets Friday declaration as Khayelitsha station delays Cape Town election results",
+      "publisher": "IOL",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOV0d3cnhBd1Q5MkcyRU5NTURCN3Z5cG51MGd0RUdGOUhsZnZPazRsNjE5cW1Mam11Tll1dTBTV19BUENEMHNZV1lKamdFbUJvdWEteGFLcFpoWnhaWXQ4ZnFhbVZncHU1d3dQNmRydWswRUZVZFJMbVRydmQyWloyWUo1X3JCUmNfcW5iMm9KYkttbnk0bmdnMk9Gdi1ZVy1LTmRVMEF1VGJVdHdTY1F2MmpER3lhc0pSd1FneWlUdElkUTA?oc=5",
+      "published_at": "2026-11-05T19:13:03Z",
+      "published_date": "2026-11-05",
+      "metro": "Cape Town"
+    },
+    {
+      "title": "After the local elections: The ANC blame game and complex coalition talks to come",
+      "publisher": "EWN",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNNExjR19mUjczRmxUd3lJeFdxR2xvWnNDSGJTblgwSXRkUFZpWU9CbUFzM29PT04wQWFGdW1jZkkyd2FrRWZ1czhWQ2RsR2pGb2RwNlFlWF84VXRjNUhDd3Z1aGltM3dBUUQ4a1hyWWdRb3NrZHNNYkswVmI4NVp4WGN3SHpDbkNQaVI4Q1AtMTFiWno3QVBxM2JfSWhTM2hybllPcFFFbkRzY1ppejVvUzdCaw?oc=5",
+      "published_at": "2026-11-05T18:02:23Z",
+      "published_date": "2026-11-05",
+      "metro": "South Africa"
+    },
+    {
       "title": "Northern Cape leads election results capture as IEC says more than 60% processed",
       "publisher": "TimesLIVE",
       "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNRnQ1eFJfOGFkRTJ2cG1UQ19IZ2FGR3dJVld1cWlRbVpTYmhiT3ZPQjVuQl9ycllSQ0Yyd3AzRjNteWdjdHhBallVQ3p3VzRFYUVLazlrV0p5ZE9DaEFIbHRNSlZzVDdud25aUEh4dERNdEJIRTItdUJrY1hjZTZSaTdDRHdvSWlKT04xekhlODZMNFpIbzVDdVhyN2x4bGNjSWF1bi01dlpRM3J1UlpYWUVhdzJPcXV2cHFUaTlrZ1FKYWJGai1zQzZKTnV3THRvb3pV?oc=5",
       "published_at": "2026-11-05T17:37:13Z",
+      "published_date": "2026-11-05",
+      "metro": "South Africa"
+    },
+    {
+      "title": "LGE2026 - IEC: More than 60% of local election results captured",
+      "publisher": "IOL",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTlpObERnYW1XMjlVdUNWa21WcDl0ekllZ3ZLVEhMbGtHZ3pzd2Y3dG5oemZkMDJMMkhOQTRib1loUXF4N3BLRXlVSnJMX0Q0bUczSXVJY3BKZUxCVUdORFFNVEJ1QnBhcVhqSU5VVUltZUtjNVFQdWI4SVhpN3R5eEFkM2RnSFpkN2RZNXpDYTJzVXViRkZrZQ?oc=5",
+      "published_at": "2026-11-05T17:02:00Z",
       "published_date": "2026-11-05",
       "metro": "South Africa"
     },
@@ -50,38 +82,6 @@
       "published_at": "2026-11-05T14:55:49Z",
       "published_date": "2026-11-05",
       "metro": "Cape Town"
-    },
-    {
-      "title": "Zille feeling ‘positive’ as DA leads Joburg while vote counting continues",
-      "publisher": "TimesLIVE",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQSVZJQVdTeDF5SmZzRS12cVJpUjFTczNyRzVFb3lQcXVvemlnMHhQd3ZERkdJSjFOVFpwQUJfVTVMa1VmR0pSdW1HM0Npc2p1SzB4T3RzNFRhWEdxdHdoVVJIa2dtbGEwYktuNmU0VG9nMU5CaTA2VDFUMGF6aUNfNmlPTUtzc1NrZjcwTmRPWENRLVFZOTdyYkxmTUFqOWt5c0dlcWJyYmQ3VzRVWnk3THFBUnN0TWxKUVBaRVNXV3h2T3NVOGdSM05Ob0pyWGpH?oc=5",
-      "published_at": "2026-11-05T14:54:09Z",
-      "published_date": "2026-11-05",
-      "metro": "Johannesburg"
-    },
-    {
-      "title": "WATCH | South Africa’s election results continue to take shape",
-      "publisher": "Business Day",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPakRoend4Q3lQZ1p6bzRESDZKMm1rUjZpbGJjV2dSeVd2b05XbFZPZW9CSzRZLVZUc0U2eGFpaHZ1bXZleHR5bWJKTjFWNEdRYlNvNUJja0l6SldTLWYxTk9tMG42R0prZGw5eVc0czE1RVdNSUhSV2l1RnFqMHFLTHJtZnQ3NDZqZ0E5bTREVVM0eGtWbnBILW5PZ0FJV1QtQmdsdXNUWGs0UQ?oc=5",
-      "published_at": "2026-11-05T14:47:51Z",
-      "published_date": "2026-11-05",
-      "metro": "South Africa"
-    },
-    {
-      "title": "Parties cautiously optimistic as vote-counting continues in South Africa’s metros",
-      "publisher": "EWN",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOS1V4RVNRMHRxLUpmMmF6dGw3aGNGQ3pxSDdnMXBoLW1sRG5aTnpLcmNJY3hFUWJJRDM3QXczVm90OTFnTGRWVVNEYWpHMlBERERzNnA3TkR5aHhpUnMxb0hYY2dXLW1yTlNyLVJ1OVlEU19pZFRYRGlXZFFZOTZvX1lUc1ZOUkIxQ1prY1FqQjlqSnk4VkY3NG1nZ0xMTzQ3WUkxeW5LUElQWTEwMDZwdXFDUGY?oc=5",
-      "published_at": "2026-11-05T14:47:14Z",
-      "published_date": "2026-11-05",
-      "metro": "South Africa"
-    },
-    {
-      "title": "LGE2026: 65% of Western Cape election results captured, IEC says",
-      "publisher": "IOL",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdmdsbVZyWngtSW0ydzdBV2VhczVWejJuZ3hYWjJoWmFFQTh6SHJVbkxCdDhDekt6QXBkTURBMTdwQkF0SUdoVXphVTM0anBtLWE4aW5nVzk3RWtxazRvd2E4WGozbk5CMUNnd2Q0VG9YTXBNZ2VRTG5JYXpqalRMZ1ZmM3gwNDBYVGttREpldmRFR2tJR1IwR18xYUJBam5F?oc=5",
-      "published_at": "2026-11-05T14:22:46Z",
-      "published_date": "2026-11-05",
-      "metro": "South Africa"
     }
   ]
 }
