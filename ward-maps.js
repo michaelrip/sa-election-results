@@ -344,6 +344,7 @@
     if (!spec[name]) return;
     const thisRequest = ++loadVersion;
     city = name;
+    if (typeof window.onMetroMapSelect === 'function') window.onMetroMapSelect(name);
     selectedNumber = null;
     if (polygonLayer) map.removeLayer(polygonLayer);
     polygonLayer = null;
