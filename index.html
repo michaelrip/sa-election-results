@@ -5,7 +5,7 @@
 .ward-map-heading h2{margin:5px 0;font-size:clamp(22px,3.2vw,28px)}
 .ward-map-heading p{margin:5px 0 16px;max-width:690px}
 .map-head-tag{border:1px solid #6081a2;border-radius:25px;padding:8px 11px;white-space:nowrap;font-size:12px;color:#dceeff}
-.map-metro-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:4px 0 14px}
+.map-metro-tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin:4px 0 14px}
 .map-metro-tabs button{background:#14243b;border-color:#4d6583;text-align:left;padding:12px 15px;display:flex;flex-direction:column;align-items:flex-start;gap:3px}
 .map-metro-tabs button strong{font-size:15px}
 .map-metro-tabs button .map-metro-count{font-size:12px;color:#b8cadc;font-weight:400}
@@ -130,7 +130,7 @@ header h1{color:#fff;text-shadow:0 2px 18px rgba(0,0,0,.45)}
 /* A single selected metro keeps mobile results compact; map and ward explorer stay in sync. */
 .metro-votes-section{margin-top:19px}
 .metro-summary-head{margin:8px 0 13px}
-.metro-vote-switcher{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:12px 0 14px}
+.metro-vote-switcher{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:12px 0 14px}
 .metro-vote-switcher button{padding:12px 7px;text-align:center;background:rgba(23,43,67,.95);border:1px solid #58728f;font-size:14px;min-width:0;min-height:48px;line-height:1.25}
 .metro-vote-switcher button[aria-pressed=true]{background:#185b82;border-color:#8ed6ff;box-shadow:inset 0 -3px #ffb612;color:#fff}
 .city-result-card{display:grid;grid-template-columns:minmax(0,.87fr) minmax(0,1.4fr);gap:20px;padding:20px}
@@ -161,7 +161,7 @@ header h1{color:#fff;text-shadow:0 2px 18px rgba(0,0,0,.45)}
 .header-votes-link:hover{background:#1a805c}
 #metro-votes{scroll-margin-top:15px}
 </style><link rel="stylesheet" href="./mobile.css"></head><body>
-<header><div class="eyebrow">SOUTH AFRICA · 2026 METRO RESULTS</div><h1>Mzanzi Key Metro Watch</h1><p>Cape Town · Tshwane · Johannesburg. Preliminary IEC-derived ward-ballot results, with source links and ward-by-ward drill-down.</p><div class="toolbar"><span id="status" class="pill warn">Checking data…</span><span id="updated" class="small">No source update yet</span><a href="#metro-votes" class="header-votes-link">View votes by city</a><button id="refresh">Refresh</button><button id="share">Share link</button></div></header>
+<header><div class="eyebrow">SOUTH AFRICA · 2026 MUNICIPAL RESULTS</div><h1>Mzanzi Key Metro Watch</h1><p>Cape Town · Tshwane · Johannesburg · Hermanus / Overstrand. Preliminary IEC-derived ward-ballot results, with source links and ward-by-ward drill-down.</p><div class="toolbar"><span id="status" class="pill warn">Checking data…</span><span id="updated" class="small">No source update yet</span><a href="#metro-votes" class="header-votes-link">View votes by city</a><button id="refresh">Refresh</button><button id="share">Share link</button></div></header>
 <main><p id="error" role="alert"></p>
 <section class="news-section" aria-labelledby="news-heading">
  <div class="news-header">
@@ -175,13 +175,14 @@ header h1{color:#fff;text-shadow:0 2px 18px rgba(0,0,0,.45)}
 
 <section id="metro-maps" class="ward-map-section" aria-labelledby="map-heading">
  <div class="ward-map-heading">
-  <div><span class="eyebrow">2026 MUNICIPAL WARD MAPS</span><h2 id="map-heading">Explore results on the map</h2><p>Choose a metro, then tap any coloured ward to see its results. Zoom in, move around or jump to a ward by name.</p></div>
-  <span class="map-head-tag">360 wards · 3 metros</span>
+  <div><span class="eyebrow">2026 MUNICIPAL WARD MAPS</span><h2 id="map-heading">Explore results on the map</h2><p>Choose a metro or Hermanus / Overstrand, then tap a ward to see its results. Zoom in, move around or jump to a ward by name.</p></div>
+  <span class="map-head-tag">375 wards · 3 metros + Overstrand</span>
  </div>
- <div class="map-metro-tabs" role="tablist" aria-label="Choose a metro">
+ <div class="map-metro-tabs" role="tablist" aria-label="Choose a municipality">
   <button type="button" role="tab" data-ward-map-metro="Cape Town" aria-selected="true"><strong>Cape Town</strong><span class="map-metro-count">118 wards</span></button>
   <button type="button" role="tab" data-ward-map-metro="Tshwane" aria-selected="false"><strong>Tshwane</strong><span class="map-metro-count">107 wards</span></button>
   <button type="button" role="tab" data-ward-map-metro="Johannesburg" aria-selected="false"><strong>Johannesburg</strong><span class="map-metro-count">135 wards</span></button>
+  <button type="button" role="tab" data-ward-map-metro="Hermanus" aria-selected="false"><strong>Hermanus</strong><span class="map-metro-count">Overstrand · 15 wards</span></button>
  </div>
  <div class="map-filter-row">
   <label class="map-ward-picker"><span>Find a ward or suburb</span><select id="map-ward-select" aria-label="Choose ward to zoom into"><option value="">Choose a ward to zoom into…</option></select></label>
@@ -200,15 +201,16 @@ header h1{color:#fff;text-shadow:0 2px 18px rgba(0,0,0,.45)}
 </section>
 
 <section class="metro-votes-section" id="metro-votes" aria-labelledby="metro-votes-heading">
-<div class="metro-summary-head"><span class="eyebrow">ELECTION RESULTS</span><h2 id="metro-votes-heading">Vote details by city</h2><p class="small">Choose one metro to see its latest ward-ballot votes and parties. Figures in brackets show the 2021 ward ballot.</p></div>
-<div class="metro-vote-switcher" role="group" aria-label="Choose a city for vote details">
+<div class="metro-summary-head"><span class="eyebrow">ELECTION RESULTS</span><h2 id="metro-votes-heading">Vote details by city</h2><p class="small">Choose one municipality to see its latest ward-ballot votes and parties. Figures in brackets show the 2021 ward ballot.</p></div>
+<div class="metro-vote-switcher" role="group" aria-label="Choose a municipality for vote details">
 <button type="button" data-vote-metro="Cape Town" aria-pressed="true">Cape Town</button>
 <button type="button" data-vote-metro="Tshwane" aria-pressed="false">Tshwane</button>
 <button type="button" data-vote-metro="Johannesburg" aria-pressed="false">Johannesburg</button>
+<button type="button" data-vote-metro="Hermanus" aria-pressed="false">Hermanus</button>
 </div>
 <div id="cards" aria-label="Selected city's live election results" aria-live="polite"></div>
 </section>
-<section class="panel" id="ward-explorer"><h2>Explore results by ward</h2><p>Choose a metro, then search by suburb, area or ward number. Area names describe places covered by the ward, not official ward names. Tap for party results, ballot type, reporting status and source.</p><div class="ward-tools"><label><span class="small">Find a suburb, area or ward</span><input id="wardSearch" type="search" inputmode="search" placeholder="e.g. Bellville or Ward 12" autocomplete="off"></label><label><span class="small">Metro</span><select id="metro"><option value="Cape Town">Cape Town</option><option value="Tshwane">Tshwane</option><option value="Johannesburg">Johannesburg</option></select></label></div><div class="flex"><span id="wardCount" class="small" role="status"></span><button id="clear" type="button">Clear search</button></div><div id="wards" class="ward-list"></div><button type="button" id="wardMore" class="ward-more" hidden>Show more wards</button></section>
+<section class="panel" id="ward-explorer"><h2>Explore results by ward</h2><p>Choose a metro, then search by suburb, area or ward number. Area names describe places covered by the ward, not official ward names. Tap for party results, ballot type, reporting status and source.</p><div class="ward-tools"><label><span class="small">Find a suburb, area or ward</span><input id="wardSearch" type="search" inputmode="search" placeholder="e.g. Bellville or Ward 12" autocomplete="off"></label><label><span class="small">Metro</span><select id="metro"><option value="Cape Town">Cape Town</option><option value="Tshwane">Tshwane</option><option value="Johannesburg">Johannesburg</option><option value="Hermanus">Hermanus / Overstrand</option></select></label></div><div class="flex"><span id="wardCount" class="small" role="status"></span><button id="clear" type="button">Clear search</button></div><div id="wards" class="ward-list"></div><button type="button" id="wardMore" class="ward-more" hidden>Show more wards</button></section>
 <section class="panel" id="cape-majority"><h2>Cape Town: DA majority watch</h2><p id="majority">Awaiting verified data. A council majority depends on final seat allocation, not an early vote share.</p></section>
 <section class="panel"><h2>Live election feeds</h2><p>This dashboard automatically imports provisional ward-ballot results from ESP's public IEC-derived pages. Verify official declarations directly with the IEC; percentages shown here are not final council seat allocations.</p><div class="flex"><a href="https://results.elections.org.za/" target="_blank" rel="noopener">Official IEC live results</a><a href="https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town" target="_blank" rel="noopener">Cape Town (ESP)</a><a href="https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane" target="_blank" rel="noopener">Tshwane (ESP)</a><a href="https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg" target="_blank" rel="noopener">Johannesburg (ESP)</a></div></section>
 <section class="panel"><h2>Sources and reliability</h2><p>This is an unofficial family dashboard. GitHub Actions checks publicly available ESP pages containing IEC-derived results every 15 minutes, and this page checks the imported snapshot every five minutes. <strong>This is not a direct IEC API feed or an official election declaration.</strong> Suburb and place labels are sourced from <a href="https://theledgersa.com/elections/2026/" target="_blank" rel="noopener">The Ledger SA's 2026 ward-area lists</a>; these are geographic descriptions, not official IEC ward names. Missing results are shown as unavailable, not estimated. Voting districts reporting are not the same as ballots counted. 2021 comparisons shown in brackets are historical ward-ballot percentages. Metro comparisons use completed 2021 results; 2026 ward comparisons use the voting districts matched to current ward boundaries and may omit new or split districts. A missing historical party share is not treated as zero. Vote counts are displayed only when sourced and validated, never derived from rounded percentages. The total shown is valid ward-ballot votes, not all ballots cast. Ward-level top-three party percentages and vote counts are imported only from the individual ESP ward-ballot pages when they match the metro result. If the source is unavailable or no longer matches, only the verified leader is shown. Percentages are for the ward ballot; PR ballots and final council seats are different.</p><a href="https://results.elections.org.za/" target="_blank" rel="noopener">Official IEC results portal</a></section><p class="foot">All source timestamps shown in South Africa Standard Time (SAST, UTC+2). Not affiliated with the IEC.</p></main>
@@ -219,7 +221,7 @@ header h1{color:#fff;text-shadow:0 2px 18px rgba(0,0,0,.45)}
  <a href="#ward-explorer"><span class="nav-icon" aria-hidden="true">🔎</span>Wards</a>
 </nav>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script>
-const metros=['Cape Town','Tshwane','Johannesburg'],el=id=>document.getElementById(id),esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])),num=v=>typeof v==='number'&&Number.isFinite(v),votesValid=v=>Number.isSafeInteger(v)&&v>=0,voteFmt=v=>votesValid(v)?new Intl.NumberFormat('en-ZA').format(v):'—',pct=v=>num(v)?v.toFixed(1)+'%':'—',date=s=>{if(!s)return 'Not available';const d=new Date(s);return Number.isNaN(+d)?'Invalid timestamp':new Intl.DateTimeFormat('en-ZA',{dateStyle:'medium',timeStyle:'short',timeZone:'Africa/Johannesburg'}).format(d)+' SAST'};let data={metros:{}};let wardAreas={metros:{}};let history2021={metros:{}};let selectedMetro='Cape Town';let wardVisibleLimit=24;
+const metros=['Cape Town','Tshwane','Johannesburg','Hermanus'],el=id=>document.getElementById(id),esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])),num=v=>typeof v==='number'&&Number.isFinite(v),votesValid=v=>Number.isSafeInteger(v)&&v>=0,voteFmt=v=>votesValid(v)?new Intl.NumberFormat('en-ZA').format(v):'—',pct=v=>num(v)?v.toFixed(1)+'%':'—',date=s=>{if(!s)return 'Not available';const d=new Date(s);return Number.isNaN(+d)?'Invalid timestamp':new Intl.DateTimeFormat('en-ZA',{dateStyle:'medium',timeStyle:'short',timeZone:'Africa/Johannesburg'}).format(d)+' SAST'};let data={metros:{}};let wardAreas={metros:{}};let history2021={metros:{}};let selectedMetro='Cape Town';let wardVisibleLimit=24;
 function historicShares(metro,wardNumber=null){
  const city=history2021&&history2021.metros&&history2021.metros[metro];
  if(!city)return {};
@@ -253,6 +255,7 @@ const first=ordered.slice(0,5),remaining=ordered.slice(5);
 const past=historicShares(name);
 el('cards').innerHTML='<article class="card city-result-card"><div class="city-result-overview">'+
  '<div class="city-result-heading"><h3>'+esc(name)+'</h3><span class="small">2026 · preliminary ward ballot</span></div>'+
+ (name==='Hermanus'?'<p class="city-result-subtext">Overstrand Local Municipality · includes Hermanus, Gansbaai and Kleinmond. Results cover the whole municipality.</p>':'')+
  '<div class="city-result-subtext">'+esc(m.status||'Awaiting verified data')+'</div>'+
  '<div class="big">'+pct(p)+'</div><div class="small">Voting districts reporting: '+(valid?a+' / '+b:'Not verified')+'</div>'+
  '<div class="track"><div class="fill" style="width:'+(p||0)+'%"></div></div>'+
@@ -397,7 +400,7 @@ function updateNewsArrows(){
 const reducedMotion=()=>window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 function renderNews(payload){
  const articles=Array.isArray(payload.articles)?payload.articles:[];
- const allowed=new Set(['Cape Town','Tshwane','Johannesburg','South Africa']);
+ const allowed=new Set(['Cape Town','Tshwane','Johannesburg','Hermanus','South Africa']);
  const filtered=articles.filter(a=>a&&typeof a.title==='string'&&a.title.length>10&&typeof a.publisher==='string'&&typeof a.url==='string'&&/^https:\/\//i.test(a.url)&&allowed.has(a.metro));
  const now=Date.now();
  const current=filtered.filter(a=>{
