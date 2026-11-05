@@ -56,8 +56,23 @@ class TableRows(HTMLParser):
 def parse_ward_areas(html, expected):
     parser = TableRows()
     parser.feed(html)
+    # Pages also contain a provisional vote-results table with rows like
+    # "Ward 1 | Not yet counted". Never mistake those for area descriptions.
+    # Only read the table headed "Ward | Covers parts of".
+    start = next(
+        (
+            index + 1
+            for index, row in enumerate(parser.rows)
+            if len(row) >= 2
+            and row[0].strip().lower() == "ward"
+            and "covers parts of" in row[1].strip().lower()
+        ),
+        None,
+    )
+    if start is None:
+        raise ValueError("2026 'Ward | Covers parts of' table was not found")
     areas = {}
-    for cells in parser.rows:
+    for cells in parser.rows[start:]:
         if len(cells) < 2:
             continue
         match = re.fullmatch(r"Ward\s+(\d{1,3})", cells[0], flags=re.I)
@@ -67,7 +82,11 @@ def parse_ward_areas(html, expected):
         label = cells[1].strip()
         if not 1 <= number <= expected or not 2 <= len(label) <= 250:
             continue
-        if label.lower() in {"—", "-", "not available", "no data"}:
+        if label.lower() in {
+            "—", "-", "not available", "no data", "not yet counted",
+            "not reported", "awaiting results", "results pending",
+            "da", "anc", "eff", "pa", "actionsa", "mkp", "ifp", "good",
+        }:
             continue
         if re.search(r"<|>|https?://", label):
             continue
