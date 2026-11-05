@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-05T12:03:06.441265+00:00",
+  "checked_at": "2026-11-05T12:03:40.044717+00:00",
   "source": "Municipal Demarcation Board 2026 ward boundaries (ArcGIS)",
   "status": "ok",
   "checks": {
@@ -29,7 +29,7 @@
       "wards": 15,
       "source": "https://services7.arcgis.com/oeoyTUJC8HEeYsRB/arcgis/rest/services/MDBWards2026/FeatureServer/0",
       "bytes": 80750,
-      "updated": true
+      "updated": false
     }
   }
 }
