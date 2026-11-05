@@ -1,0 +1,31 @@
+name: Update national election results
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '2,17,32,47 * * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/update_national.py'
+      - 'scripts/fetch_results.py'
+      - '.github/workflows/update-national.yml'
+permissions:
+  contents: write
+concurrency:
+  group: municipal-election-national
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch and validate national ward-ballot results
+        run: python scripts/update_national.py
+      - name: Safely publish validated national snapshot and check status
+        run: |
+          bash scripts/publish_generated_data.sh national-status.json "Refresh provisional national election results" \
+            national-results.json national-status.json
