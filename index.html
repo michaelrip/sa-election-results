@@ -494,10 +494,17 @@ async function loadOptionalJSON(path){
 }
 // Clicking Refresh checks the newest GitHub Pages result, rather than
 // claiming to force an IEC or ESP source update between scheduled imports.
+function ballotFingerprint(value){
+ return JSON.stringify(metros.map(city=>['pr','dc'].map(kind=>{
+  const b=value?.metros?.[city]?.[kind];
+  return b?[b.snapshot_at,b.valid_votes,b.parties?.[0]?.votes]:null;
+ })));
+}
 async function load({manual=false}={}){
  const request=++latestLoad;
  const refreshButton=el('refresh');
  const oldSnapshot=data&&data.updated_at||null;
+ const oldBallotFingerprint=ballotFingerprint(partyBallots);
  const wasLoaded=Boolean(data&&data.metros&&Object.keys(data.metros).length);
  if(manual){
   refreshButton.disabled=true;
@@ -516,12 +523,7 @@ async function load({manual=false}={}){
   render();
   el('error').textContent='';
   const checkedAt=date(new Date().toISOString());
-  if(manual){
-   const changed=!wasLoaded||fresh.updated_at!==oldSnapshot;
-   showRefreshMessage(changed
-    ?'Checked '+checkedAt+'. Latest ESP results loaded (snapshot: '+date(fresh.updated_at)+').'
-    :'Checked '+checkedAt+'. No newer ESP results are published yet (snapshot: '+date(fresh.updated_at)+').');
-  }else if(!wasLoaded){
+  if(!manual&&!wasLoaded){
    showRefreshMessage('Figures checked '+checkedAt+'. Live source: IEC-derived via ESP. Refresh checks for newly published ballot figures.');
   }
   const [areas,details,ballots,oldResults,legacyHistory,feedHealth]=await Promise.all([
@@ -548,6 +550,14 @@ async function load({manual=false}={}){
   }
   data=fresh;
   render();
+  if(manual){
+   const wardChanged=!wasLoaded||fresh.updated_at!==oldSnapshot;
+   const prChanged=oldBallotFingerprint!==ballotFingerprint(partyBallots);
+   showRefreshMessage('Checked '+checkedAt+'. '+(wardChanged||prChanged?
+    (wardChanged?'Updated ward figures loaded. ':'')+(prChanged?'Updated PR / district ballot figures loaded. ':''):
+    'No newer Ward or PR ballot figures published yet. ')+
+    'ESP snapshots are checked automatically, usually every 15 minutes.');
+  }
   if(manual&&feedHealth&&feedHealth.checks){
    const failed=Object.entries(feedHealth.checks).filter(([,item])=>item&&item.status==='error').map(([name])=>name);
    if(failed.length){
