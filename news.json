@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-05T14:16:20.713554Z",
+  "checked_at": "2026-11-05T14:29:42.157746Z",
   "source": "Publisher-attributed headlines discovered through Google News RSS",
   "feed_status": "ok",
   "articles": [
@@ -26,6 +26,14 @@
       "published_at": "2026-11-05T09:09:34Z",
       "published_date": "2026-11-05",
       "metro": "Johannesburg"
+    },
+    {
+      "title": "LGE2026: 65% of Western Cape election results captured, IEC says",
+      "publisher": "IOL",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdmdsbVZyWngtSW0ydzdBV2VhczVWejJuZ3hYWjJoWmFFQTh6SHJVbkxCdDhDekt6QXBkTURBMTdwQkF0SUdoVXphVTM0anBtLWE4aW5nVzk3RWtxazRvd2E4WGozbk5CMUNnd2Q0VG9YTXBNZ2VRTG5JYXpqalRMZ1ZmM3gwNDBYVGttREpldmRFR2tJR1IwR18xYUJBam5F?oc=5",
+      "published_at": "2026-11-05T13:50:00Z",
+      "published_date": "2026-11-05",
+      "metro": "South Africa"
     },
     {
       "title": "Local government election turnout tops 2021 level",
@@ -72,14 +80,6 @@
       "publisher": "eNCA",
       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxORlkzZ21VV2JHNVNwU2duZEp3Nkluck1PUGpJZXR1V21EbmlUaFRUcTNobm8zdFhIMG1yYmZ0WjFSTUgweHBKdmRPejdHLWxkM0c0VjZzZzBEVXlTMnl3cFdXVUVXZndRTWdWejJIdmRnOHJ4UU1rd3o4WXBmSFJEd0dyTk1YTzZOYlAyT0dpWE1YdzgyMjFRLTczaw?oc=5",
       "published_at": "2026-11-05T10:52:19Z",
-      "published_date": "2026-11-05",
-      "metro": "South Africa"
-    },
-    {
-      "title": "IEC warns parties against spreading unverified figures ahead of the official results announcement",
-      "publisher": "The Citizen",
-      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNbnp4MXE5Mkh3NXR6bXV0ZU1XcTdHOWszaWlobVAxcV9CcWRVTmdRNkpqNXhBLUY0RDlCSHdRMGNwSjNfdERhVUJ2WlhhUmVGM0JBc2dsSzlnMzdZcHZtWlF1aGo5SlJzbFBLZkFaTTNlWGxqV2VQV2JfaFV0RngwV0F5U08yX3g3RGFhMDV2Y0xzblZ1LWdQREZIMHRlWDRwc2NRaDZWeHU0WVlBc1E3N04zVEJUNlVpZnhjajJqRTR0U3lHcFBWNm5TVlp3MndqNzBQRTM3V3o1bjh0TTk5ZldWUHRRUmM?oc=5",
-      "published_at": "2026-11-05T10:50:56Z",
       "published_date": "2026-11-05",
       "metro": "South Africa"
     }
