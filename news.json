@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-05T12:29:28.609144Z",
+  "checked_at": "2026-11-05T13:20:33.130159Z",
   "source": "Publisher-attributed headlines discovered through Google News RSS",
   "feed_status": "ok",
   "articles": [
@@ -28,10 +28,18 @@
       "metro": "Johannesburg"
     },
     {
+      "title": "DA leads preliminary Ward 117 results with 78.6% of vote",
+      "publisher": "The Citizen",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPOFgtTVVkNk5WQ2hyakpTWXJRZjcxME1UWmxiYnNyY1lUNVVaNlBaU1pLSVpzaEYwYnlMTUNSY2M4RzFYV1hiTUVlWTFFa3k2NnVCcVplQ00tekl0TUhSNVJNRjFSQXM0OXJ3NGJqenRaQ3VTeVAzMGdaVlhfenVoUjIxQ2pkckdUZnBSR0J1UXZSS2wyRUhMRlJudjVqQWZqelk2ZEFaZjk2STd4dS1fZ0FSTHF2SkZxX21VYzFPMUF0ZlAtVFE5VF9jY05PRTlwWDBNQ0ZjckJDSGRiSzQw?oc=5",
+      "published_at": "2026-11-05T12:00:25Z",
+      "published_date": "2026-11-05",
+      "metro": "South Africa"
+    },
+    {
       "title": "IEC and police launch urgent probe after Siyancuma Independent Forum members storm Douglas voting station",
       "publisher": "EWN",
       "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPeTk3RENKZEpjTGJ5M2ltMnRRNjRMOE1uSzlGWmVLaHJMYjRtMVhSRVZwczR3U0stbFc1UVZ5czg3XzgyQnVNdEI4VGplbHM2UmVfdEtzbDdmeTM1NGJtN3ZCaHVBM25Fb2JmXzZrMUllMW5obmVYZ0hTNU1NNk5QRVBxbURYT1hBUHViS19jdF9HYl9kWlVCaUUxU2UtYTlseTFMTjhGalpTRTVSb2hxT21MOGc2Q1FJdjhiU3FiY1JjMWNXN29LMDUydVB2Y21IY1NiYQ?oc=5",
-      "published_at": "2026-11-05T11:44:17Z",
+      "published_at": "2026-11-05T11:47:11Z",
       "published_date": "2026-11-05",
       "metro": "South Africa"
     },
@@ -40,14 +48,6 @@
       "publisher": "EWN",
       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQazZIbFdHNERmMWxmal9yT2tUSXRFaklCa2tMRUIwaS1sbEM5bHk5NjQ5S3k3Vl9HLW04dDI5Xy1hbDlIYkNIelE2RmZpRE1sZzhZYXRxWlkzb2tRQXltOVlEV0NhMjlrWGFxcW1JbTlCRkF4X1VLZUlPaE1uWW1hSm1ldXdQcy0xdTN6S3dEaWl6LXVOTGR4aEp1Vm4yV3JLYzEtekVQM0pCanYxdzdLS1FPWlcxQQ?oc=5",
       "published_at": "2026-11-05T11:37:11Z",
-      "published_date": "2026-11-05",
-      "metro": "South Africa"
-    },
-    {
-      "title": "IEC: 15.9 million voters participated in 2026 elections",
-      "publisher": "eNCA",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxORlkzZ21VV2JHNVNwU2duZEp3Nkluck1PUGpJZXR1V21EbmlUaFRUcTNobm8zdFhIMG1yYmZ0WjFSTUgweHBKdmRPejdHLWxkM0c0VjZzZzBEVXlTMnl3cFdXVUVXZndRTWdWejJIdmRnOHJ4UU1rd3o4WXBmSFJEd0dyTk1YTzZOYlAyT0dpWE1YdzgyMjFRLTczaw?oc=5",
-      "published_at": "2026-11-05T10:52:19Z",
       "published_date": "2026-11-05",
       "metro": "South Africa"
     }
