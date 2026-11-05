@@ -1,14 +1,14 @@
 {
-  "checked_at": "2026-11-05T11:30:02.230202Z",
+  "checked_at": "2026-11-05T12:06:35.604695Z",
   "source": "Publisher-attributed headlines discovered through Google News RSS",
   "feed_status": "ok",
   "articles": [
     {
-      "title": "Cape Town election 2026: Leaders focus on housing, crime and service delivery",
-      "publisher": "IOL",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNQUpHOFJiR0c2YS1ZWDVySmJDcFNETVZuTGtWZmx5MHdBMFhKWnNCY1hCVTBJeEpBQWpFOWRIQXNpVHlBZGtEcnFGT0xvUGl2NVZlMW5oVnFaSFVSWnQybkFBTldGbWRYUTBZWHhhXzJrcTZFWldkaUV5Q3p1QUZQSU16Y25zbm9NRzl1QVNpSmc1d3N2T2U1eURUTERqQW8tTUswYV9veWpOWXljeUVmRUVGVQ?oc=5",
-      "published_at": "2026-11-04T19:00:00Z",
-      "published_date": "2026-11-04",
+      "title": "DA declares early victory in Cape Town as Hill-Lewis predicts 58% of vote",
+      "publisher": "Business Day",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNQmxNcFBRU3pyZWFmYll5TU1OaWlrQUgtRkR3UXZucVJ5SW1Rc2I1RWJLbGlBMlNnVks1VTRQTkRSZFl1X0tVd1U1RFFZXy1SUVpfaHZZRzJzTHJjT2dDSFc1OTFJNjFCaW02d0NybWVwNG5JU2UxeXNIbDJhcEdQMWhJNXczRERaX0Z5cDk0dk5UajRhMWJDazJxQU00XzlJR21CNkRHWURoMmY3T1RYd09SS3BIdlZySDM4?oc=5",
+      "published_at": "2026-11-05T11:41:18Z",
+      "published_date": "2026-11-05",
       "metro": "Cape Town"
     },
     {
@@ -21,33 +21,33 @@
     },
     {
       "title": "LIVE UPDATES | Zille in high spirits as early election results show DA leading in Johannesburg",
-      "publisher": "TimesLIVE",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNODVNTjczTVY1Y1VUY1BxVWtFWm1UaDJkVnBWdm5xQmhiaVdCTUo2SEVIYW5aNm1ROExOdHAyM0pjYXg0NTdMVUNwQmRXSmR5N0FXUFAyak84STUwdXBKMGRwZjFDRzZwdTNTNUpTTkRqY0YybnpfeURFVWtkc1pJMGV5V0htd1hvQ01UODM4MDhHS1Rrcm0teHdFVFRtZDBFSGNLM29lZUo3Y2tSa25IZnByQTBEcTZLZnJXSUE1T0lTOEY3VlRSZEY4QXBXalN0NGJrTzM4Qi0?oc=5",
+      "publisher": "Business Day",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNakJsRFk5aUY3THFDalBXWW1OeUt3Wk1YX0lqdE85M3B6SmNEOWRJcGxMUkVRRTJfSEtKR1RDY05uc1g1NS1HcVFrT3NXWk12WFZwTXJqc0lfeUlsanVtOU9ZRDBkRnFKYXVOMHNxVjhpbTJzbFV0ZWMzQ2pUbUhHZnRKZjNkNDlEOXo3WURNb1p1X0hZRldIUlN4bEVjdzk5YUVEQk5VemFKd0dVelNQWDItbUthUUw0anFmUG9yblFfS0NUVndjUmRBdmJDcExfazVLX2tVU1BmbFU?oc=5",
       "published_at": "2026-11-04T19:21:44Z",
       "published_date": "2026-11-04",
       "metro": "Johannesburg"
+    },
+    {
+      "title": "IEC and police launch urgent probe after Siyancuma Independent Forum members storm Douglas voting station",
+      "publisher": "EWN",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPeTk3RENKZEpjTGJ5M2ltMnRRNjRMOE1uSzlGWmVLaHJMYjRtMVhSRVZwczR3U0stbFc1UVZ5czg3XzgyQnVNdEI4VGplbHM2UmVfdEtzbDdmeTM1NGJtN3ZCaHVBM25Fb2JmXzZrMUllMW5obmVYZ0hTNU1NNk5QRVBxbURYT1hBUHViS19jdF9HYl9kWlVCaUUxU2UtYTlseTFMTjhGalpTRTVSb2hxT21MOGc2Q1FJdjhiU3FiY1JjMWNXN29LMDUydVB2Y21IY1NiYQ?oc=5",
+      "published_at": "2026-11-05T11:44:17Z",
+      "published_date": "2026-11-05",
+      "metro": "South Africa"
+    },
+    {
+      "title": "Mantashe says ANC's electoral decline is a sign of South Africa's maturing democracy",
+      "publisher": "EWN",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQazZIbFdHNERmMWxmal9yT2tUSXRFaklCa2tMRUIwaS1sbEM5bHk5NjQ5S3k3Vl9HLW04dDI5Xy1hbDlIYkNIelE2RmZpRE1sZzhZYXRxWlkzb2tRQXltOVlEV0NhMjlrWGFxcW1JbTlCRkF4X1VLZUlPaE1uWW1hSm1ldXdQcy0xdTN6S3dEaWl6LXVOTGR4aEp1Vm4yV3JLYzEtekVQM0pCanYxdzdLS1FPWlcxQQ?oc=5",
+      "published_at": "2026-11-05T11:37:11Z",
+      "published_date": "2026-11-05",
+      "metro": "South Africa"
     },
     {
       "title": "IEC: 15.9 million voters participated in 2026 elections",
       "publisher": "eNCA",
       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxORlkzZ21VV2JHNVNwU2duZEp3Nkluck1PUGpJZXR1V21EbmlUaFRUcTNobm8zdFhIMG1yYmZ0WjFSTUgweHBKdmRPejdHLWxkM0c0VjZzZzBEVXlTMnl3cFdXVUVXZndRTWdWejJIdmRnOHJ4UU1rd3o4WXBmSFJEd0dyTk1YTzZOYlAyT0dpWE1YdzgyMjFRLTczaw?oc=5",
       "published_at": "2026-11-05T10:52:19Z",
-      "published_date": "2026-11-05",
-      "metro": "South Africa"
-    },
-    {
-      "title": "IEC warns parties against spreading unverified figures ahead of the official results announcement",
-      "publisher": "The Citizen",
-      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNbnp4MXE5Mkh3NXR6bXV0ZU1XcTdHOWszaWlobVAxcV9CcWRVTmdRNkpqNXhBLUY0RDlCSHdRMGNwSjNfdERhVUJ2WlhhUmVGM0JBc2dsSzlnMzdZcHZtWlF1aGo5SlJzbFBLZkFaTTNlWGxqV2VQV2JfaFV0RngwV0F5U08yX3g3RGFhMDV2Y0xzblZ1LWdQREZIMHRlWDRwc2NRaDZWeHU0WVlBc1E3N04zVEJUNlVpZnhjajJqRTR0U3lHcFBWNm5TVlp3MndqNzBQRTM3V3o1bjh0TTk5ZldWUHRRUmM?oc=5",
-      "published_at": "2026-11-05T10:50:56Z",
-      "published_date": "2026-11-05",
-      "metro": "South Africa"
-    },
-    {
-      "title": "LIVE RESULTS UPDATE | Track the 2026 local government election results here",
-      "publisher": "TimesLIVE",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQc1RfYVdSTHhLcFhiYnJteGRCZVhLWEhMdDVibWRuWUUxdWVnbU1reUJKQWNvbXFsV3kzNFIwTEZIYjFRaC1KdGx2SnpzbHdKRUx3enBxWlIxVzcyVW9PNXhZWVg1dHJfTEhsT0gtcjhaUTlvVlN3eFp0YlpQOGdzR0Q3ZFpZYjBoN0NhN1N4U3lDNGIxWHN6NTI5RmNRQTV3U2hkeHg1SUt4cWIxTWtQbjhoMUQ1MFdfeU1KZl9kQjJjdGdUTkQ3R1RFWlJacVNuNjR3?oc=5",
-      "published_at": "2026-11-05T10:36:04Z",
       "published_date": "2026-11-05",
       "metro": "South Africa"
     }

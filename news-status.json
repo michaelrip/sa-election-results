@@ -1,28 +1,33 @@
 {
-  "checked_at": "2026-11-05T11:30:02.230202Z",
+  "checked_at": "2026-11-05T12:06:35.604695Z",
   "status": "ok",
-  "new_eligible_items": 73,
+  "new_eligible_items": 79,
   "published_items": 6,
   "checks": [
     {
       "query": "Cape Town 2026 local government election when:3d",
       "status": "ok",
-      "eligible": 25
+      "eligible": 28
     },
     {
       "query": "Tshwane Pretoria 2026 local government election when:3d",
       "status": "ok",
-      "eligible": 7
+      "eligible": 6
     },
     {
       "query": "Johannesburg 2026 local government election when:3d",
       "status": "ok",
-      "eligible": 23
+      "eligible": 24
     },
     {
       "query": "South Africa municipal election 2026 results when:3d",
       "status": "ok",
-      "eligible": 18
+      "eligible": 21
+    },
+    {
+      "query": "Hermanus Overstrand 2026 municipal election results when:3d",
+      "status": "ok",
+      "eligible": 0
     }
   ]
 }
