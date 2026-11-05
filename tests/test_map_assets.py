@@ -36,7 +36,7 @@ class WardMapAssets(unittest.TestCase):
         html = (ROOT / "index.html").read_text(encoding="utf-8")
         js = (ROOT / "ward-maps.js").read_text(encoding="utf-8")
         self.assertIn('id="ward-detail-map"', html)
-        self.assertIn('src="./ward-maps.js"', html)
+        self.assertRegex(html, r'src="\./ward-maps\.js(?:\?[^"]*)?"')
         self.assertIn('data-ward-map-metro="Cape Town"', html)
         self.assertIn('data-ward-map-metro="Tshwane"', html)
         self.assertIn('data-ward-map-metro="Johannesburg"', html)
