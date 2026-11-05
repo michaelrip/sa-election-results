@@ -9,7 +9,29 @@
 }
 .ward-map-popup .leaflet-popup-content a.ward-quick-link:focus-visible{outline:3px solid #185b83;outline-offset:3px}
 .ward-more{display:block;min-height:48px;width:100%;margin:14px 0 0;border-color:#759cbb;background:#1e466d}
-.mobile-quick-nav{display:none}
+/* Keep the four-section dock visible across phones, landscape and
+   in-app browsers whose viewport is wider than the mobile breakpoint. */
+.mobile-quick-nav{
+  position:fixed;z-index:9999;left:50%;right:auto;bottom:0;
+  transform:translateX(-50%);width:min(100%,540px);
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;
+  padding:6px max(8px,env(safe-area-inset-right)) calc(8px + env(safe-area-inset-bottom)) max(8px,env(safe-area-inset-left));
+  background:rgba(11,27,45,.98);border:1px solid #55728e;border-bottom:0;
+  border-radius:14px 14px 0 0;box-shadow:0 -5px 22px rgba(0,0,0,.38);
+  -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)
+}
+.mobile-quick-nav a{
+  display:flex;flex-direction:column;gap:2px;align-items:center;justify-content:center;
+  min-width:0;min-height:48px;border-radius:10px;
+  color:#e7f2ff;font-size:11px;font-weight:700;line-height:1.15;text-decoration:none
+}
+.mobile-quick-nav a:focus-visible,.mobile-quick-nav a:active,.mobile-quick-nav a.is-active{
+  background:#254d71;outline:2px solid #9bd6ff;outline-offset:-2px
+}
+.mobile-quick-nav .nav-icon{font-size:20px;line-height:1.1}
+main{padding-bottom:calc(108px + env(safe-area-inset-bottom))}
+html{scroll-padding-bottom:calc(100px + env(safe-area-inset-bottom))}
+
 #news-heading,#metro-maps,#metro-votes,#ward-explorer,#ward-map-detail{scroll-margin-top:16px}
 .ward-name,.partyline span,.news-story a,.ward-map-detail,.city-result-card{overflow-wrap:anywhere}
 
@@ -76,7 +98,7 @@
   .map-source-note,.map-footnote{font-size:11px;line-height:1.55}
   .metro-votes-section{margin-top:16px}
   .metro-summary-head h2{font-size:22px}
-  .metro-vote-switcher{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px
+  .metro-vote-switcher{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
   .metro-vote-switcher button{min-height:48px;font-size:clamp(11px,3.2vw,14px);padding:10px 3px}
   .city-result-card{grid-template-columns:minmax(0,1fr);gap:12px;padding:14px}
   .city-result-heading h3{font-size:21px}
@@ -103,20 +125,10 @@
   .ward-more{margin-top:12px}
   .card,.panel,.news-story,.ward-map-section{backdrop-filter:none;-webkit-backdrop-filter:none;background:rgba(16,33,54,.96)}
   .mobile-quick-nav{
-    position:fixed;z-index:2000;left:0;right:0;bottom:0;
-    display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;
-    padding:6px max(8px,env(safe-area-inset-right)) calc(7px + env(safe-area-inset-bottom)) max(8px,env(safe-area-inset-left));
-    background:rgba(11,27,45,.97);border-top:1px solid #55728e;
-    box-shadow:0 -5px 22px rgba(0,0,0,.38);
-    -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+    left:0;right:0;bottom:0;transform:none;width:100%;
+    border-left:0;border-right:0;border-radius:0;
+    padding-bottom:calc(9px + env(safe-area-inset-bottom))
   }
-  .mobile-quick-nav a{
-    display:flex;flex-direction:column;gap:2px;align-items:center;justify-content:center;
-    min-width:0;min-height:47px;border-radius:10px;
-    color:#e7f2ff;font-size:11px;font-weight:700;line-height:1.15;text-decoration:none;
-  }
-  .mobile-quick-nav a:focus-visible,.mobile-quick-nav a:active{background:#254d71;outline:2px solid #9bd6ff;outline-offset:-2px}
-  .mobile-quick-nav .nav-icon{font-size:20px;line-height:1.1}
   #ward-explorer,#metro-votes,#metro-maps,#news-heading,#ward-map-detail{scroll-margin-top:12px}
 }
 @media(max-width:390px){
