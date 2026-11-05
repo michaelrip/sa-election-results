@@ -64,6 +64,13 @@ class History2021Tests(unittest.TestCase):
         self.assertNotIn("PA", row["parties"])
         self.assertNotIn("MK", row["parties"])
 
+    def test_overstrand_historical_municipality_not_false_metro(self):
+        raw = visible(METRO.replace("City of Cape Town", "Overstrand"))
+        row = parse_metro(raw, "Hermanus", "https://go.esp.info/elections/local/2021/western-cape/overstrand")
+        self.assertEqual(row["parties"]["DA"], 57.8)
+        self.assertEqual(row["year"], 2021)
+        self.assertEqual(row["ballot_type"], "Ward")
+
     def test_wrong_ward_rejected(self):
         with self.assertRaisesRegex(ValueError, "Wrong ward"):
             parse_ward(visible(WARD), 37, "https://example.com")
