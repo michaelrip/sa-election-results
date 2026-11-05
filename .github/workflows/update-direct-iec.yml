@@ -1,0 +1,63 @@
+name: Check direct IEC 2026 public election reports
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/import_iec_reports.py'
+      - 'scripts/import_iec_history.py'
+      - 'tests/test_iec_direct.py'
+      - '.github/workflows/update-direct-iec.yml'
+  schedule:
+    - cron: '14,44 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: iec-official-reports
+  cancel-in-progress: false
+jobs:
+  iec-results:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    env:
+      IEC_2026_EVENT_ID: ${{ vars.IEC_2026_EVENT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate direct official report parser
+        run: python -m unittest discover -s tests -p 'test_iec_direct.py' -v
+      - name: Check IEC 2026 municipality CSV reports
+        id: check
+        shell: bash
+        run: |
+          set +e
+          python scripts/import_iec_reports.py
+          rc=$?
+          echo "exit_code=$rc" >> "$GITHUB_OUTPUT"
+          exit 0
+      - name: Publish validated direct IEC reports or missing-source status
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add iec-source-status.json
+          if [ -f results-iec.json ]; then git add results-iec.json; fi
+          if ! git diff --cached --quiet; then
+            git commit -m "Check direct IEC public reports; publish only verified all-city results"
+            for attempt in 1 2 3 4 5; do
+              git fetch origin main
+              if ! git rebase origin/main; then
+                git rebase --abort || true
+                exit 1
+              fi
+              if git push origin HEAD:main; then exit 0; fi
+              sleep 3
+            done
+            exit 1
+          fi
+      - name: Report direct IEC source availability
+        if: steps.check.outputs.exit_code != '0'
+        run: |
+          echo "Direct official 2026 CSV data is not yet available for all four municipalities."
+          echo "No direct results were published. Do NOT label the ESP snapshot as direct IEC."
