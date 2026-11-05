@@ -1,18 +1,18 @@
 {
-  "checked_at": "2026-11-05T08:55:27.690068+00:00",
-  "source": "ESP (IEC-derived public pages)",
+  "checked_at": "2026-11-05T08:57:18.403131+00:00",
+  "source": "ESP, reporting IEC-derived preliminary results",
   "checks": {
     "Cape Town": {
       "status": "error",
-      "detail": "Ward ballot section missing"
+      "detail": "Ward party rows missing"
     },
     "Tshwane": {
       "status": "error",
-      "detail": "Ward ballot section missing"
+      "detail": "Ward party rows missing"
     },
     "Johannesburg": {
       "status": "error",
-      "detail": "Ward ballot section missing"
+      "detail": "Ward party rows missing"
     }
   },
   "results_updated": false,
