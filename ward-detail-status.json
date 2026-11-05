@@ -1,42 +1,42 @@
 {
-  "checked_at": "2026-11-05T17:33:37.398249+00:00",
+  "checked_at": "2026-11-05T18:12:18.878064+00:00",
   "metros": {
     "Cape Town": {
       "cached": 83,
-      "enriched": 9,
+      "enriched": 7,
       "not_reported": 22,
       "pending": 0,
-      "errors": 4,
+      "errors": 6,
       "example_errors": [
         "Unrecognised or repeated party among first three",
         "Unrecognised or repeated party among first three",
-        "Unrecognised or repeated party among first three"
+        "Ward page district count differs from metro summary"
       ],
-      "top_three_available": 92
+      "top_three_available": 90
     },
     "Tshwane": {
-      "cached": 66,
-      "enriched": 15,
-      "not_reported": 21,
+      "cached": 61,
+      "enriched": 21,
+      "not_reported": 20,
       "pending": 0,
       "errors": 5,
       "example_errors": [
+        "Ward page district count differs from metro summary",
         "Fewer than two ranked ballot rows",
-        "Unrecognised or repeated party among first three",
-        "Ward breakdown does not match latest metro leader or reporting"
+        "Unrecognised or repeated party among first three"
       ],
-      "top_three_available": 81
+      "top_three_available": 82
     },
     "Johannesburg": {
       "cached": 87,
       "enriched": 12,
-      "not_reported": 32,
+      "not_reported": 33,
       "pending": 0,
-      "errors": 4,
+      "errors": 3,
       "example_errors": [
         "Unrecognised or repeated party among first three",
         "Unrecognised or repeated party among first three",
-        "Ward breakdown does not match latest metro leader or reporting"
+        "Unrecognised or repeated party among first three"
       ],
       "top_three_available": 99
     },
