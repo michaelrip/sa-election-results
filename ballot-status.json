@@ -1,26 +1,26 @@
 {
-  "checked_at": "2026-11-05T23:00:45.217834+00:00",
+  "checked_at": "2026-11-05T23:10:15.323300+00:00",
   "source": "ESP individual 2026 PR and DC 40% ballot pages",
   "checks": {
     "Cape Town": {
       "pr": {
         "status": "ok",
         "valid_votes": 549408,
-        "snapshot_at": "2026-11-05T22:48:00+00:00"
+        "snapshot_at": "2026-11-05T23:06:00+00:00"
       }
     },
     "Tshwane": {
       "pr": {
         "status": "ok",
-        "valid_votes": 514381,
-        "snapshot_at": "2026-11-05T22:52:00+00:00"
+        "valid_votes": 518849,
+        "snapshot_at": "2026-11-05T23:06:00+00:00"
       }
     },
     "Johannesburg": {
       "pr": {
         "status": "ok",
-        "valid_votes": 540196,
-        "snapshot_at": "2026-11-05T22:52:00+00:00"
+        "valid_votes": 559584,
+        "snapshot_at": "2026-11-05T23:06:00+00:00"
       }
     },
     "Hermanus": {
@@ -33,6 +33,12 @@
         "status": "ok",
         "valid_votes": 42536,
         "snapshot_at": "2026-11-05T20:15:00+00:00"
+      }
+    },
+    "Nelson Mandela Bay": {
+      "pr": {
+        "status": "unavailable",
+        "detail": "go.esp.info: Wrong election year or municipality; esp.info: Wrong election year or municipality; zero.esp.info: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is n"
       }
     }
   },
