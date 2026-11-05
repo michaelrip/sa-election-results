@@ -1,6 +1,6 @@
 {
   "source": "Individual ESP 2026 ward-ballot pages (IEC-derived; provisional)",
-  "checked_at": "2026-11-05T12:03:50.148082+00:00",
+  "checked_at": "2026-11-05T12:07:03.712552+00:00",
   "metros": {
     "Cape Town": {
       "5": {
@@ -3400,6 +3400,29 @@
         "reporting": "1 of 9 districts",
         "source_at": "2026-11-05T09:55:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-10"
+      },
+      "11": {
+        "parties": [
+          {
+            "name": "ANC",
+            "share": 56.3,
+            "votes": 516
+          },
+          {
+            "name": "ActionSA",
+            "share": 14.1,
+            "votes": 129
+          },
+          {
+            "name": "DA",
+            "share": 7.4,
+            "votes": 68
+          }
+        ],
+        "valid_votes": 916,
+        "reporting": "1 of 7 districts",
+        "source_at": "2026-11-05T12:03:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-11"
       },
       "13": {
         "parties": [

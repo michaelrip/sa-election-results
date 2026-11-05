@@ -1,24 +1,22 @@
 {
-  "checked_at": "2026-11-05T12:03:46.508029+00:00",
+  "checked_at": "2026-11-05T12:07:00.039954+00:00",
   "source": "ESP public pages (IEC-derived, unofficial; not direct IEC API)",
   "checks": {
     "Cape Town": {
-      "status": "ok",
-      "districts_reported": 225,
-      "wards_with_data": 94,
-      "snapshot_at": "2026-11-05T12:02:00+00:00"
+      "status": "error",
+      "detail": "Ward ballot header missing"
     },
     "Tshwane": {
       "status": "ok",
       "districts_reported": 177,
       "wards_with_data": 69,
-      "snapshot_at": "2026-11-05T12:02:00+00:00"
+      "snapshot_at": "2026-11-05T12:03:00+00:00"
     },
     "Johannesburg": {
       "status": "ok",
-      "districts_reported": 156,
-      "wards_with_data": 86,
-      "snapshot_at": "2026-11-05T12:02:00+00:00"
+      "districts_reported": 157,
+      "wards_with_data": 87,
+      "snapshot_at": "2026-11-05T12:03:00+00:00"
     },
     "Hermanus": {
       "status": "ok",
@@ -27,6 +25,6 @@
       "snapshot_at": "2026-11-05T11:47:00+00:00"
     }
   },
-  "results_updated": false,
-  "status": "ok"
+  "results_updated": true,
+  "status": "partial"
 }
