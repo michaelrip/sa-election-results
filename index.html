@@ -246,6 +246,7 @@ function parties(list,showVotes=false,historical={},maxItems=10){
  :'<p class="empty">No reported party shares available.</p>'
 }
 function renderMetroCard(){
+ const expanded=el('cards').querySelector('.city-more-results')?.open||false;
  const name=selectedMetro,m=(data.metros||{})[name]||{},a=m.districts_reported,b=m.districts_total,valid=Number.isInteger(a)&&Number.isInteger(b)&&a>=0&&b>0&&a<=b,p=valid?100*a/b:null;
 const ordered=Array.isArray(m.parties)?m.parties.filter(x=>x&&num(x.share)&&x.share>=0&&x.share<=100).sort((a,b)=>b.share-a.share):[];
 const first=ordered.slice(0,5),remaining=ordered.slice(5);
@@ -264,6 +265,7 @@ el('cards').innerHTML='<article class="card city-result-card"><div class="city-r
  parties(first,true,past)+
  (remaining.length?'<details class="city-more-results"><summary>Show '+remaining.length+' more parties</summary>'+parties(remaining,true,past,remaining.length)+'</details>':'')+
  '</div></article>';
+ if(expanded){const more=el('cards').querySelector('.city-more-results');if(more)more.open=true}
 }
 function render(){const ts=Date.parse(data.updated_at||''),age=(Date.now()-ts)/60000,recent=Number.isFinite(age)&&age>=0&&age<60;el('status').className='pill '+(recent?'ok':'warn');el('status').textContent=recent?'Recent preliminary source snapshot':'NO RECENT SOURCE SNAPSHOT';el('updated').textContent='Data timestamp: '+date(data.updated_at);
 renderMetroCard();
@@ -349,6 +351,14 @@ function newsDate(item){
  }
  return 'Date not available';
 }
+function updateNewsArrows(){
+ const feed=el('news-feed');
+ const previous=el('news-prev'),next=el('news-next');
+ const scrollable=feed.scrollWidth>feed.clientWidth+4;
+ previous.disabled=!scrollable||feed.scrollLeft<=3;
+ next.disabled=!scrollable||feed.scrollLeft+feed.clientWidth>=feed.scrollWidth-4;
+}
+const reducedMotion=()=>window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 function renderNews(payload){
  const articles=Array.isArray(payload.articles)?payload.articles:[];
  const allowed=new Set(['Cape Town','Tshwane','Johannesburg','South Africa']);
@@ -358,6 +368,7 @@ function renderNews(payload){
   const d=Date.parse(a.published_at||a.published_date||'');
   return Number.isFinite(d)&&d<=now+86400000&&now-d<=5*86400000;
  }).slice(0,6);
+ const previousOffset=el('news-feed').scrollLeft;
  el('news-feed').innerHTML=current.length?current.map(a=>
   '<article class="news-story"><p class="news-topic">'+esc(a.metro)+'</p>'+
   '<a href="'+esc(a.url)+'" target="_blank" rel="noopener noreferrer">'+esc(a.title)+'</a>'+
@@ -372,9 +383,8 @@ function renderNews(payload){
  else text+=' Automatic headline updates are being connected.';
  if(payload.feed_status==='unavailable')text+=' Latest feed check unavailable; showing previously sourced stories.';
  el('news-status').textContent=text;
- const many=current.length>3;
- el('news-prev').disabled=!many;
- el('news-next').disabled=!many;
+ el('news-feed').scrollLeft=previousOffset;
+ updateNewsArrows();
 }
 async function loadNews(){
  try{
@@ -384,11 +394,14 @@ async function loadNews(){
  }catch(e){
   el('news-status').textContent='Could not refresh news headlines. Election results remain available.';
   el('news-feed').innerHTML='<p class="news-empty">News currently unavailable. See <a href="https://elections.sabcnews.com/election-news/" target="_blank" rel="noopener noreferrer">SABC election news</a>.</p>';
+  updateNewsArrows();
  }
 }
 const newsStrip=el('news-feed');
-el('news-prev').onclick=()=>newsStrip.scrollBy({left:-Math.max(260,newsStrip.clientWidth*.85),behavior:'smooth'});
-el('news-next').onclick=()=>newsStrip.scrollBy({left:Math.max(260,newsStrip.clientWidth*.85),behavior:'smooth'});
+el('news-prev').onclick=()=>newsStrip.scrollBy({left:-Math.max(220,newsStrip.clientWidth*.85),behavior:reducedMotion()?'auto':'smooth'});
+el('news-next').onclick=()=>newsStrip.scrollBy({left:Math.max(220,newsStrip.clientWidth*.85),behavior:reducedMotion()?'auto':'smooth'});
+newsStrip.addEventListener('scroll',updateNewsArrows,{passive:true});
+window.addEventListener('resize',updateNewsArrows);
 loadNews();
 setInterval(loadNews,15*60*1000);
 </script><script src="./ward-maps.js"></script></body></html>
