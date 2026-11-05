@@ -54,7 +54,7 @@ class IECDirectReportTests(unittest.TestCase):
 
     def test_reject_pr_only(self):
         with self.assertRaisesRegex(ImportErrorIEC, "No valid IEC Ward"):
-            parse_csv(SAMPLE.replace(",Ward,", ",PR,").encode(), "Johannesburg", 2026)
+            parse_csv(SAMPLE.replace(",Ward,DEMOCRATIC", ",PR,DEMOCRATIC").replace(",Ward,AFRICAN", ",PR,AFRICAN").encode(), "Johannesburg", 2026)
 
     def test_report_urls_are_iec_only(self):
         self.assertEqual(
