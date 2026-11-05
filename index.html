@@ -861,7 +861,12 @@ async function refreshNationalPanel(){
   const pct=(100*d.districts_reported/d.districts_total).toFixed(1);
   const stamp=new Intl.DateTimeFormat('en-ZA',{dateStyle:'medium',timeStyle:'short',timeZone:'Africa/Johannesburg'}).format(new Date(d.updated_at));
   summary.textContent=fmt(d.districts_reported)+' of '+fmt(d.districts_total)+' voting districts reported ('+pct+'%). Snapshot: '+stamp+' SAST.';
+  // Replace the previous snapshot instead of appending another set of party rows.
+  bars.replaceChildren();
+  const seenParties=new Set();
   d.parties.forEach(p=>{
+   if(seenParties.has(p.name))return;
+   seenParties.add(p.name);
    if(typeof p.name!=='string'||!Number.isFinite(p.share)||p.share<0||p.share>100)return;
    const row=document.createElement('div');row.className='national-party-row';
    const label=document.createElement('span');label.textContent=p.name;
