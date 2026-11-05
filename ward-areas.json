@@ -365,9 +365,26 @@
       "133": "Ivory Park",
       "134": "Bloubosrand, Farmall, Inadan, Kya Sand, Millgate Farm, Randburg, Riverbend, Roodepoort",
       "135": "Soweto"
+    },
+    "Hermanus": {
+      "1": "Stanford, Thembelihle, De Kelders North (Guthrie Street)",
+      "2": "Gansbaai East (Main Road), Masakhane",
+      "3": "Hermanus, Fernkloof, Voëlklip, Eastcliff, Northcliff, Westcliff East",
+      "4": "Mount Pleasant, Chanteclair, Berghof, Kidbrook, Hemel-en-Aarde Valley, Westcliff West",
+      "5": "Zwelihle East",
+      "6": "Zwelihle South",
+      "7": "Sandbaai, Hemel-en-Aarde Estate and Village",
+      "8": "Hawston",
+      "9": "Kleinmond South, Mountain View, Palmiet, Beverly Hills, Extension 6",
+      "10": "Pringle Bay, Rooi-Els, Mooi-Uitsig, Betty's Bay, Overhills, Poppedorp",
+      "11": "Van Dyksbaai / Kleinbaai East, Baardskeerdersbos, Eluxolweni, Pearly Beach, Buffeljagsbaai, Franskraal",
+      "12": "Zwelihle North",
+      "13": "Onrus, Vermont",
+      "14": "Blompark, De Kelders, Birkenhead, Gansbaai West, Van Dyksbaai / Kleinbaai West, De Kelders South",
+      "15": "Fisherhaven, Heuningkloof, Kleinmond North East"
     }
   },
-  "description": "Areas covered by 2026 wards (not official ward names). Suburbs can belong to more than one ward.",
+  "description": "Areas covered by 2026 wards (not official ward names). Suburbs can belong to more than one ward. Hermanus/Overstrand 2026 ward-area labels: Overstrand Municipality official new ward boundaries, applicable 4 Nov 2026 (https://www.overstrand.gov.za/about-us/wards/).",
   "updated_at": "2026-11-05T09:33:21.109125+00:00",
   "source": "The Ledger SA individual 2026 ward pages; Stats SA places and MDB boundaries"
 }
