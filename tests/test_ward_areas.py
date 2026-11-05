@@ -17,6 +17,7 @@ PAGE = """<!doctype html><html><body>
 <tr><td><a href='/wards-2026/1/'>Ward 1</a></td><td>Bellville, Milnerton, Parow</td></tr>
 <tr><td><a href='/wards-2026/2/'>Ward 2</a></td><td>Bellville, Parow</td></tr>
 </table>
+<h2>Ward by-elections since 2021</h2>
 <table><tr><td>25 Mar 2026</td><td>104</td><td>ANC</td></tr></table>
 </body></html>"""
 
