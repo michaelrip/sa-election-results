@@ -24,9 +24,11 @@ CITIES = {
     "Cape Town": ("cape-town", "western-cape/city-of-cape-town", 118),
     "Tshwane": ("tshwane", "gauteng/city-of-tshwane", 107),
     "Johannesburg": ("johannesburg", "gauteng/city-of-johannesburg", 135),
+    "Hermanus": (None, "western-cape/overstrand", 15),
 }
 NAME_ALIASES = {
     "Democratic Alliance": "DA", "African National Congress": "ANC",
+    "Land Party": "LAND", "LAND": "LAND",
     "Economic Freedom Fighters": "EFF", "Patriotic Alliance": "PA",
     "ActionSA": "ActionSA", "Vryheidsfront Plus": "FF+",
     "Freedom Front Plus": "FF+", "VF+": "FF+", "VF PLUS": "FF+",
@@ -62,7 +64,7 @@ def canonical(fragment: str) -> str | None:
 
 
 def parse_metro(text: str, city: str, source_url: str) -> dict:
-    if "City of " + city not in text or "2021" not in text:
+    if ("Overstrand" if city == "Hermanus" else "City of " + city) not in text or "2021" not in text:
         raise ValueError("Wrong metro or election year")
     header = re.search(r"Ward ballot\s*\?\s*[·•]?\s*([\d\s]+)\s+valid votes", text)
     if not header:
@@ -170,6 +172,9 @@ def main():
             metro = {"year": 2021, "ballot_type": "Ward", "parties": {}}
         kept = {}
         for number in range(1, nwards + 1):
+            # No comparable 2026-ward district-history source is available for Overstrand.
+            if city_slug is None:
+                continue
             prior_ward = (prior.get("wards") or {}).get(str(number))
             if isinstance(prior_ward, dict) and prior_ward.get("year") == 2021 \
                and prior_ward.get("ballot_type") == "Ward" and len(prior_ward.get("parties") or {}) >= 2 \
@@ -204,7 +209,7 @@ def main():
     report = {"checked_at": now, "status": "ok" if total_ok == 360 and
               all(len(history["metros"][city].get("parties", {})) >= 3 for city in CITIES)
               else "partial", "checks": checks,
-              "warning": "2021 ward percentages are matched to the current 2026 ward's voting districts; missing parties are unknown, never zero."}
+              "warning": "2021 ward percentages are matched to the current 2026 ward's voting districts; Overstrand currently has 2021 municipality totals only; missing parties are unknown, never zero."}
     REPORT.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(json.dumps(report, indent=2))
 
