@@ -31,7 +31,7 @@
         },
         {
           "name": "EFF",
-          "share": 3.0,
+          "share": 3,
           "votes": 8005
         },
         {
@@ -61,7 +61,7 @@
         },
         {
           "name": "UDM",
-          "share": 1.0,
+          "share": 1,
           "votes": 2661
         },
         {
@@ -187,7 +187,7 @@
           "parties": [
             {
               "name": "DA",
-              "share": 83.0
+              "share": 83
             }
           ],
           "snapshot_at": "2026-11-05T11:05:00+00:00",
@@ -382,7 +382,7 @@
           "parties": [
             {
               "name": "DA",
-              "share": 85.0
+              "share": 85
             }
           ],
           "snapshot_at": "2026-11-05T11:05:00+00:00",
@@ -718,7 +718,7 @@
           "parties": [
             {
               "name": "DA",
-              "share": 63.0
+              "share": 63
             }
           ],
           "snapshot_at": "2026-11-05T11:05:00+00:00",
@@ -1015,7 +1015,7 @@
           "parties": [
             {
               "name": "DA",
-              "share": 59.0
+              "share": 59
             }
           ],
           "snapshot_at": "2026-11-05T11:05:00+00:00",
@@ -1729,7 +1729,7 @@
         },
         {
           "name": "ActionSA",
-          "share": 23.0,
+          "share": 23,
           "votes": 28419
         },
         {
@@ -1799,7 +1799,7 @@
         },
         {
           "name": "CCC",
-          "share": 0.0,
+          "share": 0,
           "votes": 33
         }
       ],
@@ -2282,7 +2282,7 @@
           "parties": [
             {
               "name": "ActionSA",
-              "share": 34.0
+              "share": 34
             }
           ],
           "snapshot_at": "2026-11-05T10:48:00+00:00",
@@ -2447,7 +2447,7 @@
           "parties": [
             {
               "name": "DA",
-              "share": 42.0
+              "share": 42
             }
           ],
           "snapshot_at": "2026-11-05T10:48:00+00:00",
@@ -2993,7 +2993,7 @@
           "parties": [
             {
               "name": "DA",
-              "share": 48.0
+              "share": 48
             }
           ],
           "snapshot_at": "2026-11-05T10:48:00+00:00",
@@ -3008,7 +3008,7 @@
           "parties": [
             {
               "name": "ANC",
-              "share": 37.0
+              "share": 37
             }
           ],
           "snapshot_at": "2026-11-05T10:48:00+00:00",
@@ -3147,7 +3147,7 @@
       "parties": [
         {
           "name": "DA",
-          "share": 40.0,
+          "share": 40,
           "votes": 65259
         },
         {
@@ -3162,7 +3162,7 @@
         },
         {
           "name": "EFF",
-          "share": 7.0,
+          "share": 7,
           "votes": 11331
         },
         {
@@ -3222,7 +3222,7 @@
         },
         {
           "name": "CCC",
-          "share": 0.0,
+          "share": 0,
           "votes": 46
         }
       ],
@@ -3696,7 +3696,7 @@
           "parties": [
             {
               "name": "IFP",
-              "share": 63.0
+              "share": 63
             }
           ],
           "snapshot_at": "2026-11-05T10:48:00+00:00",
@@ -3750,7 +3750,7 @@
           "parties": [
             {
               "name": "ANC",
-              "share": 34.0
+              "share": 34
             }
           ],
           "snapshot_at": "2026-11-05T10:48:00+00:00",
@@ -3930,7 +3930,7 @@
           "parties": [
             {
               "name": "DA",
-              "share": 63.0
+              "share": 63
             }
           ],
           "snapshot_at": "2026-11-05T10:48:00+00:00",
@@ -4029,7 +4029,7 @@
           "parties": [
             {
               "name": "ActionSA",
-              "share": 26.0
+              "share": 26
             }
           ],
           "snapshot_at": "2026-11-05T10:48:00+00:00",
@@ -4278,7 +4278,7 @@
           "parties": [
             {
               "name": "DA",
-              "share": 66.0
+              "share": 66
             }
           ],
           "snapshot_at": "2026-11-05T10:48:00+00:00",
@@ -4428,7 +4428,7 @@
           "parties": [
             {
               "name": "DA",
-              "share": 61.0
+              "share": 61
             }
           ],
           "snapshot_at": "2026-11-05T10:48:00+00:00",
@@ -4611,7 +4611,7 @@
           "parties": [
             {
               "name": "ActionSA",
-              "share": 28.0
+              "share": 28
             }
           ],
           "snapshot_at": "2026-11-05T10:48:00+00:00",
@@ -4626,7 +4626,7 @@
           "parties": [
             {
               "name": "DA",
-              "share": 37.0
+              "share": 37
             }
           ],
           "snapshot_at": "2026-11-05T10:48:00+00:00",
@@ -4872,7 +4872,7 @@
           "parties": [
             {
               "name": "DA",
-              "share": 60.0
+              "share": 60
             }
           ],
           "snapshot_at": "2026-11-05T10:48:00+00:00",
@@ -4896,7 +4896,7 @@
           "parties": [
             {
               "name": "ActionSA",
-              "share": 30.0
+              "share": 30
             }
           ],
           "snapshot_at": "2026-11-05T10:48:00+00:00",
@@ -4920,6 +4920,155 @@
       ],
       "snapshot_at": "2026-11-05T10:48:00+00:00",
       "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg"
+    },
+    "Hermanus": {
+      "status": "Awaiting verified Overstrand results · IEC-derived via ESP",
+      "municipality": "Overstrand Local Municipality",
+      "ballot_type": "Ward",
+      "districts_reported": 0,
+      "districts_total": 37,
+      "valid_votes": null,
+      "parties": [],
+      "seats": [],
+      "wards": [
+        {
+          "number": 1,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/western-cape/overstrand/ward-1"
+        },
+        {
+          "number": 2,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/western-cape/overstrand/ward-2"
+        },
+        {
+          "number": 3,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/western-cape/overstrand/ward-3"
+        },
+        {
+          "number": 4,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/western-cape/overstrand/ward-4"
+        },
+        {
+          "number": 5,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/western-cape/overstrand/ward-5"
+        },
+        {
+          "number": 6,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/western-cape/overstrand/ward-6"
+        },
+        {
+          "number": 7,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/western-cape/overstrand/ward-7"
+        },
+        {
+          "number": 8,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/western-cape/overstrand/ward-8"
+        },
+        {
+          "number": 9,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/western-cape/overstrand/ward-9"
+        },
+        {
+          "number": 10,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/western-cape/overstrand/ward-10"
+        },
+        {
+          "number": 11,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/western-cape/overstrand/ward-11"
+        },
+        {
+          "number": 12,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/western-cape/overstrand/ward-12"
+        },
+        {
+          "number": 13,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/western-cape/overstrand/ward-13"
+        },
+        {
+          "number": 14,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/western-cape/overstrand/ward-14"
+        },
+        {
+          "number": 15,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": null,
+          "source_url": "https://go.esp.info/elections/local/2026/western-cape/overstrand/ward-15"
+        }
+      ],
+      "snapshot_at": null,
+      "source_url": "https://go.esp.info/elections/local/2026/western-cape/overstrand"
     }
   }
 }
