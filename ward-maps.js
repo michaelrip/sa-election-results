@@ -123,16 +123,26 @@
     return 'Ward ' + number + (area ? ' · ' + area : '');
   }
   function tipFor(number) {
-    const lead = leadAt(number);
     const result = wardAt(number);
+    const area = areaAt(number);
     const ranked = result && Array.isArray(result.parties) ? result.parties
       .filter(function (p) {return p && typeof p.name === 'string' && Number.isFinite(p.share) && p.share >= 0 && p.share <= 100;})
-      .sort(function (a,b) {return b.share - a.share;}).slice(0,3) : [];
-    return '<strong>' + safe(wardTitle(number)) + '</strong>' +
-      (ranked.length ? ranked.map(function (p, i) {const past=historicalPct(number,p.name);return '<br>' + (i+1) + '. ' + safe(p.name) + ' ' + p.share.toFixed(1) + '%' + (past ? ' <small>(2021: ' + past + ')</small>' : '');}).join('')
-        : '<br>No reported ward-ballot results yet') +
-      (result && result.reporting ? '<br>' + safe(result.reporting) : '') +
-      '<br><small>Tap for top-three details</small>';
+      .sort(function (a, b) {return b.share - a.share;}).slice(0, 3) : [];
+    const ranking = ranked.length
+      ? ranked.map(function (party, index) {
+          const previous = historicalPct(number, party.name);
+          return '<div class="ward-quick-party"><span class="ward-quick-name">' +
+            (index + 1) + '. ' + safe(party.name) + '</span>' +
+            '<span class="ward-quick-value"><strong>' + party.share.toFixed(1) + '%</strong>' +
+            (previous ? '<small>(2021: ' + previous + ')</small>' : '') + '</span></div>';
+        }).join('')
+      : '<p class="ward-quick-empty">No reported ward-ballot results yet</p>';
+    return '<div class="ward-quick-preview">' +
+      '<div class="ward-quick-title">Ward ' + number + '</div>' +
+      (area ? '<div class="ward-quick-area">' + safe(area) + '</div>' : '') +
+      '<div class="ward-quick-parties">' + ranking + '</div>' +
+      (result && result.reporting ? '<div class="ward-quick-status">' + safe(result.reporting) + '</div>' : '') +
+      '<div class="ward-quick-hint">Full ward details appear below the map</div></div>';
   }
   function validateGeoJSON(value, name) {
     const expected = spec[name].count;
@@ -212,6 +222,7 @@
       layer.setStyle(styleFor(layer.feature));
       const number = layer.feature.properties.ward;
       if (layer.getTooltip()) layer.setTooltipContent(tipFor(number));
+      if (layer.getPopup()) layer.setPopupContent(tipFor(number));
     });
   }
   function panelFor(number) {
@@ -364,12 +375,25 @@
           const id = Number(feature.properties.ward);
           polygonByWard[id] = layer;
           layer.bindTooltip(tipFor(id), {sticky: true, direction: 'top', className: 'ward-map-tooltip'});
+          // A tap opens a larger, auto-panning popup rather than forcing people to
+          // read the narrow hover tooltip. Leave the full results panel in place.
+          layer.bindPopup(tipFor(id), {
+            className: 'ward-map-popup',
+            maxWidth: 370,
+            minWidth: Math.max(180, Math.min(300, map.getSize().x - 75)),
+            autoPan: true,
+            autoPanPadding: [14, 14],
+            closeButton: true
+          });
           layer.on('mouseover', function () {
             if (id !== selectedNumber) layer.setStyle({color: '#ffffff', weight: 2.5, fillOpacity: .85});
             layer.bringToFront();
           });
           layer.on('mouseout', function () {layer.setStyle(styleFor(feature));});
-          layer.on('click', function () {chooseWard(id, false);});
+          layer.on('click', function () {
+            layer.closeTooltip();
+            chooseWard(id, false);
+          });
         }
       }).addTo(map);
       polygonLayer = polygonsLayer;
