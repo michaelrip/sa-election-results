@@ -1,24 +1,32 @@
 {
-  "checked_at": "2026-11-05T13:12:25.767091+00:00",
+  "checked_at": "2026-11-05T13:12:49.273732+00:00",
   "status": "ok",
-  "source": "IEC official public 2021 party-result CSV",
+  "source": "IEC official public 2021 Ward and municipal PR CSV",
   "checks": {
     "Cape Town": {
       "status": "ok",
-      "valid_votes": 909509
+      "ward_valid_votes": 909509,
+      "pr_valid_votes": 913444,
+      "combined_valid_ballots": 1822953
     },
     "Tshwane": {
       "status": "ok",
-      "valid_votes": 672603
+      "ward_valid_votes": 672603,
+      "pr_valid_votes": 673165,
+      "combined_valid_ballots": 1345768
     },
     "Johannesburg": {
       "status": "ok",
-      "valid_votes": 922465
+      "ward_valid_votes": 922465,
+      "pr_valid_votes": 923724,
+      "combined_valid_ballots": 1846189
     },
     "Hermanus": {
       "status": "ok",
-      "valid_votes": 34703
+      "ward_valid_votes": 34703,
+      "pr_valid_votes": 34379,
+      "combined_valid_ballots": 69082
     }
   },
-  "note": "Only source-validated 2021 municipality-wide Ward-ballot shares are published. No 2026 ward historic shares are derived from the old boundaries."
+  "note": "2021 whole-municipality Ward and PR shares come from exact official ballot votes. Ward + PR totals count papers, not individual people. Overstrand District PR is not included. No historic 2021 ward shares are inferred from current ward boundaries."
 }
