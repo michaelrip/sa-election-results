@@ -2,6 +2,22 @@
    Desktop styling remains in index.html; this file focuses on touch screens. */
 .map-legend-toggle{display:none}
 .map-drag-toggle[hidden],.ward-more[hidden]{display:none!important}
+/* Tap a mobile ward to read its full-width panel, not an oversized
+   Leaflet popup covering the map, the zoom controls and the attribution.
+   This rule also protects in-app browsers using an older cached map script. */
+.ward-map-back{display:none}
+.ward-map-detail{scroll-margin-top:14px}
+@media(max-width:760px),(pointer:coarse){
+ #ward-detail-map .leaflet-popup.ward-map-popup{display:none!important}
+ .ward-map-back{
+   display:flex;align-items:center;justify-content:center;
+   width:max-content;max-width:100%;min-height:44px;
+   margin:0 0 12px auto;padding:9px 14px;
+   color:#eaf5ff;background:#254b70;border:1px solid #779abb;
+   border-radius:9px;font-size:13px;font-weight:750
+ }
+ .ward-map-back:focus-visible{outline:3px solid #9bd6ff;outline-offset:2px}
+}
 .ward-map-popup .leaflet-popup-content a.ward-quick-link{
  display:flex;align-items:center;justify-content:center;min-height:44px;
  margin-top:11px;padding:9px 12px;background:#185b83;border-radius:8px;
