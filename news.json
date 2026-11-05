@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-05T16:34:17.566914Z",
+  "checked_at": "2026-11-05T17:37:35.098554Z",
   "source": "Publisher-attributed headlines discovered through Google News RSS",
   "feed_status": "ok",
   "articles": [
@@ -7,7 +7,7 @@
       "title": "GOOD accuses DA of undermining IEC with early Cape Town victory claim",
       "publisher": "IOL",
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQnZTakhHd3dlNERMQW5Uc3J2bU15UW5lU05jdjNzSFdwcFRRQWNDTmdPNF9OVUdsX290NEh6Z3BPUkJzRWY1bHZKeGRQelNhcHA4QU1tcVJNYk9veWFrcDQ4Sk00T3dMM1Nyd2FMQTB1TEZGSU92OVhibWpnM1JhTHRiZjJLdmZQeVc0ZGUyMTB1czNOY19xQWU5bWd6UmFDNm5BVlY5MVAyVmc?oc=5",
-      "published_at": "2026-11-05T14:20:04Z",
+      "published_at": "2026-11-05T14:55:49Z",
       "published_date": "2026-11-05",
       "metro": "Cape Town"
     },
@@ -26,6 +26,14 @@
       "published_at": "2026-11-05T14:54:09Z",
       "published_date": "2026-11-05",
       "metro": "Johannesburg"
+    },
+    {
+      "title": "IEC says more than 60% of election results captured as collation continues",
+      "publisher": "IOL",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9KTjg4RG15c1VUUUJOVm4zZk9PbGd1UXc0OXppcDZobXl2RE1kUFY0UUlfQUVPTjhZdjBMcU0xYmh1anNUS1QwcGlLRFFxSktfX3hnem13?oc=5",
+      "published_at": "2026-11-05T16:43:00Z",
+      "published_date": "2026-11-05",
+      "metro": "South Africa"
     },
     {
       "title": "WATCH | South Africa’s election results continue to take shape",
@@ -68,18 +76,10 @@
       "metro": "South Africa"
     },
     {
-      "title": "DA leads preliminary Ward 117 results with 78.6% of vote",
-      "publisher": "The Citizen",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPOFgtTVVkNk5WQ2hyakpTWXJRZjcxME1UWmxiYnNyY1lUNVVaNlBaU1pLSVpzaEYwYnlMTUNSY2M4RzFYV1hiTUVlWTFFa3k2NnVCcVplQ00tekl0TUhSNVJNRjFSQXM0OXJ3NGJqenRaQ3VTeVAzMGdaVlhfenVoUjIxQ2pkckdUZnBSR0J1UXZSS2wyRUhMRlJudjVqQWZqelk2ZEFaZjk2STd4dS1fZ0FSTHF2SkZxX21VYzFPMUF0ZlAtVFE5VF9jY05PRTlwWDBNQ0ZjckJDSGRiSzQw?oc=5",
-      "published_at": "2026-11-05T12:00:25Z",
-      "published_date": "2026-11-05",
-      "metro": "South Africa"
-    },
-    {
-      "title": "IEC and police launch urgent probe after Siyancuma Independent Forum members storm Douglas voting station",
+      "title": "ANC loses outright majority in Makana, setting stage for coalition talks",
       "publisher": "EWN",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPeTk3RENKZEpjTGJ5M2ltMnRRNjRMOE1uSzlGWmVLaHJMYjRtMVhSRVZwczR3U0stbFc1UVZ5czg3XzgyQnVNdEI4VGplbHM2UmVfdEtzbDdmeTM1NGJtN3ZCaHVBM25Fb2JmXzZrMUllMW5obmVYZ0hTNU1NNk5QRVBxbURYT1hBUHViS19jdF9HYl9kWlVCaUUxU2UtYTlseTFMTjhGalpTRTVSb2hxT21MOGc2Q1FJdjhiU3FiY1JjMWNXN29LMDUydVB2Y21IY1NiYQ?oc=5",
-      "published_at": "2026-11-05T11:47:11Z",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNS1Iwckp0c3V1bU50TldhUUpVdm5aYzZKMVV6RmlOaTFVYVRmNFplZi1RWEZFUENSUWRHc2VsY0tUUVh5dkxidmZDbEtrMTRNWVdiM1pwZ2NxSzVVOFloYzVkMDZ2S1MtMkpnV3RGbnpvWXRDODAtQ0JFOWhNLWZmNTdJaWhyR2V2MGxndmVSR0pwSm9lYTVRWTQ3OExTMlZNOTR0dGtwMA?oc=5",
+      "published_at": "2026-11-05T12:37:11Z",
       "published_date": "2026-11-05",
       "metro": "South Africa"
     }
