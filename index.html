@@ -211,6 +211,7 @@ main{padding-bottom:calc(105px + env(safe-area-inset-bottom))}
 @media(max-width:760px){.ballot-switcher{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.ballot-switcher button{font-size:12px;min-height:48px;padding:9px 4px}}
 
 /* Compact, scannable controls for the news carousel and technical source notes. */
+#clear[hidden]{display:none}
 .news-position{min-width:46px;text-align:center;white-space:nowrap;color:#c6d8e9;
  font-size:12px;font-weight:750;font-variant-numeric:tabular-nums}
 .mobile-quick-nav a.is-active,.mobile-quick-nav a[aria-current="location"]{
@@ -295,7 +296,7 @@ main{padding-bottom:calc(105px + env(safe-area-inset-bottom))}
 <div id="cards" aria-label="Selected city's live election results" aria-live="polite"></div>
 </section>
 <section class="panel" id="cape-majority"><h2>Cape Town: DA majority watch</h2><p id="majority">Awaiting verified data. A council majority depends on final seat allocation, not an early vote share.</p></section>
-<section class="panel" id="ward-explorer"><h2>Explore results by ward</h2><p>Choose a municipality, then search by suburb, area or ward number. You can type just a number (for example, 12) to find that exact ward. Area names describe places covered by the ward, not official ward names. Tap for party results, ballot type, reporting status and source.</p><div class="ward-tools"><label><span class="small">Find a suburb, area or ward</span><input id="wardSearch" type="search" inputmode="search" placeholder="e.g. Ward 12, Bellville or Sandbaai" autocomplete="off"></label><label><span class="small">Municipality</span><select id="metro"><option value="Cape Town">Cape Town</option><option value="Tshwane">Tshwane</option><option value="Johannesburg">Johannesburg</option><option value="Hermanus">Hermanus / Overstrand</option></select></label></div><div class="flex"><span id="wardCount" class="small" role="status"></span><button id="clear" type="button">Clear search</button></div><div id="wards" class="ward-list"></div><button type="button" id="wardMore" class="ward-more" hidden>Show more wards</button></section>
+<section class="panel" id="ward-explorer"><h2>Explore results by ward</h2><p>Choose a municipality, then search by suburb, area or ward number. You can type just a number (for example, 12) to find that exact ward. Area names describe places covered by the ward, not official ward names. Tap for party results, ballot type, reporting status and source.</p><div class="ward-tools"><label><span class="small">Find a suburb, area or ward</span><input id="wardSearch" type="search" inputmode="search" placeholder="e.g. Ward 12, Bellville or Sandbaai" autocomplete="off"></label><label><span class="small">Municipality</span><select id="metro"><option value="Cape Town">Cape Town</option><option value="Tshwane">Tshwane</option><option value="Johannesburg">Johannesburg</option><option value="Hermanus">Hermanus / Overstrand</option></select></label></div><div class="flex"><span id="wardCount" class="small" role="status"></span><button id="clear" type="button" hidden>Clear search</button></div><div id="wards" class="ward-list"></div><button type="button" id="wardMore" class="ward-more" hidden>Show more wards</button></section>
 
 <details class="panel source-details" id="about-data">
  <summary><span><strong>About the data and sources</strong><small>How to read the vote totals, 2021 comparisons and maps</small></span></summary>
@@ -503,13 +504,15 @@ function renderWards(){
  const metro=el('metro').value,q=el('wardSearch').value.trim().toLowerCase();
  const m=(data.metros||{})[metro]||{},wards=Array.isArray(m.wards)?m.wards:[],areas=(wardAreas.metros||{})[metro]||{};
  const nameOf=w=>String(areas[String(w.number)]||'').trim();
- const exactWard=/^ward\s+(\d+)$/.exec(q);const filtered=wards.filter(w=>exactWard?Number(w.number)===Number(exactWard[1]):String(w.number??'').toLowerCase().includes(q)||nameOf(w).toLowerCase().includes(q)).sort((a,b)=>(nameOf(a)||('Ward '+a.number)).localeCompare(nameOf(b)||('Ward '+b.number),'en',{sensitivity:'base'})||Number(a.number)-Number(b.number));
+ const exactWard=/^(?:(?:ward|w)\s*)?(\d{1,3})$/.exec(q);
+ const filtered=wards.filter(w=>exactWard?Number(w.number)===Number(exactWard[1]):String(w.number??'').toLowerCase().includes(q)||nameOf(w).toLowerCase().includes(q)).sort((a,b)=>(nameOf(a)||('Ward '+a.number)).localeCompare(nameOf(b)||('Ward '+b.number),'en',{sensitivity:'base'})||Number(a.number)-Number(b.number));
  const list=el('wards');
  const openIds=new Set(Array.from(list.querySelectorAll('details.ward[open]'),node=>node.getAttribute('data-ward-number')));
  const shown=Math.min(wardVisibleLimit,filtered.length);
- el('wardCount').textContent=wards.length
-  ?(filtered.length===wards.length?shown+' of '+wards.length+' wards shown':shown+' of '+filtered.length+' matching wards shown')
-  :'Ward-level data not yet connected';
+ el('clear').hidden=!q;
+ el('wardCount').textContent=!wards.length?'Ward-level data not yet connected':
+  q?(filtered.length?shown+' of '+filtered.length+' matching wards shown':'No wards found for “'+q+'”'):
+  shown+' of '+wards.length+' wards shown';
  list.innerHTML=filtered.length?filtered.slice(0,wardVisibleLimit).map(w=>{
   const name=nameOf(w);
   return '<details class="ward" data-ward-number="'+esc(w.number)+'"><summary><span><span class="ward-name">'+esc(name||('Ward '+w.number))+'</span>'+(name?'<span class="small ward-id">Ward '+esc(w.number)+' · 2026 boundaries</span>':'')+'</span><span class="small">'+esc(w.status||'Preliminary')+'</span></summary><p class="small">'+(name?'Areas covered: '+esc(name)+'<br>':'')+'Ballot: '+esc(w.ballot_type||'Not specified')+'<br>Reporting: '+esc(w.reporting||'Not verified')+'<br>Updated: '+esc(date(w.snapshot_at))+'</p>'+(votesValid(w.valid_votes)?'<p class="small">Valid ward-ballot votes: <strong>'+voteFmt(w.valid_votes)+'</strong></p>':'')+'<h3>Top parties · ward ballot</h3>'+parties(Array.isArray(w.parties)?w.parties.slice(0,3):[],true,historicShares(metro,w.number))+((w.parties||[]).length<3&&w.parties&&w.parties.length?'<p class="small">More party results pending verification from this ward’s source.</p>':'')+(historicCoverage(metro,w.number)?'<p class="history-note">2021 brackets: '+esc(historicCoverage(metro,w.number))+' voting districts matched to this 2026 ward. Boundaries may differ.</p>':'')+(w.source_url?'<a href="'+esc(w.source_url)+'" target="_blank" rel="noopener">Ward result source</a> · <a href="'+esc(w.source_url+'?ballot=pr')+'" target="_blank" rel="noopener">See ward PR vote at ESP</a>':'')+'</details>';
@@ -669,6 +672,14 @@ function updateNewsArrows(){
  const scrollable=feed.scrollWidth>feed.clientWidth+4;
  previous.disabled=!scrollable||feed.scrollLeft<=3;
  next.disabled=!scrollable||feed.scrollLeft+feed.clientWidth>=feed.scrollWidth-4;
+ const cards=feed.querySelectorAll('.news-story');
+ const count=cards.length;
+ const gap=window.getComputedStyle?parseFloat(window.getComputedStyle(feed).columnGap)||12:12;
+ const step=count?Math.max(1,cards[0].offsetWidth+gap):1;
+ const index=count?Math.min(count,1+Math.round(feed.scrollLeft/step)):0;
+ const position=el('news-position');
+ position.textContent=count?index+' / '+count:'—';
+ position.setAttribute('aria-label',count?'Headline '+index+' of '+count:'No headlines');
 }
 const reducedMotion=()=>window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 function renderNews(payload){
@@ -736,6 +747,47 @@ async function loadNews({manual=false}={}){
   if(manual){checkButton.disabled=false;checkButton.textContent='Check news';}
  }
 }
+// Keep the persistent dock oriented as readers scroll between sections.
+function trackSectionNavigation(){
+ const nav=document.querySelector('.mobile-quick-nav');
+ if(!nav)return;
+ const links=Array.from(nav.querySelectorAll('a[href^="#"]'));
+ const sections=links.map(a=>({link:a,section:document.getElementById(a.getAttribute('href').slice(1))}))
+  .filter(item=>item.section);
+ if(!sections.length)return;
+ function activate(id){
+  for(const {link,section} of sections){
+   const active=section.id===id;
+   link.classList.toggle('is-active',active);
+   if(active)link.setAttribute('aria-current','location');
+   else link.removeAttribute('aria-current');
+  }
+ }
+ function currentSection(){
+  const cutoff=Math.min(260,Math.max(100,(window.innerHeight||650)*.34));
+  let current=sections[0].section.id;
+  for(const {section} of sections){
+   if(section.getBoundingClientRect().top<=cutoff)current=section.id;
+  }
+  const page=document.documentElement;
+  if(page&&(window.scrollY||0)+(window.innerHeight||0)>=page.scrollHeight-24)
+   current=sections[sections.length-1].section.id;
+  activate(current);
+ }
+ let pending=false;
+ function schedule(){
+  if(pending)return;
+  pending=true;
+  const raf=window.requestAnimationFrame||((fn)=>fn());
+  raf(()=>{pending=false;currentSection()});
+ }
+ window.addEventListener('scroll',schedule,{passive:true});
+ window.addEventListener('resize',schedule);
+ links.forEach(a=>a.addEventListener('click',()=>activate(a.getAttribute('href').slice(1))));
+ currentSection();
+}
+trackSectionNavigation();
+
 const newsStrip=el('news-feed');
 el('news-prev').onclick=()=>newsStrip.scrollBy({left:-Math.max(220,newsStrip.clientWidth*.85),behavior:reducedMotion()?'auto':'smooth'});
 el('news-next').onclick=()=>newsStrip.scrollBy({left:Math.max(220,newsStrip.clientWidth*.85),behavior:reducedMotion()?'auto':'smooth'});
