@@ -8,6 +8,21 @@ Enable GitHub Pages in **Settings → Pages**: select **Deploy from a branch**, 
 
 Intended website: https://michaelrip.github.io/sa-election-results/
 
+## Mobile usability improvements
+
+Mobile screens (up to 760 px wide) load `mobile.css` after the main styles. The live website URL does not change. Recent changes include:
+
+- Fixed, safe-area-aware bottom links to **News**, **Map**, **Votes** and **Wards**, plus a fast **View votes by city** link in the header.
+- Larger touch targets for map zoom, city selectors, search fields, news arrows, source links, ward actions and the ward popup's **See full ward breakdown** link.
+- On touch devices, map dragging starts disabled so a finger swipe scrolls the page normally. Press **Move map** to enable dragging and **Done moving map** to restore page scrolling. Tap-to-select wards and zoom controls stay available either way.
+- Collapsed party-colour legend and compact map controls on mobile; larger, more legible ward cards and a stacked single-column result view. The desktop presentation is unaffected.
+- An initial batch of **24 wards**, followed by **Show more wards**. Search still checks every ward immediately, and rerendering preserves any expanded ward cards.
+- News arrows activate only when their carousel genuinely overflows. Headline scrolling is preserved during refreshes.
+- The main result snapshot renders first; optional ward details, labels and 2021 comparisons load concurrently and enrich it afterward. Polling is paused in hidden tabs and refreshed when the tab becomes visible to reduce background phone data/battery usage.
+- Reduced-motion support and iPhone safe-area spacing.
+
+No source counts, vote percentages, 2021 historical comparisons, maps or publisher attribution are altered by these layout changes.
+
 ## Mobile-friendly city selection
 
 The **Vote details by city** section displays **one metro at a time** instead of stacking all three metro party cards. A three-button city selector switches Cape Town, Tshwane, or Johannesburg without a page reload. The selected city synchronizes with the 2026 interactive map and searchable ward list in both directions.
