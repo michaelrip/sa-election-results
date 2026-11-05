@@ -1,0 +1,62 @@
+name: Import 2021 ward-ballot historical comparisons
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/update_history_2021.py'
+      - 'tests/test_history_2021.py'
+      - '.github/workflows/update-history-2021.yml'
+  workflow_dispatch:
+  schedule:
+    - cron: '13 5 * * 1'
+permissions:
+  contents: write
+concurrency:
+  group: election-history-2021
+  cancel-in-progress: false
+jobs:
+  historical:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check ballot matching and historical parsing
+        run: python -m unittest discover -s tests -p 'test_history_2021.py' -v
+      - name: Import comparable 2021 ward ballots
+        run: python scripts/update_history_2021.py
+      - name: Publish sourced historical data and validation report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add history-2021.json history-2021-status.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh 2021 metro and matched-ward ballot comparisons"
+            for attempt in 1 2 3 4 5; do
+              git fetch origin main
+              if ! git rebase origin/main; then
+                git rebase --abort || true
+                echo "Conflicting remote update; aborting rather than overwriting"
+                exit 1
+              fi
+              if git push origin HEAD:main; then
+                exit 0
+              fi
+              if [ "$attempt" -eq 5 ]; then
+                echo "Unable to push 2021 comparison after five attempts"
+                exit 1
+              fi
+              sleep 3
+            done
+          fi
+      - name: Show historical coverage summary
+        run: |
+          python - <<'PY'
+          import json
+          report=json.load(open("history-2021-status.json",encoding="utf-8"))
+          print("Import status:",report["status"])
+          for name,stat in report["checks"].items():
+              print(name,stat)
+          PY
