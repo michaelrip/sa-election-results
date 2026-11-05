@@ -9,6 +9,8 @@ on:
       - 'tests/test_ward_top_three.py'
       - 'tests/test_ward_areas.py'
       - 'scripts/update_ward_areas.py'
+      - 'scripts/update_party_ballots.py'
+      - 'tests/test_party_ballots.py'
       - '.github/workflows/check-iec.yml'
   schedule:
     - cron: '7,22,37,52 * * * *'
@@ -31,6 +33,8 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: Fetch and validate IEC-derived metro results
         run: python scripts/fetch_results.py
+      - name: Import ESP municipal PR and district PR ballot results
+        run: python scripts/update_party_ballots.py
       - name: Import validated top-three ward-ballot results from individual wards
         run: python scripts/update_ward_details.py
       - name: Refresh area labels for all 2026 wards
@@ -39,7 +43,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add results.json feed-status.json ward-areas.json ward-area-status.json ward-details.json ward-detail-status.json
+          git add results.json feed-status.json ward-areas.json ward-area-status.json ward-details.json ward-detail-status.json ballots.json ballot-status.json
           if ! git diff --cached --quiet; then
             git commit -m "Update verified-source four-area results"
             # Keep remote changes; replay only the generated report commit.
