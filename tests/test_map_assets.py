@@ -8,6 +8,7 @@ EXPECTED = {
     "Cape Town": ("cape-town", 118),
     "Tshwane": ("tshwane", 107),
     "Johannesburg": ("johannesburg", 135),
+    "Hermanus": ("overstrand", 15),
 }
 
 class WardMapAssets(unittest.TestCase):
@@ -39,6 +40,8 @@ class WardMapAssets(unittest.TestCase):
         self.assertIn('data-ward-map-metro="Cape Town"', html)
         self.assertIn('data-ward-map-metro="Tshwane"', html)
         self.assertIn('data-ward-map-metro="Johannesburg"', html)
+        self.assertIn('data-ward-map-metro="Hermanus"', html)
+        self.assertIn('data-vote-metro="Hermanus"', html)
         self.assertIn("chooseWard(", js)
         self.assertIn("returnGeometry", js)
         self.assertIn("metroWardMaps", js)
