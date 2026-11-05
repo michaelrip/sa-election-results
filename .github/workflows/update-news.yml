@@ -1,0 +1,51 @@
+name: Update election news headlines
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/update_news.py'
+      - 'tests/test_news.py'
+      - '.github/workflows/update-news.yml'
+  workflow_dispatch:
+  schedule:
+    - cron: '34 * * * *'
+permissions:
+  contents: write
+concurrency:
+  group: municipal-election-news
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test headline importer
+        run: python -m unittest discover -s tests -p 'test_news.py' -v
+      - name: Discover recent election headlines
+        run: python scripts/update_news.py
+      - name: Publish attributed news and feed status
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add news.json news-status.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update attributed South African election headlines"
+            for attempt in 1 2 3 4 5; do
+              git fetch origin main
+              if ! git rebase origin/main; then
+                git rebase --abort || true
+                echo "A concurrent update conflicted with news; preserving remote state."
+                exit 1
+              fi
+              if git push origin HEAD:main; then
+                exit 0
+              fi
+              echo "Retrying push ($attempt of 5)"
+              sleep 2
+            done
+            exit 1
+          fi
