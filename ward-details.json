@@ -1,6 +1,6 @@
 {
   "source": "Individual ESP 2026 ward-ballot pages (IEC-derived; provisional)",
-  "checked_at": "2026-11-05T13:27:50.578129+00:00",
+  "checked_at": "2026-11-05T14:18:58.217817+00:00",
   "metros": {
     "Cape Town": {
       "5": {
@@ -329,23 +329,23 @@
         "parties": [
           {
             "name": "DA",
-            "share": 85.0,
-            "votes": 2376
+            "share": 86.7,
+            "votes": 4222
           },
           {
             "name": "FF+",
-            "share": 8.6,
-            "votes": 241
+            "share": 8.1,
+            "votes": 395
           },
           {
             "name": "GOOD",
-            "share": 1.4,
-            "votes": 38
+            "share": 1.2,
+            "votes": 58
           }
         ],
-        "valid_votes": 2794,
-        "reporting": "1 of 5 districts",
-        "source_at": "2026-11-05T10:21:00+00:00",
+        "valid_votes": 4872,
+        "reporting": "2 of 5 districts",
+        "source_at": "2026-11-05T14:06:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-21"
       },
       "22": {
@@ -646,23 +646,23 @@
         "parties": [
           {
             "name": "ANC",
-            "share": 43.9,
-            "votes": 649
+            "share": 43.4,
+            "votes": 1109
           },
           {
             "name": "DA",
-            "share": 26.7,
-            "votes": 394
+            "share": 32.2,
+            "votes": 821
           },
           {
             "name": "EFF",
-            "share": 12.7,
-            "votes": 187
+            "share": 11.6,
+            "votes": 295
           }
         ],
-        "valid_votes": 1478,
-        "reporting": "2 of 8 districts",
-        "source_at": "2026-11-05T08:50:00+00:00",
+        "valid_votes": 2553,
+        "reporting": "3 of 8 districts",
+        "source_at": "2026-11-05T14:05:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-39"
       },
       "40": {
@@ -737,24 +737,24 @@
       "43": {
         "parties": [
           {
-            "name": "ANC",
-            "share": 50.4,
-            "votes": 292
-          },
-          {
             "name": "DA",
-            "share": 19.7,
-            "votes": 114
+            "share": 39.8,
+            "votes": 687
           },
           {
-            "name": "EFF",
-            "share": 10.0,
-            "votes": 58
+            "name": "ANC",
+            "share": 18.3,
+            "votes": 315
+          },
+          {
+            "name": "CCC",
+            "share": 7.3,
+            "votes": 126
           }
         ],
-        "valid_votes": 579,
-        "reporting": "1 of 6 districts",
-        "source_at": "2026-11-05T12:02:00+00:00",
+        "valid_votes": 1725,
+        "reporting": "2 of 6 districts",
+        "source_at": "2026-11-05T14:02:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-43"
       },
       "44": {
@@ -779,6 +779,29 @@
         "reporting": "1 of 7 districts",
         "source_at": "2026-11-05T04:16:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-44"
+      },
+      "47": {
+        "parties": [
+          {
+            "name": "DA",
+            "share": 40.0,
+            "votes": 417
+          },
+          {
+            "name": "Al Jama-ah",
+            "share": 21.9,
+            "votes": 228
+          },
+          {
+            "name": "CCC",
+            "share": 9.3,
+            "votes": 97
+          }
+        ],
+        "valid_votes": 1042,
+        "reporting": "1 of 7 districts",
+        "source_at": "2026-11-05T14:18:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-47"
       },
       "49": {
         "parties": [
@@ -922,23 +945,23 @@
         "parties": [
           {
             "name": "DA",
-            "share": 84.7,
-            "votes": 5634
+            "share": 81.9,
+            "votes": 7008
           },
           {
             "name": "GOOD",
-            "share": 4.5,
-            "votes": 300
+            "share": 5.2,
+            "votes": 442
           },
           {
             "name": "ANC",
-            "share": 2.4,
-            "votes": 162
+            "share": 2.6,
+            "votes": 225
           }
         ],
-        "valid_votes": 6650,
-        "reporting": "3 of 6 districts",
-        "source_at": "2026-11-05T05:56:00+00:00",
+        "valid_votes": 8558,
+        "reporting": "4 of 6 districts",
+        "source_at": "2026-11-05T14:02:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-58"
       },
       "59": {
@@ -968,23 +991,23 @@
         "parties": [
           {
             "name": "DA",
-            "share": 58.7,
-            "votes": 498
+            "share": 64.6,
+            "votes": 1740
           },
           {
             "name": "ActionSA",
-            "share": 7.8,
-            "votes": 66
+            "share": 6.9,
+            "votes": 185
           },
           {
-            "name": "ANC",
-            "share": 7.5,
-            "votes": 64
+            "name": "PA",
+            "share": 4.6,
+            "votes": 124
           }
         ],
-        "valid_votes": 848,
-        "reporting": "2 of 9 districts",
-        "source_at": "2026-11-05T11:47:00+00:00",
+        "valid_votes": 2692,
+        "reporting": "4 of 9 districts",
+        "source_at": "2026-11-05T14:18:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-61"
       },
       "62": {
@@ -1033,6 +1056,29 @@
         "source_at": "2026-11-05T10:00:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-63"
       },
+      "64": {
+        "parties": [
+          {
+            "name": "DA",
+            "share": 90.4,
+            "votes": 2294
+          },
+          {
+            "name": "FF+",
+            "share": 4.3,
+            "votes": 108
+          },
+          {
+            "name": "GOOD",
+            "share": 1.7,
+            "votes": 43
+          }
+        ],
+        "valid_votes": 2538,
+        "reporting": "1 of 6 districts",
+        "source_at": "2026-11-05T14:02:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-64"
+      },
       "66": {
         "parties": [
           {
@@ -1060,23 +1106,23 @@
         "parties": [
           {
             "name": "DA",
-            "share": 58.3,
-            "votes": 726
+            "share": 51.4,
+            "votes": 1519
           },
           {
             "name": "Al Jama-ah",
-            "share": 9.0,
-            "votes": 112
+            "share": 9.2,
+            "votes": 273
           },
           {
-            "name": "PA",
-            "share": 7.0,
-            "votes": 87
+            "name": "ANC",
+            "share": 7.2,
+            "votes": 212
           }
         ],
-        "valid_votes": 1246,
-        "reporting": "2 of 6 districts",
-        "source_at": "2026-11-05T08:24:00+00:00",
+        "valid_votes": 2956,
+        "reporting": "3 of 6 districts",
+        "source_at": "2026-11-05T14:02:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-67"
       },
       "69": {
@@ -1198,46 +1244,46 @@
         "parties": [
           {
             "name": "DA",
-            "share": 41.2,
-            "votes": 974
+            "share": 41.9,
+            "votes": 3524
           },
           {
             "name": "CCC",
-            "share": 17.8,
-            "votes": 420
+            "share": 14.2,
+            "votes": 1191
           },
           {
-            "name": "Al Jama-ah",
-            "share": 13.2,
-            "votes": 311
+            "name": "ANC",
+            "share": 9.2,
+            "votes": 774
           }
         ],
-        "valid_votes": 2365,
-        "reporting": "3 of 8 districts",
-        "source_at": "2026-11-05T11:47:00+00:00",
+        "valid_votes": 8404,
+        "reporting": "7 of 8 districts",
+        "source_at": "2026-11-05T14:18:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-76"
       },
       "78": {
         "parties": [
           {
             "name": "DA",
-            "share": 47.1,
-            "votes": 1062
+            "share": 48.5,
+            "votes": 2000
           },
           {
             "name": "CCC",
-            "share": 19.1,
-            "votes": 430
+            "share": 17.4,
+            "votes": 715
           },
           {
-            "name": "ACDP",
-            "share": 5.8,
-            "votes": 130
+            "name": "Al Jama-ah",
+            "share": 6.4,
+            "votes": 265
           }
         ],
-        "valid_votes": 2257,
-        "reporting": "2 of 7 districts",
-        "source_at": "2026-11-05T02:35:00+00:00",
+        "valid_votes": 4121,
+        "reporting": "3 of 7 districts",
+        "source_at": "2026-11-05T14:18:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-78"
       },
       "81": {
@@ -1267,46 +1313,46 @@
         "parties": [
           {
             "name": "DA",
-            "share": 57.3,
-            "votes": 970
+            "share": 55.2,
+            "votes": 1806
           },
           {
             "name": "CCC",
-            "share": 8.3,
-            "votes": 140
+            "share": 10.2,
+            "votes": 334
           },
           {
             "name": "GOOD",
-            "share": 6.6,
-            "votes": 112
+            "share": 6.3,
+            "votes": 207
           }
         ],
-        "valid_votes": 1692,
-        "reporting": "2 of 7 districts",
-        "source_at": "2026-11-05T12:17:00+00:00",
+        "valid_votes": 3274,
+        "reporting": "3 of 7 districts",
+        "source_at": "2026-11-05T14:18:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-82"
       },
       "83": {
         "parties": [
           {
             "name": "DA",
-            "share": 81.9,
-            "votes": 7329
+            "share": 83.2,
+            "votes": 5579
           },
           {
             "name": "FF+",
-            "share": 13.5,
-            "votes": 1206
+            "share": 13.1,
+            "votes": 877
           },
           {
             "name": "ACDP",
             "share": 1.5,
-            "votes": 135
+            "votes": 101
           }
         ],
-        "valid_votes": 8954,
-        "reporting": "4 of 6 districts",
-        "source_at": "2026-11-05T08:32:00+00:00",
+        "valid_votes": 6706,
+        "reporting": "3 of 6 districts",
+        "source_at": "2026-11-05T14:18:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-83"
       },
       "84": {
@@ -1377,6 +1423,29 @@
         "reporting": "7 of 8 districts",
         "source_at": "2026-11-05T11:22:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-86"
+      },
+      "87": {
+        "parties": [
+          {
+            "name": "ANC",
+            "share": 71.4,
+            "votes": 345
+          },
+          {
+            "name": "EFF",
+            "share": 8.1,
+            "votes": 39
+          },
+          {
+            "name": "DA",
+            "share": 7.0,
+            "votes": 34
+          }
+        ],
+        "valid_votes": 483,
+        "reporting": "1 of 9 districts",
+        "source_at": "2026-11-05T14:18:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-87"
       },
       "88": {
         "parties": [
@@ -1982,23 +2051,23 @@
         "parties": [
           {
             "name": "DA",
-            "share": 62.8,
-            "votes": 843
+            "share": 59.9,
+            "votes": 1848
           },
           {
             "name": "FF+",
-            "share": 16.1,
-            "votes": 216
+            "share": 18.1,
+            "votes": 558
           },
           {
             "name": "ActionSA",
             "share": 11.8,
-            "votes": 158
+            "votes": 364
           }
         ],
-        "valid_votes": 1342,
-        "reporting": "1 of 6 districts",
-        "source_at": "2026-11-05T10:07:00+00:00",
+        "valid_votes": 3083,
+        "reporting": "2 of 6 districts",
+        "source_at": "2026-11-05T14:02:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-1"
       },
       "2": {
@@ -2116,6 +2185,29 @@
         "source_at": "2026-11-05T12:19:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-10"
       },
+      "11": {
+        "parties": [
+          {
+            "name": "ActionSA",
+            "share": 34.3,
+            "votes": 300
+          },
+          {
+            "name": "ANC",
+            "share": 30.2,
+            "votes": 264
+          },
+          {
+            "name": "EFF",
+            "share": 10.4,
+            "votes": 91
+          }
+        ],
+        "valid_votes": 874,
+        "reporting": "1 of 6 districts",
+        "source_at": "2026-11-05T14:18:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-11"
+      },
       "13": {
         "parties": [
           {
@@ -2138,6 +2230,29 @@
         "reporting": "1 of 8 districts",
         "source_at": "2026-11-05T07:00:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-13"
+      },
+      "14": {
+        "parties": [
+          {
+            "name": "ANC",
+            "share": 38.2,
+            "votes": 269
+          },
+          {
+            "name": "ActionSA",
+            "share": 23.7,
+            "votes": 167
+          },
+          {
+            "name": "DA",
+            "share": 17.5,
+            "votes": 123
+          }
+        ],
+        "valid_votes": 704,
+        "reporting": "1 of 8 districts",
+        "source_at": "2026-11-05T14:18:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-14"
       },
       "15": {
         "parties": [
@@ -2281,23 +2396,23 @@
         "parties": [
           {
             "name": "ANC",
-            "share": 39.6,
-            "votes": 934
+            "share": 40.6,
+            "votes": 1126
           },
           {
             "name": "ActionSA",
-            "share": 28.9,
-            "votes": 682
+            "share": 27.5,
+            "votes": 763
           },
           {
             "name": "DA",
-            "share": 13.3,
-            "votes": 314
+            "share": 14.7,
+            "votes": 406
           }
         ],
-        "valid_votes": 2360,
-        "reporting": "4 of 13 districts",
-        "source_at": "2026-11-05T10:39:00+00:00",
+        "valid_votes": 2771,
+        "reporting": "5 of 13 districts",
+        "source_at": "2026-11-05T14:18:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-25"
       },
       "26": {
@@ -2349,116 +2464,93 @@
       "28": {
         "parties": [
           {
-            "name": "ANC",
-            "share": 29.1,
-            "votes": 172
-          },
-          {
             "name": "ActionSA",
-            "share": 28.6,
-            "votes": 169
+            "share": 34.3,
+            "votes": 498
           },
           {
-            "name": "MK",
-            "share": 17.1,
-            "votes": 101
+            "name": "ANC",
+            "share": 27.4,
+            "votes": 397
+          },
+          {
+            "name": "DA",
+            "share": 10.1,
+            "votes": 146
           }
         ],
-        "valid_votes": 591,
-        "reporting": "1 of 6 districts",
-        "source_at": "2026-11-05T06:08:00+00:00",
+        "valid_votes": 1451,
+        "reporting": "2 of 6 districts",
+        "source_at": "2026-11-05T14:18:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-28"
       },
       "29": {
         "parties": [
           {
             "name": "ANC",
-            "share": 35.7,
-            "votes": 1191
+            "share": 34.4,
+            "votes": 1448
           },
           {
             "name": "ActionSA",
-            "share": 28.5,
-            "votes": 950
+            "share": 26.5,
+            "votes": 1115
           },
           {
             "name": "DA",
-            "share": 9.4,
-            "votes": 314
+            "share": 9.1,
+            "votes": 382
           }
         ],
-        "valid_votes": 3333,
-        "reporting": "4 of 7 districts",
-        "source_at": "2026-11-05T07:47:00+00:00",
+        "valid_votes": 4208,
+        "reporting": "5 of 7 districts",
+        "source_at": "2026-11-05T14:02:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-29"
-      },
-      "31": {
-        "parties": [
-          {
-            "name": "ActionSA",
-            "share": 24.7,
-            "votes": 1471
-          },
-          {
-            "name": "ANC",
-            "share": 24.6,
-            "votes": 1463
-          },
-          {
-            "name": "DA",
-            "share": 14.9,
-            "votes": 886
-          }
-        ],
-        "valid_votes": 5952,
-        "reporting": "8 of 9 districts",
-        "source_at": "2026-11-05T11:48:00+00:00",
-        "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-31"
       },
       "32": {
         "parties": [
           {
-            "name": "ActionSA",
-            "share": 27.3,
-            "votes": 884
+            "name": "ANC",
+            "share": 27.6,
+            "votes": 1125
           },
           {
-            "name": "ANC",
-            "share": 26.1,
-            "votes": 843
+            "name": "ActionSA",
+            "share": 25.5,
+            "votes": 1039
           },
           {
             "name": "DA",
-            "share": 13.1,
-            "votes": 423
+            "share": 12.5,
+            "votes": 507
           }
         ],
-        "valid_votes": 3233,
-        "reporting": "4 of 9 districts",
-        "source_at": "2026-11-05T10:45:00+00:00",
+        "valid_votes": 4070,
+        "reporting": "5 of 9 districts",
+        "source_at": "2026-11-05T13:45:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-32"
       },
       "33": {
         "parties": [
           {
             "name": "ActionSA",
-            "share": 31.5,
-            "votes": 331
+            "share": 34.0,
+            "votes": 835
           },
           {
             "name": "ANC",
-            "share": 27.4,
-            "votes": 288
+            "share": 32.3,
+            "votes": 794
           },
           {
-            "name": "EFF",
-            "share": 13.0,
-            "votes": 136
+            "name": "DA",
+            "share": 8.8,
+            "votes": 217
           }
         ],
-        "valid_votes": 1050,
-        "reporting": "2 of 8 districts",
-        "source_at": "2026-11-05T10:07:00+00:00",
+        "valid_votes": 2459,
+        "reporting": "3 of 8 districts",
+        "source_at": "2026-11-05T14:18:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-33"
       },
       "34": {
@@ -2598,46 +2690,46 @@
         "parties": [
           {
             "name": "ANC",
-            "share": 43.5,
-            "votes": 121
+            "share": 40.3,
+            "votes": 854
           },
           {
             "name": "ActionSA",
-            "share": 24.1,
-            "votes": 67
+            "share": 29.9,
+            "votes": 634
           },
           {
             "name": "DA",
-            "share": 9.4,
-            "votes": 26
+            "share": 11.3,
+            "votes": 240
           }
         ],
-        "valid_votes": 278,
-        "reporting": "1 of 6 districts",
-        "source_at": "2026-11-05T06:48:00+00:00",
+        "valid_votes": 2121,
+        "reporting": "2 of 6 districts",
+        "source_at": "2026-11-05T14:02:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-40"
       },
       "41": {
         "parties": [
           {
             "name": "DA",
-            "share": 55.5,
-            "votes": 430
+            "share": 61.6,
+            "votes": 1474
           },
           {
             "name": "ActionSA",
-            "share": 16.9,
-            "votes": 131
+            "share": 13.8,
+            "votes": 331
           },
           {
             "name": "FF+",
-            "share": 14.6,
-            "votes": 113
+            "share": 12.0,
+            "votes": 286
           }
         ],
-        "valid_votes": 775,
-        "reporting": "1 of 7 districts",
-        "source_at": "2026-11-05T10:02:00+00:00",
+        "valid_votes": 2391,
+        "reporting": "2 of 7 districts",
+        "source_at": "2026-11-05T14:18:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-41"
       },
       "42": {
@@ -2667,23 +2759,23 @@
         "parties": [
           {
             "name": "DA",
-            "share": 78.6,
-            "votes": 1436
+            "share": 82.4,
+            "votes": 3498
           },
           {
             "name": "FF+",
             "share": 9.0,
-            "votes": 165
+            "votes": 384
           },
           {
             "name": "ActionSA",
-            "share": 5.5,
-            "votes": 101
+            "share": 4.1,
+            "votes": 175
           }
         ],
-        "valid_votes": 1828,
-        "reporting": "1 of 5 districts",
-        "source_at": "2026-11-05T12:22:00+00:00",
+        "valid_votes": 4247,
+        "reporting": "2 of 5 districts",
+        "source_at": "2026-11-05T14:18:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-44"
       },
       "45": {
@@ -2782,23 +2874,23 @@
         "parties": [
           {
             "name": "DA",
-            "share": 63.9,
-            "votes": 3254
+            "share": 64.1,
+            "votes": 4452
           },
           {
             "name": "FF+",
-            "share": 21.4,
-            "votes": 1088
+            "share": 23.1,
+            "votes": 1607
           },
           {
             "name": "ActionSA",
-            "share": 7.9,
-            "votes": 401
+            "share": 6.7,
+            "votes": 462
           }
         ],
-        "valid_votes": 5089,
-        "reporting": "3 of 5 districts",
-        "source_at": "2026-11-05T12:21:00+00:00",
+        "valid_votes": 6944,
+        "reporting": "4 of 5 districts",
+        "source_at": "2026-11-05T14:06:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-54"
       },
       "55": {
@@ -2920,23 +3012,23 @@
         "parties": [
           {
             "name": "DA",
-            "share": 47.7,
-            "votes": 227
+            "share": 34.7,
+            "votes": 442
           },
           {
-            "name": "FF+",
-            "share": 22.9,
-            "votes": 109
+            "name": "ANC",
+            "share": 25.6,
+            "votes": 326
           },
           {
             "name": "ActionSA",
-            "share": 14.9,
-            "votes": 71
+            "share": 21.5,
+            "votes": 273
           }
         ],
-        "valid_votes": 476,
-        "reporting": "1 of 8 districts",
-        "source_at": "2026-11-05T13:21:00+00:00",
+        "valid_votes": 1272,
+        "reporting": "2 of 8 districts",
+        "source_at": "2026-11-05T14:18:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-61"
       },
       "63": {
@@ -3035,24 +3127,47 @@
         "parties": [
           {
             "name": "DA",
-            "share": 75.4,
-            "votes": 1643
+            "share": 73.7,
+            "votes": 3742
           },
           {
             "name": "FF+",
-            "share": 13.7,
-            "votes": 298
+            "share": 15.9,
+            "votes": 805
           },
           {
             "name": "ANC",
-            "share": 5.6,
-            "votes": 121
+            "share": 4.1,
+            "votes": 210
           }
         ],
-        "valid_votes": 2179,
-        "reporting": "1 of 5 districts",
-        "source_at": "2026-11-05T09:59:00+00:00",
+        "valid_votes": 5077,
+        "reporting": "2 of 5 districts",
+        "source_at": "2026-11-05T13:32:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-70"
+      },
+      "71": {
+        "parties": [
+          {
+            "name": "ANC",
+            "share": 36.3,
+            "votes": 242
+          },
+          {
+            "name": "ActionSA",
+            "share": 23.9,
+            "votes": 159
+          },
+          {
+            "name": "DA",
+            "share": 14.6,
+            "votes": 97
+          }
+        ],
+        "valid_votes": 666,
+        "reporting": "1 of 4 districts",
+        "source_at": "2026-11-05T14:18:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-71"
       },
       "73": {
         "parties": [
@@ -3173,23 +3288,23 @@
         "parties": [
           {
             "name": "DA",
-            "share": 64.0,
-            "votes": 3905
+            "share": 65.7,
+            "votes": 4756
           },
           {
             "name": "FF+",
-            "share": 28.1,
-            "votes": 1718
+            "share": 26.6,
+            "votes": 1924
           },
           {
             "name": "ActionSA",
-            "share": 3.5,
-            "votes": 215
+            "share": 3.3,
+            "votes": 242
           }
         ],
-        "valid_votes": 6104,
-        "reporting": "3 of 7 districts",
-        "source_at": "2026-11-05T12:32:00+00:00",
+        "valid_votes": 7241,
+        "reporting": "4 of 7 districts",
+        "source_at": "2026-11-05T14:18:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-84"
       },
       "85": {
@@ -3242,23 +3357,23 @@
         "parties": [
           {
             "name": "ANC",
-            "share": 46.7,
-            "votes": 972
+            "share": 45.4,
+            "votes": 1671
           },
           {
             "name": "ActionSA",
-            "share": 20.1,
-            "votes": 419
+            "share": 20.4,
+            "votes": 751
           },
           {
             "name": "DA",
-            "share": 12.5,
-            "votes": 261
+            "share": 14.8,
+            "votes": 544
           }
         ],
-        "valid_votes": 2083,
-        "reporting": "3 of 8 districts",
-        "source_at": "2026-11-05T10:48:00+00:00",
+        "valid_votes": 3679,
+        "reporting": "5 of 8 districts",
+        "source_at": "2026-11-05T14:18:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-88"
       },
       "90": {
@@ -3288,46 +3403,69 @@
         "parties": [
           {
             "name": "DA",
-            "share": 61.9,
-            "votes": 1755
+            "share": 67.7,
+            "votes": 4673
           },
           {
             "name": "FF+",
-            "share": 20.4,
-            "votes": 577
+            "share": 16.1,
+            "votes": 1115
           },
           {
             "name": "ActionSA",
-            "share": 7.9,
-            "votes": 225
+            "share": 7.2,
+            "votes": 495
           }
         ],
-        "valid_votes": 2834,
-        "reporting": "2 of 5 districts",
-        "source_at": "2026-11-05T09:59:00+00:00",
+        "valid_votes": 6906,
+        "reporting": "3 of 5 districts",
+        "source_at": "2026-11-05T13:32:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-91"
+      },
+      "92": {
+        "parties": [
+          {
+            "name": "DA",
+            "share": 37.8,
+            "votes": 930
+          },
+          {
+            "name": "ActionSA",
+            "share": 29.4,
+            "votes": 723
+          },
+          {
+            "name": "EFF",
+            "share": 11.2,
+            "votes": 276
+          }
+        ],
+        "valid_votes": 2463,
+        "reporting": "2 of 6 districts",
+        "source_at": "2026-11-05T14:02:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-92"
       },
       "93": {
         "parties": [
           {
-            "name": "ActionSA",
-            "share": 34.3,
-            "votes": 622
-          },
-          {
             "name": "ANC",
-            "share": 30.5,
-            "votes": 554
+            "share": 36.4,
+            "votes": 1363
           },
           {
-            "name": "DA",
-            "share": 10.9,
-            "votes": 197
+            "name": "ActionSA",
+            "share": 24.4,
+            "votes": 915
+          },
+          {
+            "name": "EFF",
+            "share": 11.0,
+            "votes": 414
           }
         ],
-        "valid_votes": 1814,
-        "reporting": "3 of 11 districts",
-        "source_at": "2026-11-05T12:32:00+00:00",
+        "valid_votes": 3747,
+        "reporting": "4 of 11 districts",
+        "source_at": "2026-11-05T14:18:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-93"
       },
       "94": {
@@ -3380,23 +3518,23 @@
         "parties": [
           {
             "name": "DA",
-            "share": 48.0,
-            "votes": 2389
+            "share": 48.8,
+            "votes": 2729
           },
           {
             "name": "FF+",
-            "share": 19.9,
-            "votes": 992
+            "share": 20.7,
+            "votes": 1155
           },
           {
             "name": "ActionSA",
-            "share": 15.0,
-            "votes": 749
+            "share": 14.2,
+            "votes": 791
           }
         ],
-        "valid_votes": 4977,
-        "reporting": "3 of 7 districts",
-        "source_at": "2026-11-05T10:46:00+00:00",
+        "valid_votes": 5587,
+        "reporting": "4 of 7 districts",
+        "source_at": "2026-11-05T14:18:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-96"
       },
       "97": {
@@ -3449,23 +3587,23 @@
         "parties": [
           {
             "name": "DA",
-            "share": 47.5,
-            "votes": 2528
+            "share": 48.3,
+            "votes": 3247
           },
           {
             "name": "FF+",
-            "share": 21.3,
-            "votes": 1135
+            "share": 21.4,
+            "votes": 1439
           },
           {
             "name": "ANC",
-            "share": 12.7,
-            "votes": 676
+            "share": 12.6,
+            "votes": 845
           }
         ],
-        "valid_votes": 5318,
-        "reporting": "15 of 21 districts",
-        "source_at": "2026-11-05T08:46:00+00:00",
+        "valid_votes": 6728,
+        "reporting": "17 of 21 districts",
+        "source_at": "2026-11-05T14:06:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-102"
       },
       "104": {
@@ -3750,23 +3888,23 @@
         "parties": [
           {
             "name": "ANC",
-            "share": 31.9,
-            "votes": 722
+            "share": 31.6,
+            "votes": 1037
           },
           {
             "name": "ActionSA",
-            "share": 17.8,
-            "votes": 402
+            "share": 19.2,
+            "votes": 631
           },
           {
             "name": "EFF",
-            "share": 12.5,
-            "votes": 284
+            "share": 11.2,
+            "votes": 367
           }
         ],
-        "valid_votes": 2264,
-        "reporting": "3 of 8 districts",
-        "source_at": "2026-11-05T12:48:00+00:00",
+        "valid_votes": 3279,
+        "reporting": "4 of 8 districts",
+        "source_at": "2026-11-05T14:18:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-21"
       },
       "23": {
@@ -3933,24 +4071,24 @@
       "34": {
         "parties": [
           {
+            "name": "IFP",
+            "share": 45.5,
+            "votes": 1281
+          },
+          {
             "name": "ActionSA",
-            "share": 32.6,
-            "votes": 334
+            "share": 14.8,
+            "votes": 416
           },
           {
-            "name": "ANC",
-            "share": 20.2,
-            "votes": 207
-          },
-          {
-            "name": "DA",
-            "share": 12.9,
-            "votes": 132
+            "name": "MK",
+            "share": 13.0,
+            "votes": 366
           }
         ],
-        "valid_votes": 1026,
-        "reporting": "1 of 4 districts",
-        "source_at": "2026-11-05T10:07:00+00:00",
+        "valid_votes": 2816,
+        "reporting": "2 of 4 districts",
+        "source_at": "2026-11-05T14:02:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-34"
       },
       "37": {
@@ -4021,6 +4159,29 @@
         "reporting": "1 of 8 districts",
         "source_at": "2026-11-05T09:55:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-40"
+      },
+      "41": {
+        "parties": [
+          {
+            "name": "ANC",
+            "share": 29.2,
+            "votes": 175
+          },
+          {
+            "name": "DA",
+            "share": 25.5,
+            "votes": 153
+          },
+          {
+            "name": "ActionSA",
+            "share": 14.2,
+            "votes": 85
+          }
+        ],
+        "valid_votes": 599,
+        "reporting": "1 of 7 districts",
+        "source_at": "2026-11-05T14:18:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-41"
       },
       "42": {
         "parties": [
@@ -4279,23 +4440,23 @@
         "parties": [
           {
             "name": "ANC",
-            "share": 36.3,
-            "votes": 552
+            "share": 35.9,
+            "votes": 845
           },
           {
             "name": "ActionSA",
-            "share": 13.1,
-            "votes": 200
+            "share": 16.7,
+            "votes": 392
           },
           {
-            "name": "EFF",
-            "share": 10.9,
-            "votes": 166
+            "name": "MK",
+            "share": 9.9,
+            "votes": 233
           }
         ],
-        "valid_votes": 1521,
-        "reporting": "2 of 6 districts",
-        "source_at": "2026-11-05T08:25:00+00:00",
+        "valid_votes": 2354,
+        "reporting": "3 of 6 districts",
+        "source_at": "2026-11-05T14:18:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-53"
       },
       "54": {
@@ -4325,23 +4486,23 @@
         "parties": [
           {
             "name": "DA",
-            "share": 70.3,
-            "votes": 3303
+            "share": 62.4,
+            "votes": 3629
           },
           {
             "name": "ActionSA",
-            "share": 9.9,
-            "votes": 467
+            "share": 11.4,
+            "votes": 661
           },
           {
             "name": "ANC",
-            "share": 6.1,
-            "votes": 289
+            "share": 9.1,
+            "votes": 529
           }
         ],
-        "valid_votes": 4700,
-        "reporting": "3 of 6 districts",
-        "source_at": "2026-11-05T12:46:00+00:00",
+        "valid_votes": 5815,
+        "reporting": "4 of 6 districts",
+        "source_at": "2026-11-05T14:18:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-56"
       },
       "57": {
@@ -4371,24 +4532,47 @@
         "parties": [
           {
             "name": "ANC",
-            "share": 37.7,
-            "votes": 1519
+            "share": 33.4,
+            "votes": 2011
           },
           {
             "name": "DA",
-            "share": 24.5,
-            "votes": 988
+            "share": 31.3,
+            "votes": 1880
           },
           {
-            "name": "RISE",
-            "share": 8.8,
-            "votes": 354
+            "name": "ActionSA",
+            "share": 8.3,
+            "votes": 497
           }
         ],
-        "valid_votes": 4026,
-        "reporting": "4 of 7 districts",
-        "source_at": "2026-11-05T09:01:00+00:00",
+        "valid_votes": 6013,
+        "reporting": "5 of 7 districts",
+        "source_at": "2026-11-05T14:18:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-58"
+      },
+      "59": {
+        "parties": [
+          {
+            "name": "ANC",
+            "share": 25.3,
+            "votes": 438
+          },
+          {
+            "name": "ActionSA",
+            "share": 19.4,
+            "votes": 336
+          },
+          {
+            "name": "EFF",
+            "share": 17.7,
+            "votes": 307
+          }
+        ],
+        "valid_votes": 1730,
+        "reporting": "1 of 2 districts",
+        "source_at": "2026-11-05T14:18:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-59"
       },
       "60": {
         "parties": [
@@ -4831,23 +5015,23 @@
         "parties": [
           {
             "name": "DA",
-            "share": 80.5,
-            "votes": 1440
+            "share": 78.7,
+            "votes": 4484
+          },
+          {
+            "name": "ActionSA",
+            "share": 5.7,
+            "votes": 323
           },
           {
             "name": "FF+",
-            "share": 5.4,
-            "votes": 96
-          },
-          {
-            "name": "ANC",
-            "share": 4.4,
-            "votes": 78
+            "share": 5.1,
+            "votes": 291
           }
         ],
-        "valid_votes": 1789,
-        "reporting": "1 of 5 districts",
-        "source_at": "2026-11-05T11:48:00+00:00",
+        "valid_votes": 5695,
+        "reporting": "2 of 5 districts",
+        "source_at": "2026-11-05T14:18:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-89"
       },
       "91": {
@@ -5176,23 +5360,23 @@
         "parties": [
           {
             "name": "DA",
-            "share": 40.3,
-            "votes": 2556
+            "share": 38.5,
+            "votes": 4887
           },
           {
             "name": "ActionSA",
-            "share": 27.8,
-            "votes": 1761
+            "share": 29.2,
+            "votes": 3704
           },
           {
             "name": "ANC",
-            "share": 8.8,
-            "votes": 559
+            "share": 9.3,
+            "votes": 1183
           }
         ],
-        "valid_votes": 6337,
-        "reporting": "3 of 7 districts",
-        "source_at": "2026-11-05T11:51:00+00:00",
+        "valid_votes": 12683,
+        "reporting": "5 of 7 districts",
+        "source_at": "2026-11-05T14:02:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-112"
       },
       "113": {
@@ -5268,23 +5452,23 @@
         "parties": [
           {
             "name": "DA",
-            "share": 70.9,
-            "votes": 1427
-          },
-          {
-            "name": "ANC",
-            "share": 6.3,
-            "votes": 127
+            "share": 71.4,
+            "votes": 2427
           },
           {
             "name": "ActionSA",
-            "share": 5.4,
-            "votes": 108
+            "share": 5.8,
+            "votes": 196
+          },
+          {
+            "name": "ANC",
+            "share": 5.7,
+            "votes": 193
           }
         ],
-        "valid_votes": 2014,
-        "reporting": "1 of 6 districts",
-        "source_at": "2026-11-05T11:04:00+00:00",
+        "valid_votes": 3397,
+        "reporting": "2 of 6 districts",
+        "source_at": "2026-11-05T14:02:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-118"
       },
       "119": {
@@ -5309,6 +5493,29 @@
         "reporting": "1 of 7 districts",
         "source_at": "2026-11-05T02:15:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-119"
+      },
+      "122": {
+        "parties": [
+          {
+            "name": "DA",
+            "share": 30.6,
+            "votes": 15
+          },
+          {
+            "name": "ANC",
+            "share": 22.4,
+            "votes": 11
+          },
+          {
+            "name": "EFF",
+            "share": 20.4,
+            "votes": 10
+          }
+        ],
+        "valid_votes": 49,
+        "reporting": "1 of 11 districts",
+        "source_at": "2026-11-05T14:18:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-122"
       },
       "123": {
         "parties": [
