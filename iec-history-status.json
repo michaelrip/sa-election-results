@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-11-05T12:42:45.488474+00:00",
+  "status": "unavailable",
+  "source": "IEC official public 2021 party-result CSV",
+  "checks": {
+    "Cape Town": {
+      "status": "error",
+      "detail": "Downloaded report is for a different municipality"
+    },
+    "Tshwane": {
+      "status": "error",
+      "detail": "Downloaded report is for a different municipality"
+    },
+    "Johannesburg": {
+      "status": "error",
+      "detail": "Downloaded report is for a different municipality"
+    },
+    "Hermanus": {
+      "status": "error",
+      "detail": "Downloaded report is for a different municipality"
+    }
+  },
+  "note": "Only source-validated 2021 municipality-wide Ward-ballot shares are published. No 2026 ward historic shares are derived from the old boundaries."
+}
