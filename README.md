@@ -8,6 +8,14 @@ Enable GitHub Pages in **Settings → Pages**: select **Deploy from a branch**, 
 
 Intended website: https://michaelrip.github.io/sa-election-results/
 
+## Manual refresh and persistent navigation
+
+The **Refresh** button checks the newest `results.json` published to GitHub Pages. It now gives an immediate checking state and then explicitly confirms whether a newer published snapshot was loaded, whether the publication is unchanged, or whether the network request failed. An unchanged result after pressing Refresh is not a broken button: **upstream ESP/IEC-derived imports run on the GitHub Actions schedule (roughly every 15 minutes)**, and the button does **not** force those upstream sources to update. The message shows the latest published snapshot and any recently failed source checks from `feed-status.json`. Failed network requests preserve the last downloaded figures.
+
+The four-link bottom navigation (**News, Map, Votes, Wards**) is visible at both mobile and larger landscape/in-app browser viewports, with safe-area spacing and a self-contained CSS fallback even if `mobile.css` loads late. The stylesheet URL is versioned to avoid showing a cached earlier style that hid the dock. The malformed mobile city-selector CSS declaration was repaired.
+
+For source robustness, the importer accepts the ward-ballot heading with or without a decorative question mark. If one ESP hostname omits the detailed ward-ballot table, it checks the alternate ESP hostname; the alternate source must still satisfy the existing municipality, date, party-vote and district-count validation. It never substitutes a vote-share estimate for ballot counts.
+
 ## Mobile usability improvements
 
 Mobile screens (up to 760 px wide) load `mobile.css` after the main styles. The live website URL does not change. Recent changes include:
