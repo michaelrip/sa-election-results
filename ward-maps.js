@@ -306,7 +306,8 @@
         : '') +
       '<p class="ward-map-note">Preliminary ward-ballot votes are not final declared councillors or council seats.</p>' +
       '<button type="button" class="ward-map-view" id="ward-map-jump">See ward in results list</button>' +
-      (source ? '<a class="ward-map-source" href="' + safe(source) + '" target="_blank" rel="noopener">View original ward result source</a>' : '');
+      (source ? '<a class="ward-map-source" href="' + safe(source) + '" target="_blank" rel="noopener noreferrer">Ward ballot source</a>' +
+        '<a class="ward-map-source" href="' + safe(source + '?ballot=pr') + '" target="_blank" rel="noopener noreferrer">View this ward’s PR ballot on ESP</a>' : '');
     const action = document.getElementById('ward-map-jump');
     if (action) action.addEventListener('click', function () {
       const metroSelect = document.getElementById('metro');
