@@ -202,6 +202,101 @@ def parse_csv(payload: bytes, city: str, year: int) -> dict:
     }
 
 
+
+def parse_pr_csv(payload: bytes, city: str, year: int) -> dict:
+    """Aggregate *municipal party-list PR* only, excluding Ward and District PR.
+
+    Official 2021 CSVs contain a separate row for each party in each voting
+    district. Do not use the Ward number as a requirement for PR: the results
+    are compared at whole-municipality level, not to 2026 ward boundaries.
+    """
+    if year != 2021 or city not in CITIES:
+        raise ImportErrorIEC("Only the official 2021 municipal PR history is supported")
+    _, muni, _, aliases = CITIES[city]
+    reader = csv.DictReader(io.StringIO(decode(payload), newline=""))
+    if not reader.fieldnames:
+        raise ImportErrorIEC("No official IEC CSV header")
+    cols = {normalized(col): col for col in reader.fieldnames if col}
+    required = {"MUNICIPALITY", "BALLOTTYPE", "PARTYNAME",
+                "VOTINGDISTRICT", "TOTALVALIDVOTES"}
+    if not required.issubset(cols):
+        raise ImportErrorIEC("Official IEC PR columns not recognised")
+    totals = defaultdict(int)
+    seen = set()
+    ballot_labels = set()
+    districts = set()
+    for row in reader:
+        if not any(row.values()):
+            continue
+        val = lambda k: str(row.get(cols[k]) or "").strip()
+        typ = normalized(val("BALLOTTYPE"))
+        ballot_labels.add(typ)
+        if typ != "PR":
+            continue  # explicitly exclude Ward and DC 40% ballots
+        raw_muni = " ".join(val("MUNICIPALITY").lower().split())
+        if " - " in raw_muni:
+            code, name = raw_muni.split(" - ", 1)
+            correct = code == muni.lower() and name in aliases
+        else:
+            correct = raw_muni in aliases
+        if not correct:
+            raise ImportErrorIEC("Different municipality in PR rows: " + repr(raw_muni[:70]))
+        district = val("VOTINGDISTRICT")
+        if not re.fullmatch(r"\d{6,12}", district):
+            raise ImportErrorIEC("Invalid voting-district identifier in PR rows")
+        party = party_label(val("PARTYNAME"))
+        ident = (district, party)
+        if ident in seen:
+            raise ImportErrorIEC("Duplicate IEC municipal PR result row")
+        seen.add(ident)
+        votes = read_int(val("TOTALVALIDVOTES"))
+        totals[party] += votes
+        districts.add(district)
+    total_votes = sum(totals.values())
+    if not totals or total_votes <= 0:
+        raise ImportErrorIEC(
+            "2021 municipal PR rows missing (ballot labels: " +
+            ", ".join(sorted(ballot_labels)[:10]) + ")")
+    return {
+        "total_votes": total_votes,
+        "party_rows": [
+            {"name": name, "share": round(votes * 100 / total_votes, 1),
+             "votes": votes}
+            for name, votes in sorted(totals.items(), key=lambda p: (-p[1], p[0]))
+            if votes > 0
+        ],
+        "reported_vds": len(districts),
+        "ballot_type": "PR",
+    }
+
+
+def historic_combined(ward: dict, pr: dict) -> dict:
+    """Compute 2021 Ward+municipal-PR shares from exact integer votes.
+
+    Rounded percentages must NEVER be used as weights or interpreted as votes.
+    """
+    if not ward or not pr:
+        raise ImportErrorIEC("Both 2021 ballot types are required")
+    total = ward["total_votes"] + pr["total_votes"]
+    if total <= 0:
+        raise ImportErrorIEC("No valid 2021 ballots to combine")
+    sums = defaultdict(int)
+    for ballot in (ward, pr):
+        if sum(p["votes"] for p in ballot["party_rows"]) != ballot["total_votes"]:
+            raise ImportErrorIEC("Incomplete historical party rows")
+        for row in ballot["party_rows"]:
+            sums[row["name"]] += row["votes"]
+    if sum(sums.values()) != total:
+        raise ImportErrorIEC("Historical combined valid vote totals disagree")
+    return {
+        "valid_votes": total,
+        "parties": {name: round(100 * votes / total, 1)
+                    for name, votes in sums.items() if votes > 0},
+        "votes": dict(sums),
+        "ballot_type": "Ward + PR",
+        "note": "Two municipal ballot papers per voter (when both valid), not unique voters",
+    }
+
 def build_results(parsed: dict, urls: dict, event_id: int) -> dict:
     if set(parsed) != set(CITIES):
         raise ImportErrorIEC("All four municipality reports must validate before publication")
@@ -250,19 +345,38 @@ def build_results(parsed: dict, urls: dict, event_id: int) -> dict:
     }
 
 
-def build_history(parsed: dict, urls: dict) -> dict:
+def build_history(parsed: dict, urls: dict, pr_parsed: dict | None = None) -> dict:
     checked = datetime.now(timezone.utc).isoformat()
+    cities = {}
+    for city, ward in parsed.items():
+        ward_votes = {p["name"]: p["votes"] for p in ward["party_rows"]}
+        item = {
+            "ballot_type": "Ward", "year": 2021,
+            "valid_votes": ward["total_votes"],
+            "parties": {p["name"]: p["share"] for p in ward["party_rows"]},
+            "votes": ward_votes, "source_url": urls[city], "wards": {},
+        }
+        if pr_parsed and city in pr_parsed:
+            pr = pr_parsed[city]
+            if not pr.get("party_rows") or pr["total_votes"] <= 0:
+                raise ImportErrorIEC("2021 municipal PR ballot rows are missing")
+            item["pr"] = {
+                "year": 2021, "ballot_type": "PR",
+                "valid_votes": pr["total_votes"],
+                "parties": {p["name"]: p["share"] for p in pr["party_rows"]},
+                "votes": {p["name"]: p["votes"] for p in pr["party_rows"]},
+                "source_url": urls[city],
+            }
+            item["combined"] = historic_combined(ward, pr)
+            item["combined"]["year"] = 2021
+            item["combined"]["source_url"] = urls[city]
+        cities[city] = item
     return {
         "year": 2021, "ballot_type": "Ward",
-        "source": "IEC direct public 2021 ward-ballot CSV reports",
+        "source": "IEC direct public 2021 ward and municipal PR ballot CSV reports",
         "source_verified": True, "checked_at": checked,
-        "notes": "Whole municipality only. 2021 ward boundaries are not directly comparable with 2026 wards.",
-        "metros": {city: {
-            "ballot_type": "Ward", "year": 2021,
-            "valid_votes": item["total_votes"],
-            "parties": {p["name"]: p["share"] for p in item["party_rows"]},
-            "source_url": urls[city], "wards": {},
-        } for city, item in parsed.items()}
+        "notes": "Whole-municipality Ward and municipal PR votes. Ward+PR counts ballot papers, not unique voters. District PR excluded; 2021 ward boundaries are not directly comparable with 2026 wards.",
+        "metros": cities,
     }
 
 
