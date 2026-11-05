@@ -723,9 +723,8 @@ function renderNews(payload){
  const current=filtered.filter(a=>{
   const d=Date.parse(a.published_at||a.published_date||'');
   return Number.isFinite(d)&&d<=now+86400000&&now-d<=5*86400000;
- }).slice(0,10);
+ }).sort((a,b)=>Date.parse(b.published_at||b.published_date||'')-Date.parse(a.published_at||a.published_date||'')).slice(0,10);
  const nextFingerprint=current.map(a=>[a.url,a.published_at,a.title].join('|')).join('||');
- const previousOffset=el('news-feed').scrollLeft;
  if(nextFingerprint!==lastNewsFingerprint){
  el('news-feed').innerHTML=current.length?current.map(a=>
   '<article class="news-story"><p class="news-topic">'+esc(a.metro)+'</p>'+
@@ -733,7 +732,8 @@ function renderNews(payload){
   '<div class="news-meta">'+esc(a.publisher)+' · '+esc(newsDate(a))+'</div></article>'
  ).join(''):'<p class="news-empty">No recent, source-attributed election headlines are available. Check SABC News or Reuters for current coverage.</p>';
  lastNewsFingerprint=nextFingerprint;
- el('news-feed').scrollLeft=previousOffset;
+ // A changed feed begins with the newest headline visible on the left.
+ el('news-feed').scrollLeft=0;
  }
  const checked=Date.parse(payload.checked_at||'');
  const age=now-checked;
