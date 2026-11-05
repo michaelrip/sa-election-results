@@ -249,6 +249,15 @@ main{padding-bottom:calc(105px + env(safe-area-inset-bottom))}
 </style><link rel="stylesheet" href="./mobile.css?v=20261105-map-panel-fix"></head><body>
 <header><div class="eyebrow">SOUTH AFRICA · 2026 MUNICIPAL RESULTS</div><h1>Mzanzi Key Metro Watch</h1><p>Cape Town · Tshwane · Johannesburg · Hermanus / Overstrand. Preliminary ward, municipal PR and district PR results sourced through ESP, with interactive ward maps.</p><div class="toolbar"><span id="status" class="pill warn">Checking data…</span><span id="updated" class="small">No source update yet</span><a href="#metro-votes" class="header-votes-link">View votes by city</a><button id="refresh" type="button" aria-label="Check for newly published election results">Refresh</button><button id="share">Share link</button></div><p id="refresh-feedback" class="refresh-feedback" role="status" aria-live="polite" aria-atomic="true">Refresh checks the latest published results; source updates are scheduled approximately every 15 minutes.</p></header>
 <main><p id="error" role="alert"></p>
+<section id="national-results" class="panel" aria-labelledby="national-heading" style="margin:18px 0">
+ <span class="eyebrow">SOUTH AFRICA · WARD BALLOT</span>
+ <h2 id="national-heading">National results snapshot</h2>
+ <p>Compare the nationwide count with the metro results below. Provisional IEC-derived ward-ballot figures; not a national-election projection or a council-seat count.</p>
+ <p id="national-summary" role="status">Loading national snapshot…</p>
+ <div id="national-party-bars" class="national-party-bars" aria-label="National party vote shares"></div>
+ <p id="national-source" class="small"></p>
+</section>
+
 <section class="news-section" aria-labelledby="news-heading">
  <div class="news-header">
   <div><span class="eyebrow">ELECTION NEWS</span><h2 id="news-heading">Key headlines</h2><p>Reporting from independent newsrooms. Sources checked about every 10 minutes; open any story at its publisher.</p></div>
@@ -832,4 +841,39 @@ setInterval(()=>{if(!document.hidden)loadNews()},2*60*1000);
 document.addEventListener('visibilitychange',()=>{
  if(!document.hidden){load();loadNews()}
 });
-</script><script src="./ward-maps.js?v=20261105-map-panel-fix"></script><script data-goatcounter="https://mzanzielection.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script></body></html>
+</script><script src="./ward-maps.js?v=20261105-map-panel-fix"></script><script data-goatcounter="https://mzanzielection.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script><style>
+.national-party-bars{display:grid;gap:10px;max-width:760px;margin:16px 0}
+.national-party-row{display:grid;grid-template-columns:92px minmax(0,1fr) 65px;align-items:center;gap:10px;font-size:14px}
+.national-party-track{height:12px;background:#293c52;border-radius:9px;overflow:hidden}
+.national-party-fill{height:100%;background:#49a9cf;border-radius:9px}
+.national-party-row strong{text-align:right;font-variant-numeric:tabular-nums}
+@media(max-width:480px){.national-party-row{grid-template-columns:72px minmax(0,1fr) 55px;gap:7px;font-size:12px}}
+</style>
+<script>
+(async function(){
+ const summary=document.getElementById('national-summary'),bars=document.getElementById('national-party-bars'),source=document.getElementById('national-source');
+ try{
+  const response=await fetch('./national-results.json?ts='+Date.now(),{cache:'no-store'});
+  if(!response.ok)throw new Error('National snapshot unavailable');
+  const d=await response.json();
+  if(!Array.isArray(d.parties)||!Number.isFinite(d.districts_reported)||!Number.isFinite(d.districts_total)||d.districts_total<=0)throw new Error('Incomplete national snapshot');
+  const fmt=n=>new Intl.NumberFormat('en-ZA').format(n);
+  const pct=(100*d.districts_reported/d.districts_total).toFixed(1);
+  const stamp=new Intl.DateTimeFormat('en-ZA',{dateStyle:'medium',timeStyle:'short',timeZone:'Africa/Johannesburg'}).format(new Date(d.updated_at));
+  summary.textContent=fmt(d.districts_reported)+' of '+fmt(d.districts_total)+' voting districts reported ('+pct+'%). Snapshot: '+stamp+' SAST.';
+  d.parties.forEach(p=>{
+   if(typeof p.name!=='string'||!Number.isFinite(p.share)||p.share<0||p.share>100)return;
+   const row=document.createElement('div');row.className='national-party-row';
+   const label=document.createElement('span');label.textContent=p.name;
+   const track=document.createElement('div');track.className='national-party-track';
+   const fill=document.createElement('div');fill.className='national-party-fill';fill.style.width=p.share+'%';track.appendChild(fill);
+   const value=document.createElement('strong');value.textContent=p.share.toFixed(1)+'%';
+   row.append(label,track,value);bars.appendChild(row);
+  });
+  const a=document.createElement('a');a.href='https://sepush.co.za/elections/local/2026';a.target='_blank';a.rel='noopener noreferrer';a.textContent='View latest national count at ESP';
+  source.textContent='Historical snapshot, not a live feed. Figures may have changed. Source: ';
+  source.appendChild(a);
+ }catch(e){summary.textContent='National snapshot could not be loaded. Check the source for current figures.';}
+})();
+</script>
+</body></html>
