@@ -1,88 +1,88 @@
 {
-  "updated_at": "2026-11-05T10:57:02.331444+00:00",
+  "updated_at": "2026-11-05T11:16:19.946647+00:00",
   "source": "Provisional IEC-derived ward-ballot results via ESP (unofficial)",
   "metros": {
     "Cape Town": {
       "status": "Preliminary · IEC-derived via ESP",
       "ballot_type": "Ward",
-      "districts_reported": 204,
+      "districts_reported": 212,
       "districts_total": 829,
-      "valid_votes": 243622,
+      "valid_votes": 262938,
       "parties": [
         {
           "name": "DA",
-          "share": 59.6,
-          "votes": 145266
+          "share": 60.3,
+          "votes": 158472
         },
         {
           "name": "ANC",
-          "share": 12.2,
-          "votes": 29625
+          "share": 11.6,
+          "votes": 30561
         },
         {
           "name": "PA",
-          "share": 4.3,
-          "votes": 10592
+          "share": 4.4,
+          "votes": 11521
         },
         {
           "name": "FF+",
           "share": 3.4,
-          "votes": 8306
+          "votes": 8869
         },
         {
           "name": "EFF",
-          "share": 3.2,
-          "votes": 7778
+          "share": 3.0,
+          "votes": 8005
         },
         {
           "name": "ActionSA",
           "share": 2.4,
-          "votes": 5756
+          "votes": 6319
         },
         {
           "name": "CCC",
-          "share": 2.2,
-          "votes": 5344
+          "share": 2.3,
+          "votes": 6060
         },
         {
           "name": "GOOD",
           "share": 2.2,
-          "votes": 5255
+          "votes": 5772
         },
         {
           "name": "Al Jama-ah",
           "share": 2.1,
-          "votes": 5226
+          "votes": 5566
         },
         {
           "name": "ACDP",
           "share": 1.5,
-          "votes": 3615
+          "votes": 3926
         },
         {
           "name": "UDM",
           "share": 1.0,
-          "votes": 2544
+          "votes": 2661
         },
         {
           "name": "ATM",
           "share": 0.6,
-          "votes": 1534
+          "votes": 1619
         },
         {
           "name": "MK",
           "share": 0.5,
-          "votes": 1165
+          "votes": 1216
         },
         {
           "name": "SACP",
           "share": 0.4,
-          "votes": 982
+          "votes": 1003
         },
         {
           "name": "BOSA",
-          "share": 0.4,
-          "votes": 865
+          "share": 0.3,
+          "votes": 911
         },
         {
           "name": "H.O.I.",
@@ -92,7 +92,7 @@
         {
           "name": "IFP",
           "share": 0.1,
-          "votes": 145
+          "votes": 154
         }
       ],
       "seats": [],
@@ -103,7 +103,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-1"
         },
         {
@@ -112,7 +112,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-2"
         },
         {
@@ -121,7 +121,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-3"
         },
         {
@@ -130,7 +130,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-4"
         },
         {
@@ -145,7 +145,7 @@
               "share": 83.7
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-5"
         },
         {
@@ -160,7 +160,7 @@
               "share": 51.3
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-6"
         },
         {
@@ -175,7 +175,7 @@
               "share": 78.1
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-7"
         },
         {
@@ -190,7 +190,7 @@
               "share": 83.0
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-8"
         },
         {
@@ -205,7 +205,7 @@
               "share": 46.6
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-9"
         },
         {
@@ -220,7 +220,7 @@
               "share": 53.7
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-10"
         },
         {
@@ -235,22 +235,22 @@
               "share": 82.6
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-11"
         },
         {
           "number": 12,
           "status": "Partly counted",
           "ballot_type": "Ward",
-          "reporting": "2 of 7 districts",
+          "reporting": "3 of 7 districts",
           "winner": "DA",
           "parties": [
             {
               "name": "DA",
-              "share": 57.9
+              "share": 56.9
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-12"
         },
         {
@@ -265,7 +265,7 @@
               "share": 88.9
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-13"
         },
         {
@@ -280,7 +280,7 @@
               "share": 66.3
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-14"
         },
         {
@@ -295,22 +295,22 @@
               "share": 87.2
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-15"
         },
         {
           "number": 16,
           "status": "Partly counted",
           "ballot_type": "Ward",
-          "reporting": "3 of 8 districts",
+          "reporting": "4 of 8 districts",
           "winner": "DA",
           "parties": [
             {
               "name": "DA",
-              "share": 58.0
+              "share": 55.6
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-16"
         },
         {
@@ -325,7 +325,7 @@
               "share": 65.5
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-17"
         },
         {
@@ -340,7 +340,7 @@
               "share": 47.9
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-18"
         },
         {
@@ -355,7 +355,7 @@
               "share": 60.4
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-19"
         },
         {
@@ -370,7 +370,7 @@
               "share": 63.8
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-20"
         },
         {
@@ -385,7 +385,7 @@
               "share": 85.0
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-21"
         },
         {
@@ -400,7 +400,7 @@
               "share": 62.1
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-22"
         },
         {
@@ -415,7 +415,7 @@
               "share": 86.2
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-23"
         },
         {
@@ -424,7 +424,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-24"
         },
         {
@@ -439,7 +439,7 @@
               "share": 60.3
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-25"
         },
         {
@@ -454,7 +454,7 @@
               "share": 63.7
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-26"
         },
         {
@@ -469,7 +469,7 @@
               "share": 58.6
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-27"
         },
         {
@@ -484,7 +484,7 @@
               "share": 66.7
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-28"
         },
         {
@@ -493,7 +493,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-29"
         },
         {
@@ -508,7 +508,7 @@
               "share": 53.4
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-30"
         },
         {
@@ -523,7 +523,7 @@
               "share": 48.8
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-31"
         },
         {
@@ -532,7 +532,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-32"
         },
         {
@@ -547,7 +547,7 @@
               "share": 36.9
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-33"
         },
         {
@@ -562,7 +562,7 @@
               "share": 60.1
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-34"
         },
         {
@@ -577,7 +577,7 @@
               "share": 46.5
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-35"
         },
         {
@@ -592,7 +592,7 @@
               "share": 48.8
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-36"
         },
         {
@@ -607,7 +607,7 @@
               "share": 50.9
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-37"
         },
         {
@@ -622,7 +622,7 @@
               "share": 46.8
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-38"
         },
         {
@@ -637,7 +637,7 @@
               "share": 43.9
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-39"
         },
         {
@@ -652,7 +652,7 @@
               "share": 39.7
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-40"
         },
         {
@@ -667,7 +667,7 @@
               "share": 43.7
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-41"
         },
         {
@@ -682,7 +682,7 @@
               "share": 69.5
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-42"
         },
         {
@@ -691,7 +691,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-43"
         },
         {
@@ -706,16 +706,22 @@
               "share": 59.3
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-44"
         },
         {
           "number": 45,
-          "status": "Not yet reported",
+          "status": "Partly counted",
           "ballot_type": "Ward",
-          "reporting": "Not yet reported",
-          "parties": [],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "reporting": "1 of 4 districts",
+          "winner": "DA",
+          "parties": [
+            {
+              "name": "DA",
+              "share": 63.0
+            }
+          ],
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-45"
         },
         {
@@ -724,7 +730,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-46"
         },
         {
@@ -733,7 +739,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-47"
         },
         {
@@ -742,7 +748,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-48"
         },
         {
@@ -757,7 +763,7 @@
               "share": 65.1
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-49"
         },
         {
@@ -766,7 +772,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-50"
         },
         {
@@ -781,7 +787,7 @@
               "share": 62.4
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-51"
         },
         {
@@ -790,22 +796,22 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-52"
         },
         {
           "number": 53,
           "status": "Partly counted",
           "ballot_type": "Ward",
-          "reporting": "1 of 6 districts",
+          "reporting": "2 of 6 districts",
           "winner": "DA",
           "parties": [
             {
               "name": "DA",
-              "share": 43.1
+              "share": 69.3
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-53"
         },
         {
@@ -820,7 +826,7 @@
               "share": 89.5
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-54"
         },
         {
@@ -835,7 +841,7 @@
               "share": 75.6
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-55"
         },
         {
@@ -844,7 +850,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-56"
         },
         {
@@ -859,7 +865,7 @@
               "share": 59.3
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-57"
         },
         {
@@ -874,7 +880,7 @@
               "share": 84.7
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-58"
         },
         {
@@ -889,7 +895,7 @@
               "share": 81.1
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-59"
         },
         {
@@ -898,31 +904,37 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-60"
         },
         {
           "number": 61,
-          "status": "Not yet reported",
+          "status": "Partly counted",
           "ballot_type": "Ward",
-          "reporting": "Not yet reported",
-          "parties": [],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "reporting": "1 of 9 districts",
+          "winner": "ANC",
+          "parties": [
+            {
+              "name": "ANC",
+              "share": 50.4
+            }
+          ],
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-61"
         },
         {
           "number": 62,
           "status": "Partly counted",
           "ballot_type": "Ward",
-          "reporting": "2 of 5 districts",
+          "reporting": "3 of 5 districts",
           "winner": "DA",
           "parties": [
             {
               "name": "DA",
-              "share": 85.8
+              "share": 85.9
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-62"
         },
         {
@@ -937,7 +949,7 @@
               "share": 79.6
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-63"
         },
         {
@@ -946,7 +958,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-64"
         },
         {
@@ -961,7 +973,7 @@
               "share": 60.5
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-65"
         },
         {
@@ -976,7 +988,7 @@
               "share": 58.6
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-66"
         },
         {
@@ -991,7 +1003,7 @@
               "share": 58.3
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-67"
         },
         {
@@ -1006,7 +1018,7 @@
               "share": 59.0
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-68"
         },
         {
@@ -1015,7 +1027,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-69"
         },
         {
@@ -1030,7 +1042,7 @@
               "share": 84.2
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-70"
         },
         {
@@ -1045,7 +1057,7 @@
               "share": 80.5
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-71"
         },
         {
@@ -1060,7 +1072,7 @@
               "share": 66.2
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-72"
         },
         {
@@ -1075,7 +1087,7 @@
               "share": 84.4
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-73"
         },
         {
@@ -1084,7 +1096,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-74"
         },
         {
@@ -1099,7 +1111,7 @@
               "share": 51.7
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-75"
         },
         {
@@ -1114,7 +1126,7 @@
               "share": 36.9
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-76"
         },
         {
@@ -1129,7 +1141,7 @@
               "share": 82.2
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-77"
         },
         {
@@ -1144,22 +1156,22 @@
               "share": 47.1
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-78"
         },
         {
           "number": 79,
           "status": "Partly counted",
           "ballot_type": "Ward",
-          "reporting": "1 of 6 districts",
+          "reporting": "2 of 6 districts",
           "winner": "DA",
           "parties": [
             {
               "name": "DA",
-              "share": 59.7
+              "share": 60.2
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-79"
         },
         {
@@ -1168,7 +1180,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-80"
         },
         {
@@ -1183,7 +1195,7 @@
               "share": 55.3
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-81"
         },
         {
@@ -1198,7 +1210,7 @@
               "share": 55.8
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-82"
         },
         {
@@ -1213,7 +1225,7 @@
               "share": 81.9
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-83"
         },
         {
@@ -1228,7 +1240,7 @@
               "share": 59.4
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-84"
         },
         {
@@ -1243,7 +1255,7 @@
               "share": 36.9
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-85"
         },
         {
@@ -1258,7 +1270,7 @@
               "share": 75.5
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-86"
         },
         {
@@ -1267,7 +1279,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-87"
         },
         {
@@ -1282,7 +1294,7 @@
               "share": 48.5
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-88"
         },
         {
@@ -1291,7 +1303,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-89"
         },
         {
@@ -1306,7 +1318,7 @@
               "share": 85.5
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-90"
         },
         {
@@ -1321,7 +1333,7 @@
               "share": 68.6
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-91"
         },
         {
@@ -1336,7 +1348,7 @@
               "share": 33.9
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-92"
         },
         {
@@ -1351,7 +1363,7 @@
               "share": 49.1
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-93"
         },
         {
@@ -1366,7 +1378,7 @@
               "share": 44.9
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-94"
         },
         {
@@ -1375,7 +1387,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-95"
         },
         {
@@ -1390,7 +1402,7 @@
               "share": 52.7
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-96"
         },
         {
@@ -1405,7 +1417,7 @@
               "share": 47.8
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-97"
         },
         {
@@ -1420,7 +1432,7 @@
               "share": 51.7
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-98"
         },
         {
@@ -1435,7 +1447,7 @@
               "share": 70.1
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-99"
         },
         {
@@ -1450,7 +1462,7 @@
               "share": 45.3
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-100"
         },
         {
@@ -1465,7 +1477,7 @@
               "share": 48.1
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-101"
         },
         {
@@ -1480,7 +1492,7 @@
               "share": 82.9
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-102"
         },
         {
@@ -1495,7 +1507,7 @@
               "share": 83.8
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-103"
         },
         {
@@ -1510,7 +1522,7 @@
               "share": 52.2
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-104"
         },
         {
@@ -1525,7 +1537,7 @@
               "share": 80.6
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-105"
         },
         {
@@ -1540,7 +1552,7 @@
               "share": 44.5
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-106"
         },
         {
@@ -1555,7 +1567,7 @@
               "share": 85.9
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-107"
         },
         {
@@ -1564,7 +1576,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-108"
         },
         {
@@ -1579,7 +1591,7 @@
               "share": 67.5
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-109"
         },
         {
@@ -1594,7 +1606,7 @@
               "share": 60.1
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-110"
         },
         {
@@ -1609,7 +1621,7 @@
               "share": 71.6
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-111"
         },
         {
@@ -1618,7 +1630,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-112"
         },
         {
@@ -1633,7 +1645,7 @@
               "share": 74.2
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-113"
         },
         {
@@ -1642,7 +1654,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-114"
         },
         {
@@ -1651,22 +1663,22 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-115"
         },
         {
           "number": 116,
           "status": "Partly counted",
           "ballot_type": "Ward",
-          "reporting": "1 of 8 districts",
+          "reporting": "2 of 8 districts",
           "winner": "DA",
           "parties": [
             {
               "name": "DA",
-              "share": 61.2
+              "share": 56.9
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-116"
         },
         {
@@ -1681,7 +1693,7 @@
               "share": 89.2
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-117"
         },
         {
@@ -1696,11 +1708,11 @@
               "share": 54.6
             }
           ],
-          "snapshot_at": "2026-11-05T10:40:00+00:00",
+          "snapshot_at": "2026-11-05T11:05:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town/ward-118"
         }
       ],
-      "snapshot_at": "2026-11-05T10:40:00+00:00",
+      "snapshot_at": "2026-11-05T11:05:00+00:00",
       "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town"
     },
     "Tshwane": {
