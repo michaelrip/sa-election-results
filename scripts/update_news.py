@@ -22,6 +22,7 @@ QUERIES = [
     "Tshwane Pretoria 2026 local government election when:3d",
     "Johannesburg 2026 local government election when:3d",
     "South Africa municipal election 2026 results when:3d",
+    "Hermanus Overstrand 2026 municipal election results when:3d",
 ]
 TRUSTED = {
     "reuters", "associated press", "ap news", "sabc news",
@@ -35,6 +36,7 @@ CITY_TERMS = {
     "Cape Town": ("cape town", "city of cape town"),
     "Tshwane": ("tshwane", "pretoria"),
     "Johannesburg": ("johannesburg", "joburg", "soweto"),
+    "Hermanus": ("hermanus", "overstrand", "gansbaai", "kleinmond"),
 }
 ELECTION_TERMS = re.compile(
     r"\b(election|electoral|municipal|ward|coalition|counting|"
