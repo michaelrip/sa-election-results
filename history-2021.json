@@ -1,0 +1,5418 @@
+{
+  "year": 2021,
+  "ballot_type": "Ward",
+  "checked_at": "2026-11-05T11:06:29.417644+00:00",
+  "notes": "Wards use voting districts matched to 2026 boundaries; historic 2021 shares can be incomplete where districts changed.",
+  "metros": {
+    "Cape Town": {
+      "ballot_type": "Ward",
+      "year": 2021,
+      "valid_votes": 909509,
+      "parties": {
+        "DA": 57.8,
+        "ANC": 18.5,
+        "EFF": 4.1,
+        "GOOD": 3.9,
+        "CCC": 2.8,
+        "ACDP": 2.4,
+        "FF+": 1.6,
+        "PA": 1.5,
+        "Al Jama-ah": 1.3,
+        "Independent": 1.1,
+        "CAPEXIT": 0.6,
+        "UDM": 0.3,
+        "ATM": 0.1,
+        "IFP": 0.0
+      },
+      "source_url": "https://go.esp.info/elections/local/2021/western-cape/city-of-cape-town",
+      "comparison": "Completed 2021 local-election ward ballot, whole municipality",
+      "wards": {
+        "1": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 89.1,
+            "FF+": 3.7,
+            "GOOD": 1.7,
+            "ACDP": 1.6,
+            "CAPEXIT": 1.0
+          },
+          "matched_districts": 4,
+          "districts_in_2026_ward": 4,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/1/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "2": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 83.4,
+            "FF+": 4.5,
+            "ACDP": 3.2,
+            "GOOD": 2.0,
+            "ANC": 1.7
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/2/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "3": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 83.9,
+            "FF+": 5.4,
+            "ACDP": 2.5,
+            "Independent": 1.6,
+            "ANC": 1.5
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/3/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "4": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 63.2,
+            "ANC": 17.3,
+            "EFF": 8.7,
+            "GOOD": 2.5,
+            "Independent": 1.4
+          },
+          "matched_districts": 3,
+          "districts_in_2026_ward": 4,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/4/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "5": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 88.1,
+            "ACDP": 3.3,
+            "FF+": 2.5,
+            "CAPEXIT": 1.3,
+            "Independent": 1.2
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/5/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "6": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 62.1,
+            "EFF": 23.0,
+            "DA": 10.2,
+            "Independent": 1.0,
+            "UDM": 1.0
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/6/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "7": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 72.0,
+            "PA": 7.0,
+            "ANC": 4.5,
+            "ACDP": 3.8,
+            "GOOD": 3.7
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/7/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "8": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 86.3,
+            "FF+": 6.4,
+            "ACDP": 2.0,
+            "ANC": 1.3,
+            "CAPEXIT": 1.1
+          },
+          "matched_districts": 4,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/8/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "9": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 41.6,
+            "Independent": 16.0,
+            "CCC": 12.5,
+            "ANC": 10.3,
+            "EFF": 5.9
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/9/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "10": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 70.1,
+            "CCC": 4.7,
+            "GOOD": 4.6,
+            "ANC": 4.5,
+            "ACDP": 4.3
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/10/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "11": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 77.8,
+            "GOOD": 5.1,
+            "FF+": 4.3,
+            "ACDP": 3.8,
+            "ANC": 2.9
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/11/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "12": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 63.8,
+            "ANC": 8.5,
+            "GOOD": 7.3,
+            "PA": 6.7,
+            "ACDP": 2.8
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/12/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "13": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 87.4,
+            "FF+": 4.1,
+            "ACDP": 2.1,
+            "ANC": 1.5,
+            "GOOD": 1.4
+          },
+          "matched_districts": 4,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/13/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "14": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 68.7,
+            "ANC": 8.4,
+            "GOOD": 5.4,
+            "ACDP": 4.2,
+            "EFF": 3.8
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/14/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "15": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 90.3,
+            "FF+": 3.6,
+            "ACDP": 2.8,
+            "ANC": 0.7,
+            "GOOD": 0.7
+          },
+          "matched_districts": 4,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/15/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "16": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 60.5,
+            "ANC": 9.0,
+            "GOOD": 7.0,
+            "CCC": 5.2,
+            "PA": 4.6
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/16/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "17": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 62.1,
+            "ANC": 9.2,
+            "GOOD": 6.7,
+            "CCC": 6.3,
+            "ACDP": 5.0
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/17/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "18": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 56.4,
+            "EFF": 15.9,
+            "PA": 7.5,
+            "Independent": 7.3,
+            "DA": 4.5
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/18/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "19": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 52.4,
+            "ANC": 12.6,
+            "GOOD": 10.2,
+            "ACDP": 7.0,
+            "EFF": 4.9
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/19/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "20": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 47.5,
+            "ANC": 31.2,
+            "GOOD": 5.3,
+            "CCC": 4.3,
+            "EFF": 3.8
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/20/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "21": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 89.3,
+            "FF+": 4.9,
+            "ACDP": 2.2,
+            "CAPEXIT": 1.0,
+            "GOOD": 0.7
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/21/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "22": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 60.7,
+            "GOOD": 9.4,
+            "ANC": 6.9,
+            "PA": 5.3,
+            "ACDP": 4.5
+          },
+          "matched_districts": 10,
+          "districts_in_2026_ward": 10,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/22/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "23": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 84.5,
+            "FF+": 5.8,
+            "CAPEXIT": 2.4,
+            "ACDP": 2.4,
+            "ANC": 1.8
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/23/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "24": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 43.7,
+            "DA": 27.0,
+            "EFF": 14.8,
+            "PA": 6.2,
+            "UDM": 1.2
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/24/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "25": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 73.2,
+            "CCC": 5.8,
+            "ANC": 3.9,
+            "GOOD": 3.7,
+            "ACDP": 3.6
+          },
+          "matched_districts": 10,
+          "districts_in_2026_ward": 10,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/25/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "26": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 67.0,
+            "ANC": 6.7,
+            "GOOD": 4.5,
+            "CCC": 4.5,
+            "FF+": 3.4
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/26/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "27": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 71.3,
+            "GOOD": 4.7,
+            "FF+": 4.5,
+            "ANC": 3.6,
+            "Independent": 3.3
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/27/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "28": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 72.2,
+            "GOOD": 5.8,
+            "ANC": 5.0,
+            "CCC": 4.4,
+            "ACDP": 3.1
+          },
+          "matched_districts": 10,
+          "districts_in_2026_ward": 10,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/28/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "29": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 53.2,
+            "ANC": 19.9,
+            "CCC": 13.0,
+            "GOOD": 3.8,
+            "PA": 3.7
+          },
+          "matched_districts": 11,
+          "districts_in_2026_ward": 11,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/29/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "30": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 60.6,
+            "ANC": 10.6,
+            "GOOD": 6.9,
+            "ACDP": 5.3,
+            "Al Jama-ah": 4.8
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/30/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "31": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 64.4,
+            "ANC": 9.2,
+            "GOOD": 7.4,
+            "ACDP": 3.6,
+            "PA": 3.1
+          },
+          "matched_districts": 9,
+          "districts_in_2026_ward": 9,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/31/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "32": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 44.4,
+            "ANC": 27.1,
+            "CCC": 10.0,
+            "PA": 5.6,
+            "EFF": 3.5
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/32/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "33": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 70.8,
+            "EFF": 12.7,
+            "DA": 10.7,
+            "Independent": 1.5
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/33/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "34": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 77.0,
+            "EFF": 17.0,
+            "DA": 2.4,
+            "Independent": 1.1
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/34/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "35": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 62.7,
+            "EFF": 18.1,
+            "DA": 8.7,
+            "UDM": 1.2
+          },
+          "matched_districts": 9,
+          "districts_in_2026_ward": 9,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/35/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "36": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 76.7,
+            "EFF": 12.5,
+            "DA": 4.7,
+            "Independent": 1.2
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/36/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "37": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 78.3,
+            "EFF": 11.8,
+            "DA": 4.3,
+            "UDM": 1.3,
+            "GOOD": 1.2
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/37/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "38": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 74.5,
+            "EFF": 8.8,
+            "GOOD": 5.3,
+            "DA": 3.5,
+            "Independent": 2.9
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/38/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "39": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 72.9,
+            "EFF": 14.4,
+            "DA": 5.9,
+            "Independent": 0.9
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/39/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "40": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 61.3,
+            "EFF": 20.5,
+            "DA": 13.4,
+            "UDM": 0.8
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/40/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "41": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 73.4,
+            "EFF": 13.2,
+            "DA": 4.3,
+            "GOOD": 1.7
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 9,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/41/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "42": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 74.0,
+            "GOOD": 6.6,
+            "PA": 5.2,
+            "CCC": 3.1,
+            "ACDP": 3.1
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/42/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "43": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 48.6,
+            "GOOD": 19.1,
+            "CCC": 9.3,
+            "ANC": 6.6,
+            "ACDP": 4.3
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/43/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "44": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 41.3,
+            "ANC": 22.7,
+            "ACDP": 10.4,
+            "EFF": 5.3,
+            "CCC": 3.6
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/44/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "45": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 62.7,
+            "ANC": 10.7,
+            "CCC": 5.2,
+            "GOOD": 4.8
+          },
+          "matched_districts": 4,
+          "districts_in_2026_ward": 4,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/45/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "46": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 51.7,
+            "ANC": 10.6,
+            "Al Jama-ah": 8.8,
+            "GOOD": 7.6,
+            "CCC": 4.4
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/46/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "47": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 47.6,
+            "PA": 23.6,
+            "CCC": 6.9,
+            "GOOD": 6.2,
+            "Al Jama-ah": 3.7
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/47/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "48": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 59.7,
+            "GOOD": 9.1,
+            "Al Jama-ah": 7.8,
+            "ANC": 4.7,
+            "CCC": 3.6
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/48/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "49": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 68.9,
+            "GOOD": 6.2,
+            "Al Jama-ah": 4.7,
+            "CCC": 4.1,
+            "ACDP": 3.9
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/49/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "50": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 66.4,
+            "CCC": 6.4,
+            "Independent": 4.9,
+            "ANC": 3.1
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/50/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "51": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 55.9,
+            "Independent": 16.9,
+            "EFF": 13.8,
+            "DA": 7.5
+          },
+          "matched_districts": 9,
+          "districts_in_2026_ward": 9,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/51/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "52": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 74.3,
+            "EFF": 12.0,
+            "DA": 6.8,
+            "UDM": 1.6
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/52/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "53": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 78.1,
+            "GOOD": 4.7,
+            "ACDP": 4.5,
+            "ANC": 3.7,
+            "EFF": 1.2
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/53/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "54": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 84.3,
+            "FF+": 7.7,
+            "GOOD": 2.4,
+            "ANC": 2.4,
+            "CAPEXIT": 0.8
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/54/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "55": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 81.4,
+            "ANC": 3.6,
+            "GOOD": 2.5,
+            "FF+": 2.5,
+            "ACDP": 1.9
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/55/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "56": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 49.0,
+            "Independent": 17.9,
+            "GOOD": 7.3,
+            "Al Jama-ah": 7.3,
+            "CCC": 6.2
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/56/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "57": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 71.2,
+            "EFF": 8.3,
+            "GOOD": 7.6,
+            "ANC": 5.0,
+            "ACDP": 1.4
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/57/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "58": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 85.0,
+            "GOOD": 4.4,
+            "ANC": 2.4,
+            "ACDP": 2.1,
+            "EFF": 0.9
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/58/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "59": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 85.9,
+            "GOOD": 4.5,
+            "ANC": 2.6,
+            "EFF": 1.5,
+            "ACDP": 1.4
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/59/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "60": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 53.9,
+            "Independent": 15.3,
+            "Al Jama-ah": 6.1,
+            "GOOD": 5.5,
+            "ANC": 4.7
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/60/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "61": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 72.0,
+            "CCC": 6.2,
+            "PA": 5.3,
+            "ANC": 3.9,
+            "CAPEXIT": 2.9
+          },
+          "matched_districts": 9,
+          "districts_in_2026_ward": 9,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/61/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "62": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 86.8,
+            "GOOD": 3.4,
+            "ANC": 2.8,
+            "ACDP": 1.6,
+            "CAPEXIT": 1.0
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/62/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "63": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 68.9,
+            "GOOD": 6.4,
+            "ANC": 4.4,
+            "Al Jama-ah": 4.4,
+            "ACDP": 3.2
+          },
+          "matched_districts": 9,
+          "districts_in_2026_ward": 10,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/63/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "64": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 86.7,
+            "GOOD": 2.8,
+            "ACDP": 2.7,
+            "CAPEXIT": 1.7,
+            "ANC": 1.5
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/64/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "65": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 65.1,
+            "CCC": 5.8,
+            "GOOD": 4.9,
+            "Al Jama-ah": 4.3
+          },
+          "matched_districts": 9,
+          "districts_in_2026_ward": 9,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/65/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "66": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 64.7,
+            "GOOD": 10.1,
+            "Al Jama-ah": 5.0,
+            "ACDP": 3.5,
+            "ANC": 3.4
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/66/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "67": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 57.5,
+            "GOOD": 7.2,
+            "Al Jama-ah": 6.9,
+            "CCC": 5.7
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/67/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "68": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 53.7,
+            "CCC": 5.1,
+            "GOOD": 4.5,
+            "ACDP": 4.2
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/68/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "69": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 65.6,
+            "ANC": 23.6,
+            "EFF": 4.2,
+            "CAPEXIT": 1.5,
+            "ACDP": 1.4
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/69/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "70": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 89.7,
+            "FF+": 3.9,
+            "ACDP": 2.0,
+            "GOOD": 1.1
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/70/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "71": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 85.7,
+            "ANC": 5.5,
+            "EFF": 2.1,
+            "ACDP": 1.8,
+            "GOOD": 1.8
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/71/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "72": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 68.8,
+            "GOOD": 6.6,
+            "ACDP": 4.8,
+            "CCC": 3.1
+          },
+          "matched_districts": 9,
+          "districts_in_2026_ward": 9,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/72/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "73": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 89.4,
+            "GOOD": 3.2,
+            "ACDP": 2.2,
+            "CAPEXIT": 1.1,
+            "FF+": 0.8
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/73/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "74": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 64.2,
+            "ANC": 22.8,
+            "EFF": 4.0,
+            "GOOD": 2.5,
+            "CCC": 1.7
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/74/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "75": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 60.8,
+            "CCC": 11.3,
+            "GOOD": 6.3,
+            "Al Jama-ah": 6.2,
+            "ACDP": 3.7
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/75/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "76": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 42.5,
+            "ANC": 14.9,
+            "CCC": 11.5,
+            "GOOD": 9.3,
+            "EFF": 5.8
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/76/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "77": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 77.6,
+            "GOOD": 5.0,
+            "ANC": 4.9,
+            "Independent": 3.3,
+            "Al Jama-ah": 2.6
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/77/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "78": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 57.7,
+            "GOOD": 11.8,
+            "CCC": 11.3,
+            "Al Jama-ah": 4.6,
+            "ACDP": 4.4
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/78/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "79": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 61.6,
+            "CCC": 14.2,
+            "GOOD": 8.4,
+            "ACDP": 2.9,
+            "Al Jama-ah": 2.8
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/79/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "80": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 69.2,
+            "EFF": 12.9,
+            "Independent": 7.6,
+            "DA": 4.4,
+            "UDM": 2.4
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/80/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "81": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 60.1,
+            "CCC": 10.8,
+            "GOOD": 7.1,
+            "Al Jama-ah": 5.3,
+            "ACDP": 3.9
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/81/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "82": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 61.4,
+            "CCC": 10.0,
+            "GOOD": 5.6,
+            "ACDP": 3.9
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/82/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "83": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 87.3,
+            "FF+": 5.0,
+            "ACDP": 2.7,
+            "GOOD": 1.2,
+            "Independent": 1.0
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/83/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "84": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 79.0,
+            "ANC": 7.8,
+            "FF+": 2.9,
+            "ACDP": 2.9,
+            "GOOD": 2.4
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/84/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "85": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 41.6,
+            "ANC": 34.5,
+            "EFF": 4.9,
+            "CCC": 4.4,
+            "Al Jama-ah": 2.8
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/85/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "86": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 78.7,
+            "DA": 7.7,
+            "EFF": 5.9,
+            "CCC": 1.9,
+            "ACDP": 1.1
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/86/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "87": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 70.5,
+            "EFF": 10.1,
+            "PA": 9.1,
+            "DA": 5.8
+          },
+          "matched_districts": 9,
+          "districts_in_2026_ward": 9,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/87/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "88": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 64.6,
+            "DA": 13.9,
+            "EFF": 10.2,
+            "Independent": 1.4
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/88/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "89": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 74.2,
+            "EFF": 14.5,
+            "DA": 3.5,
+            "GOOD": 1.4,
+            "Independent": 1.4
+          },
+          "matched_districts": 9,
+          "districts_in_2026_ward": 9,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/89/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "90": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 88.5,
+            "FF+": 3.4,
+            "ACDP": 3.1,
+            "GOOD": 1.2,
+            "CAPEXIT": 0.9
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/90/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "91": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 75.5,
+            "EFF": 12.9,
+            "DA": 5.3,
+            "GOOD": 1.2
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/91/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "92": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 54.0,
+            "GOOD": 11.4,
+            "Al Jama-ah": 6.9,
+            "ANC": 5.4,
+            "EFF": 4.6
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/92/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "93": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 72.5,
+            "EFF": 17.3,
+            "DA": 3.0,
+            "GOOD": 2.0,
+            "Independent": 1.3
+          },
+          "matched_districts": 9,
+          "districts_in_2026_ward": 11,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/93/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "94": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 75.0,
+            "EFF": 13.8,
+            "DA": 4.7,
+            "Independent": 1.7
+          },
+          "matched_districts": 11,
+          "districts_in_2026_ward": 11,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/94/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "95": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 69.9,
+            "EFF": 12.1,
+            "DA": 8.1,
+            "GOOD": 4.5,
+            "Independent": 1.0
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/95/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "96": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 70.9,
+            "EFF": 19.7,
+            "DA": 3.4,
+            "Independent": 2.6,
+            "UDM": 1.8
+          },
+          "matched_districts": 9,
+          "districts_in_2026_ward": 10,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/96/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "97": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 75.9,
+            "EFF": 12.9,
+            "DA": 4.9,
+            "Independent": 1.4
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/97/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "98": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 68.4,
+            "EFF": 19.0,
+            "DA": 4.9,
+            "Independent": 1.4
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/98/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "99": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 69.3,
+            "EFF": 20.6,
+            "DA": 5.0,
+            "PA": 1.2
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/99/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "100": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 62.6,
+            "CCC": 9.2,
+            "CAPEXIT": 6.7,
+            "ACDP": 3.9,
+            "ANC": 3.9
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/100/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "101": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 57.5,
+            "EFF": 22.4,
+            "DA": 12.9,
+            "Independent": 1.7,
+            "ATM": 1.1
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/101/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "102": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 83.3,
+            "FF+": 6.2,
+            "ACDP": 2.3,
+            "GOOD": 1.8,
+            "CAPEXIT": 1.5
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/102/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "103": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 88.5,
+            "FF+": 5.5,
+            "ACDP": 2.4,
+            "CAPEXIT": 1.3,
+            "GOOD": 0.8
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/103/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "104": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 59.8,
+            "EFF": 18.4,
+            "DA": 8.1,
+            "Independent": 6.2,
+            "ATM": 2.7
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/104/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "105": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 76.3,
+            "ANC": 10.6,
+            "FF+": 4.1,
+            "EFF": 2.0,
+            "ACDP": 1.5
+          },
+          "matched_districts": 4,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/105/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "106": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 43.1,
+            "ANC": 31.6,
+            "EFF": 9.2,
+            "CCC": 4.3,
+            "GOOD": 2.8
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/106/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "107": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 85.7,
+            "ANC": 2.5,
+            "FF+": 2.2,
+            "CAPEXIT": 2.0,
+            "EFF": 2.0
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/107/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "108": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 47.3,
+            "GOOD": 21.1,
+            "ANC": 12.9,
+            "Independent": 3.9,
+            "EFF": 3.5
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/108/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "109": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 58.8,
+            "GOOD": 11.5,
+            "ANC": 8.5,
+            "ACDP": 8.4,
+            "CCC": 3.3
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/109/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "110": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 63.6,
+            "GOOD": 4.5,
+            "CCC": 4.5,
+            "ACDP": 4.1
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/110/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "111": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 71.9,
+            "PA": 9.8,
+            "FF+": 3.7,
+            "GOOD": 3.0,
+            "ACDP": 2.8
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/111/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "112": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 87.3,
+            "FF+": 4.8,
+            "ACDP": 3.3,
+            "GOOD": 1.4,
+            "CAPEXIT": 1.3
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/112/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "113": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 84.8,
+            "ACDP": 3.2,
+            "FF+": 2.9,
+            "CAPEXIT": 2.7,
+            "ANC": 1.6
+          },
+          "matched_districts": 4,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/113/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "114": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 72.1,
+            "EFF": 12.3,
+            "DA": 5.9,
+            "ATM": 2.7,
+            "Independent": 1.2
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/114/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "115": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 83.2,
+            "GOOD": 5.0,
+            "ANC": 3.4,
+            "EFF": 2.1,
+            "FF+": 1.9
+          },
+          "matched_districts": 4,
+          "districts_in_2026_ward": 4,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/115/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "116": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 58.3,
+            "CCC": 17.0,
+            "GOOD": 6.0,
+            "Al Jama-ah": 3.9,
+            "ACDP": 3.2
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/116/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "117": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 81.3,
+            "ANC": 4.8,
+            "EFF": 4.4,
+            "ACDP": 2.6,
+            "GOOD": 1.9
+          },
+          "matched_districts": 4,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/117/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "118": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 59.3,
+            "DA": 15.0,
+            "EFF": 10.3,
+            "Independent": 4.5,
+            "GOOD": 2.3
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/cape-town/wards-2026/118/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        }
+      }
+    },
+    "Tshwane": {
+      "ballot_type": "Ward",
+      "year": 2021,
+      "valid_votes": 672603,
+      "parties": {
+        "ANC": 34.4,
+        "DA": 32.3,
+        "EFF": 10.9,
+        "ActionSA": 8.0,
+        "FF+": 8.0,
+        "Independent": 1.4,
+        "ACDP": 0.9,
+        "DOP": 0.6,
+        "PA": 0.5,
+        "GOOD": 0.2,
+        "ATM": 0.2,
+        "IFP": 0.1,
+        "UDM": 0.1,
+        "Al Jama-ah": 0.1,
+        "CCC": 0.0
+      },
+      "source_url": "https://go.esp.info/elections/local/2021/gauteng/city-of-tshwane",
+      "comparison": "Completed 2021 local-election ward ballot, whole municipality",
+      "wards": {
+        "1": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 62.6,
+            "FF+": 21.3,
+            "ANC": 7.2,
+            "ActionSA": 3.6,
+            "EFF": 2.3
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/1/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "2": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 61.9,
+            "FF+": 20.6,
+            "ANC": 6.1,
+            "ActionSA": 4.8,
+            "EFF": 3.6
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/2/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "3": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 29.7,
+            "DA": 22.1,
+            "EFF": 17.4,
+            "ActionSA": 13.3
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/3/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "4": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 31.4,
+            "ActionSA": 27.3,
+            "EFF": 17.9,
+            "DA": 16.1,
+            "FF+": 3.0
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/4/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "5": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 60.5,
+            "FF+": 22.7,
+            "ANC": 6.0,
+            "ActionSA": 5.3,
+            "EFF": 3.4
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/5/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "6": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 63.6,
+            "EFF": 13.3,
+            "ActionSA": 8.5,
+            "DA": 5.0
+          },
+          "matched_districts": 9,
+          "districts_in_2026_ward": 9,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/6/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "7": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 39.0,
+            "Independent": 19.7,
+            "EFF": 16.9,
+            "ActionSA": 10.6,
+            "DA": 8.6
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/7/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "8": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 62.3,
+            "EFF": 13.6,
+            "DA": 6.4,
+            "Independent": 4.9,
+            "ActionSA": 4.4
+          },
+          "matched_districts": 11,
+          "districts_in_2026_ward": 11,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/8/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "9": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 68.2,
+            "EFF": 16.8,
+            "DA": 5.9,
+            "ActionSA": 1.3
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/9/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "10": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 47.2,
+            "EFF": 27.4,
+            "Independent": 11.9,
+            "ActionSA": 6.0,
+            "DA": 3.8
+          },
+          "matched_districts": 9,
+          "districts_in_2026_ward": 9,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/10/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "11": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 68.0,
+            "EFF": 14.2,
+            "ActionSA": 6.3,
+            "DA": 4.0,
+            "Independent": 1.7
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/11/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "12": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 58.4,
+            "EFF": 14.7,
+            "ActionSA": 6.0,
+            "DA": 5.2,
+            "Independent": 3.7
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/12/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "13": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 65.5,
+            "EFF": 16.9,
+            "DA": 7.4,
+            "ActionSA": 3.7,
+            "Independent": 1.9
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/13/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "14": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 51.1,
+            "Independent": 28.5,
+            "EFF": 7.1,
+            "DA": 3.9,
+            "ActionSA": 2.3
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/14/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "15": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 58.1,
+            "EFF": 18.7,
+            "DA": 12.2,
+            "ActionSA": 6.0,
+            "Independent": 0.8
+          },
+          "matched_districts": 13,
+          "districts_in_2026_ward": 14,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/15/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "16": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 62.2,
+            "EFF": 14.8,
+            "ActionSA": 9.9,
+            "DA": 4.2,
+            "Independent": 2.1
+          },
+          "matched_districts": 9,
+          "districts_in_2026_ward": 9,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/16/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "17": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 56.0,
+            "EFF": 16.4,
+            "Independent": 14.2,
+            "ActionSA": 4.8,
+            "DA": 3.8
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/17/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "18": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 65.8,
+            "EFF": 13.8,
+            "ActionSA": 11.8,
+            "DA": 4.3
+          },
+          "matched_districts": 9,
+          "districts_in_2026_ward": 9,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/18/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "19": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 68.7,
+            "EFF": 13.4,
+            "DA": 3.9,
+            "ActionSA": 3.8,
+            "Independent": 3.0
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/19/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "20": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 51.7,
+            "EFF": 19.0,
+            "ActionSA": 11.5,
+            "DA": 6.5,
+            "Independent": 3.0
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/20/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "21": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 50.0,
+            "EFF": 13.5,
+            "ActionSA": 11.6,
+            "Independent": 10.3,
+            "DA": 4.2
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/21/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "22": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 61.9,
+            "EFF": 17.2,
+            "ActionSA": 7.1,
+            "DA": 4.6,
+            "Independent": 3.4
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/22/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "23": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 71.2,
+            "EFF": 11.8,
+            "ActionSA": 9.7,
+            "DA": 3.8
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/23/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "24": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 74.1,
+            "EFF": 10.9,
+            "DA": 5.4,
+            "Independent": 2.3,
+            "ActionSA": 2.1
+          },
+          "matched_districts": 9,
+          "districts_in_2026_ward": 10,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/24/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "25": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 63.3,
+            "EFF": 14.6,
+            "DA": 5.2,
+            "PA": 3.8,
+            "ActionSA": 2.9
+          },
+          "matched_districts": 12,
+          "districts_in_2026_ward": 13,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/25/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "26": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 63.2,
+            "EFF": 18.1,
+            "DA": 7.0,
+            "ActionSA": 5.3
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/26/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "27": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 57.8,
+            "EFF": 12.4,
+            "DA": 4.8,
+            "ActionSA": 4.7
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/27/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "28": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 63.3,
+            "EFF": 16.7,
+            "ActionSA": 9.6,
+            "DA": 4.3
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/28/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "29": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 56.7,
+            "EFF": 25.6,
+            "ActionSA": 5.0,
+            "DA": 3.7,
+            "Independent": 2.6
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/29/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "30": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 56.3,
+            "EFF": 24.7,
+            "ActionSA": 8.7,
+            "DA": 4.9
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/30/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "31": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 49.1,
+            "EFF": 17.7,
+            "ActionSA": 12.6,
+            "DA": 11.1,
+            "FF+": 3.6
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 9,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/31/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "32": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 54.5,
+            "EFF": 20.6,
+            "ActionSA": 12.6,
+            "DA": 6.9,
+            "ACDP": 0.8
+          },
+          "matched_districts": 9,
+          "districts_in_2026_ward": 9,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/32/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "33": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 54.3,
+            "EFF": 17.3,
+            "ActionSA": 9.4,
+            "DA": 6.7
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/33/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "34": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 62.8,
+            "EFF": 14.8,
+            "ActionSA": 11.3,
+            "DA": 3.9
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/34/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "35": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 58.0,
+            "EFF": 15.9,
+            "ActionSA": 7.5,
+            "DA": 5.3
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/35/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "36": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 49.7,
+            "EFF": 20.2,
+            "ActionSA": 13.5,
+            "DA": 8.4,
+            "Independent": 4.3
+          },
+          "matched_districts": 9,
+          "districts_in_2026_ward": 9,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/36/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "37": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 62.1,
+            "EFF": 21.7,
+            "ActionSA": 7.7,
+            "DA": 5.3,
+            "ACDP": 0.4
+          },
+          "matched_districts": 9,
+          "districts_in_2026_ward": 9,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/37/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "38": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 43.5,
+            "EFF": 22.8,
+            "ActionSA": 13.2,
+            "DA": 13.0
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/38/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "39": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 67.2,
+            "EFF": 19.6,
+            "DA": 4.8,
+            "ActionSA": 4.4,
+            "Independent": 1.8
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/39/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "40": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 61.5,
+            "EFF": 13.7,
+            "Independent": 8.8,
+            "ActionSA": 6.3,
+            "DA": 3.9
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/40/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "41": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 64.2,
+            "FF+": 13.1,
+            "ANC": 7.7,
+            "ActionSA": 6.4,
+            "EFF": 4.4
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/41/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "42": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 73.6,
+            "FF+": 11.9,
+            "ANC": 6.4,
+            "ActionSA": 4.8,
+            "EFF": 1.3
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/42/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "43": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 30.8,
+            "PA": 29.4,
+            "ActionSA": 16.5,
+            "ANC": 11.4,
+            "EFF": 3.0
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/43/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "44": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 71.0,
+            "FF+": 16.8,
+            "ActionSA": 4.7,
+            "ANC": 3.0,
+            "EFF": 1.6
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/44/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "45": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 67.8,
+            "FF+": 17.5,
+            "ActionSA": 5.4,
+            "ANC": 4.2,
+            "ACDP": 1.6
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 9,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/45/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "46": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 71.5,
+            "FF+": 15.4,
+            "ActionSA": 4.9,
+            "ANC": 3.5,
+            "ACDP": 1.6
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/46/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "47": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 68.7,
+            "FF+": 19.0,
+            "ActionSA": 4.9,
+            "ANC": 3.9,
+            "ACDP": 1.5
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/47/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "48": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 52.8,
+            "ActionSA": 18.1,
+            "ANC": 12.1,
+            "EFF": 7.6,
+            "FF+": 6.8
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 13,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/48/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "49": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 58.0,
+            "EFF": 16.1,
+            "Independent": 9.1,
+            "DA": 6.0,
+            "ActionSA": 5.1
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/49/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "50": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 67.8,
+            "FF+": 19.3,
+            "ActionSA": 4.4,
+            "ANC": 4.3,
+            "EFF": 2.5
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/50/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "51": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 45.3,
+            "EFF": 18.3,
+            "ActionSA": 16.2,
+            "Independent": 8.8,
+            "DA": 6.5
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/51/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "52": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 62.1,
+            "FF+": 31.3,
+            "ActionSA": 2.1,
+            "ANC": 1.7,
+            "ACDP": 1.2
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/52/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "53": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 61.6,
+            "FF+": 20.3,
+            "ANC": 5.7,
+            "ActionSA": 5.4,
+            "EFF": 4.3
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/53/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "54": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 64.5,
+            "FF+": 25.0,
+            "ANC": 3.2,
+            "ActionSA": 2.9,
+            "EFF": 1.7
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/54/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "55": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 41.0,
+            "FF+": 22.0,
+            "ANC": 19.1,
+            "ActionSA": 7.6,
+            "EFF": 7.3
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/55/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "56": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 62.1,
+            "ActionSA": 10.1,
+            "FF+": 9.7,
+            "EFF": 8.6,
+            "ANC": 7.2
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/56/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "57": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 59.0,
+            "FF+": 15.9,
+            "ActionSA": 9.2,
+            "ANC": 8.1,
+            "EFF": 4.8
+          },
+          "matched_districts": 3,
+          "districts_in_2026_ward": 4,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/57/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "58": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 29.4,
+            "ANC": 25.0,
+            "EFF": 17.9,
+            "ActionSA": 12.7,
+            "FF+": 6.4
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/58/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "59": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 51.7,
+            "ANC": 16.3,
+            "EFF": 12.6,
+            "ActionSA": 11.1,
+            "FF+": 4.6
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/59/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "60": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 30.2,
+            "DA": 27.9,
+            "ActionSA": 14.8,
+            "EFF": 14.2,
+            "FF+": 7.9
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/60/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "61": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 46.6,
+            "ActionSA": 29.2,
+            "DA": 10.1,
+            "Independent": 5.1,
+            "EFF": 4.8
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/61/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "62": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 58.1,
+            "ActionSA": 20.2,
+            "EFF": 13.7,
+            "DA": 3.3
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/62/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "63": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 60.1,
+            "EFF": 18.7,
+            "ActionSA": 11.8,
+            "DA": 3.9,
+            "IFP": 1.5
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/63/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "64": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 47.0,
+            "ActionSA": 15.4,
+            "ANC": 13.3,
+            "EFF": 11.2,
+            "FF+": 9.6
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/64/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "65": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 64.4,
+            "FF+": 12.4,
+            "ActionSA": 9.4,
+            "ANC": 8.3,
+            "EFF": 3.7
+          },
+          "matched_districts": 4,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/65/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "66": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 77.6,
+            "FF+": 12.6,
+            "ANC": 4.1,
+            "ActionSA": 2.8,
+            "EFF": 1.0
+          },
+          "matched_districts": 4,
+          "districts_in_2026_ward": 4,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/66/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "67": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 64.4,
+            "EFF": 12.6,
+            "DA": 10.3,
+            "ActionSA": 8.2
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/67/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "68": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 69.8,
+            "EFF": 13.0,
+            "ActionSA": 9.7,
+            "DA": 3.2,
+            "ACDP": 1.3
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/68/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "69": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 78.2,
+            "FF+": 14.3,
+            "ActionSA": 3.4,
+            "ANC": 1.5,
+            "ACDP": 0.8
+          },
+          "matched_districts": 4,
+          "districts_in_2026_ward": 4,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/69/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "70": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 63.0,
+            "FF+": 14.1,
+            "ANC": 10.6,
+            "ActionSA": 5.8,
+            "EFF": 3.1
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/70/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "71": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 63.7,
+            "EFF": 22.6,
+            "ActionSA": 4.4,
+            "DA": 3.3,
+            "Independent": 2.8
+          },
+          "matched_districts": 4,
+          "districts_in_2026_ward": 4,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/71/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "72": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 59.0,
+            "EFF": 20.3,
+            "ActionSA": 13.7,
+            "DA": 2.7,
+            "ACDP": 0.7
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/72/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "73": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 48.9,
+            "EFF": 15.5,
+            "Independent": 9.0,
+            "ActionSA": 6.9
+          },
+          "matched_districts": 11,
+          "districts_in_2026_ward": 11,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/73/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "74": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 56.9,
+            "EFF": 14.3,
+            "ActionSA": 10.0,
+            "Independent": 5.8,
+            "DA": 5.5
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/74/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "75": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 55.3,
+            "EFF": 17.1,
+            "ActionSA": 15.6,
+            "DA": 5.5,
+            "Independent": 1.4
+          },
+          "matched_districts": 9,
+          "districts_in_2026_ward": 9,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/75/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "76": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 66.1,
+            "EFF": 11.6,
+            "DA": 7.4,
+            "ActionSA": 5.0
+          },
+          "matched_districts": 10,
+          "districts_in_2026_ward": 10,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/76/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "77": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 36.7,
+            "EFF": 22.1,
+            "ActionSA": 19.0,
+            "DA": 15.6,
+            "Independent": 2.9
+          },
+          "matched_districts": 4,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/77/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "78": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 68.4,
+            "FF+": 12.0,
+            "ActionSA": 8.2,
+            "ANC": 6.0,
+            "EFF": 3.1
+          },
+          "matched_districts": 3,
+          "districts_in_2026_ward": 3,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/78/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "79": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 66.9,
+            "FF+": 16.7,
+            "ActionSA": 8.8,
+            "ANC": 4.4,
+            "EFF": 1.5
+          },
+          "matched_districts": 4,
+          "districts_in_2026_ward": 4,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/79/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "80": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 37.9,
+            "EFF": 35.8,
+            "ActionSA": 13.2,
+            "DA": 7.9,
+            "PA": 1.2
+          },
+          "matched_districts": 4,
+          "districts_in_2026_ward": 4,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/80/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "81": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 40.5,
+            "EFF": 26.5,
+            "ActionSA": 16.3,
+            "DA": 10.2,
+            "FF+": 2.9
+          },
+          "matched_districts": 4,
+          "districts_in_2026_ward": 4,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/81/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "82": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 79.1,
+            "FF+": 10.2,
+            "ActionSA": 3.9,
+            "ANC": 3.7,
+            "ACDP": 1.3
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/82/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "83": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 70.0,
+            "FF+": 17.0,
+            "ActionSA": 4.8,
+            "ANC": 4.0,
+            "ACDP": 2.0
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/83/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "84": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 65.9,
+            "FF+": 22.1,
+            "ActionSA": 4.8,
+            "ANC": 3.1,
+            "ACDP": 1.6
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/84/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "85": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 67.2,
+            "FF+": 12.9,
+            "ANC": 6.9,
+            "ActionSA": 6.7,
+            "EFF": 3.8
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/85/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "86": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 49.2,
+            "DA": 17.7,
+            "EFF": 15.3,
+            "ActionSA": 9.1,
+            "FF+": 2.8
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/86/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "87": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 49.6,
+            "ANC": 18.9,
+            "FF+": 17.6,
+            "EFF": 5.3,
+            "ActionSA": 4.5
+          },
+          "matched_districts": 12,
+          "districts_in_2026_ward": 12,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/87/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "88": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 65.2,
+            "EFF": 16.7,
+            "ActionSA": 6.8,
+            "DA": 5.6
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/88/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "89": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 64.8,
+            "EFF": 20.1,
+            "ActionSA": 7.3,
+            "DA": 4.9
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/89/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "90": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 60.5,
+            "EFF": 21.2,
+            "ActionSA": 9.4,
+            "DA": 5.3,
+            "ACDP": 0.3
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/90/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "91": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 56.1,
+            "FF+": 18.8,
+            "ANC": 9.6,
+            "ActionSA": 7.9,
+            "EFF": 4.1
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/91/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "92": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 34.0,
+            "ANC": 24.8,
+            "EFF": 16.9,
+            "ActionSA": 15.9,
+            "FF+": 4.8
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/92/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "93": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 60.7,
+            "EFF": 18.8,
+            "ActionSA": 12.7,
+            "DA": 5.2,
+            "ACDP": 0.5
+          },
+          "matched_districts": 11,
+          "districts_in_2026_ward": 11,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/93/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "94": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 66.1,
+            "EFF": 15.0,
+            "ActionSA": 8.0,
+            "DA": 3.8
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/94/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "95": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 55.6,
+            "DA": 17.1,
+            "EFF": 12.6,
+            "FF+": 7.6,
+            "ActionSA": 2.3
+          },
+          "matched_districts": 10,
+          "districts_in_2026_ward": 11,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/95/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "96": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 52.5,
+            "FF+": 20.7,
+            "ANC": 12.0,
+            "EFF": 8.1,
+            "ActionSA": 4.6
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/96/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "97": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 68.9,
+            "EFF": 18.0,
+            "DA": 5.5,
+            "ActionSA": 3.1,
+            "Independent": 2.4
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/97/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "98": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 39.8,
+            "ANC": 18.0,
+            "ActionSA": 15.0,
+            "FF+": 13.6,
+            "EFF": 10.2
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/98/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "99": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 59.6,
+            "EFF": 12.5,
+            "DA": 11.2,
+            "FF+": 5.0
+          },
+          "matched_districts": 15,
+          "districts_in_2026_ward": 15,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/99/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "100": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 50.8,
+            "FF+": 21.3,
+            "ANC": 17.5,
+            "ActionSA": 3.5,
+            "EFF": 3.2
+          },
+          "matched_districts": 11,
+          "districts_in_2026_ward": 14,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/100/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "101": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 64.6,
+            "FF+": 14.8,
+            "ANC": 7.7,
+            "ActionSA": 5.5,
+            "EFF": 3.3
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/101/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "102": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 38.7,
+            "FF+": 23.1,
+            "ANC": 22.6,
+            "EFF": 7.5,
+            "ActionSA": 3.9
+          },
+          "matched_districts": 21,
+          "districts_in_2026_ward": 21,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/102/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "103": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 65.8,
+            "EFF": 21.2,
+            "DA": 6.0,
+            "ActionSA": 3.7,
+            "ATM": 0.8
+          },
+          "matched_districts": 10,
+          "districts_in_2026_ward": 10,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/103/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "104": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 76.7,
+            "EFF": 13.3,
+            "DA": 4.0,
+            "ActionSA": 1.9,
+            "ATM": 0.8
+          },
+          "matched_districts": 11,
+          "districts_in_2026_ward": 11,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/104/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "105": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 69.4,
+            "EFF": 18.1,
+            "DA": 7.6,
+            "FF+": 1.8,
+            "ActionSA": 0.6
+          },
+          "matched_districts": 14,
+          "districts_in_2026_ward": 15,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/105/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "106": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 57.6,
+            "EFF": 20.3,
+            "Independent": 7.2,
+            "ActionSA": 6.6,
+            "DA": 5.3
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/106/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "107": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 56.4,
+            "EFF": 29.8,
+            "ActionSA": 5.7,
+            "DA": 3.7,
+            "Independent": 1.4
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/tshwane/wards-2026/107/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        }
+      }
+    },
+    "Johannesburg": {
+      "ballot_type": "Ward",
+      "year": 2021,
+      "valid_votes": 922465,
+      "parties": {
+        "ANC": 34.0,
+        "DA": 26.8,
+        "ActionSA": 14.0,
+        "EFF": 11.1,
+        "PA": 2.9,
+        "IFP": 2.4,
+        "FF+": 1.3,
+        "Independent": 1.3,
+        "ACDP": 1.1,
+        "Al Jama-ah": 1.1,
+        "GOOD": 0.4,
+        "ATM": 0.4,
+        "UDM": 0.2,
+        "DOP": 0.1
+      },
+      "source_url": "https://go.esp.info/elections/local/2021/gauteng/city-of-johannesburg",
+      "comparison": "Completed 2021 local-election ward ballot, whole municipality",
+      "wards": {
+        "1": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 60.6,
+            "EFF": 11.7,
+            "ActionSA": 7.4,
+            "DA": 6.9,
+            "Independent": 5.1
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/1/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "2": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 50.3,
+            "EFF": 26.9,
+            "DA": 11.2,
+            "ActionSA": 2.9,
+            "IFP": 2.0
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/2/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "3": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 61.5,
+            "EFF": 18.6,
+            "DA": 6.7,
+            "ActionSA": 4.3,
+            "IFP": 3.4
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/3/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "4": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 63.3,
+            "EFF": 12.3,
+            "ActionSA": 7.4,
+            "DA": 6.5
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/4/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "5": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 59.2,
+            "EFF": 17.0,
+            "ActionSA": 7.0,
+            "DA": 5.2,
+            "IFP": 4.1
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/5/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "6": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 57.6,
+            "EFF": 11.8,
+            "Independent": 10.0,
+            "ActionSA": 5.0
+          },
+          "matched_districts": 10,
+          "districts_in_2026_ward": 10,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/6/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "7": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 36.6,
+            "PA": 34.1,
+            "DA": 12.6,
+            "EFF": 6.2,
+            "ActionSA": 5.1
+          },
+          "matched_districts": 9,
+          "districts_in_2026_ward": 9,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/7/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "8": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 50.5,
+            "EFF": 16.5,
+            "ActionSA": 14.0,
+            "DA": 6.6,
+            "Al Jama-ah": 5.1
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/8/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "9": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "Al Jama-ah": 45.2,
+            "DA": 18.3,
+            "ANC": 18.2,
+            "ActionSA": 12.8,
+            "EFF": 2.4
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 9,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/9/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "10": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "Al Jama-ah": 31.5,
+            "ANC": 27.6,
+            "DA": 15.0,
+            "ActionSA": 11.5,
+            "EFF": 5.5
+          },
+          "matched_districts": 9,
+          "districts_in_2026_ward": 9,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/10/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "11": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 40.6,
+            "PA": 16.0,
+            "ActionSA": 13.9,
+            "EFF": 10.2,
+            "DA": 9.0
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/11/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "12": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 53.7,
+            "ActionSA": 19.8,
+            "EFF": 15.6,
+            "DA": 3.4
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/12/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "13": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 46.9,
+            "ActionSA": 26.1,
+            "EFF": 15.5,
+            "DA": 4.6,
+            "IFP": 1.3
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/13/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "14": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 50.6,
+            "ActionSA": 22.9,
+            "EFF": 13.6,
+            "DA": 4.4,
+            "IFP": 2.1
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/14/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "15": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 54.5,
+            "ActionSA": 16.1,
+            "EFF": 14.0,
+            "IFP": 4.9,
+            "DA": 3.3
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/15/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "16": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 44.0,
+            "IFP": 20.3,
+            "EFF": 12.8,
+            "ActionSA": 11.7,
+            "DA": 3.9
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/16/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "17": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "PA": 52.2,
+            "DA": 20.7,
+            "ANC": 13.2,
+            "ActionSA": 4.5,
+            "EFF": 3.2
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/17/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "18": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "PA": 64.6,
+            "DA": 18.2,
+            "ANC": 6.9,
+            "ActionSA": 3.6,
+            "EFF": 1.2
+          },
+          "matched_districts": 9,
+          "districts_in_2026_ward": 9,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/18/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "19": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 52.5,
+            "ActionSA": 20.2,
+            "EFF": 14.0,
+            "DA": 4.5,
+            "IFP": 2.1
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/19/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "20": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 52.4,
+            "EFF": 18.1,
+            "ActionSA": 15.1,
+            "Independent": 4.1,
+            "DA": 3.2
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/20/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "21": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 42.7,
+            "ActionSA": 16.2,
+            "EFF": 15.7,
+            "Independent": 12.0,
+            "DA": 3.7
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/21/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "22": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 48.9,
+            "ActionSA": 18.6,
+            "EFF": 12.3,
+            "Independent": 10.5,
+            "DA": 3.9
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/22/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "23": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 50.5,
+            "ActionSA": 35.6,
+            "ANC": 8.5,
+            "EFF": 2.0,
+            "FF+": 1.1
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/23/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "24": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 48.1,
+            "EFF": 17.8,
+            "ActionSA": 13.7,
+            "DA": 5.3
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/24/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "25": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 43.9,
+            "ActionSA": 17.3,
+            "Independent": 14.0,
+            "EFF": 13.3,
+            "DA": 2.8
+          },
+          "matched_districts": 9,
+          "districts_in_2026_ward": 9,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/25/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "26": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 45.8,
+            "EFF": 16.6,
+            "IFP": 14.6,
+            "ActionSA": 9.5,
+            "Independent": 6.1
+          },
+          "matched_districts": 9,
+          "districts_in_2026_ward": 9,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/26/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "27": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 47.8,
+            "ActionSA": 22.1,
+            "EFF": 18.4,
+            "DA": 4.5,
+            "Independent": 1.7
+          },
+          "matched_districts": 9,
+          "districts_in_2026_ward": 9,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/27/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "28": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 55.4,
+            "ActionSA": 17.5,
+            "EFF": 16.2,
+            "DA": 3.7,
+            "Independent": 1.3
+          },
+          "matched_districts": 9,
+          "districts_in_2026_ward": 9,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/28/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "29": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 35.0,
+            "PA": 17.6,
+            "DA": 12.3,
+            "ActionSA": 11.3,
+            "EFF": 11.2
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/29/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "30": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 47.5,
+            "ActionSA": 19.4,
+            "EFF": 15.4,
+            "DA": 6.9
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/30/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "31": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 50.3,
+            "ActionSA": 20.4,
+            "EFF": 14.2,
+            "DA": 4.5
+          },
+          "matched_districts": 11,
+          "districts_in_2026_ward": 11,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/31/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "32": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 60.0,
+            "ActionSA": 17.2,
+            "ANC": 11.7,
+            "EFF": 6.6,
+            "ACDP": 1.0
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/32/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "33": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 57.0,
+            "ActionSA": 19.0,
+            "EFF": 15.8,
+            "DA": 2.8,
+            "IFP": 2.0
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/33/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "34": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 35.5,
+            "IFP": 30.8,
+            "ActionSA": 16.1,
+            "EFF": 9.6,
+            "DA": 2.8
+          },
+          "matched_districts": 4,
+          "districts_in_2026_ward": 4,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/34/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "35": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 58.3,
+            "EFF": 16.9,
+            "ActionSA": 14.1,
+            "DA": 3.2,
+            "IFP": 2.6
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/35/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "36": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 49.5,
+            "ActionSA": 17.9,
+            "EFF": 17.8,
+            "DA": 5.7,
+            "IFP": 1.9
+          },
+          "matched_districts": 9,
+          "districts_in_2026_ward": 9,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/36/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "37": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 46.5,
+            "IFP": 21.2,
+            "EFF": 14.6,
+            "ActionSA": 10.7,
+            "DA": 2.2
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/37/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "38": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 38.7,
+            "IFP": 21.4,
+            "ActionSA": 15.0,
+            "EFF": 14.9
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/38/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "39": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 56.2,
+            "ActionSA": 19.3,
+            "EFF": 13.9,
+            "DA": 4.4,
+            "IFP": 2.8
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/39/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "40": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 40.3,
+            "IFP": 28.5,
+            "ActionSA": 12.3,
+            "EFF": 9.9,
+            "DA": 3.8
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/40/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "41": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 61.1,
+            "ActionSA": 15.5,
+            "EFF": 12.6,
+            "DA": 4.3,
+            "Independent": 1.5
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/41/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "42": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 63.0,
+            "ActionSA": 14.3,
+            "EFF": 13.2,
+            "DA": 2.9,
+            "Independent": 1.5
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/42/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "43": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 61.2,
+            "ActionSA": 15.7,
+            "EFF": 14.9,
+            "DA": 2.9
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/43/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "44": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 58.1,
+            "EFF": 21.2,
+            "ActionSA": 12.4,
+            "DA": 3.7,
+            "Independent": 1.9
+          },
+          "matched_districts": 4,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/44/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "45": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 51.4,
+            "ActionSA": 19.4,
+            "EFF": 13.2,
+            "DA": 4.0,
+            "Independent": 2.8
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/45/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "46": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 48.8,
+            "EFF": 16.5,
+            "ActionSA": 12.1,
+            "Independent": 8.9,
+            "ATM": 4.2
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/46/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "47": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 44.1,
+            "ActionSA": 21.8,
+            "EFF": 15.6,
+            "Independent": 5.0,
+            "DA": 3.9
+          },
+          "matched_districts": 9,
+          "districts_in_2026_ward": 9,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/47/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "48": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 49.5,
+            "ActionSA": 21.9,
+            "EFF": 15.7,
+            "DA": 4.1,
+            "ATM": 1.0
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/48/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "49": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 56.9,
+            "EFF": 20.4,
+            "ActionSA": 14.6,
+            "DA": 3.6,
+            "IFP": 1.2
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/49/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "50": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 51.4,
+            "EFF": 15.1,
+            "ActionSA": 6.5,
+            "PA": 3.8
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/50/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "51": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 52.4,
+            "EFF": 18.0,
+            "ActionSA": 13.7,
+            "DA": 3.0,
+            "IFP": 2.9
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/51/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "52": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 55.3,
+            "ActionSA": 17.6,
+            "EFF": 15.0,
+            "DA": 3.7,
+            "Independent": 1.4
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/52/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "53": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 63.9,
+            "EFF": 12.5,
+            "ActionSA": 10.0,
+            "Independent": 4.0
+          },
+          "matched_districts": 4,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/53/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "54": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 49.1,
+            "ActionSA": 18.8,
+            "ANC": 14.5,
+            "EFF": 6.9,
+            "PA": 3.7
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/54/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "55": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 40.7,
+            "ANC": 21.2,
+            "ActionSA": 13.8,
+            "EFF": 7.8,
+            "PA": 5.6
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/55/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "56": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 53.2,
+            "ANC": 19.8,
+            "ActionSA": 13.6,
+            "EFF": 6.5,
+            "ACDP": 1.4
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/56/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "57": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 45.6,
+            "ANC": 23.2,
+            "ActionSA": 12.6,
+            "EFF": 6.9,
+            "PA": 4.2
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/57/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "58": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 49.4,
+            "DA": 23.4,
+            "ActionSA": 8.2,
+            "EFF": 4.9,
+            "Al Jama-ah": 4.8
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/58/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "59": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 45.9,
+            "EFF": 22.5,
+            "ActionSA": 19.4,
+            "IFP": 4.7,
+            "DA": 4.4
+          },
+          "matched_districts": 2,
+          "districts_in_2026_ward": 2,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/59/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "60": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 35.8,
+            "EFF": 26.6,
+            "ActionSA": 23.6,
+            "DA": 6.6,
+            "IFP": 2.0
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/60/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "61": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "IFP": 28.7,
+            "ANC": 28.3,
+            "EFF": 18.6,
+            "ActionSA": 13.8,
+            "DA": 5.8
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/61/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "62": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 50.5,
+            "EFF": 22.2,
+            "ActionSA": 13.5,
+            "DA": 4.8,
+            "IFP": 2.7
+          },
+          "matched_districts": 4,
+          "districts_in_2026_ward": 4,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/62/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "63": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 53.1,
+            "EFF": 22.5,
+            "ActionSA": 14.7,
+            "DA": 3.3,
+            "IFP": 2.8
+          },
+          "matched_districts": 4,
+          "districts_in_2026_ward": 4,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/63/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "64": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 47.8,
+            "EFF": 19.7,
+            "ActionSA": 15.7,
+            "DA": 9.2,
+            "IFP": 2.7
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/64/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "65": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "IFP": 66.9,
+            "ANC": 13.9,
+            "ActionSA": 7.4,
+            "EFF": 5.8,
+            "DA": 2.2
+          },
+          "matched_districts": 4,
+          "districts_in_2026_ward": 4,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/65/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "66": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 41.9,
+            "ANC": 23.8,
+            "ActionSA": 16.7,
+            "EFF": 8.1,
+            "ACDP": 1.9
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/66/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "67": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 40.9,
+            "ActionSA": 20.1,
+            "DA": 17.9,
+            "EFF": 15.4,
+            "IFP": 2.0
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/67/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "68": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 27.1,
+            "DA": 26.3,
+            "PA": 19.4,
+            "ActionSA": 9.8,
+            "EFF": 9.2
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/68/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "69": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 35.7,
+            "PA": 14.8,
+            "ActionSA": 14.0,
+            "ANC": 11.6,
+            "ACDP": 9.6
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/69/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "70": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 48.7,
+            "ANC": 15.7,
+            "ActionSA": 12.3,
+            "PA": 6.8,
+            "EFF": 6.1
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 9,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/70/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "71": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 34.2,
+            "ANC": 23.4,
+            "ActionSA": 14.2,
+            "PA": 9.8,
+            "EFF": 8.9
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/71/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "72": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 74.2,
+            "ANC": 9.1,
+            "ActionSA": 7.9,
+            "EFF": 2.1,
+            "ACDP": 1.5
+          },
+          "matched_districts": 4,
+          "districts_in_2026_ward": 4,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/72/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "73": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 62.7,
+            "ActionSA": 14.4,
+            "ANC": 12.2,
+            "EFF": 3.9,
+            "Al Jama-ah": 2.6
+          },
+          "matched_districts": 4,
+          "districts_in_2026_ward": 4,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/73/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "74": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 50.9,
+            "Independent": 18.3,
+            "ActionSA": 12.5,
+            "ANC": 11.1,
+            "EFF": 3.4
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/74/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "75": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 35.1,
+            "IFP": 26.2,
+            "EFF": 14.3,
+            "ActionSA": 11.9,
+            "DA": 4.1
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/75/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "76": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 56.0,
+            "EFF": 19.2,
+            "ActionSA": 13.8,
+            "DA": 5.2
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/76/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "77": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 54.6,
+            "EFF": 21.1,
+            "ActionSA": 7.9,
+            "DA": 4.4
+          },
+          "matched_districts": 4,
+          "districts_in_2026_ward": 4,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/77/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "78": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 61.6,
+            "EFF": 22.6,
+            "ActionSA": 5.7,
+            "DA": 4.0
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/78/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "79": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 52.6,
+            "EFF": 24.9,
+            "ActionSA": 9.8,
+            "Independent": 5.5,
+            "DA": 3.4
+          },
+          "matched_districts": 4,
+          "districts_in_2026_ward": 4,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/79/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "80": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 52.3,
+            "EFF": 25.0,
+            "ActionSA": 9.6,
+            "DA": 6.0,
+            "PA": 1.6
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/80/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "81": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 33.9,
+            "ANC": 27.3,
+            "ActionSA": 17.3,
+            "EFF": 11.2,
+            "Independent": 3.6
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/81/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "82": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 23.6,
+            "ACDP": 16.6,
+            "ANC": 16.5,
+            "PA": 14.8,
+            "GOOD": 14.0
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/82/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "83": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 63.6,
+            "FF+": 17.2,
+            "ActionSA": 9.2,
+            "ANC": 5.7,
+            "EFF": 1.8
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/83/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "84": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 47.3,
+            "ActionSA": 15.5,
+            "ANC": 10.9,
+            "FF+": 9.2,
+            "PA": 6.2
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/84/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "85": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 69.0,
+            "ActionSA": 12.4,
+            "FF+": 8.4,
+            "ANC": 5.5,
+            "EFF": 1.8
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/85/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "86": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 61.3,
+            "ActionSA": 14.2,
+            "ANC": 8.2,
+            "FF+": 7.1,
+            "EFF": 2.6
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/86/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "87": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 71.1,
+            "ActionSA": 9.9,
+            "ANC": 9.2,
+            "EFF": 4.0,
+            "GOOD": 1.4
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/87/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "88": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 62.5,
+            "ActionSA": 12.4,
+            "Independent": 10.4,
+            "ANC": 6.0,
+            "FF+": 3.4
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/88/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "89": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 69.0,
+            "ActionSA": 12.0,
+            "FF+": 7.3,
+            "ANC": 5.4,
+            "EFF": 1.8
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/89/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "90": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 70.2,
+            "ActionSA": 12.0,
+            "ANC": 11.4,
+            "EFF": 2.4,
+            "FF+": 0.8
+          },
+          "matched_districts": 4,
+          "districts_in_2026_ward": 4,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/90/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "91": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 68.5,
+            "ActionSA": 12.6,
+            "ANC": 10.0,
+            "EFF": 3.8,
+            "FF+": 0.9
+          },
+          "matched_districts": 4,
+          "districts_in_2026_ward": 4,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/91/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "92": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 40.0,
+            "DA": 21.2,
+            "EFF": 17.9,
+            "ActionSA": 14.3,
+            "ACDP": 1.8
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/92/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "93": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 66.1,
+            "ActionSA": 18.4,
+            "ANC": 5.6,
+            "EFF": 3.4
+          },
+          "matched_districts": 4,
+          "districts_in_2026_ward": 4,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/93/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "94": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 72.0,
+            "ActionSA": 11.9,
+            "ANC": 8.4,
+            "EFF": 2.7,
+            "FF+": 1.3
+          },
+          "matched_districts": 4,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/94/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "95": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 66.6,
+            "EFF": 19.2,
+            "ActionSA": 6.0,
+            "DA": 3.2,
+            "Independent": 1.8
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/95/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "96": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 37.2,
+            "ANC": 33.2,
+            "ActionSA": 10.4,
+            "Independent": 8.1,
+            "EFF": 7.7
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 9,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/96/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "97": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 64.7,
+            "ActionSA": 15.8,
+            "ANC": 7.1,
+            "FF+": 6.0,
+            "EFF": 3.9
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/97/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "98": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 68.2,
+            "ActionSA": 16.7,
+            "ANC": 6.3,
+            "FF+": 3.2,
+            "EFF": 2.5
+          },
+          "matched_districts": 3,
+          "districts_in_2026_ward": 4,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/98/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "99": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 70.6,
+            "ActionSA": 10.6,
+            "ANC": 7.5,
+            "FF+": 4.5,
+            "EFF": 2.4
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/99/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "100": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 54.5,
+            "EFF": 20.5,
+            "ActionSA": 15.9,
+            "DA": 4.9,
+            "ATM": 0.7
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/100/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "101": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 62.5,
+            "ActionSA": 21.3,
+            "ANC": 6.2,
+            "EFF": 4.1,
+            "FF+": 2.8
+          },
+          "matched_districts": 3,
+          "districts_in_2026_ward": 4,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/101/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "102": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 71.2,
+            "ActionSA": 12.7,
+            "ANC": 6.7,
+            "EFF": 3.8,
+            "FF+": 2.3
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/102/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "103": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 81.8,
+            "ANC": 8.5,
+            "EFF": 3.6,
+            "FF+": 1.3,
+            "GOOD": 1.0
+          },
+          "matched_districts": 4,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/103/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "104": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 64.7,
+            "ActionSA": 16.4,
+            "ANC": 9.1,
+            "EFF": 3.6,
+            "FF+": 2.5
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/104/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "105": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 56.3,
+            "ActionSA": 19.1,
+            "EFF": 14.9,
+            "DA": 3.9
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/105/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "106": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 66.2,
+            "ActionSA": 19.8,
+            "ANC": 7.0,
+            "EFF": 2.9,
+            "FF+": 1.4
+          },
+          "matched_districts": 3,
+          "districts_in_2026_ward": 4,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/106/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "107": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 54.4,
+            "EFF": 20.7,
+            "ActionSA": 13.6,
+            "DA": 4.4,
+            "IFP": 2.4
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/107/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "108": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 56.5,
+            "EFF": 21.8,
+            "ActionSA": 11.8,
+            "DA": 4.5,
+            "IFP": 0.9
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/108/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "109": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 54.0,
+            "ActionSA": 19.4,
+            "ANC": 16.8,
+            "EFF": 4.9,
+            "PA": 1.2
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/109/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "110": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 48.3,
+            "EFF": 22.2,
+            "ActionSA": 15.3,
+            "DA": 10.2,
+            "FF+": 0.6
+          },
+          "matched_districts": 4,
+          "districts_in_2026_ward": 4,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/110/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "111": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 50.7,
+            "EFF": 23.2,
+            "ActionSA": 13.9,
+            "ATM": 4.2,
+            "DA": 4.1
+          },
+          "matched_districts": 2,
+          "districts_in_2026_ward": 3,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/111/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "112": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 36.3,
+            "ActionSA": 26.1,
+            "ANC": 18.9,
+            "EFF": 14.6,
+            "ACDP": 1.1
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/112/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "113": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 58.1,
+            "EFF": 19.1,
+            "ActionSA": 7.3,
+            "DA": 4.9
+          },
+          "matched_districts": 4,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/113/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "114": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 44.0,
+            "EFF": 16.2,
+            "Independent": 14.9,
+            "ActionSA": 11.8,
+            "DA": 10.1
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/114/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "115": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 59.7,
+            "ANC": 15.7,
+            "ActionSA": 15.2,
+            "EFF": 3.9,
+            "Independent": 1.3
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/115/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "116": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 70.1,
+            "EFF": 13.5,
+            "ActionSA": 8.3,
+            "DA": 3.4
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/116/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "117": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 71.1,
+            "ActionSA": 14.0,
+            "ANC": 6.7,
+            "EFF": 2.2,
+            "FF+": 1.5
+          },
+          "matched_districts": 4,
+          "districts_in_2026_ward": 4,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/117/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "118": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 48.7,
+            "ANC": 19.3,
+            "ActionSA": 8.9,
+            "EFF": 7.3,
+            "Independent": 5.6
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/118/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "119": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 51.7,
+            "EFF": 17.6,
+            "ActionSA": 13.2,
+            "DA": 4.6,
+            "IFP": 2.7
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/119/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "120": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 33.1,
+            "DA": 21.3,
+            "ActionSA": 19.1,
+            "Al Jama-ah": 12.8,
+            "EFF": 5.5
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/120/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "121": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 48.1,
+            "PA": 15.5,
+            "ActionSA": 9.6,
+            "EFF": 8.5,
+            "DA": 8.3
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/121/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "122": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 60.5,
+            "EFF": 11.0,
+            "ActionSA": 6.9,
+            "Al Jama-ah": 4.9,
+            "DA": 4.8
+          },
+          "matched_districts": 11,
+          "districts_in_2026_ward": 11,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/122/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "123": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 38.8,
+            "EFF": 23.6,
+            "ActionSA": 21.0,
+            "DA": 4.9
+          },
+          "matched_districts": 4,
+          "districts_in_2026_ward": 4,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/123/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "124": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 35.8,
+            "ActionSA": 20.9,
+            "DA": 19.3,
+            "EFF": 13.7,
+            "PA": 2.0
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/124/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "125": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 36.1,
+            "ActionSA": 26.0,
+            "ANC": 21.3,
+            "EFF": 8.3,
+            "PA": 2.6
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/125/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "126": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 71.1,
+            "ActionSA": 14.3,
+            "ANC": 5.0,
+            "FF+": 4.6,
+            "EFF": 2.3
+          },
+          "matched_districts": 3,
+          "districts_in_2026_ward": 3,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/126/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "127": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 61.0,
+            "ActionSA": 14.8,
+            "EFF": 13.0,
+            "DA": 6.6
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/127/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "128": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 69.3,
+            "EFF": 14.1,
+            "ActionSA": 7.1,
+            "DA": 4.1,
+            "IFP": 1.6
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/128/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "129": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 57.8,
+            "EFF": 18.7,
+            "ActionSA": 8.7,
+            "DA": 3.4,
+            "Independent": 3.1
+          },
+          "matched_districts": 6,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/129/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "130": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 58.5,
+            "ActionSA": 17.1,
+            "EFF": 15.0,
+            "DA": 2.8,
+            "IFP": 1.2
+          },
+          "matched_districts": 7,
+          "districts_in_2026_ward": 7,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/130/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "131": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 45.6,
+            "EFF": 36.4,
+            "ActionSA": 6.1,
+            "DA": 3.6
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 8,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/131/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "132": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 61.2,
+            "ActionSA": 18.3,
+            "ANC": 11.5,
+            "EFF": 6.1,
+            "ACDP": 0.9
+          },
+          "matched_districts": 4,
+          "districts_in_2026_ward": 6,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/132/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "133": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 62.7,
+            "EFF": 25.5,
+            "ActionSA": 5.2,
+            "DA": 3.0,
+            "IFP": 1.1
+          },
+          "matched_districts": 4,
+          "districts_in_2026_ward": 4,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/133/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "134": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "DA": 56.5,
+            "ActionSA": 17.4,
+            "ANC": 15.0,
+            "EFF": 7.4,
+            "FF+": 2.2
+          },
+          "matched_districts": 5,
+          "districts_in_2026_ward": 5,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/134/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        },
+        "135": {
+          "ballot_type": "Ward",
+          "year": 2021,
+          "parties": {
+            "ANC": 43.6,
+            "EFF": 23.3,
+            "ActionSA": 23.1,
+            "DA": 3.1,
+            "ACDP": 1.4
+          },
+          "matched_districts": 8,
+          "districts_in_2026_ward": 9,
+          "source_url": "https://theledgersa.com/metros/johannesburg/wards-2026/135/",
+          "comparison": "2021 votes in voting districts matched to this 2026 ward, not official 2021 ward boundaries"
+        }
+      }
+    }
+  }
+}
