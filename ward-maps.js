@@ -319,7 +319,9 @@
         renderWards();
         const detail = explorer.querySelector('details.ward[data-ward-number="' + number + '"]');
         if (detail) detail.open = true;
-        explorer.scrollIntoView({behavior: 'smooth', block: 'start'});
+        const reduceMotion = window.matchMedia &&
+          window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        explorer.scrollIntoView({behavior: reduceMotion ? 'auto' : 'smooth', block: 'start'});
       }
     });
   }
@@ -342,16 +344,23 @@
     layer.bringToFront();
     panelFor(selectedNumber);
   }
+  let wardChoiceFingerprint = '';
   function updateChoices() {
-    const previouslySelected = selectedNumber;
-    let choices = '<option value="">Choose a ward to zoom into…</option>';
     const areas = wardAreasFor(city);
-    for (let n = 1; n <= spec[city].count; n++) {
-      choices += '<option value="' + n + '">Ward ' + n +
-        (areas[String(n)] ? ' · ' + safe(areas[String(n)]) : '') + '</option>';
+    // Five-minute data refreshes shouldn't replace a focused ward dropdown
+    // unless its city or area labels have actually changed.
+    const fingerprint = city + '|' + JSON.stringify(areas);
+    if (fingerprint !== wardChoiceFingerprint) {
+      let choices = '<option value="">Choose a ward to zoom into…</option>';
+      for (let n = 1; n <= spec[city].count; n++) {
+        choices += '<option value="' + n + '">Ward ' + n +
+          (areas[String(n)] ? ' · ' + safe(areas[String(n)]) : '') + '</option>';
+      }
+      els.choice.innerHTML = choices;
+      wardChoiceFingerprint = fingerprint;
     }
-    els.choice.innerHTML = choices;
-    els.choice.value = previouslySelected != null ? String(previouslySelected) : '';
+    const desired = selectedNumber != null ? String(selectedNumber) : '';
+    if (els.choice.value !== desired) els.choice.value = desired;
   }
   function updateTabs() {
     document.querySelectorAll('[data-ward-map-metro]').forEach(function (button) {
