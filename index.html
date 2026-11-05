@@ -428,17 +428,30 @@ async function load({manual=false}={}){
   }else if(!wasLoaded){
    showRefreshMessage('Figures checked '+checkedAt+'. Source: '+(direct?'official IEC report':'IEC-derived ESP, direct IEC pending')+'. Refresh checks for newly published results.');
   }
-  const [areas,details,oldResults,feedHealth]=await Promise.all([
+  const [areas,details,oldResults,legacyHistory,feedHealth]=await Promise.all([
    loadOptionalJSON('./ward-areas.json'),
    direct?Promise.resolve(null):loadOptionalJSON('./ward-details.json'),
-   loadOptionalJSON(direct?'./history-iec-2021.json':'./history-2021.json'),
+   loadOptionalJSON('./history-iec-2021.json'),
+   direct?Promise.resolve(null):loadOptionalJSON('./history-2021.json'),
    manual?loadOptionalJSON(direct?'./iec-source-status.json':'./feed-status.json'):Promise.resolve(null)
   ]);
   if(request!==latestLoad)return;
   if(areas&&areas.metros)wardAreas=areas;
   if(details&&details.metros)mergeWardDetails(fresh,details);
-  if(oldResults&&oldResults.year===2021&&oldResults.ballot_type==='Ward'&&oldResults.metros&&
-   (!direct||oldResults.source_verified===true))history2021=oldResults;
+  if(oldResults&&oldResults.year===2021&&oldResults.ballot_type==='Ward'&&oldResults.source_verified===true&&oldResults.metros&&
+   metros.every(city=>oldResults.metros[city])){
+   // Official 2021 municipality shares always win. The older matched-district
+   // ward comparisons are kept only while the live 2026 data remains ESP-based;
+   // they are deliberately excluded from the fully direct IEC mode.
+   history2021={...oldResults,metros:{}};
+   for(const city of metros){
+    const original=oldResults.metros[city];
+    const wardHistory=!direct&&legacyHistory?.metros?.[city]?.wards||{};
+    history2021.metros[city]={...original,wards:wardHistory};
+   }
+  }else if(!direct&&legacyHistory?.year===2021&&legacyHistory?.metros){
+   history2021=legacyHistory;
+  }
   data=fresh;
   render();
   if(manual&&feedHealth&&feedHealth.checks){
