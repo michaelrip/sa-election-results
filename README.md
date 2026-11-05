@@ -1,6 +1,6 @@
 # Mzanzi Key Metro Watch
 
-Mobile-friendly public dashboard with a South African flag-inspired background for Cape Town, Tshwane and Johannesburg: preliminary municipal ward-ballot results, sourced vote counts, district-counting progress, and ward drill-down.
+Mobile-friendly public dashboard with a South African flag-inspired background for Cape Town, Tshwane, Johannesburg and Hermanus / Overstrand: preliminary municipal ward-ballot results, sourced vote counts, district-counting progress, and ward drill-down.
 
 ## Website
 
@@ -25,9 +25,15 @@ No source counts, vote percentages, 2021 historical comparisons, maps or publish
 
 ## Mobile-friendly city selection
 
-The **Vote details by city** section displays **one metro at a time** instead of stacking all three metro party cards. A three-button city selector switches Cape Town, Tshwane, or Johannesburg without a page reload. The selected city synchronizes with the 2026 interactive map and searchable ward list in both directions.
+The **Vote details by city** section displays **one municipality at a time** instead of stacking all four municipality party cards. A four-option city selector switches Cape Town, Tshwane, Johannesburg or Hermanus / Overstrand without a page reload. The selected city synchronizes with the 2026 interactive map and searchable ward list in both directions.
 
 The overview highlights voting-district progress and sourced valid ward-ballot vote totals, with the top five party results visible. Remaining reported parties are available in an accessible **Show more parties** expander. Bracketed 2021 ward-ballot comparisons remain available next to the corresponding current percentages. The header includes a **View votes by city** shortcut to the section, and the Cape Town-only DA majority watch is hidden when another metro is selected. The choice persists across the dashboard's regular data refreshes (within the current page visit).
+
+## Hermanus / Overstrand (fourth location)
+
+Hermanus is a town **within Overstrand Local Municipality**, not a metropolitan municipality. The fourth tab is labelled **Hermanus**, but the reported vote shares and counts always refer to **the whole Overstrand municipality**, including Hermanus, Gansbaai and Kleinmond, not the town alone. The results source is [ESP's 2026 Overstrand municipality page](https://go.esp.info/elections/local/2026/western-cape/overstrand).
+
+The 2026 map uses the **15 official Overstrand ward polygons** from the Municipal Demarcation Board, verified against ward IDs 1–15. Ward-area names in `ward-areas.json` are from the [municipality's official new ward boundaries effective 4 November 2026](https://www.overstrand.gov.za/about-us/wards/). Overstrand's municipal 2021 ward-ballot percentages are sourced from ESP; no fabricated 2021 percentages are shown for individual 2026 Overstrand wards, because the boundaries have changed and the existing district-matching archive covers only the eight metros. When no verified 2026 results are available, the UI shows that data as pending rather than estimating votes.
 
 ## Theme and vote totals
 
@@ -39,7 +45,7 @@ Each metro card shows **valid ward-ballot votes counted** when the ESP source pu
 
 ## Sourced election headlines
 
-The website displays a scrollable, mobile-friendly news strip **above the ward map**, including publisher names, dates, direct story links where available, and topical labels for Cape Town, Tshwane, Johannesburg and national election coverage.
+The website displays a scrollable, mobile-friendly news strip **above the ward map**, including publisher names, dates, direct story links where available, and topical labels for Cape Town, Tshwane, Johannesburg, Hermanus / Overstrand and national election coverage.
 
 `news.json` provides up to six attributed news links. `scripts/update_news.py` checks recent Google News RSS search feeds on an hourly GitHub Actions schedule (`.github/workflows/update-news.yml`), filters for relevant recent articles from established newsrooms, removes duplicates and prioritises at least one story for each metro where available. `news-status.json` records feed errors and accepted story counts. The browser rechecks `news.json` every 15 minutes. Older headlines are labelled by publication date, not presented as breaking news.
 
@@ -67,12 +73,12 @@ The browser loads historical data alongside current results; if historical data 
 
 ## Interactive 2026 ward map
 
-The page opens with one large interactive map and three metro tabs: **Cape Town (118 wards), Tshwane (107), and Johannesburg (135)**. The map uses validated 2026 polygons from the [Municipal Demarcation Board's MDBWards2026 ArcGIS service](https://services7.arcgis.com/oeoyTUJC8HEeYsRB/arcgis/rest/services/MDBWards2026/FeatureServer/0).
+The page opens with one large interactive map and four location tabs: **Cape Town (118 wards), Tshwane (107), Johannesburg (135), and Hermanus / Overstrand (15)**. The map uses validated 2026 polygons from the [Municipal Demarcation Board's MDBWards2026 ArcGIS service](https://services7.arcgis.com/oeoyTUJC8HEeYsRB/arcgis/rest/services/MDBWards2026/FeatureServer/0).
 
 - **Leading party** mode colours each ward by the current reported leader on the ward ballot. Grey means no result yet. These are **preliminary leaders, not declared councillors or final ward winners**.
 - **Counting progress** mode shades wards by complete/partial/no reported district counts.
 - Select any shaded ward to display its number, suburb/area labels, reported leading party, vote share, count progress and source timestamp. Open the same ward in the searchable result list.
-- A metro switcher, ward/suburb selector, full-area reset and hover labels work across desktop and mobile screens.
+- A municipality switcher, ward/suburb selector, full-area reset and hover labels work across desktop and mobile screens.
 - The shapes live under `ward-boundaries/*.geojson` and are verified against the exact 2026 ward-number set before publication. The workflow `.github/workflows/update-ward-maps.yml` checks the MDB source and refreshes them.
 - `ward-maps.js` handles the Leaflet drill-down. If a GeoJSON file is temporarily unavailable, it also tries the MDB ArcGIS service in the browser, and provides a clear error message if the service cannot be reached.
 
@@ -82,13 +88,13 @@ Map boundaries are **not** inferred from suburb-name strings. Neighbourhood desc
 
 GitHub Actions checks ESP's public 2026 local-election pages every **15 minutes**, and the browser reloads the published `results.json` every five minutes. The source is **IEC-derived through ESP**, **not** a direct official IEC API or a certified IEC declaration.
 
-- `results.json`: latest validated provisional ward-ballot data for the three metros, with a timestamp and source URLs.
-- `feed-status.json`: last check and success/error details for each metro. A GitHub Actions green tick means *all three* feeds passed validation.
+- `results.json`: latest validated provisional ward-ballot data for the four selected municipality areas, with a timestamp and source URLs.
+- `feed-status.json`: last check and success/error details for each metro. A GitHub Actions green tick means *all four* municipality feeds passed validation.
 - `scripts/fetch_results.py`: guarded importer. Source mismatch, stale timestamp, invalid vote shares, and lower district counts do not replace the last valid snapshot.
 - `tests/test_fetch_results.py`: offline results parsing regression tests.
 - `scripts/update_ward_areas.py`: imports factual area descriptions from each **individual 2026 ward page** at The Ledger SA, not from the election-night ward-status list. It validates each ward identity and rejects missing/incorrect area labels.
 - `ward-areas.json`: geographic areas covered by each ward. The website displays these prominently and keeps the official ward number as a secondary identifier. Suburbs can span several wards; these are **not official names**.
-- `ward-area-status.json`: validation and import status for all 118 Cape Town, 107 Tshwane, and 135 Johannesburg wards.
+- `ward-area-status.json`: validation and import status for all 118 Cape Town, 107 Tshwane, 135 Johannesburg and 15 Overstrand wards.
 - `tests/test_ward_areas.py`: regression tests preventing party names and counting statuses from being mistaken for place names.
 
 Ward cards display the **leading party** and reported percentage, *not* a declared ward councillor or winner. Council seats are intentionally not estimated from early ward votes. The website marks outdated snapshots and keeps unavailable data unavailable.
@@ -99,6 +105,6 @@ Ward cards display the **leading party** and reported percentage, *not* a declar
 
 ## Run manually
 
-Open **Actions → Update three-metro election results → Run workflow**.
+Open **Actions → Update four-area election results → Run workflow**.
 
 For troubleshooting, inspect the `feed-status.json` report and the workflow's validation step. A source-format change may require updating the parser; the importer must not guess missing election results.
