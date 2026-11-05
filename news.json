@@ -1,31 +1,39 @@
 {
-  "checked_at": "2026-11-05T13:22:55.796526Z",
+  "checked_at": "2026-11-05T14:16:20.713554Z",
   "source": "Publisher-attributed headlines discovered through Google News RSS",
   "feed_status": "ok",
   "articles": [
     {
-      "title": "DA declares early victory in Cape Town as Hill-Lewis predicts 58% of vote",
-      "publisher": "Business Day",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNQmxNcFBRU3pyZWFmYll5TU1OaWlrQUgtRkR3UXZucVJ5SW1Rc2I1RWJLbGlBMlNnVks1VTRQTkRSZFl1X0tVd1U1RFFZXy1SUVpfaHZZRzJzTHJjT2dDSFc1OTFJNjFCaW02d0NybWVwNG5JU2UxeXNIbDJhcEdQMWhJNXczRERaX0Z5cDk0dk5UajRhMWJDazJxQU00XzlJR21CNkRHWURoMmY3T1RYd09SS3BIdlZySDM4?oc=5",
-      "published_at": "2026-11-05T11:41:18Z",
+      "title": "GOOD accuses DA of undermining IEC with early Cape Town victory claim",
+      "publisher": "IOL",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQnZTakhHd3dlNERMQW5Uc3J2bU15UW5lU05jdjNzSFdwcFRRQWNDTmdPNF9OVUdsX290NEh6Z3BPUkJzRWY1bHZKeGRQelNhcHA4QU1tcVJNYk9veWFrcDQ4Sk00T3dMM1Nyd2FMQTB1TEZGSU92OVhibWpnM1JhTHRiZjJLdmZQeVc0ZGUyMTB1czNOY19xQWU5bWd6UmFDNm5BVlY5MVAyVmc?oc=5",
+      "published_at": "2026-11-05T13:56:14Z",
       "published_date": "2026-11-05",
       "metro": "Cape Town"
     },
     {
-      "title": "ActionSA leads early Tshwane election results as 10% of votes counted",
+      "title": "DA leads Tshwane municipal race as ActionSA gains ground",
       "publisher": "The Citizen",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNSFBEUXNtdVVPdDgwM1dUQVZGbGZUbEgtd2s0OGxhS3VpQWxGRDZBUTJPQUo3UF9FSzhuamNtakpoWVhhS2NfVlN2bl9ocVkxdlZpTmtVczFjd29mRXpJbGVQUEo5RFhMdldadHkxWUJBdXpvblVCaGFzUlIwdE1sRmYtMFkzS2JKeG90VFF3NGxJSkIzbUZZV1ZSRkxoS1NDWGdGeDJCNnhzd1dVQUxOTzJQakFlWmhRZm56bVRKNm5YM1VGd3BSaV82SnVpc0w4dDlDQWFrNnp3T0VJMlBhZXZsbw?oc=5",
-      "published_at": "2026-11-05T07:00:34Z",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPb2hnY0x6SXFnUGl3cGtGRWJrNk16bUdybm9XUDFJVWdqak9SNFdDS3AxV1VRNDVJSWdUWGZqbE00aG0ybkVhZlI5djlsZzRhN0I3eE8xd01qVGdqd2I5TE9fWm9qdXlUWjJndUhtbGNWakp0Uk04NzZCN1h6QW41eGY2b19jN1dkei1lWGZWODRhRllnQ21hZ21yaGRpaXh2QnZMc0c2UXZiYl9xT3I4dmJ0YmcwV0NWLXFoUFAwQkNqV3pnWFEteQ?oc=5",
+      "published_at": "2026-11-05T13:03:17Z",
       "published_date": "2026-11-05",
       "metro": "Tshwane"
     },
     {
-      "title": "LIVE UPDATES | Zille in high spirits as early election results show DA leading in Johannesburg",
-      "publisher": "Business Day",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNakJsRFk5aUY3THFDalBXWW1OeUt3Wk1YX0lqdE85M3B6SmNEOWRJcGxMUkVRRTJfSEtKR1RDY05uc1g1NS1HcVFrT3NXWk12WFZwTXJqc0lfeUlsanVtOU9ZRDBkRnFKYXVOMHNxVjhpbTJzbFV0ZWMzQ2pUbUhHZnRKZjNkNDlEOXo3WURNb1p1X0hZRldIUlN4bEVjdzk5YUVEQk5VemFKd0dVelNQWDItbUthUUw0anFmUG9yblFfS0NUVndjUmRBdmJDcExfazVLX2tVU1BmbFU?oc=5",
-      "published_at": "2026-11-04T19:21:44Z",
-      "published_date": "2026-11-04",
+      "title": "Helen Zille alleges IEC interference after ballot papers run out in Joburg ward",
+      "publisher": "The Citizen",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQVFBSN0p5LWVOTVhEa0o3YWthaDIwMk1XdnVHUFg5czZBTjZqcW1OY0ViUEw1TF81WVVWOVB0aHIxbGRETW9hV2c4N2xWZF9IdVZ6bWpXTHRmZnkwWEFUSWxUSWczbS1Od2s5Q09JbDhxRFc5OFJHdmU0RDRNWTBFTWtMdTNGUVBVeEhsWTBMeHVfOGx4Zy1nUWdORmktczdmV0tnWWdEbXhKemVTTFNlTzdCb2tfOVRjbGxHMHBlMDBfQUNWVEx2NGU4bnItSU9sZTdv?oc=5",
+      "published_at": "2026-11-05T09:09:34Z",
+      "published_date": "2026-11-05",
       "metro": "Johannesburg"
+    },
+    {
+      "title": "Local government election turnout tops 2021 level",
+      "publisher": "eNCA",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPQXJsQzFIUjRBWlJHNWlBYlcyOUtMczZ6aW5FazdiOXRSdXd6REdVNXMtakkyaWZzdEV2OUFiZmt1LWlsR3VTYW9SVlhhSWFhMlZHYWpTNndyc3JWOVp6MXFHc0VXdjlWaUFlT1Q1MVltTWZzeHk5OTNpTXVvTnVOdg?oc=5",
+      "published_at": "2026-11-05T13:41:24Z",
+      "published_date": "2026-11-05",
+      "metro": "South Africa"
     },
     {
       "title": "DA leads preliminary Ward 117 results with 78.6% of vote",
@@ -42,6 +50,14 @@
       "published_at": "2026-11-05T11:47:11Z",
       "published_date": "2026-11-05",
       "metro": "South Africa"
+    },
+    {
+      "title": "DA declares early victory in Cape Town as Hill-Lewis predicts 58% of vote",
+      "publisher": "Business Day",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNQmxNcFBRU3pyZWFmYll5TU1OaWlrQUgtRkR3UXZucVJ5SW1Rc2I1RWJLbGlBMlNnVks1VTRQTkRSZFl1X0tVd1U1RFFZXy1SUVpfaHZZRzJzTHJjT2dDSFc1OTFJNjFCaW02d0NybWVwNG5JU2UxeXNIbDJhcEdQMWhJNXczRERaX0Z5cDk0dk5UajRhMWJDazJxQU00XzlJR21CNkRHWURoMmY3T1RYd09SS3BIdlZySDM4?oc=5",
+      "published_at": "2026-11-05T11:41:18Z",
+      "published_date": "2026-11-05",
+      "metro": "Cape Town"
     },
     {
       "title": "Mantashe says ANC's electoral decline is a sign of South Africa's maturing democracy",
@@ -64,22 +80,6 @@
       "publisher": "The Citizen",
       "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNbnp4MXE5Mkh3NXR6bXV0ZU1XcTdHOWszaWlobVAxcV9CcWRVTmdRNkpqNXhBLUY0RDlCSHdRMGNwSjNfdERhVUJ2WlhhUmVGM0JBc2dsSzlnMzdZcHZtWlF1aGo5SlJzbFBLZkFaTTNlWGxqV2VQV2JfaFV0RngwV0F5U08yX3g3RGFhMDV2Y0xzblZ1LWdQREZIMHRlWDRwc2NRaDZWeHU0WVlBc1E3N04zVEJUNlVpZnhjajJqRTR0U3lHcFBWNm5TVlp3MndqNzBQRTM3V3o1bjh0TTk5ZldWUHRRUmM?oc=5",
       "published_at": "2026-11-05T10:50:56Z",
-      "published_date": "2026-11-05",
-      "metro": "South Africa"
-    },
-    {
-      "title": "Meet the power brokers in South Africa’s great coalition scramble",
-      "publisher": "Daily Maverick",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOZ0s1VEpmZGh4LWdJSmxxeWlDVm1mUkd1VlJuSllSNGFIRE92d1RzRFl4MlplYmVQWUJnSks3UGQtZ3l0X1ZQZzQtVVRIVDg0MzNXNFlsV1I5ME1sNTIzcUphTmRVdlJJaFpYQlFRTUZuU2toLWJFTnRlQTNxZTkzNXJPOVlHeG1ZcVNneGo2eGlsZ00yejUzbTFZbWhMSHJqLUxYb2kwSC1rQmV5cEtINURnLUkxaDA?oc=5",
-      "published_at": "2026-11-05T10:45:21Z",
-      "published_date": "2026-11-05",
-      "metro": "South Africa"
-    },
-    {
-      "title": "LIVE RESULTS UPDATE | Track the 2026 local government election results here",
-      "publisher": "TimesLIVE",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQc1RfYVdSTHhLcFhiYnJteGRCZVhLWEhMdDVibWRuWUUxdWVnbU1reUJKQWNvbXFsV3kzNFIwTEZIYjFRaC1KdGx2SnpzbHdKRUx3enBxWlIxVzcyVW9PNXhZWVg1dHJfTEhsT0gtcjhaUTlvVlN3eFp0YlpQOGdzR0Q3ZFpZYjBoN0NhN1N4U3lDNGIxWHN6NTI5RmNRQTV3U2hkeHg1SUt4cWIxTWtQbjhoMUQ1MFdfeU1KZl9kQjJjdGdUTkQ3R1RFWlJacVNuNjR3?oc=5",
-      "published_at": "2026-11-05T10:36:04Z",
       "published_date": "2026-11-05",
       "metro": "South Africa"
     }
