@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-05T12:09:22.073624+00:00",
+  "checked_at": "2026-11-05T12:10:01.521635+00:00",
   "metros": {
     "Cape Town": {
       "cached": 85,
@@ -9,8 +9,8 @@
       "errors": 9,
       "example_errors": [
         "Ward page district count differs from metro summary",
-        "Ward page district count differs from metro summary",
-        "Unrecognised or repeated party among first three"
+        "Unrecognised or repeated party among first three",
+        "Ward page district count differs from metro summary"
       ],
       "top_three_available": 85
     },
@@ -41,8 +41,8 @@
       "top_three_available": 83
     },
     "Hermanus": {
-      "cached": 1,
-      "enriched": 4,
+      "cached": 5,
+      "enriched": 0,
       "not_reported": 9,
       "pending": 0,
       "errors": 1,
