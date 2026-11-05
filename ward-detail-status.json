@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-11-05T23:10:19.900315+00:00",
+  "checked_at": "2026-11-05T23:40:45.559146+00:00",
   "metros": {
     "Cape Town": {
-      "cached": 90,
-      "enriched": 0,
-      "not_reported": 24,
+      "cached": 87,
+      "enriched": 4,
+      "not_reported": 23,
       "pending": 0,
       "errors": 4,
       "example_errors": [
@@ -12,11 +12,11 @@
         "Fewer than two ranked ballot rows",
         "Unrecognised or repeated party among first three"
       ],
-      "top_three_available": 90
+      "top_three_available": 91
     },
     "Tshwane": {
-      "cached": 77,
-      "enriched": 4,
+      "cached": 79,
+      "enriched": 2,
       "not_reported": 25,
       "pending": 0,
       "errors": 1,
