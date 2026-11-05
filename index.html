@@ -98,7 +98,38 @@ header h1{color:#fff;text-shadow:0 2px 18px rgba(0,0,0,.45)}
 .ward-map-share-pair{margin-left:auto;display:flex;flex-direction:column;align-items:flex-end;gap:3px;min-width:0;text-align:right}
 .ward-map-share-pair strong{margin-left:0!important;white-space:nowrap}
 .ward-map-share-pair .history-share{font-size:11px;color:#b5cadd}
-.metro-summary-head{margin:22px 0 11px}.metro-summary-head h2{margin:0 0 4px}.metro-summary-head p{margin:0;color:#d0e2f2}</style></head><body>
+.metro-summary-head{margin:22px 0 11px}.metro-summary-head h2{margin:0 0 4px}.metro-summary-head p{margin:0;color:#d0e2f2}
+/* A single selected metro keeps mobile results compact; map and ward explorer stay in sync. */
+.metro-votes-section{margin-top:19px}
+.metro-summary-head{margin:8px 0 13px}
+.metro-vote-switcher{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:12px 0 14px}
+.metro-vote-switcher button{padding:12px 7px;text-align:center;background:rgba(23,43,67,.95);border:1px solid #58728f;font-size:14px;min-width:0;min-height:48px;line-height:1.25}
+.metro-vote-switcher button[aria-pressed=true]{background:#185b82;border-color:#8ed6ff;box-shadow:inset 0 -3px #ffb612;color:#fff}
+.city-result-card{display:grid;grid-template-columns:minmax(0,.87fr) minmax(0,1.4fr);gap:20px;padding:20px}
+.city-result-card h3{margin:0 0 9px;font-size:19px}
+.city-result-heading{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:13px}
+.city-result-heading h3{font-size:23px;margin:0}
+.city-result-overview{min-width:0}
+.city-result-overview .big{font-size:40px;margin:8px 0 0;line-height:1.15}
+.city-result-overview .vote-total{margin:15px 0 12px}
+.city-result-parties{min-width:0;border-left:1px solid #415975;padding-left:20px}
+.city-result-parties .party{margin:9px 0}
+.city-result-parties .partyline{align-items:baseline}
+.city-result-parties .share-pair{max-width:58%}
+.city-result-subtext{color:#bbcddd;font-size:12px;line-height:1.4}
+.city-more-results{margin-top:10px;border-top:1px solid #415975;padding-top:8px}
+.city-more-results summary{cursor:pointer;min-height:44px;display:flex;align-items:center;color:#a6d9ff;font-weight:750;font-size:13px;padding:10px 2px}
+.city-more-results summary:focus-visible{outline:3px solid #8bc8ff;outline-offset:2px}
+.city-seats-note{font-size:12px;color:#b9cbe0;line-height:1.45;margin:15px 0 0}
+@media(max-width:750px){
+ .city-result-card{grid-template-columns:1fr;gap:16px;padding:15px}
+ .city-result-parties{border-left:0;border-top:1px solid #415975;padding:17px 0 0}
+ .city-result-overview .big{font-size:35px}
+ .metro-vote-switcher{gap:6px}
+ .metro-vote-switcher button{font-size:13px;padding:11px 5px}
+}
+@media(max-width:375px){.metro-vote-switcher button{font-size:12px;padding:10px 3px}}
+</style></head><body>
 <header><div class="eyebrow">SOUTH AFRICA · 2026 METRO RESULTS</div><h1>Mzanzi Key Metro Watch</h1><p>Cape Town · Tshwane · Johannesburg. Preliminary IEC-derived ward-ballot results, with source links and ward-by-ward drill-down.</p><div class="toolbar"><span id="status" class="pill warn">Checking data…</span><span id="updated" class="small">No source update yet</span><button id="refresh">Refresh</button><button id="share">Share link</button></div></header>
 <main><p id="error" role="alert"></p>
 <section class="news-section" aria-labelledby="news-heading">
@@ -135,13 +166,21 @@ header h1{color:#fff;text-shadow:0 2px 18px rgba(0,0,0,.45)}
  <p class="map-source-note">Ward boundaries: <a href="https://services7.arcgis.com/oeoyTUJC8HEeYsRB/arcgis/rest/services/MDBWards2026/FeatureServer/0" target="_blank" rel="noopener">Municipal Demarcation Board 2026 layer</a>. Ballot data: preliminary IEC-derived reporting through ESP. Colours indicate <strong>currently leading parties, not declared winners</strong>. Zoom with the +/− buttons; scroll-wheel zoom is disabled. <a href="https://go.esp.info/elections/map/local/2026/wards" target="_blank" rel="noopener">Compare ESP's map</a>.</p>
 </section>
 
-<div class="metro-summary-head"><h2>Metro overview</h2><p class="small">2026 results are preliminary. Percentages in brackets show the completed 2021 ward ballot for the same metro.</p></div><div id="cards" class="grid" aria-label="Live results by metro"></div>
+<section class="metro-votes-section" id="metro-votes" aria-labelledby="metro-votes-heading">
+<div class="metro-summary-head"><span class="eyebrow">ELECTION RESULTS</span><h2 id="metro-votes-heading">Vote details by city</h2><p class="small">Choose one metro to see its latest ward-ballot votes and parties. Figures in brackets show the 2021 ward ballot.</p></div>
+<div class="metro-vote-switcher" role="group" aria-label="Choose a city for vote details">
+<button type="button" data-vote-metro="Cape Town" aria-pressed="true">Cape Town</button>
+<button type="button" data-vote-metro="Tshwane" aria-pressed="false">Tshwane</button>
+<button type="button" data-vote-metro="Johannesburg" aria-pressed="false">Johannesburg</button>
+</div>
+<div id="cards" aria-label="Selected city's live election results" aria-live="polite"></div>
+</section>
 <section class="panel" id="ward-explorer"><h2>Explore results by ward</h2><p>Choose a metro, then search by suburb, area or ward number. Area names describe places covered by the ward, not official ward names. Tap for party results, ballot type, reporting status and source.</p><div class="ward-tools"><label><span class="small">Find a suburb, area or ward</span><input id="wardSearch" type="search" inputmode="search" placeholder="e.g. Bellville or Ward 12" autocomplete="off"></label><label><span class="small">Metro</span><select id="metro"><option value="Cape Town">Cape Town</option><option value="Tshwane">Tshwane</option><option value="Johannesburg">Johannesburg</option></select></label></div><div class="flex"><span id="wardCount" class="small"></span><button id="clear" type="button">Clear search</button></div><div id="wards" class="ward-list" aria-live="polite"></div></section>
 <section class="panel"><h2>Cape Town: DA majority watch</h2><p id="majority">Awaiting verified data. A council majority depends on final seat allocation, not an early vote share.</p></section>
 <section class="panel"><h2>Live election feeds</h2><p>This dashboard automatically imports provisional ward-ballot results from ESP's public IEC-derived pages. Verify official declarations directly with the IEC; percentages shown here are not final council seat allocations.</p><div class="flex"><a href="https://results.elections.org.za/" target="_blank" rel="noopener">Official IEC live results</a><a href="https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town" target="_blank" rel="noopener">Cape Town (ESP)</a><a href="https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane" target="_blank" rel="noopener">Tshwane (ESP)</a><a href="https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg" target="_blank" rel="noopener">Johannesburg (ESP)</a></div></section>
 <section class="panel"><h2>Sources and reliability</h2><p>This is an unofficial family dashboard. GitHub Actions checks publicly available ESP pages containing IEC-derived results every 15 minutes, and this page checks the imported snapshot every five minutes. <strong>This is not a direct IEC API feed or an official election declaration.</strong> Suburb and place labels are sourced from <a href="https://theledgersa.com/elections/2026/" target="_blank" rel="noopener">The Ledger SA's 2026 ward-area lists</a>; these are geographic descriptions, not official IEC ward names. Missing results are shown as unavailable, not estimated. Voting districts reporting are not the same as ballots counted. 2021 comparisons shown in brackets are historical ward-ballot percentages. Metro comparisons use completed 2021 results; 2026 ward comparisons use the voting districts matched to current ward boundaries and may omit new or split districts. A missing historical party share is not treated as zero. Vote counts are displayed only when sourced and validated, never derived from rounded percentages. The total shown is valid ward-ballot votes, not all ballots cast. Ward-level top-three party percentages and vote counts are imported only from the individual ESP ward-ballot pages when they match the metro result. If the source is unavailable or no longer matches, only the verified leader is shown. Percentages are for the ward ballot; PR ballots and final council seats are different.</p><a href="https://results.elections.org.za/" target="_blank" rel="noopener">Official IEC results portal</a></section><p class="foot">All source timestamps shown in South Africa Standard Time (SAST, UTC+2). Not affiliated with the IEC.</p></main>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script>
-const metros=['Cape Town','Tshwane','Johannesburg'],el=id=>document.getElementById(id),esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])),num=v=>typeof v==='number'&&Number.isFinite(v),votesValid=v=>Number.isSafeInteger(v)&&v>=0,voteFmt=v=>votesValid(v)?new Intl.NumberFormat('en-ZA').format(v):'—',pct=v=>num(v)?v.toFixed(1)+'%':'—',date=s=>{if(!s)return 'Not available';const d=new Date(s);return Number.isNaN(+d)?'Invalid timestamp':new Intl.DateTimeFormat('en-ZA',{dateStyle:'medium',timeStyle:'short',timeZone:'Africa/Johannesburg'}).format(d)+' SAST'};let data={metros:{}};let wardAreas={metros:{}};let history2021={metros:{}};
+const metros=['Cape Town','Tshwane','Johannesburg'],el=id=>document.getElementById(id),esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])),num=v=>typeof v==='number'&&Number.isFinite(v),votesValid=v=>Number.isSafeInteger(v)&&v>=0,voteFmt=v=>votesValid(v)?new Intl.NumberFormat('en-ZA').format(v):'—',pct=v=>num(v)?v.toFixed(1)+'%':'—',date=s=>{if(!s)return 'Not available';const d=new Date(s);return Number.isNaN(+d)?'Invalid timestamp':new Intl.DateTimeFormat('en-ZA',{dateStyle:'medium',timeStyle:'short',timeZone:'Africa/Johannesburg'}).format(d)+' SAST'};let data={metros:{}};let wardAreas={metros:{}};let history2021={metros:{}};let selectedMetro='Cape Town';
 function historicShares(metro,wardNumber=null){
  const city=history2021&&history2021.metros&&history2021.metros[metro];
  if(!city)return {};
@@ -154,9 +193,9 @@ function historicCoverage(metro,wardNumber){
  return row&&Number.isInteger(row.matched_districts)&&Number.isInteger(row.districts_in_2026_ward)
     ?row.matched_districts+'/'+row.districts_in_2026_ward:null;
 }
-function parties(list,showVotes=false,historical={}){
+function parties(list,showVotes=false,historical={},maxItems=10){
  return Array.isArray(list)&&list.length
- ?list.filter(p=>p&&num(p.share)&&p.share>=0&&p.share<=100).sort((a,b)=>b.share-a.share).slice(0,10).map(p=>{
+ ?list.filter(p=>p&&num(p.share)&&p.share>=0&&p.share<=100).sort((a,b)=>b.share-a.share).slice(0,maxItems).map(p=>{
   const old=historical&&historical[p.name];
   const past=(num(old)&&old>=0&&old<=100)
     ?'<span class="history-share" title="2021 ward-ballot percentage">(2021: '+pct(old)+')</span>':'';
@@ -167,9 +206,46 @@ function parties(list,showVotes=false,historical={}){
  }).join('')
  :'<p class="empty">No reported party shares available.</p>'
 }
+function renderMetroCard(){
+ const name=selectedMetro,m=(data.metros||{})[name]||{},a=m.districts_reported,b=m.districts_total,valid=Number.isInteger(a)&&Number.isInteger(b)&&a>=0&&b>0&&a<=b,p=valid?100*a/b:null;
+const ordered=Array.isArray(m.parties)?m.parties.filter(x=>x&&num(x.share)&&x.share>=0&&x.share<=100).sort((a,b)=>b.share-a.share):[];
+const first=ordered.slice(0,5),remaining=ordered.slice(5);
+const past=historicShares(name);
+el('cards').innerHTML='<article class="card city-result-card"><div class="city-result-overview">'+
+ '<div class="city-result-heading"><h3>'+esc(name)+'</h3><span class="small">2026 · preliminary ward ballot</span></div>'+
+ '<div class="city-result-subtext">'+esc(m.status||'Awaiting verified data')+'</div>'+
+ '<div class="big">'+pct(p)+'</div><div class="small">Voting districts reporting: '+(valid?a+' / '+b:'Not verified')+'</div>'+
+ '<div class="track"><div class="fill" style="width:'+(p||0)+'%"></div></div>'+
+ '<div class="vote-total"><span class="vote-label">Valid ward-ballot votes counted</span><strong>'+voteFmt(m.valid_votes)+'</strong></div>'+
+ '<div class="small">Source snapshot: '+esc(date(m.snapshot_at))+'</div>'+
+ '<p class="city-seats-note">Council seats: '+(Array.isArray(m.seats)&&m.seats.length?m.seats.map(x=>esc(x.name)+': '+esc(x.count)).join(' · '):'Not yet allocated or verified')+'</p>'+
+ (m.source_url?'<p class="city-result-subtext"><a href="'+esc(m.source_url)+'" target="_blank" rel="noopener noreferrer">Metro results source</a></p>':'')+
+ '</div><div class="city-result-parties"><h3>Leading parties</h3>'+
+ '<p class="city-result-subtext">Vote share today <span class="history-share">(2021 in brackets)</span> · actual votes counted beneath each party.</p>'+
+ parties(first,true,past)+
+ (remaining.length?'<details class="city-more-results"><summary>Show '+remaining.length+' more parties</summary>'+parties(remaining,true,past,remaining.length)+'</details>':'')+
+ '</div></article>';
+}
 function render(){const ts=Date.parse(data.updated_at||''),age=(Date.now()-ts)/60000,recent=Number.isFinite(age)&&age>=0&&age<60;el('status').className='pill '+(recent?'ok':'warn');el('status').textContent=recent?'Recent preliminary source snapshot':'NO RECENT SOURCE SNAPSHOT';el('updated').textContent='Data timestamp: '+date(data.updated_at);
-el('cards').innerHTML=metros.map(name=>{const m=(data.metros||{})[name]||{},a=m.districts_reported,b=m.districts_total,valid=Number.isInteger(a)&&Number.isInteger(b)&&a>=0&&b>0&&a<=b,p=valid?100*a/b:null;return '<article class="card"><h2>'+esc(name)+'</h2><div class="small">'+esc(m.status||'Awaiting verified data')+' · '+esc(m.ballot_type||'Ballot unspecified')+'</div><div class="big">'+pct(p)+'</div><div class="small">Voting districts reporting: '+(valid?a+' / '+b:'Not verified')+'</div><div class="track"><div class="fill" style="width:'+(p||0)+'%"></div></div><div class="vote-total"><span class="vote-label">Valid ward-ballot votes counted</span><strong>'+voteFmt(m.valid_votes)+'</strong></div><div class="small">Snapshot: '+esc(date(m.snapshot_at))+'</div><h3>Leading parties</h3>'+parties(m.parties,true,historicShares(name))+'<h3>Seats</h3><p class="small">'+(Array.isArray(m.seats)&&m.seats.length?m.seats.map(s=>esc(s.name)+': '+esc(s.count)).join(' · '):'Not allocated / not verified')+'</p>'+(m.source_url?'<a href="'+esc(m.source_url)+'" target="_blank" rel="noopener">Source</a>':'')+'</article>'}).join('');
+renderMetroCard();
 if(window.metroWardMaps&&window.metroWardMaps.refresh)window.metroWardMaps.refresh();const ct=(data.metros||{})['Cape Town']||{},da=(ct.parties||[]).find(p=>p.name==='DA');el('majority').textContent=da?'DA '+pct(da.share)+' on the '+(ct.ballot_type||'reported')+' ballot. This is not a final seat-majority projection.':'Awaiting verified Cape Town figures. A council majority requires more than half the final council seats.';renderWards()}
+function selectMetro(name,fromMap=false){
+ if(!metros.includes(name))return;
+ const changed=selectedMetro!==name;
+ selectedMetro=name;
+ document.querySelectorAll('[data-vote-metro]').forEach(button=>button.setAttribute('aria-pressed',String(button.getAttribute('data-vote-metro')===name)));
+ const wardMetro=el('metro');
+ if(wardMetro)wardMetro.value=name;
+ if(changed&&el('wardSearch'))el('wardSearch').value='';
+ renderMetroSelection();
+ if(window.metroWardMaps&&!fromMap&&window.metroWardMaps.selectMetro)window.metroWardMaps.selectMetro(name);
+ if(typeof renderWards==='function')renderWards();
+}
+function renderMetroSelection(){
+ if(!data||!data.metros)return;
+ const old=document.getElementById('cards');
+ if(old&&typeof renderMetroCard==='function')renderMetroCard();
+}
 function renderWards(){
  const metro=el('metro').value,q=el('wardSearch').value.trim().toLowerCase();
  const m=(data.metros||{})[metro]||{},wards=Array.isArray(m.wards)?m.wards:[],areas=(wardAreas.metros||{})[metro]||{};
@@ -205,7 +281,9 @@ function mergeWardDetails(snapshot,details){
  }
 }
 async function load(){try{const r=await fetch('./results.json?ts='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);const fresh=await r.json();try{const a=await fetch('./ward-areas.json?ts='+Date.now(),{cache:'no-store'});if(a.ok)wardAreas=await a.json()}catch(_){}try{const d=await fetch('./ward-details.json?ts='+Date.now(),{cache:'no-store'});if(d.ok)mergeWardDetails(fresh,await d.json())}catch(_){}try{const h=await fetch('./history-2021.json?ts='+Date.now(),{cache:'no-store'});if(h.ok){const past=await h.json();if(past&&past.year===2021&&past.ballot_type==='Ward'&&past.metros)history2021=past}}catch(_){}data=fresh;render();el('error').textContent=''}catch(e){el('error').textContent='Unable to load results: '+e.message;render()}}
-el('metro').onchange=renderWards;el('wardSearch').oninput=renderWards;el('clear').onclick=()=>{el('wardSearch').value='';renderWards()};el('refresh').onclick=load;el('share').onclick=async()=>{try{if(navigator.share)await navigator.share({title:document.title,url:location.href});else{await navigator.clipboard.writeText(location.href);el('share').textContent='Copied!'}}catch(e){}};load();setInterval(load,300000);
+document.querySelectorAll('[data-vote-metro]').forEach(button=>button.addEventListener('click',()=>selectMetro(button.getAttribute('data-vote-metro'))));
+window.onMetroMapSelect=name=>selectMetro(name,true);
+el('metro').onchange=()=>selectMetro(el('metro').value);el('wardSearch').oninput=renderWards;el('clear').onclick=()=>{el('wardSearch').value='';renderWards()};el('refresh').onclick=load;el('share').onclick=async()=>{try{if(navigator.share)await navigator.share({title:document.title,url:location.href});else{await navigator.clipboard.writeText(location.href);el('share').textContent='Copied!'}}catch(e){}};load();setInterval(load,300000);
 
 /* Headlines are external publisher reporting, not IEC-certified figures. */
 function newsDate(item){
