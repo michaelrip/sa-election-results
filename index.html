@@ -409,20 +409,19 @@ function renderMetroCard(){
  if(expanded){const more=cards.querySelector('.city-more-results');if(more)more.open=true}
 }
 function render(){const ts=Date.parse(data.updated_at||''),age=(Date.now()-ts)/60000,recent=Number.isFinite(age)&&age>=0&&age<60;
- const direct=data.source_type==='iec_public_csv'&&data.source_verified===true;
  el('status').className='pill '+(recent?'ok':'warn');
- el('status').textContent=direct?(recent?'Direct IEC report loaded':'IEC report may be outdated'):(recent?'IEC-derived via ESP · preliminary':'ESP snapshot may be outdated');
- el('updated').textContent=(direct?'IEC report checked: ':'ESP snapshot checked: ')+date(data.updated_at);
+ el('status').textContent=recent?'ESP · preliminary results':'ESP results may be outdated';
+ el('updated').textContent='ESP source snapshot: '+date(data.updated_at);
  const prov=el('data-provenance');
- if(prov){prov.className='data-provenance'+(direct?' iec-direct':'');
- prov.textContent=direct?'Election votes: official IEC CSV, downloaded directly. Ward-ballot votes only. Counting totals and IEC capture time are not supplied in the public CSV; news and MDB boundaries remain separate.':
- 'Election votes: IEC-derived via independent ESP (NOT directly sourced from IEC). Direct-IEC reporting will switch on only when all four official IEC municipal CSV reports pass validation.';}
+ if(prov){prov.className='data-provenance';
+  prov.textContent='Live Ward, PR and district PR ballot totals come from IEC-derived results published by ESP. Historical 2021 municipality comparisons are from official IEC CSVs. This website is independent and not an IEC service.';}
 renderMetroCard();
 if(window.metroWardMaps&&window.metroWardMaps.refresh)window.metroWardMaps.refresh();const ct=(data.metros||{})['Cape Town']||{},da=(ct.parties||[]).find(p=>p.name==='DA');el('majority').textContent=da?'DA '+pct(da.share)+' on the '+(ct.ballot_type||'reported')+' ballot. This is not a final seat-majority projection.':'Awaiting verified Cape Town figures. A council majority requires more than half the final council seats.';renderWards()}
 function selectMetro(name,fromMap=false){
  if(!metros.includes(name))return;
  const changed=selectedMetro!==name;
  selectedMetro=name;
+ if(name!=='Hermanus'&&selectedBallot==='dc')selectedBallot='all';
  const capeWatch=el('cape-majority');if(capeWatch)capeWatch.hidden=name!=='Cape Town';
  document.querySelectorAll('[data-vote-metro]').forEach(button=>button.setAttribute('aria-pressed',String(button.getAttribute('data-vote-metro')===name)));
  const wardMetro=el('metro');
@@ -507,22 +506,11 @@ async function load({manual=false}={}){
   showRefreshMessage('Checking the latest published election results…','checking');
  }
  try{
-  const directCandidate=await loadOptionalJSON('./results-iec.json');
-  const directAvailable=directCandidate&&directCandidate.source_verified===true&&
-   directCandidate.source_type==='iec_public_csv'&&directCandidate.election_year===2026&&
-   directCandidate.metros&&metros.every(city=>Array.isArray(directCandidate.metros[city]?.wards));
-  let fresh;
-  if(directAvailable)fresh=directCandidate;
-  else if(data.source_verified===true&&data.source_type==='iec_public_csv')fresh=data;
-  else{
-   const response=await fetch('./results.json?ts='+Date.now(),{cache:'no-store'});
-   if(!response.ok)throw Error('HTTP '+response.status);
-   fresh=await response.json();
-  }
+  const response=await fetch('./results.json?ts='+Date.now(),{cache:'no-store'});
+  if(!response.ok)throw Error('HTTP '+response.status);
+  const fresh=await response.json();
   if(request!==latestLoad)return;
-  if(!fresh||!fresh.metros||!fresh.updated_at)throw Error('Published result file was incomplete');
-  const direct=fresh.source_type==='iec_public_csv'&&fresh.source_verified===true;
-  if(direct&&data.source_type!=='iec_public_csv')history2021={metros:{}};
+  if(!fresh||!fresh.metros||!fresh.updated_at)throw Error('Published ESP result file was incomplete');
   // Publish the main count immediately, while ward metadata arrives separately.
   data=fresh;
   render();
@@ -531,33 +519,31 @@ async function load({manual=false}={}){
   if(manual){
    const changed=!wasLoaded||fresh.updated_at!==oldSnapshot;
    showRefreshMessage(changed
-    ?'Checked '+checkedAt+'. Latest '+(direct?'official IEC report':'IEC-derived ESP')+' figures loaded (checked: '+date(fresh.updated_at)+').'
-    :'Checked '+checkedAt+'. No newer '+(direct?'official IEC report':'IEC-derived ESP')+' figures are published yet (checked: '+date(fresh.updated_at)+').');
+    ?'Checked '+checkedAt+'. Latest ESP results loaded (snapshot: '+date(fresh.updated_at)+').'
+    :'Checked '+checkedAt+'. No newer ESP results are published yet (snapshot: '+date(fresh.updated_at)+').');
   }else if(!wasLoaded){
-   showRefreshMessage('Figures checked '+checkedAt+'. Source: '+(direct?'official IEC report':'IEC-derived ESP, direct IEC pending')+'. Refresh checks for newly published results.');
+   showRefreshMessage('Figures checked '+checkedAt+'. Live source: IEC-derived via ESP. Refresh checks for newly published ballot figures.');
   }
-  const [areas,details,oldResults,legacyHistory,feedHealth]=await Promise.all([
+  const [areas,details,ballots,oldResults,legacyHistory,feedHealth]=await Promise.all([
    loadOptionalJSON('./ward-areas.json'),
-   direct?Promise.resolve(null):loadOptionalJSON('./ward-details.json'),
+   loadOptionalJSON('./ward-details.json'),
+   loadOptionalJSON('./ballots.json'),
    loadOptionalJSON('./history-iec-2021.json'),
-   direct?Promise.resolve(null):loadOptionalJSON('./history-2021.json'),
-   manual?loadOptionalJSON(direct?'./iec-source-status.json':'./feed-status.json'):Promise.resolve(null)
+   loadOptionalJSON('./history-2021.json'),
+   manual?loadOptionalJSON('./feed-status.json'):Promise.resolve(null)
   ]);
   if(request!==latestLoad)return;
   if(areas&&areas.metros)wardAreas=areas;
   if(details&&details.metros)mergeWardDetails(fresh,details);
+  if(ballots&&ballots.metros)partyBallots=ballots;
   if(oldResults&&oldResults.year===2021&&oldResults.ballot_type==='Ward'&&oldResults.source_verified===true&&oldResults.metros&&
    metros.every(city=>oldResults.metros[city])){
-   // Official 2021 municipality shares always win. The older matched-district
-   // ward comparisons are kept only while the live 2026 data remains ESP-based;
-   // they are deliberately excluded from the fully direct IEC mode.
    history2021={...oldResults,metros:{}};
    for(const city of metros){
-    const original=oldResults.metros[city];
-    const wardHistory=!direct&&legacyHistory?.metros?.[city]?.wards||{};
-    history2021.metros[city]={...original,wards:wardHistory};
+    history2021.metros[city]={...oldResults.metros[city],
+      wards:legacyHistory?.metros?.[city]?.wards||{}};
    }
-  }else if(!direct&&legacyHistory?.year===2021&&legacyHistory?.metros){
+  }else if(legacyHistory?.year===2021&&legacyHistory?.metros){
    history2021=legacyHistory;
   }
   data=fresh;
@@ -585,6 +571,7 @@ async function load({manual=false}={}){
 }
 
 document.querySelectorAll('[data-vote-metro]').forEach(button=>button.addEventListener('click',()=>selectMetro(button.getAttribute('data-vote-metro'))));
+document.querySelectorAll('[data-ballot-mode]').forEach(button=>button.addEventListener('click',()=>selectBallot(button.getAttribute('data-ballot-mode'))));
 window.onMetroMapSelect=name=>selectMetro(name,true);
 el('metro').onchange=()=>selectMetro(el('metro').value);
 el('wardSearch').oninput=()=>{wardVisibleLimit=24;renderWards()};
