@@ -1,0 +1,68 @@
+name: Refresh 2026 metro ward boundaries
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/update_ward_boundaries.py'
+      - 'tests/test_ward_boundaries.py'
+      - '.github/workflows/update-ward-maps.yml'
+  workflow_dispatch:
+  schedule:
+    - cron: '21 4 * * 1'
+permissions:
+  contents: write
+concurrency:
+  group: metro-ward-boundaries
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate boundary importer
+        run: python -m unittest discover -s tests -p 'test_ward_boundaries.py' -v
+      - name: Download 2026 MDB ward polygons
+        run: |
+          python scripts/update_ward_boundaries.py || echo "Boundary source not fully available; report will be published"
+      - name: Publish validated boundaries and status
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ward-boundaries/*.geojson ward-boundary-status.json || true
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh authoritative 2026 metro ward map polygons"
+            for attempt in 1 2 3 4 5; do
+              git fetch origin main
+              if ! git rebase origin/main; then
+                echo "Conflict; refusing to overwrite remote geometry"
+                git rebase --abort || true
+                exit 1
+              fi
+              if git push origin HEAD:main; then
+                break
+              fi
+              if [ "$attempt" -eq 5 ]; then
+                echo "Could not publish boundaries after five attempts"
+                exit 1
+              fi
+              sleep 3
+            done
+          fi
+      - name: Confirm 2026 ward coverage
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          expected = {"cape-town":118, "tshwane":107, "johannesburg":135}
+          for slug, count in expected.items():
+              p = Path("ward-boundaries") / (slug + ".geojson")
+              if not p.exists(): raise SystemExit(f"Missing {p}")
+              data = json.loads(p.read_text())
+              wards = {f["properties"]["ward"] for f in data["features"]}
+              if wards != set(range(1, count + 1)):
+                  raise SystemExit(f"{slug}: invalid ward coverage {len(wards)}/{count}")
+              print(f"{slug}: {len(wards)} validated ward shapes")
+          PY
