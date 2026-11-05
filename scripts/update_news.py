@@ -177,23 +177,8 @@ def select_stories(articles: list[dict], now: datetime) -> list[dict]:
         if key not in unique or when(article) > when(unique[key]):
             unique[key] = article
     latest = sorted(unique.values(), key=when, reverse=True)
-    chosen = []
-    used = set()
-    # A top-story slot for each metro, where a recent headline is available.
-    for metro in CITY_TERMS:
-        for article in latest:
-            key = article["title"]
-            if article["metro"] == metro and key not in used:
-                chosen.append(article)
-                used.add(key)
-                break
-    for article in latest:
-        if len(chosen) >= MAX_STORIES:
-            break
-        if article["title"] not in used:
-            chosen.append(article)
-            used.add(article["title"])
-    return chosen[:MAX_STORIES]
+    # Show the ten newest unique eligible headlines overall, regardless of metro.
+    return latest[:MAX_STORIES]
 
 
 def main() -> None:
