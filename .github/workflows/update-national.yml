@@ -23,6 +23,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Refresh election headlines as a backup to the news workflow
+        run: python scripts/update_news.py
+      - name: Publish refreshed headlines
+        run: |
+          bash scripts/publish_generated_data.sh news-status.json "Update attributed South African election headlines" \
+            news.json news-status.json
       - name: Fetch and validate national ward-ballot results
         run: python scripts/update_national.py
       - name: Safely publish validated national snapshot and check status
