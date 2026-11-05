@@ -9,6 +9,7 @@
     'Cape Town': {slug: 'cape-town', count: 118, query: 'Cape Town', centre: [-33.925, 18.5], zoom: 10},
     'Tshwane': {slug: 'tshwane', count: 107, query: 'Tshwane', centre: [-25.75, 28.23], zoom: 10},
     'Johannesburg': {slug: 'johannesburg', count: 135, query: 'Johannesburg', centre: [-26.20, 28.05], zoom: 10},
+    'Nelson Mandela Bay': {slug: 'nelson-mandela-bay', count: 60, query: 'Nelson Mandela Bay', centre: [-33.90, 25.55], zoom: 10},
     'Hermanus': {slug: 'overstrand', count: 15, query: 'Overstrand', centre: [-34.4200, 19.2420], zoom: 10}
   };
   const endpoints = [
