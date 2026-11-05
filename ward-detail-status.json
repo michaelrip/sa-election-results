@@ -1,23 +1,23 @@
 {
-  "checked_at": "2026-11-05T14:18:58.217817+00:00",
+  "checked_at": "2026-11-05T14:31:59.485588+00:00",
   "metros": {
     "Cape Town": {
-      "cached": 76,
-      "enriched": 13,
+      "cached": 87,
+      "enriched": 3,
       "not_reported": 20,
       "pending": 0,
-      "errors": 9,
+      "errors": 8,
       "example_errors": [
         "Ward page district count differs from metro summary",
         "Ward page district count differs from metro summary",
         "Unrecognised or repeated party among first three"
       ],
-      "top_three_available": 89
+      "top_three_available": 90
     },
     "Tshwane": {
-      "cached": 49,
-      "enriched": 22,
-      "not_reported": 27,
+      "cached": 68,
+      "enriched": 4,
+      "not_reported": 26,
       "pending": 0,
       "errors": 9,
       "example_errors": [
@@ -25,18 +25,18 @@
         "Ward page district count differs from metro summary",
         "Ward page district count differs from metro summary"
       ],
-      "top_three_available": 71
+      "top_three_available": 72
     },
     "Johannesburg": {
-      "cached": 78,
-      "enriched": 11,
+      "cached": 87,
+      "enriched": 2,
       "not_reported": 41,
       "pending": 0,
       "errors": 5,
       "example_errors": [
         "Unrecognised or repeated party among first three",
         "Unrecognised or repeated party among first three",
-        "Unrecognised or repeated party among first three"
+        "Ward page district count differs from metro summary"
       ],
       "top_three_available": 89
     },
