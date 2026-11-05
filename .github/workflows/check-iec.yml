@@ -1,5 +1,11 @@
 name: Update three-metro election results
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/fetch_results.py'
+      - 'tests/test_fetch_results.py'
+      - '.github/workflows/check-iec.yml'
   schedule:
     - cron: '17 * * * *'
   workflow_dispatch:
@@ -16,6 +22,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Test importer against representative public page markup
+        run: python -m unittest discover -s tests -v
       - name: Fetch and validate IEC-derived metro results
         run: python scripts/fetch_results.py
       - name: Publish validated results and status
@@ -43,3 +51,14 @@ jobs:
             echo "Could not publish after 5 attempts."
             exit 1
           fi
+
+      - name: Confirm all metro feeds passed validation
+        run: |
+          python - <<'PY'
+          import json, sys
+          status = json.load(open("feed-status.json", encoding="utf-8"))
+          for metro, check in status["checks"].items():
+              print(metro, check)
+          if status["status"] != "ok":
+              sys.exit("One or more source feeds failed. Check feed-status.json.")
+          PY
