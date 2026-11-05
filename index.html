@@ -398,6 +398,11 @@ function renderMetroCard(){
  const a=m.districts_reported,b=m.districts_total,progress=Number.isInteger(a)&&Number.isInteger(b)&&a>=0&&b>0&&a<=b,p=progress?100*a/b:null;
  const past=historicBallotShares(name,mode);
  const historicLabel=mode==='pr'?'municipal PR':mode==='all'?'Ward + municipal PR':'Ward';
+ const original=history2021?.metros?.[name];
+ if(mode!=='dc'&&Object.keys(past).length>0&&history2021.source_verified===true&&
+    original&&/^https:\/\/results\.elections\.org\.za\//.test(original.source_url||'')){
+  src.push(['2021 IEC ballot report',original.source_url]);
+ }
  const modeLabel=mode==='pr'?'PR':mode==='dc'?'District PR':mode==='ward'?'Ward':'Ward + PR';
  const top=ordered.slice(0,5),remaining=ordered.slice(5);
  const asAt=selected?.snapshot_at?date(selected.snapshot_at):'Not available';
