@@ -1,8 +1,16 @@
 {
-  "checked_at": "2026-11-06T12:58:21.818768Z",
+  "checked_at": "2026-11-06T14:13:55.731510Z",
   "source": "Publisher-attributed headlines discovered through Google News RSS",
   "feed_status": "ok",
   "articles": [
+    {
+      "title": "FF+ secures 3.5% in Cape Town metro, staying in the mix for council representation",
+      "publisher": "EWN",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQYldORkRHNjlkWncxTl82N3ZGd0s3RWdUYU95SHZWWkpmc2ttUEpEc242Tlk1eUhVM1E3c3BtblN0UDJHRS1laHBzbjFuY2VYUzQzZFZJY0lYeHpUQnRtZFNubThuR2x0NjgySGhpanFXTkFrWlpvMklLVmJ1T3FMM3AzWlY3QWtEbjRRV2ZMZ2FPeXQ3VVdublRBcW5KUnZ2cDFoRXZPTFJldGZFWTRROVhfQVFlUQ?oc=5",
+      "published_at": "2026-11-06T12:58:13Z",
+      "published_date": "2026-11-06",
+      "metro": "Cape Town"
+    },
     {
       "title": "ANC’s national vote share falls to 31.8% as DA climbs to 24.1% with 81% counted",
       "publisher": "The Citizen",
@@ -47,7 +55,7 @@
       "title": "DA draws coalition red line as Western Cape faces hung councils",
       "publisher": "IOL",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRVJEbWxBREpOUFF0SEhyTWowbk5rQ3hYbE9XenIwem90NmhVc2wxWTltUmJIS1NVWlU0YTkxMmhBZ2h2bEhLOGNwOFBlZ1RhYlZUekl4akN0eGhyX0tNREs1VUF0dG9PVUNyZW5SaUxTcUNLUkdoNlhRQm1CanZSRkNkTHBFSFE4M29wS0N2TW5VZ1FkWVVMdmtla2kxenJoanpB?oc=5",
-      "published_at": "2026-11-06T11:01:32Z",
+      "published_at": "2026-11-06T11:06:57Z",
       "published_date": "2026-11-06",
       "metro": "South Africa"
     },
@@ -68,18 +76,10 @@
       "metro": "South Africa"
     },
     {
-      "title": "ELECTIONS LIVE: DA starts coalition talks",
-      "publisher": "The Citizen",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPNzJKQUMyb0NQQ0JDOGNrZGFuMUpxd1N1Q2tjWHBOVnNodDY0SkJXQTVkSGtTSVR0WXlxLVI2SnFBVEJ4OWxCWkZJcWFBWEw2Zk5WcGZYLWJKa2xfZ1oxMkJkOVNpSWFSdE1rS2UwTHU1WUxYYk91b0wySnFFTjBvMGJJLVR1UzQ3Ry1SQzA3cmdKVnZacUFDRExoQk9IaHlwYmc?oc=5",
-      "published_at": "2026-11-06T09:08:51Z",
-      "published_date": "2026-11-06",
-      "metro": "South Africa"
-    },
-    {
-      "title": "LGE 2026: DA says no one-size-fits-all approach to its coalition negotiations",
-      "publisher": "EWN",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPdF9iYVRLVmZadUF1M1NEc3ItVHJRTEtWa0pzeWlBZ29nRlUtVmwzRzNGODEyNG5TWlFTZVNkeWs3ck1CMTNYMFFrQUZVYWFRQmxFV3RLUUwtQWRuNXhCc2owNGF3NWpIcXpHeFp0Vk1wdjdmb1ZDNHVvMUJBYXlhWGotRHNwSE96M3RuMGdBYW9yZS1MWHNDRVJMWk5jVEppN1F5aUYwbkhOTE0zQ3c?oc=5",
-      "published_at": "2026-11-06T08:14:57Z",
+      "title": "DA ready for coalition talks",
+      "publisher": "SABC News",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPbXN2d1l3S212NlA0REVuQi0wdGljQlZocU1ieVQxc1Bkbnp4dnpCdmxxNHdyaFpfUTdINjNnYXNhM3lLMGF5Y3JFc2M3emgwazZQa1A2M1l5R29kQzVtd25Bckp5aW1NRUVIME53V2tGcHlYeGpNVU1lLUh2ODUwcHgxY0dDNUExTVpRSkdNSVN2UzllYWlwTTFEMlFyYlBKQjFtWXNR?oc=5",
+      "published_at": "2026-11-06T09:38:34Z",
       "published_date": "2026-11-06",
       "metro": "South Africa"
     }
