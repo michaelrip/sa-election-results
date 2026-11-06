@@ -343,6 +343,7 @@ try{
  if(metros.includes(city))selectedMetro=city;
  if(['all','pr','ward','dc'].includes(ballot))selectedBallot=ballot;
  if(selectedBallot==='dc'&&selectedMetro!=='Hermanus')selectedBallot='all';
+ if(selectedMetro==='Nelson Mandela Bay'&&selectedBallot==='all')selectedBallot='ward';
 }catch(_){}
 window.initialMetro=selectedMetro;
 el('metro').value=selectedMetro;
@@ -529,6 +530,7 @@ function selectMetro(name,fromMap=false){
  const changed=selectedMetro!==name;
  selectedMetro=name;
  if(name!=='Hermanus'&&selectedBallot==='dc')selectedBallot='all';
+ if(name==='Nelson Mandela Bay'&&selectedBallot==='all')selectedBallot='ward';
  const capeWatch=el('cape-majority');if(capeWatch)capeWatch.hidden=name!=='Cape Town';
  document.querySelectorAll('[data-vote-metro]').forEach(button=>button.setAttribute('aria-pressed',String(button.getAttribute('data-vote-metro')===name)));
  const wardMetro=el('metro');
@@ -648,12 +650,15 @@ async function load({manual=false}={}){
   if(areas&&areas.metros)wardAreas=areas;
   if(details&&details.metros)mergeWardDetails(fresh,details);
   if(ballots&&ballots.metros)partyBallots=ballots;
-  if(oldResults&&oldResults.year===2021&&oldResults.ballot_type==='Ward'&&oldResults.source_verified===true&&oldResults.metros&&
-   metros.every(city=>oldResults.metros[city])){
+  if(oldResults&&oldResults.year===2021&&oldResults.ballot_type==='Ward'&&oldResults.source_verified===true&&oldResults.metros){
+   // Historical coverage is per municipality. Adding a new municipality must
+   // not hide verified 2021 comparisons for municipalities already covered.
    history2021={...oldResults,metros:{}};
    for(const city of metros){
-    history2021.metros[city]={...oldResults.metros[city],
-      wards:legacyHistory?.metros?.[city]?.wards||{}};
+    if(oldResults.metros[city]){
+     history2021.metros[city]={...oldResults.metros[city],
+       wards:legacyHistory?.metros?.[city]?.wards||{}};
+    }
    }
   }else if(legacyHistory?.year===2021&&legacyHistory?.metros){
    history2021=legacyHistory;
