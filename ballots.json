@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T22:36:45.635432+00:00",
+  "updated_at": "2026-11-06T23:15:27.924085+00:00",
   "source": "IEC-derived via ESP: separate validated ballot pages",
   "metros": {
     "Cape Town": {
@@ -648,6 +648,11 @@
             "share": 2.4
           },
           {
+            "name": "Mayibuye Civic Movement",
+            "votes": 7207,
+            "share": 2.2
+          },
+          {
             "name": "ActionSA",
             "votes": 6316,
             "share": 1.9
@@ -668,16 +673,6 @@
             "share": 0.9
           },
           {
-            "name": "PAC",
-            "votes": 2872,
-            "share": 0.9
-          },
-          {
-            "name": "AIC",
-            "votes": 1602,
-            "share": 0.5
-          },
-          {
             "name": "Al Jama-ah",
             "votes": 858,
             "share": 0.3
@@ -686,20 +681,10 @@
             "name": "GOOD",
             "votes": 806,
             "share": 0.2
-          },
-          {
-            "name": "COPE",
-            "votes": 306,
-            "share": 0.1
-          },
-          {
-            "name": "OHM",
-            "votes": 282,
-            "share": 0.1
           }
         ],
-        "unlisted_votes": 20045,
-        "note": "Other/unlisted votes equal source total minus individually validated named party votes."
+        "unlisted_votes": 17900,
+        "note": "Unlisted parties are the residual of valid PR votes, not assigned to named parties."
       }
     }
   }
