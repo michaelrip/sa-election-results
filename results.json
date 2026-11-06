@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T07:58:08.140208+00:00",
+  "updated_at": "2026-11-06T08:01:06.564454+00:00",
   "source": "Provisional IEC-derived ward-ballot results via ESP (unofficial)",
   "metros": {
     "Cape Town": {
@@ -5374,7 +5374,7 @@
       "status": "Preliminary · IEC-derived via ESP",
       "municipality": "Nelson Mandela Bay Metropolitan Municipality",
       "ballot_type": "Ward",
-      "districts_reported": 213,
+      "districts_reported": 214,
       "districts_total": 268,
       "valid_votes": 265844,
       "parties": [
@@ -5561,7 +5561,7 @@
           "number": 10,
           "status": "Partly counted",
           "ballot_type": "Ward",
-          "reporting": "1 of 3 districts",
+          "reporting": "2 of 3 districts",
           "winner": "DA",
           "parties": [
             {

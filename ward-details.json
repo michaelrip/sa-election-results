@@ -1,6 +1,6 @@
 {
   "source": "Individual ESP 2026 ward-ballot pages (IEC-derived; provisional)",
-  "checked_at": "2026-11-06T07:58:17.993559+00:00",
+  "checked_at": "2026-11-06T08:01:16.625077+00:00",
   "metros": {
     "Cape Town": {
       "1": {
@@ -6068,6 +6068,675 @@
         "reporting": "5 of 9 districts",
         "source_at": "2026-11-06T06:27:00+00:00",
         "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-135"
+      }
+    },
+    "Nelson Mandela Bay": {
+      "2": {
+        "parties": [
+          {
+            "name": "DA",
+            "share": 80.1,
+            "votes": 955
+          },
+          {
+            "name": "EFF",
+            "share": 5.2,
+            "votes": 62
+          },
+          {
+            "name": "ANC",
+            "share": 2.9,
+            "votes": 34
+          }
+        ],
+        "valid_votes": 1192,
+        "reporting": "1 of 4 districts",
+        "source_at": "2026-11-06T07:49:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-2"
+      },
+      "3": {
+        "parties": [
+          {
+            "name": "DA",
+            "share": 87.5,
+            "votes": 2901
+          },
+          {
+            "name": "FF+",
+            "share": 3.5,
+            "votes": 117
+          },
+          {
+            "name": "ACDP",
+            "share": 2.1,
+            "votes": 68
+          }
+        ],
+        "valid_votes": 3317,
+        "reporting": "2 of 4 districts",
+        "source_at": "2026-11-06T07:49:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-3"
+      },
+      "5": {
+        "parties": [
+          {
+            "name": "DA",
+            "share": 43.2,
+            "votes": 1767
+          },
+          {
+            "name": "EFF",
+            "share": 23.4,
+            "votes": 956
+          },
+          {
+            "name": "ANC",
+            "share": 8.3,
+            "votes": 339
+          }
+        ],
+        "valid_votes": 4086,
+        "reporting": "3 of 4 districts",
+        "source_at": "2026-11-06T07:49:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-5"
+      },
+      "6": {
+        "parties": [
+          {
+            "name": "DA",
+            "share": 89.1,
+            "votes": 5574
+          },
+          {
+            "name": "FF+",
+            "share": 3.8,
+            "votes": 239
+          },
+          {
+            "name": "ANC",
+            "share": 1.5,
+            "votes": 92
+          }
+        ],
+        "valid_votes": 6255,
+        "reporting": "3 of 4 districts",
+        "source_at": "2026-11-06T07:49:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-6"
+      },
+      "9": {
+        "parties": [
+          {
+            "name": "DA",
+            "share": 79.5,
+            "votes": 1915
+          },
+          {
+            "name": "ACDP",
+            "share": 8.3,
+            "votes": 200
+          },
+          {
+            "name": "FF+",
+            "share": 4.1,
+            "votes": 100
+          }
+        ],
+        "valid_votes": 2410,
+        "reporting": "1 of 3 districts",
+        "source_at": "2026-11-06T07:49:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-9"
+      },
+      "10": {
+        "parties": [
+          {
+            "name": "DA",
+            "share": 75.6,
+            "votes": 1975
+          },
+          {
+            "name": "ANC",
+            "share": 5.9,
+            "votes": 155
+          },
+          {
+            "name": "Al Jama-ah",
+            "share": 4.1,
+            "votes": 107
+          }
+        ],
+        "valid_votes": 2611,
+        "reporting": "2 of 3 districts",
+        "source_at": "2026-11-06T07:54:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-10"
+      },
+      "11": {
+        "parties": [
+          {
+            "name": "DA",
+            "share": 72.3,
+            "votes": 3356
+          },
+          {
+            "name": "PA",
+            "share": 9.9,
+            "votes": 461
+          },
+          {
+            "name": "ANC",
+            "share": 3.8,
+            "votes": 175
+          }
+        ],
+        "valid_votes": 4639,
+        "reporting": "4 of 5 districts",
+        "source_at": "2026-11-06T07:49:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-11"
+      },
+      "12": {
+        "parties": [
+          {
+            "name": "DA",
+            "share": 74.7,
+            "votes": 4332
+          },
+          {
+            "name": "ANC",
+            "share": 6.3,
+            "votes": 366
+          },
+          {
+            "name": "EFF",
+            "share": 5.2,
+            "votes": 300
+          }
+        ],
+        "valid_votes": 5801,
+        "reporting": "2 of 3 districts",
+        "source_at": "2026-11-06T07:49:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-12"
+      },
+      "13": {
+        "parties": [
+          {
+            "name": "DA",
+            "share": 77.9,
+            "votes": 2469
+          },
+          {
+            "name": "PA",
+            "share": 11.2,
+            "votes": 354
+          },
+          {
+            "name": "ANC",
+            "share": 2.0,
+            "votes": 63
+          }
+        ],
+        "valid_votes": 3168,
+        "reporting": "2 of 4 districts",
+        "source_at": "2026-11-06T07:49:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-13"
+      },
+      "16": {
+        "parties": [
+          {
+            "name": "DA",
+            "share": 49.9,
+            "votes": 1806
+          },
+          {
+            "name": "ANC",
+            "share": 25.1,
+            "votes": 907
+          },
+          {
+            "name": "EFF",
+            "share": 5.8,
+            "votes": 210
+          }
+        ],
+        "valid_votes": 3616,
+        "reporting": "4 of 6 districts",
+        "source_at": "2026-11-06T07:49:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-16"
+      },
+      "18": {
+        "parties": [
+          {
+            "name": "ANC",
+            "share": 55.9,
+            "votes": 1033
+          },
+          {
+            "name": "EFF",
+            "share": 9.5,
+            "votes": 175
+          },
+          {
+            "name": "DA",
+            "share": 6.7,
+            "votes": 123
+          }
+        ],
+        "valid_votes": 1847,
+        "reporting": "2 of 3 districts",
+        "source_at": "2026-11-06T07:49:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-18"
+      },
+      "19": {
+        "parties": [
+          {
+            "name": "ANC",
+            "share": 54.9,
+            "votes": 1399
+          },
+          {
+            "name": "EFF",
+            "share": 13.3,
+            "votes": 340
+          },
+          {
+            "name": "Independent",
+            "share": 6.4,
+            "votes": 164
+          }
+        ],
+        "valid_votes": 2549,
+        "reporting": "4 of 5 districts",
+        "source_at": "2026-11-06T07:49:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-19"
+      },
+      "20": {
+        "parties": [
+          {
+            "name": "ANC",
+            "share": 56.2,
+            "votes": 1871
+          },
+          {
+            "name": "EFF",
+            "share": 10.3,
+            "votes": 342
+          },
+          {
+            "name": "DA",
+            "share": 7.7,
+            "votes": 257
+          }
+        ],
+        "valid_votes": 3330,
+        "reporting": "4 of 5 districts",
+        "source_at": "2026-11-06T07:49:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-20"
+      },
+      "23": {
+        "parties": [
+          {
+            "name": "ANC",
+            "share": 52.7,
+            "votes": 1327
+          },
+          {
+            "name": "EFF",
+            "share": 11.7,
+            "votes": 294
+          },
+          {
+            "name": "SACP",
+            "share": 5.6,
+            "votes": 142
+          }
+        ],
+        "valid_votes": 2519,
+        "reporting": "3 of 4 districts",
+        "source_at": "2026-11-06T07:49:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-23"
+      },
+      "27": {
+        "parties": [
+          {
+            "name": "ANC",
+            "share": 55.0,
+            "votes": 1842
+          },
+          {
+            "name": "EFF",
+            "share": 9.4,
+            "votes": 314
+          },
+          {
+            "name": "DA",
+            "share": 8.7,
+            "votes": 291
+          }
+        ],
+        "valid_votes": 3349,
+        "reporting": "4 of 5 districts",
+        "source_at": "2026-11-06T07:49:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-27"
+      },
+      "28": {
+        "parties": [
+          {
+            "name": "ANC",
+            "share": 57.6,
+            "votes": 1852
+          },
+          {
+            "name": "UDM",
+            "share": 14.6,
+            "votes": 469
+          },
+          {
+            "name": "EFF",
+            "share": 8.6,
+            "votes": 277
+          }
+        ],
+        "valid_votes": 3214,
+        "reporting": "3 of 4 districts",
+        "source_at": "2026-11-06T07:49:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-28"
+      },
+      "32": {
+        "parties": [
+          {
+            "name": "DA",
+            "share": 68.3,
+            "votes": 1752
+          },
+          {
+            "name": "PA",
+            "share": 8.7,
+            "votes": 223
+          },
+          {
+            "name": "ANC",
+            "share": 5.9,
+            "votes": 152
+          }
+        ],
+        "valid_votes": 2566,
+        "reporting": "2 of 5 districts",
+        "source_at": "2026-11-06T07:54:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-32"
+      },
+      "33": {
+        "parties": [
+          {
+            "name": "DA",
+            "share": 46.3,
+            "votes": 800
+          },
+          {
+            "name": "ANC",
+            "share": 14.7,
+            "votes": 253
+          },
+          {
+            "name": "PAC",
+            "share": 13.3,
+            "votes": 230
+          }
+        ],
+        "valid_votes": 1726,
+        "reporting": "2 of 4 districts",
+        "source_at": "2026-11-06T07:49:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-33"
+      },
+      "35": {
+        "parties": [
+          {
+            "name": "DA",
+            "share": 72.9,
+            "votes": 1669
+          },
+          {
+            "name": "PA",
+            "share": 10.2,
+            "votes": 233
+          },
+          {
+            "name": "ANC",
+            "share": 4.4,
+            "votes": 101
+          }
+        ],
+        "valid_votes": 2290,
+        "reporting": "3 of 6 districts",
+        "source_at": "2026-11-06T07:49:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-35"
+      },
+      "36": {
+        "parties": [
+          {
+            "name": "ANC",
+            "share": 60.5,
+            "votes": 3046
+          },
+          {
+            "name": "EFF",
+            "share": 10.3,
+            "votes": 519
+          },
+          {
+            "name": "SACP",
+            "share": 7.2,
+            "votes": 361
+          }
+        ],
+        "valid_votes": 5033,
+        "reporting": "6 of 7 districts",
+        "source_at": "2026-11-06T07:49:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-36"
+      },
+      "38": {
+        "parties": [
+          {
+            "name": "DA",
+            "share": 42.6,
+            "votes": 1977
+          },
+          {
+            "name": "ANC",
+            "share": 30.3,
+            "votes": 1404
+          },
+          {
+            "name": "PA",
+            "share": 11.1,
+            "votes": 513
+          }
+        ],
+        "valid_votes": 4639,
+        "reporting": "3 of 4 districts",
+        "source_at": "2026-11-06T07:49:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-38"
+      },
+      "40": {
+        "parties": [
+          {
+            "name": "DA",
+            "share": 62.9,
+            "votes": 4453
+          },
+          {
+            "name": "ANC",
+            "share": 15.3,
+            "votes": 1086
+          },
+          {
+            "name": "FF+",
+            "share": 4.7,
+            "votes": 332
+          }
+        ],
+        "valid_votes": 7079,
+        "reporting": "7 of 8 districts",
+        "source_at": "2026-11-06T07:49:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-40"
+      },
+      "42": {
+        "parties": [
+          {
+            "name": "ANC",
+            "share": 48.3,
+            "votes": 1153
+          },
+          {
+            "name": "SACP",
+            "share": 36.0,
+            "votes": 860
+          },
+          {
+            "name": "EFF",
+            "share": 4.0,
+            "votes": 95
+          }
+        ],
+        "valid_votes": 2386,
+        "reporting": "2 of 3 districts",
+        "source_at": "2026-11-06T07:49:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-42"
+      },
+      "49": {
+        "parties": [
+          {
+            "name": "DA",
+            "share": 73.5,
+            "votes": 3302
+          },
+          {
+            "name": "PA",
+            "share": 16.3,
+            "votes": 732
+          },
+          {
+            "name": "ANC",
+            "share": 3.7,
+            "votes": 166
+          }
+        ],
+        "valid_votes": 4494,
+        "reporting": "4 of 5 districts",
+        "source_at": "2026-11-06T07:49:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-49"
+      },
+      "54": {
+        "parties": [
+          {
+            "name": "ANC",
+            "share": 61.7,
+            "votes": 2505
+          },
+          {
+            "name": "EFF",
+            "share": 8.3,
+            "votes": 335
+          },
+          {
+            "name": "DA",
+            "share": 7.7,
+            "votes": 314
+          }
+        ],
+        "valid_votes": 4057,
+        "reporting": "3 of 4 districts",
+        "source_at": "2026-11-06T07:49:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-54"
+      },
+      "55": {
+        "parties": [
+          {
+            "name": "ANC",
+            "share": 68.6,
+            "votes": 2731
+          },
+          {
+            "name": "DA",
+            "share": 10.2,
+            "votes": 407
+          },
+          {
+            "name": "EFF",
+            "share": 6.5,
+            "votes": 257
+          }
+        ],
+        "valid_votes": 3983,
+        "reporting": "4 of 5 districts",
+        "source_at": "2026-11-06T07:49:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-55"
+      },
+      "56": {
+        "parties": [
+          {
+            "name": "ANC",
+            "share": 49.9,
+            "votes": 1576
+          },
+          {
+            "name": "EFF",
+            "share": 15.0,
+            "votes": 475
+          },
+          {
+            "name": "DA",
+            "share": 9.9,
+            "votes": 314
+          }
+        ],
+        "valid_votes": 3158,
+        "reporting": "4 of 5 districts",
+        "source_at": "2026-11-06T07:49:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-56"
+      },
+      "57": {
+        "parties": [
+          {
+            "name": "ANC",
+            "share": 50.7,
+            "votes": 1279
+          },
+          {
+            "name": "EFF",
+            "share": 12.0,
+            "votes": 302
+          },
+          {
+            "name": "DA",
+            "share": 8.2,
+            "votes": 207
+          }
+        ],
+        "valid_votes": 2524,
+        "reporting": "2 of 4 districts",
+        "source_at": "2026-11-06T07:49:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-57"
+      },
+      "60": {
+        "parties": [
+          {
+            "name": "ANC",
+            "share": 54.7,
+            "votes": 1706
+          },
+          {
+            "name": "SACP",
+            "share": 7.1,
+            "votes": 222
+          },
+          {
+            "name": "MK",
+            "share": 6.2,
+            "votes": 192
+          }
+        ],
+        "valid_votes": 3116,
+        "reporting": "2 of 3 districts",
+        "source_at": "2026-11-06T07:49:00+00:00",
+        "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-60"
       }
     },
     "Hermanus": {}

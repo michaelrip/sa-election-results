@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-06T07:58:08.140208+00:00",
+  "checked_at": "2026-11-06T08:01:06.564454+00:00",
   "source": "ESP public pages (IEC-derived, unofficial; not direct IEC API)",
   "checks": {
     "Cape Town": {
@@ -26,7 +26,7 @@
     },
     "Nelson Mandela Bay": {
       "status": "ok",
-      "districts_reported": 213,
+      "districts_reported": 214,
       "wards_with_data": 34,
       "snapshot_at": "2026-11-06T07:54:00+00:00"
     }
