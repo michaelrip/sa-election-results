@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-05T23:17:36.957349Z",
+  "checked_at": "2026-11-06T00:11:24.640337Z",
   "status": "ok",
   "new_eligible_items": 76,
   "published_items": 10,
@@ -17,12 +17,12 @@
     {
       "query": "Johannesburg 2026 local government election when:3d",
       "status": "ok",
-      "eligible": 23
+      "eligible": 22
     },
     {
       "query": "South Africa municipal election 2026 results when:3d",
       "status": "ok",
-      "eligible": 23
+      "eligible": 24
     },
     {
       "query": "Hermanus Overstrand 2026 municipal election results when:3d",
