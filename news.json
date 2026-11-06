@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-06T04:29:45.090633Z",
+  "checked_at": "2026-11-06T05:31:57.068159Z",
   "source": "Publisher-attributed headlines discovered through Google News RSS",
   "feed_status": "ok",
   "articles": [
@@ -16,6 +16,14 @@
       "publisher": "IOL",
       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQempoZmQzY09wb1Fwb3FkRDNhT3h3NXZIWUtwaVBmYnhHQTZoQ25YOExaNWRwRVM1WVpDNTFqZHdPMFZFNmdnVVdscVkzN2ttMVJHWTlWLVJzVjZYcnBMdHJTOGVrTU83OUNINXJZd2VwcFJrUUswUDVyVS1lUG0yTUpYNjdJZExoXy1WUGRaMEdrZEo3TE5rdWphNnVSZE96MnQzNURNSEM3dkRvV0pwWFFLRUNJNzhxY3pLQk91enV4QWhJZzNzTkRZWWVNYTFo?oc=5",
       "published_at": "2026-11-05T23:34:21Z",
+      "published_date": "2026-11-05",
+      "metro": "South Africa"
+    },
+    {
+      "title": "LIVE | LGE 2026: ANC under pressure as DA closes gap to just seven points in election count",
+      "publisher": "IOL",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQempoZmQzY09wb1Fwb3FkRDNhT3h3NXZIWUtwaVBmYnhHQTZoQ25YOExaNWRwRVM1WVpDNTFqZHdPMFZFNmdnVVdscVkzN2ttMVJHWTlWLVJzVjZYcnBMdHJTOGVrTU83OUNINXJZd2VwcFJrUUswUDVyVS1lUG0yTUpYNjdJZExoXy1WUGRaMEdrZEo3TE5rdWphNnVSZE96MnQzNURNSEM3dkRvV0pwWFFLRUNJNzhxY3pLQk91enV4QWhJZzNzTkRZWWVNYTFo?oc=5",
+      "published_at": "2026-11-05T23:22:34Z",
       "published_date": "2026-11-05",
       "metro": "South Africa"
     },
@@ -72,14 +80,6 @@
       "publisher": "TimesLIVE",
       "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNRnQ1eFJfOGFkRTJ2cG1UQ19IZ2FGR3dJVld1cWlRbVpTYmhiT3ZPQjVuQl9ycllSQ0Yyd3AzRjNteWdjdHhBallVQ3p3VzRFYUVLazlrV0p5ZE9DaEFIbHRNSlZzVDdud25aUEh4dERNdEJIRTItdUJrY1hjZTZSaTdDRHdvSWlKT04xekhlODZMNFpIbzVDdVhyN2x4bGNjSWF1bi01dlpRM3J1UlpYWUVhdzJPcXV2cHFUaTlrZ1FKYWJGai1zQzZKTnV3THRvb3pV?oc=5",
       "published_at": "2026-11-05T17:37:13Z",
-      "published_date": "2026-11-05",
-      "metro": "South Africa"
-    },
-    {
-      "title": "DA takes majority control of at least four councils in Western Cape, 13 hung still and counting",
-      "publisher": "TimesLIVE",
-      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQTWFfZmtkcnpUUUwwdHg5TFNoMVNqam02TGtxUVA2VVNWUHNoVnRTMmpocjlKRF9QNk9wc3RURVRzNTlROVgtQ0FWYWJzaFQ3NHR2cU41YXRaaU82dVhyYkk2Ulk5THl3RkJoUGxLWFdacWtaTHZ5Y1kyOXM3NVgyYktWb0IyNjF6S3BzVUNGa0xqdHRqcjNVbzdoYkM0akVaQUdLRjVDZnFhZzZtLWZDYjZTUFlvaGtpQ1J0cUVLUUVvYWt2NXhjb3RKUFhtR0RxWWFKTlVFMHNka1lqcmgyREs4UXJ5TUNyU19BQWZyOA?oc=5",
-      "published_at": "2026-11-05T17:01:48Z",
       "published_date": "2026-11-05",
       "metro": "South Africa"
     }
