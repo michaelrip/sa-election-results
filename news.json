@@ -1,8 +1,24 @@
 {
-  "checked_at": "2026-11-06T17:08:52.974613Z",
+  "checked_at": "2026-11-06T17:59:07.600484Z",
   "source": "Publisher-attributed headlines discovered through Google News RSS",
   "feed_status": "ok",
   "articles": [
+    {
+      "title": "From ActionSA to MK, what Gauteng’s top parties will demand in coalition talks",
+      "publisher": "Daily Maverick",
+      "url": "https://news.google.com/rss/articles/CBMisAJBVV95cUxQN296Ti1xU2NjTDNId0VfN2FkS1RJTHE4N1FTNUI2NjBuNmdwTDFmN0ZtOFdFV2RmT1ZNcTVFbU5hRDhIejB2d183UVpjb0MyUVBYR2hZLTItX2R1NlNOQUQydl9zLWpsSFBTX19qcGhXUndyMERNRklwRVktNmpsNmJzQjROaGtTc3ZfbXphZUlHcWFPcFhiNXdUUmVDNjh2LTNtbG80NGw2VFZUemhnMGMxOVlIemtmOHNHMGhjNWlGNnRUZkJjc0lGS3Y2NHhoVXNZTk5NbzJSam1rTXV3aEJVeW84MG5laVlZOWI3ZllOSnhtM2lLbEV5UWlTSzZhb05Da1huTi1xRThPeHBwcFhQaHRHY2lqeEw4MUllNXBmVFZsY3M1bjdBMlYtVEx0?oc=5",
+      "published_at": "2026-11-06T17:06:15Z",
+      "published_date": "2026-11-06",
+      "metro": "South Africa"
+    },
+    {
+      "title": "ANC’s vote share falls from 48.9% to 33.9% in Merafong",
+      "publisher": "SABC News",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQVGQwbEt2Zi1vYWwzQ1g5TVhKZXgzbmNaZGZfQm0yeXpZZ1NmblBmVDZTZUg5QzljUWFyQUtWdFhYNEFYOEpfSlJZTUs5WkJiRXk0bE9vMFhaSERGRW9nVnRSdkdjMWVMWjI3Vi1DUDJmMzc0QmMyWVI4a0ZZbHVMNXNFZlhBbXNYRGJPaWJNcw?oc=5",
+      "published_at": "2026-11-06T16:17:15Z",
+      "published_date": "2026-11-06",
+      "metro": "South Africa"
+    },
     {
       "title": "South Africa's ANC at 32%, DA 24% as municipal vote count enters final stretch",
       "publisher": "Reuters",
@@ -66,22 +82,6 @@
       "published_at": "2026-11-06T12:28:13Z",
       "published_date": "2026-11-06",
       "metro": "South Africa"
-    },
-    {
-      "title": "Local Elections 2026: DA surges, ANC slides and metros face massive coalition test",
-      "publisher": "EWN",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQbDFsMW1SbXZRV19tLThqeTIzT1FJem5oU2JKSkJUMktMS0lWNTdnNVRINk85QmJXUXpqSnBiZHZybWVtNmhpTmdTbUFjcTI0VjU3bnFXZW9uOV9YSXpPXzQ2bjB4U0Z6eWNHcElaV0tYYTlGZFhXdzNOUEo2aFJvejI2TFNaUWM1ci0zOGhSZ3R0MG9Vdm80NEdwc1o4OWN5VzA1X3NSdWktbFEwcUxMczk0dw?oc=5",
-      "published_at": "2026-11-06T11:33:13Z",
-      "published_date": "2026-11-06",
-      "metro": "South Africa"
-    },
-    {
-      "title": "ANC admits disappointment after poor Cape Town election showing",
-      "publisher": "IOL",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPTHI2MWxKOVg0ZXFYQVB3eVZQRGFzemdlSTIycE9ubUQ5N09WMGNVX0dZeWNPVGptQnRuUTE2V3VDLVhNcEpnUHI1RUw2WHFPSzEtdjlLX29xQnJiV2tTVmFVNkR4dmlEX1BhOTV5Zmo5RWN6cDBzYkdUdmpVMlRJcmxpZ25JTVBBdTFadGNhLWkxdV92NTlmU1lDdzNSNXNfeDVJ?oc=5",
-      "published_at": "2026-11-06T11:07:14Z",
-      "published_date": "2026-11-06",
-      "metro": "Cape Town"
     }
   ]
 }
