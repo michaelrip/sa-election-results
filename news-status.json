@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-11-06T20:44:39.442891Z",
+  "checked_at": "2026-11-06T21:24:25.199134Z",
   "status": "ok",
-  "new_eligible_items": 96,
+  "new_eligible_items": 97,
   "published_items": 10,
   "checks": [
     {
       "query": "Cape Town 2026 local government election when:3d",
       "status": "ok",
-      "eligible": 33
+      "eligible": 34
     },
     {
       "query": "Tshwane Pretoria 2026 local government election when:3d",
