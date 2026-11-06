@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-06T22:59:15.849906Z",
+  "checked_at": "2026-11-06T23:39:06.698003Z",
   "source": "Publisher-attributed headlines discovered through Google News RSS",
   "feed_status": "ok",
   "articles": [
@@ -24,6 +24,14 @@
       "publisher": "SABC News",
       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPZjNZdV9paHBILXpvdnpfSjVFXzQtd250YTVmNjMxUHVvUE9SZy1INXBLcEpWM2NSdWx4RnlUajJ2bTZkdGUyVG5nSE1uNzVIYVZWb1VreUVpdGlEMDJiZDNzQURHX05ZaXlYZ1U4LUFjcmFDV0kzRjh2eGt2UlZjd1NGZEpHSzV0WnpFcmNhalhZR3dYVDFvanczM2FoekVZUFE?oc=5",
       "published_at": "2026-11-06T18:10:55Z",
+      "published_date": "2026-11-06",
+      "metro": "South Africa"
+    },
+    {
+      "title": "IEC rejects false claims about municipal official allegedly voting 4 times - LNN - Network News",
+      "publisher": "The Citizen",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNRWxYeEZyeVhNM0drVTFYNlg2MERrWnZqU08tTUh5X1ZTcFJZaEg1RWliMk9XazVHbzJ4dnRHc1ZLRXh6RUdNTXVUOE15cDJVOGJtekpqM3JmTTdvZ2FWb2NQaVRQYzM3S20tNHVBX1RYaVVIbGItN2xnZW10SDQtNHRJcnhWOGNteVFReDBsY1BWeTJiY012d3NqRHBLTEFMMVVYdV8xWElxNmZFbnhOSmFJbVJjaWFYVmRmWVhQNlRVT25F?oc=5",
+      "published_at": "2026-11-06T17:36:25Z",
       "published_date": "2026-11-06",
       "metro": "South Africa"
     },
@@ -72,14 +80,6 @@
       "publisher": "EWN",
       "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNMXE4TkJvbXNCWnM4TGxhZFdkbWFRZ3ByQWdYbFFPSmE5c2JvVHVCUGQ3S003SF9PYVY4TFNFaFE5SldXNXZCUnB5N0hjczdtdm1MWlQ5Z3cxelJkeFEtT1pfaVR3N19lSmVJQjRMWHctTzNwUGV3UElVdHpEaWV3aWVMbG5sMEUwODhNN0ZrWDVjcUlKQ0VCWl9feTYyUFJrTHNRRUY5Z0NBOVJxTktCaG5XSDZrYUpLVVFEQWQzRDNEN3p0WnFj?oc=5",
       "published_at": "2026-11-06T14:23:14Z",
-      "published_date": "2026-11-06",
-      "metro": "South Africa"
-    },
-    {
-      "title": "ANC leads Mbombela council race as election count passes 90%",
-      "publisher": "The Citizen",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNTmpQMVpnWDY2N3JFSDZxaTNsc25vbXpDQXViMEt5UzlxS19jNzhVLURaNEF6RG9oX2JHRzZuTkR5Wk50S3hETkVwQUJxRHg3OEw2REdTLXprSUZva0U1RENEMXFTTGZsUUZuRmtIOWVTTHRySWFVTVFWdjc4SzJaVEhVUUcwRWhwM1M2Tjl0cXRVVWs0ZVhRd2RjZC1VSWZNNGFFWnIzQzAxNXRJVEh4cWk0TVFMZHRHNmxNNHI3UEtORzBKY1hYN0premlwelI4SnFJY0VR?oc=5",
-      "published_at": "2026-11-06T13:25:55Z",
       "published_date": "2026-11-06",
       "metro": "South Africa"
     }
