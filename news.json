@@ -1,13 +1,37 @@
 {
-  "checked_at": "2026-11-06T16:04:00.803404Z",
+  "checked_at": "2026-11-06T17:08:52.974613Z",
   "source": "Publisher-attributed headlines discovered through Google News RSS",
   "feed_status": "ok",
   "articles": [
+    {
+      "title": "South Africa's ANC at 32%, DA 24% as municipal vote count enters final stretch",
+      "publisher": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNWUh4RHpsRVhxcW9nTG9zOVVtV2Nibkp6blk0SC11WmZuTC1ibDJwU1pUSFNGZFpOX1diMUhwNFZFUWhFSzh0XzFncE1BRmZyRjdBZENKRWRwYlZ5TzVyUElZWXZDV3lNSmUyOXdQS3ZzUUdkbHhMaE5KN0xtU1ozRkJNZ2xTYTFObUlhVWJXQ2xQMVc3WDFJQ2NOeDRuWUFsZG5VU2M3aE9hQTlVQkZWYU9MaG5udU9s?oc=5",
+      "published_at": "2026-11-06T16:11:43Z",
+      "published_date": "2026-11-06",
+      "metro": "South Africa"
+    },
     {
       "title": "ANC faces worst-ever election result as support slumps",
       "publisher": "eNCA",
       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNeEtXV0o3MUdSX2FYTWFRMWFMNmRSS0hlSUt1bk8tUmxUX2N5eVdSeGc5UlI3azktNkNUbWJyNnVncUxnZzZCUUVHcW1HREFBbHZ1ODlMNzZhRzZBS0t2dzg5cmFSZjdVZGlzUVBnOHByYjByN1VpX3FqRmZ4S0lYVkxrU01zUHkzTkZTTDBia0NyWjQ?oc=5",
       "published_at": "2026-11-06T14:28:14Z",
+      "published_date": "2026-11-06",
+      "metro": "South Africa"
+    },
+    {
+      "title": "UDM shakes up Eastern Cape politics in historic vote as ANC loses majority",
+      "publisher": "Business Day",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNQ3U5VmdYWFJxZUlpa1gxaExCd3lUOEczRTRwNEFpMnc5T21CbWRkWC1xV014WkZJb1VsU0ZCeG9vejg5U1dwYUlLTXN0TDdnc21lM2NlNktRRFlvM29mMFA5d2ZjaGY0aEx1bF9QeE92cERRYW9nNXp4dDI3YS1CM1hibkVya0ZYWnFsa2EtUjFXeWxlaVd2THJYWHU5T2pKOFNBZnlvemtHemh1b3g1WFl5ZnhYWEZGZjJSMlV3?oc=5",
+      "published_at": "2026-11-06T14:23:36Z",
+      "published_date": "2026-11-06",
+      "metro": "South Africa"
+    },
+    {
+      "title": "ANC leads national vote count as 82% of districts complete counting, but hung councils loom large",
+      "publisher": "EWN",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNMXE4TkJvbXNCWnM4TGxhZFdkbWFRZ3ByQWdYbFFPSmE5c2JvVHVCUGQ3S003SF9PYVY4TFNFaFE5SldXNXZCUnB5N0hjczdtdm1MWlQ5Z3cxelJkeFEtT1pfaVR3N19lSmVJQjRMWHctTzNwUGV3UElVdHpEaWV3aWVMbG5sMEUwODhNN0ZrWDVjcUlKQ0VCWl9feTYyUFJrTHNRRUY5Z0NBOVJxTktCaG5XSDZrYUpLVVFEQWQzRDNEN3p0WnFj?oc=5",
+      "published_at": "2026-11-06T14:23:14Z",
       "published_date": "2026-11-06",
       "metro": "South Africa"
     },
@@ -58,30 +82,6 @@
       "published_at": "2026-11-06T11:07:14Z",
       "published_date": "2026-11-06",
       "metro": "Cape Town"
-    },
-    {
-      "title": "DA draws coalition red line as Western Cape faces hung councils",
-      "publisher": "IOL",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRVJEbWxBREpOUFF0SEhyTWowbk5rQ3hYbE9XenIwem90NmhVc2wxWTltUmJIS1NVWlU0YTkxMmhBZ2h2bEhLOGNwOFBlZ1RhYlZUekl4akN0eGhyX0tNREs1VUF0dG9PVUNyZW5SaUxTcUNLUkdoNlhRQm1CanZSRkNkTHBFSFE4M29wS0N2TW5VZ1FkWVVMdmtla2kxenJoanpB?oc=5",
-      "published_at": "2026-11-06T11:06:57Z",
-      "published_date": "2026-11-06",
-      "metro": "South Africa"
-    },
-    {
-      "title": "ANC leads Tshwane council race with seats as early results trickle in",
-      "publisher": "The Citizen",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPM1d3N1hLa0tCdkhtUDFEcDB5ZS12TjdndXR0VUJGN3VFNmFDRGc0MTQ2Y1Rmd29PaG1Vc2RVUk9VeHBaanlHQVhyTHRvaHZfMU5McGZCV3M1cG5odlBlbURyQWEwbmlIakRBUUltQmF2cllQaFlaSWZyQzgxaWNYMll6LVFHTUpWV3ZGZ2V1NXhWT0lOWDk0d2tYbkJfb01aOEx5ZlZid0pELWhRcG9tRlkzMGdWcUNPRDhCSndJY1VnLS1RT0RYLQ?oc=5",
-      "published_at": "2026-11-06T10:56:21Z",
-      "published_date": "2026-11-06",
-      "metro": "Tshwane"
-    },
-    {
-      "title": "ANC's dominance challenged as opposition parties make gains in local polls",
-      "publisher": "EWN",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNVmpGanRYaFhacGJheXdrVk9PdzMyb0d2Y3ByTWhTcDA3dVpjTk1sZmlmem9mRmxyQk9iaGdrdGMtSzBEVWlGTkN5VFlITllxZkdnMU5SWGJBcGpRZW9IdGJVUVpWQ1BtWURXVFhTZUVUTERyQTFLOEJ3Vi1hNE9uTFBkbWFnNEsyUjdhZk5YWVV3LUZ0ODRNa2VTZVVjT1dWMEtkODVyUncxdw?oc=5",
-      "published_at": "2026-11-06T10:14:58Z",
-      "published_date": "2026-11-06",
-      "metro": "South Africa"
     }
   ]
 }
