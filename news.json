@@ -1,13 +1,29 @@
 {
-  "checked_at": "2026-11-06T05:31:57.068159Z",
+  "checked_at": "2026-11-06T06:36:53.045295Z",
   "source": "Publisher-attributed headlines discovered through Google News RSS",
   "feed_status": "ok",
   "articles": [
     {
+      "title": "EFF, ActionSA urge calm as coalition talks follow 2026 local election",
+      "publisher": "IOL",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5aVjNWdVd6U2xVYkFLV0ZxckdoZUxuRzVkdkl2R3hjVXpwcEY2LXVEVXRrUllFREJZUU5acDFBWktxUkk3ZE1qT1dEaHUycU5XMmt4Wm12Q2hlOVlmQ1E?oc=5",
+      "published_at": "2026-11-06T05:30:00Z",
+      "published_date": "2026-11-06",
+      "metro": "South Africa"
+    },
+    {
       "title": "DA leader Hill-Lewis braces for fierce start to coalition talks in Gauteng",
       "publisher": "EWN",
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOQkxWRjgzOW5CRnJqMDAzai1EeEhSOVdOUTE4Wi11NkxYR2M1T1lkV28tR2JSQmlrU0F5U3hDNm9ZMTdYcWRnVldBVnRqZlYwSUpTSlN6VnpLWDhiZnZicm5memlTWEVMTnJwblRoX01QV3Y5MmwxMDVJMmMxck85dUtxdGhfMkdGWXF3X2JlTnhQeVZYMWFadTVxZnI3WURiYXoxaWMydm16TU0?oc=5",
-      "published_at": "2026-11-06T04:12:37Z",
+      "published_at": "2026-11-06T04:17:35Z",
+      "published_date": "2026-11-06",
+      "metro": "South Africa"
+    },
+    {
+      "title": "Election surprise: ActionSA surges to take 53 Gauteng wards off ANC",
+      "publisher": "News24",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPUzZkaFB5bV9xTTRDX1M1SWw0VDRfVDA5a0tqTGE1emdsSVV1ZHpqOFZIdEFMTk14Mm0ycjdXaDF6UU1EQ0ExVEpBZnJDbkNsNTkyZjcxeVVNUENXNG5RbHJONUhyUUNmbEJHR3B1dlJFV0Y5TDBadmpoNWJPdXMyY245N3A3MlFSemJLY2VUX19mOFF5TzFPY2RFbXJYMXJQQ05qVU5aYVVGNkhjT0traXRnNzFUV19xZ3JZWXVlMA?oc=5",
+      "published_at": "2026-11-06T02:09:02Z",
       "published_date": "2026-11-06",
       "metro": "South Africa"
     },
@@ -64,22 +80,6 @@
       "publisher": "EWN",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNNExjR19mUjczRmxUd3lJeFdxR2xvWnNDSGJTblgwSXRkUFZpWU9CbUFzM29PT04wQWFGdW1jZkkyd2FrRWZ1czhWQ2RsR2pGb2RwNlFlWF84VXRjNUhDd3Z1aGltM3dBUUQ4a1hyWWdRb3NrZHNNYkswVmI4NVp4WGN3SHpDbkNQaVI4Q1AtMTFiWno3QVBxM2JfSWhTM2hybllPcFFFbkRzY1ppejVvUzdCaw?oc=5",
       "published_at": "2026-11-05T18:02:23Z",
-      "published_date": "2026-11-05",
-      "metro": "South Africa"
-    },
-    {
-      "title": "LGE2026 - IEC: More than 60% of local election results captured",
-      "publisher": "IOL",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTlpObERnYW1XMjlVdUNWa21WcDl0ekllZ3ZLVEhMbGtHZ3pzd2Y3dG5oemZkMDJMMkhOQTRib1loUXF4N3BLRXlVSnJMX0Q0bUczSXVJY3BKZUxCVUdORFFNVEJ1QnBhcVhqSU5VVUltZUtjNVFQdWI4SVhpN3R5eEFkM2RnSFpkN2RZNXpDYTJzVXViRkZrZQ?oc=5",
-      "published_at": "2026-11-05T18:01:18Z",
-      "published_date": "2026-11-05",
-      "metro": "South Africa"
-    },
-    {
-      "title": "Northern Cape leads election results capture as IEC says more than 60% processed",
-      "publisher": "TimesLIVE",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNRnQ1eFJfOGFkRTJ2cG1UQ19IZ2FGR3dJVld1cWlRbVpTYmhiT3ZPQjVuQl9ycllSQ0Yyd3AzRjNteWdjdHhBallVQ3p3VzRFYUVLazlrV0p5ZE9DaEFIbHRNSlZzVDdud25aUEh4dERNdEJIRTItdUJrY1hjZTZSaTdDRHdvSWlKT04xekhlODZMNFpIbzVDdVhyN2x4bGNjSWF1bi01dlpRM3J1UlpYWUVhdzJPcXV2cHFUaTlrZ1FKYWJGai1zQzZKTnV3THRvb3pV?oc=5",
-      "published_at": "2026-11-05T17:37:13Z",
       "published_date": "2026-11-05",
       "metro": "South Africa"
     }
