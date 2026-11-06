@@ -1,31 +1,31 @@
 {
-  "checked_at": "2026-11-06T11:34:22.889828+00:00",
+  "checked_at": "2026-11-06T12:25:38.546676+00:00",
   "metros": {
     "Cape Town": {
-      "cached": 75,
-      "enriched": 9,
-      "not_reported": 28,
+      "cached": 71,
+      "enriched": 12,
+      "not_reported": 30,
       "pending": 0,
-      "errors": 6,
+      "errors": 5,
       "example_errors": [
-        "Fewer than two ranked ballot rows",
         "Unrecognised or repeated party among first three",
+        "Fewer than two ranked ballot rows",
         "Fewer than two ranked ballot rows"
       ],
-      "top_three_available": 84
+      "top_three_available": 83
     },
     "Tshwane": {
-      "cached": 54,
-      "enriched": 8,
-      "not_reported": 45,
+      "cached": 46,
+      "enriched": 14,
+      "not_reported": 47,
       "pending": 0,
       "errors": 0,
       "example_errors": [],
-      "top_three_available": 62
+      "top_three_available": 60
     },
     "Johannesburg": {
-      "cached": 83,
-      "enriched": 11,
+      "cached": 79,
+      "enriched": 15,
       "not_reported": 39,
       "pending": 0,
       "errors": 2,
