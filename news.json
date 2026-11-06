@@ -1,8 +1,32 @@
 {
-  "checked_at": "2026-11-06T09:59:13.998783Z",
+  "checked_at": "2026-11-06T11:00:34.123714Z",
   "source": "Publisher-attributed headlines discovered through Google News RSS",
   "feed_status": "ok",
   "articles": [
+    {
+      "title": "DA draws coalition red line as Western Cape faces hung councils",
+      "publisher": "IOL",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE93YV9va0w2U19lbU5DMWVRNFVZT20xcmp2MVFrcFdKM3MzTGhjdldWTTQtcy0tV1pfaDkySW53SUJQV3Q4N0ZFN293OWJNeXdCTmduSDBR?oc=5",
+      "published_at": "2026-11-06T10:30:00Z",
+      "published_date": "2026-11-06",
+      "metro": "South Africa"
+    },
+    {
+      "title": "ANC's dominance challenged as opposition parties make gains in local polls",
+      "publisher": "EWN",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNVmpGanRYaFhacGJheXdrVk9PdzMyb0d2Y3ByTWhTcDA3dVpjTk1sZmlmem9mRmxyQk9iaGdrdGMtSzBEVWlGTkN5VFlITllxZkdnMU5SWGJBcGpRZW9IdGJVUVpWQ1BtWURXVFhTZUVUTERyQTFLOEJ3Vi1hNE9uTFBkbWFnNEsyUjdhZk5YWVV3LUZ0ODRNa2VTZVVjT1dWMEtkODVyUncxdw?oc=5",
+      "published_at": "2026-11-06T09:55:11Z",
+      "published_date": "2026-11-06",
+      "metro": "South Africa"
+    },
+    {
+      "title": "ELECTIONS LIVE: DA starts coalition talks",
+      "publisher": "The Citizen",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPNzJKQUMyb0NQQ0JDOGNrZGFuMUpxd1N1Q2tjWHBOVnNodDY0SkJXQTVkSGtTSVR0WXlxLVI2SnFBVEJ4OWxCWkZJcWFBWEw2Zk5WcGZYLWJKa2xfZ1oxMkJkOVNpSWFSdE1rS2UwTHU1WUxYYk91b0wySnFFTjBvMGJJLVR1UzQ3Ry1SQzA3cmdKVnZacUFDRExoQk9IaHlwYmc?oc=5",
+      "published_at": "2026-11-06T09:08:51Z",
+      "published_date": "2026-11-06",
+      "metro": "South Africa"
+    },
     {
       "title": "LGE 2026: DA says no one-size-fits-all approach to its coalition negotiations",
       "publisher": "EWN",
@@ -44,42 +68,18 @@
       "metro": "Tshwane"
     },
     {
+      "title": "South Africa's ANC on track for big drop in voter support in municipal vote",
+      "publisher": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOeFRweVVpZ3lOU2xYS3BSakV3SDBYdGFacTdwMnRZS3B6U1pySWM1cksxeUZVSFVtUVRnZVVYMHlhZWlTQUlBX1N6MThNd19DRFJYMzN4RUduaUxHLW0xc2FEMEpldWVGcjJwbXlxQlp4WGVBZklJRVpyU2NRaUhFb2plbXBCb2dfNmlORk9XbHQ1XzNyakl0bjNlVHAyaUtvc05NanRsNW4wdXV5emNZ?oc=5",
+      "published_at": "2026-11-06T06:41:00Z",
+      "published_date": "2026-11-06",
+      "metro": "South Africa"
+    },
+    {
       "title": "EFF, ActionSA urge calm as coalition talks follow 2026 local election",
       "publisher": "IOL",
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOVzlpMXNQemM0ajlMZDMxQ0JDWHRDS2p5bnJ0QjF6VGJRZ1NhTnJMMWZXMmxOQnhWRGhaUVVWSFNVZGp4a0t2cEJ2YVI4YnNtNmVuU0tBZDhKUGFoZld3cHZxclhWemFIdHc1Q014WWFOUW9pVHMwbnRfTFpRaUFDRWZGT3VKU00wT2gyYzU4Ym9DaDBJVkFabzJjd05qd3A5RE5DMnJ5QWJLOUFzZXlHMzBR?oc=5",
-      "published_at": "2026-11-06T05:30:00Z",
-      "published_date": "2026-11-06",
-      "metro": "South Africa"
-    },
-    {
-      "title": "DA leader Hill-Lewis braces for fierce start to coalition talks in Gauteng",
-      "publisher": "EWN",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOQkxWRjgzOW5CRnJqMDAzai1EeEhSOVdOUTE4Wi11NkxYR2M1T1lkV28tR2JSQmlrU0F5U3hDNm9ZMTdYcWRnVldBVnRqZlYwSUpTSlN6VnpLWDhiZnZicm5memlTWEVMTnJwblRoX01QV3Y5MmwxMDVJMmMxck85dUtxdGhfMkdGWXF3X2JlTnhQeVZYMWFadTVxZnI3WURiYXoxaWMydm16TU0?oc=5",
-      "published_at": "2026-11-06T04:17:35Z",
-      "published_date": "2026-11-06",
-      "metro": "South Africa"
-    },
-    {
-      "title": "ANC faces lowest national vote share, loses control of key metros as DA, ActionSA surge",
-      "publisher": "News24",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQN29idEVZdHUzNWVDeTF0RUI2U1VnaFF0QVVfbFBBclQwOG5fT19wVnA0elk2Z2pBOXRkdUlEX1RUOHJzZ1I2UDYteHR2VUUta1d3ZjdxYm91cktta2t5ZFY3aS1PMnJTYVhfVUZWaFJ0Y3gtMm15NFhrcmMwRTE3eUtkcUU1RVdhdm5QdDN4OTlCeEJ6c3oyMVpyLUVzcEcyMVg4bGNOX1JaYzhzMXY4UFRGZTNhSWNaWmY5bnVsS0UzZm01a0Z0aFBJM1dLbkJFTEo4NGtaSDk?oc=5",
-      "published_at": "2026-11-06T02:44:18Z",
-      "published_date": "2026-11-06",
-      "metro": "South Africa"
-    },
-    {
-      "title": "Election surprise: ActionSA surges to take 53 Gauteng wards from ANC",
-      "publisher": "News24",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPUzZkaFB5bV9xTTRDX1M1SWw0VDRfVDA5a0tqTGE1emdsSVV1ZHpqOFZIdEFMTk14Mm0ycjdXaDF6UU1EQ0ExVEpBZnJDbkNsNTkyZjcxeVVNUENXNG5RbHJONUhyUUNmbEJHR3B1dlJFV0Y5TDBadmpoNWJPdXMyY245N3A3MlFSemJLY2VUX19mOFF5TzFPY2RFbXJYMXJQQ05qVU5aYVVGNkhjT0traXRnNzFUV19xZ3JZWXVlMA?oc=5",
-      "published_at": "2026-11-06T02:42:36Z",
-      "published_date": "2026-11-06",
-      "metro": "South Africa"
-    },
-    {
-      "title": "Election surprise: ActionSA surges to take 54 Gauteng wards from ANC",
-      "publisher": "News24",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPUzZkaFB5bV9xTTRDX1M1SWw0VDRfVDA5a0tqTGE1emdsSVV1ZHpqOFZIdEFMTk14Mm0ycjdXaDF6UU1EQ0ExVEpBZnJDbkNsNTkyZjcxeVVNUENXNG5RbHJONUhyUUNmbEJHR3B1dlJFV0Y5TDBadmpoNWJPdXMyY245N3A3MlFSemJLY2VUX19mOFF5TzFPY2RFbXJYMXJQQ05qVU5aYVVGNkhjT0traXRnNzFUV19xZ3JZWXVlMA?oc=5",
-      "published_at": "2026-11-06T02:42:17Z",
+      "published_at": "2026-11-06T05:50:16Z",
       "published_date": "2026-11-06",
       "metro": "South Africa"
     }
