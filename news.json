@@ -1,8 +1,16 @@
 {
-  "checked_at": "2026-11-06T02:30:23.699120Z",
+  "checked_at": "2026-11-06T03:24:56.882932Z",
   "source": "Publisher-attributed headlines discovered through Google News RSS",
   "feed_status": "ok",
   "articles": [
+    {
+      "title": "ANC may need a blue lifeline in Joburg as election results point to coalition",
+      "publisher": "Mail & Guardian",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOekN0RWVOeVNTUzJKY3ZnYkNlU3Vhel81djR1aG1lWWF5a2gtTkUxRjdvUGdxamlGQjRqb2F2b1ViQWYtbl9BNGJYRjhIUHBQZTVGY0IyTFRIZmIwWTJILUY1NnplVjI1cWN4djk0VG1lX2QzV2ZlQ3lrSjFDSFpzSDV3?oc=5",
+      "published_at": "2026-11-05T22:38:27Z",
+      "published_date": "2026-11-05",
+      "metro": "Johannesburg"
+    },
     {
       "title": "LIVE | LGE 2026: ANC under pressure as DA closes gap to just six points in election count",
       "publisher": "IOL",
@@ -74,14 +82,6 @@
       "published_at": "2026-11-05T16:43:00Z",
       "published_date": "2026-11-05",
       "metro": "South Africa"
-    },
-    {
-      "title": "GOOD accuses DA of undermining IEC with early Cape Town victory claim",
-      "publisher": "IOL",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQnZTakhHd3dlNERMQW5Uc3J2bU15UW5lU05jdjNzSFdwcFRRQWNDTmdPNF9OVUdsX290NEh6Z3BPUkJzRWY1bHZKeGRQelNhcHA4QU1tcVJNYk9veWFrcDQ4Sk00T3dMM1Nyd2FMQTB1TEZGSU92OVhibWpnM1JhTHRiZjJLdmZQeVc0ZGUyMTB1czNOY19xQWU5bWd6UmFDNm5BVlY5MVAyVmc?oc=5",
-      "published_at": "2026-11-05T14:55:49Z",
-      "published_date": "2026-11-05",
-      "metro": "Cape Town"
     }
   ]
 }
