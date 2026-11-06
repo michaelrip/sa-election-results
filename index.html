@@ -418,7 +418,7 @@ function combinedBallots(ward,pr){
  const counted=Array.from(sums.values()).reduce((v,n)=>v+n,0);
  if(counted>n)return null;
  const rows=Array.from(sums,([name,votes])=>({name,votes,share:100*votes/n}));
- if(n-counted>0)rows.push({name:'Other / unlisted candidates & parties',votes:n-counted,share:100*(n-counted)/n});
+ if(n-counted>0)rows.push({name:'Other / unlisted votes (calculated remainder)',votes:n-counted,share:100*(n-counted)/n});
  rows.sort((a,b)=>b.votes-a.votes);
  return {valid_votes:n,parties:rows,snapshot_at:ward.snapshot_at,pr_snapshot_at:pr.snapshot_at};
 }
@@ -515,10 +515,11 @@ function renderMetroCard(){
   '<p class="city-seats-note">Council seats: '+(Array.isArray(m.seats)&&m.seats.length?m.seats.map(x=>esc(x.name)+': '+esc(x.count)).join(' · '):'Not yet allocated or verified')+'</p>'+
   '</div><div class="city-result-parties"><h3>'+esc(mode==='all'?'Parties across ward + PR ballots':'Parties · '+label)+'</h3>'+
   '<p class="city-result-subtext">'+esc(
+   mode==='dc'?'Separate district council ballot; no matching 2021 district comparison is included.':
+   !Object.keys(past).length?'Separate 2021 '+historicLabel+' comparisons are not available for this municipality.':
    mode==='ward'?'2021 Ward percentages appear in brackets where available.':
    mode==='pr'?'2021 municipal PR percentages appear in brackets where available.':
-   mode==='all'?'Brackets show 2021 Ward + municipal PR share calculated from actual votes on both ballots, not an average of percentages.':
-   'Separate district council ballot; no matching 2021 district comparison is included.'
+   'Brackets show 2021 Ward + municipal PR shares calculated from actual votes on both ballots, not an average of percentages.'
   )+' 2021 is final; 2026 is preliminary.</p>'+
   (valid?parties(top,true,past,10,historicLabel):'<p class="empty">No verified '+esc(modeLabel)+' party counts available from ESP yet.</p>')+
   (remaining.length?'<details class="city-more-results"><summary>Show '+remaining.length+' more parties / groups</summary>'+parties(remaining,true,past,remaining.length,historicLabel)+'</details>':'')+
