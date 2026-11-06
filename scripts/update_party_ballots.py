@@ -78,7 +78,7 @@ def party_name(fragment: str) -> str | None:
 def parse_ballot(source: str, city: str, ballot: str, url: str, now: datetime) -> dict:
     if ballot not in TYPE_LABELS or (ballot == "dc" and city != "Hermanus"):
         raise ValueError("Unsupported ballot type for this municipality")
-    muni = "Overstrand" if city == "Hermanus" else "City of " + city
+    muni = "Overstrand" if city == "Hermanus" else ("Nelson Mandela Bay" if city == "Nelson Mandela Bay" else "City of " + city)
     if muni not in source or "2026" not in source:
         raise ValueError("Wrong election year or municipality")
     when = parsed_time(source, now)
@@ -164,7 +164,7 @@ def main():
                             report["checks"][city][typ]["status"] = "cached"
                     except (ValueError, KeyError, TypeError):
                         pass
-    report["status"] = "ok" if successes == 5 else "partial"
+    report["status"] = "ok" if successes == 6 else "partial"
     OUTPUT.write_text(json.dumps(result, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
     STATUS.write_text(json.dumps(report, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
     print(json.dumps(report, indent=2))
