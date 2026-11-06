@@ -481,6 +481,15 @@ function renderMetroCard(){
  const past=historicBallotShares(name,mode);
  const historicLabel=mode==='pr'?'municipal PR':mode==='all'?'Ward + municipal PR':'Ward';
  const original=history2021?.metros?.[name];
+ const historicalOverall=original?.overall?.year===2021&&original.overall.ballot_type==='Ward + PR'
+   ?original.overall:null;
+ const historicalOverallNote=historicalOverall&&historicalOverall.parties
+   ?'<div class="ballot-detail"><strong>2021 final overall council vote (Ward + PR)</strong> · '+
+    Object.entries(historicalOverall.parties).map(([party,share])=>esc(party)+' '+pct(share)).join(' · ')+
+    '<p class="small">Official IEC overall percentages. Separate 2021 Ward and PR vote counts have not yet been verified for this municipality; these overall shares are not directly comparable to an individual ballot.</p>'+
+    (historicalOverall.source_url?'<a href="'+esc(historicalOverall.source_url)+'" target="_blank" rel="noopener noreferrer">2021 IEC final results source</a>':'')+
+    '</div>':'';
+
  if(mode!=='dc'&&Object.keys(past).length>0&&history2021.source_verified===true&&
     original&&/^https:\/\/results\.elections\.org\.za\//.test(original.source_url||'')){
   src.push(['2021 IEC ballot report',original.source_url]);
@@ -501,6 +510,7 @@ function renderMetroCard(){
   (valid?'<p class="small">Ballot snapshot: '+esc(asAt)+'</p>':'')+
   (mode==='all'&&valid?'<p class="small">PR snapshot: '+esc(date(all.pr_snapshot_at))+'</p>':'')+
   (warning?'<p class="ballot-warning">'+esc(warning)+'</p>':'')+
+  historicalOverallNote+
   (src.length?'<div class="ballot-source-line">'+src.map(([caption,url])=>url&&/^https:\/\//.test(url)?'<a href="'+esc(url)+'" target="_blank" rel="noopener noreferrer">'+esc(caption)+' source</a>':'').filter(Boolean).join(' · ')+'</div>':'')+
   '<p class="city-seats-note">Council seats: '+(Array.isArray(m.seats)&&m.seats.length?m.seats.map(x=>esc(x.name)+': '+esc(x.count)).join(' · '):'Not yet allocated or verified')+'</p>'+
   '</div><div class="city-result-parties"><h3>'+esc(mode==='all'?'Parties across ward + PR ballots':'Parties · '+label)+'</h3>'+
