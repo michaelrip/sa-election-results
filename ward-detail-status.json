@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-11-06T19:37:59.616629+00:00",
+  "checked_at": "2026-11-06T20:29:01.247847+00:00",
   "metros": {
     "Cape Town": {
-      "cached": 50,
-      "enriched": 10,
-      "not_reported": 53,
+      "cached": 53,
+      "enriched": 3,
+      "not_reported": 57,
       "pending": 0,
       "errors": 5,
       "example_errors": [
@@ -12,30 +12,30 @@
         "Unrecognised or repeated party among first three",
         "Fewer than two ranked ballot rows"
       ],
-      "top_three_available": 60
+      "top_three_available": 56
     },
     "Tshwane": {
-      "cached": 43,
-      "enriched": 3,
-      "not_reported": 60,
+      "cached": 33,
+      "enriched": 12,
+      "not_reported": 61,
       "pending": 0,
       "errors": 1,
       "example_errors": [
         "Fewer than two ranked ballot rows"
       ],
-      "top_three_available": 46
+      "top_three_available": 45
     },
     "Johannesburg": {
-      "cached": 64,
+      "cached": 61,
       "enriched": 9,
-      "not_reported": 60,
+      "not_reported": 63,
       "pending": 0,
       "errors": 2,
       "example_errors": [
         "Unrecognised or repeated party among first three",
         "Unrecognised or repeated party among first three"
       ],
-      "top_three_available": 73
+      "top_three_available": 70
     },
     "Nelson Mandela Bay": {
       "cached": 7,
@@ -44,8 +44,8 @@
       "pending": 0,
       "errors": 3,
       "example_errors": [
-        "Unrecognised or repeated party among first three",
         "Fewer than two ranked ballot rows",
+        "Unrecognised or repeated party among first three",
         "Unrecognised or repeated party among first three"
       ],
       "top_three_available": 8
