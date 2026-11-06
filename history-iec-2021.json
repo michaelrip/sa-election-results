@@ -1160,17 +1160,97 @@
     },
     "Nelson Mandela Bay": {
       "year": 2021,
-      "overall": {
+      "ballot_type": "Ward",
+      "valid_votes": 262602,
+      "votes": {
+        "DA": 104520,
+        "ANC": 103104,
+        "EFF": 16803,
+        "NA": 5726,
+        "ACDP": 4317,
+        "FF+": 3968,
+        "DOP": 3859,
+        "PA": 3724,
+        "AIM": 2758,
+        "INDEPENDENT": 2720,
+        "UDM": 2665
+      },
+      "parties": {
+        "DA": 39.8,
+        "ANC": 39.3,
+        "EFF": 6.4,
+        "NA": 2.2,
+        "ACDP": 1.6,
+        "FF+": 1.5,
+        "DOP": 1.5,
+        "PA": 1.4,
+        "AIM": 1.1,
+        "INDEPENDENT": 1,
+        "UDM": 1
+      },
+      "pr": {
+        "year": 2021,
+        "ballot_type": "PR",
+        "valid_votes": 263461,
+        "votes": {
+          "DA": 105487,
+          "ANC": 104339,
+          "EFF": 16859,
+          "NA": 5499,
+          "ACDP": 4427,
+          "FF+": 4310,
+          "DOP": 3640,
+          "PA": 3473,
+          "AIM": 2914,
+          "UDM": 2832
+        },
+        "parties": {
+          "DA": 40,
+          "ANC": 39.6,
+          "EFF": 6.4,
+          "NA": 2.1,
+          "ACDP": 1.7,
+          "FF+": 1.6,
+          "DOP": 1.4,
+          "PA": 1.3,
+          "AIM": 1.1,
+          "UDM": 1.1
+        },
+        "source_url": "https://esp.info/elections/local/2021/eastern-cape/nelson-mandela-bay?ballot=pr"
+      },
+      "combined": {
         "year": 2021,
         "ballot_type": "Ward + PR",
-        "parties": {
-          "DA": 39.92,
-          "ANC": 39.43,
-          "EFF": 6.4
+        "valid_votes": 526063,
+        "votes": {
+          "DA": 210007,
+          "ANC": 207443,
+          "EFF": 33662,
+          "NA": 11225,
+          "ACDP": 8744,
+          "FF+": 8278,
+          "DOP": 7499,
+          "PA": 7197,
+          "AIM": 5672,
+          "UDM": 5497
         },
-        "source_url": "https://www.gov.za/news/speeches/chairperson-glen-mashinini-final-results-municipal-elections-04-nov-2021",
-        "note": "Official IEC final overall municipal shares; not separately verified ward or PR vote counts. Only three parties shown."
-      }
+        "parties": {
+          "DA": 39.9,
+          "ANC": 39.4,
+          "EFF": 6.4,
+          "NA": 2.1,
+          "ACDP": 1.7,
+          "FF+": 1.6,
+          "DOP": 1.4,
+          "PA": 1.4,
+          "AIM": 1.1,
+          "UDM": 1
+        },
+        "source_url": "https://go.esp.info/elections/local/2021/eastern-cape/nelson-mandela-bay",
+        "note": "Combined shares computed from verified votes for parties appearing on both ballot tables; other parties not estimated."
+      },
+      "source_url": "https://go.esp.info/elections/local/2021/eastern-cape/nelson-mandela-bay",
+      "note": "Final IEC-derived ESP 2021 ballot counts; parties listed on both source pages have combined totals. Missing smaller parties are not assigned zero votes."
     }
   }
 }
