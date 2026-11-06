@@ -19,7 +19,7 @@ from fetch_results import get
 RESULTS = Path("results.json")
 DETAILS = Path("ward-details.json")
 STATUS = Path("ward-detail-status.json")
-METROS = ("Cape Town", "Tshwane", "Johannesburg", "Hermanus")
+METROS = ("Cape Town", "Tshwane", "Johannesburg", "Nelson Mandela Bay", "Hermanus")
 MAX_REQUESTS = 180  # cap requests per scheduled run; retry unfilled wards next run
 WORKERS = 8
 NAME_TO_CODE = {
