@@ -1,50 +1,53 @@
 {
-  "checked_at": "2026-11-06T17:57:25.115054+00:00",
+  "checked_at": "2026-11-06T18:46:23.867770+00:00",
   "metros": {
     "Cape Town": {
-      "cached": 54,
+      "cached": 49,
       "enriched": 7,
-      "not_reported": 52,
+      "not_reported": 54,
       "pending": 0,
-      "errors": 5,
+      "errors": 8,
       "example_errors": [
         "Fewer than two ranked ballot rows",
         "Unrecognised or repeated party among first three",
         "Fewer than two ranked ballot rows"
       ],
-      "top_three_available": 61
+      "top_three_available": 56
     },
     "Tshwane": {
-      "cached": 44,
-      "enriched": 7,
+      "cached": 45,
+      "enriched": 5,
       "not_reported": 56,
-      "pending": 0,
-      "errors": 0,
-      "example_errors": [],
-      "top_three_available": 51
-    },
-    "Johannesburg": {
-      "cached": 66,
-      "enriched": 7,
-      "not_reported": 61,
       "pending": 0,
       "errors": 1,
       "example_errors": [
-        "Unrecognised or repeated party among first three"
+        "Fewer than two ranked ballot rows"
       ],
-      "top_three_available": 73
+      "top_three_available": 50
     },
-    "Nelson Mandela Bay": {
-      "cached": 12,
-      "enriched": 0,
-      "not_reported": 46,
+    "Johannesburg": {
+      "cached": 66,
+      "enriched": 8,
+      "not_reported": 59,
       "pending": 0,
       "errors": 2,
       "example_errors": [
-        "Fewer than two ranked ballot rows",
-        "Unrecognised or repeated party among first three"
+        "Unrecognised or repeated party among first three",
+        "Ward breakdown does not match latest metro leader or reporting"
       ],
-      "top_three_available": 12
+      "top_three_available": 74
+    },
+    "Nelson Mandela Bay": {
+      "cached": 11,
+      "enriched": 0,
+      "not_reported": 47,
+      "pending": 0,
+      "errors": 2,
+      "example_errors": [
+        "Unrecognised or repeated party among first three",
+        "Fewer than two ranked ballot rows"
+      ],
+      "top_three_available": 11
     },
     "Hermanus": {
       "cached": 0,
