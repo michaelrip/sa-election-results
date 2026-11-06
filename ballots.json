@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T17:12:33.502754+00:00",
+  "updated_at": "2026-11-06T17:26:37.430157+00:00",
   "source": "IEC-derived via ESP: separate validated ballot pages",
   "metros": {
     "Cape Town": {
@@ -609,97 +609,82 @@
       "pr": {
         "ballot_type": "PR",
         "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay?ballot=pr",
-        "snapshot_at": "2026-11-06T17:08:00+00:00",
-        "valid_votes": 303381,
+        "snapshot_at": "2026-11-06T17:24:00+00:00",
+        "valid_votes": 307955,
         "parties": [
           {
             "name": "DA",
-            "votes": 133650,
-            "share": 44.1
+            "votes": 137481,
+            "share": 44.6
           },
           {
             "name": "ANC",
-            "votes": 78785,
-            "share": 26.0
+            "votes": 78917,
+            "share": 25.6
           },
           {
             "name": "EFF",
-            "votes": 17124,
+            "votes": 17216,
             "share": 5.6
           },
           {
             "name": "SACP",
-            "votes": 8932,
+            "votes": 8945,
             "share": 2.9
           },
           {
             "name": "PA",
-            "votes": 8624,
+            "votes": 8630,
             "share": 2.8
           },
           {
             "name": "FF+",
-            "votes": 8048,
+            "votes": 8223,
             "share": 2.7
           },
           {
             "name": "UDM",
-            "votes": 7559,
+            "votes": 7604,
             "share": 2.5
           },
           {
+            "name": "Mayibuye Civic Movement",
+            "votes": 6803,
+            "share": 2.2
+          },
+          {
             "name": "ActionSA",
-            "votes": 5929,
+            "votes": 6017,
             "share": 2.0
           },
           {
             "name": "MK",
-            "votes": 3785,
+            "votes": 3796,
             "share": 1.2
           },
           {
             "name": "ACDP",
-            "votes": 2926,
+            "votes": 3028,
             "share": 1.0
           },
           {
             "name": "ATM",
-            "votes": 2804,
+            "votes": 2839,
             "share": 0.9
-          },
-          {
-            "name": "PAC",
-            "votes": 2790,
-            "share": 0.9
-          },
-          {
-            "name": "AIC",
-            "votes": 1495,
-            "share": 0.5
           },
           {
             "name": "Al Jama-ah",
-            "votes": 817,
+            "votes": 818,
             "share": 0.3
           },
           {
             "name": "GOOD",
-            "votes": 710,
+            "votes": 714,
             "share": 0.2
-          },
-          {
-            "name": "COPE",
-            "votes": 296,
-            "share": 0.1
-          },
-          {
-            "name": "OHM",
-            "votes": 278,
-            "share": 0.1
           }
         ],
-        "unlisted_votes": 18829,
-        "note": "Other/unlisted votes equal source total minus individually validated named party votes."
+        "unlisted_votes": 16924,
+        "note": "Unlisted parties are the residual of valid PR votes, not assigned to named parties."
       }
     }
   }
