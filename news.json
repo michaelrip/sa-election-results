@@ -1,8 +1,32 @@
 {
-  "checked_at": "2026-11-06T11:53:56.593605Z",
+  "checked_at": "2026-11-06T12:58:21.818768Z",
   "source": "Publisher-attributed headlines discovered through Google News RSS",
   "feed_status": "ok",
   "articles": [
+    {
+      "title": "ANC’s national vote share falls to 31.8% as DA climbs to 24.1% with 81% counted",
+      "publisher": "The Citizen",
+      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQRUl5SmRQUGNRd0pKNGxnMVllX0Y4TFdGT2tHMV9KRU5XM2tJWTM5RFl0ajZGeHd1ai1wX0Q5aTBIeU95SEN6QTZ0cWhrUFRQWVpSazg0VGpUVTh2MjB4REVRdVl6WjJOMTZxclB6U0htb3dJNzM5SWZuNk5DMDE5N3Z0d3pfT2NFOXMwUkt6UVFwQTlPbmFmZzFHb0p0cTR5LVFnQlp3ckZtRnhHNDVfZEQ0eERmdXdWYVdTYXR1R0xHU2RYNWNDQW9QdWtwckl3bGg1cTFWWmlESVJXRjhMOWw1NnM0UjB1cDM2WmR5aHVrQXBJZE9zQw?oc=5",
+      "published_at": "2026-11-06T12:39:39Z",
+      "published_date": "2026-11-06",
+      "metro": "South Africa"
+    },
+    {
+      "title": "AI election forecast project hung councils in Joburg and Tshwane as DA gains across metros",
+      "publisher": "IOL",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQTk1PbE9NN3lSMVRsTTBHNlhqUGl4ck1iSDhDel9CYXBFQ2xFZVdxVzMtS0YtZDhtd1E3Yy1Jc3Y3TEFrTm1oVS1qeXV6eE51emxVRWx6U0I5VzhNbkJqS2VjaUJxa1p6UDFFTDZjdUg2SHBJWUYzaENlODZNSUdYVFk5bUpUcFF4dXBxMnhWMWFpc2dEUXRtSEltZWRxd1BldGk3N20xRGhiR2xaMHN5VXRISXVKMzQwdmtmeDNQM0Vsd0ptUVpR?oc=5",
+      "published_at": "2026-11-06T12:31:00Z",
+      "published_date": "2026-11-06",
+      "metro": "South Africa"
+    },
+    {
+      "title": "LGE 2026: ActionSA wins Robben Island voting district in unexpected LGE result",
+      "publisher": "EWN",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPTGJfMFVjNjRSZlVJODZpZnVZa1R1b1Y0R3I1eGZUbmpNZ0hndHljQVlsaEJJblNnb2ZFMU81YmRoQnpGcU9HN2JxRUNoRy1BVnpyZUt6X0N5clJEQWpfZVJobWx0Q1g2NTcwZ2xreDEzajBTMXlSVm1JWjJ4cEJwUHBHdUpOX2xuWk92SmExSDVXUFFTQ0FTbXM0VXkzNF85VnBLemlSRDQ1RzNJVFM0?oc=5",
+      "published_at": "2026-11-06T12:27:26Z",
+      "published_date": "2026-11-06",
+      "metro": "South Africa"
+    },
     {
       "title": "Local Elections 2026: DA surges, ANC slides and metros face massive coalition test",
       "publisher": "EWN",
@@ -12,12 +36,28 @@
       "metro": "South Africa"
     },
     {
+      "title": "ANC admits disappointment after poor Cape Town election showing",
+      "publisher": "IOL",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPTHI2MWxKOVg0ZXFYQVB3eVZQRGFzemdlSTIycE9ubUQ5N09WMGNVX0dZeWNPVGptQnRuUTE2V3VDLVhNcEpnUHI1RUw2WHFPSzEtdjlLX29xQnJiV2tTVmFVNkR4dmlEX1BhOTV5Zmo5RWN6cDBzYkdUdmpVMlRJcmxpZ25JTVBBdTFadGNhLWkxdV92NTlmU1lDdzNSNXNfeDVJ?oc=5",
+      "published_at": "2026-11-06T11:07:14Z",
+      "published_date": "2026-11-06",
+      "metro": "Cape Town"
+    },
+    {
       "title": "DA draws coalition red line as Western Cape faces hung councils",
       "publisher": "IOL",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE93YV9va0w2U19lbU5DMWVRNFVZT20xcmp2MVFrcFdKM3MzTGhjdldWTTQtcy0tV1pfaDkySW53SUJQV3Q4N0ZFN293OWJNeXdCTmduSDBR?oc=5",
-      "published_at": "2026-11-06T10:30:00Z",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRVJEbWxBREpOUFF0SEhyTWowbk5rQ3hYbE9XenIwem90NmhVc2wxWTltUmJIS1NVWlU0YTkxMmhBZ2h2bEhLOGNwOFBlZ1RhYlZUekl4akN0eGhyX0tNREs1VUF0dG9PVUNyZW5SaUxTcUNLUkdoNlhRQm1CanZSRkNkTHBFSFE4M29wS0N2TW5VZ1FkWVVMdmtla2kxenJoanpB?oc=5",
+      "published_at": "2026-11-06T11:01:32Z",
       "published_date": "2026-11-06",
       "metro": "South Africa"
+    },
+    {
+      "title": "ANC leads Tshwane council race as early results trickle in",
+      "publisher": "The Citizen",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPM1d3N1hLa0tCdkhtUDFEcDB5ZS12TjdndXR0VUJGN3VFNmFDRGc0MTQ2Y1Rmd29PaG1Vc2RVUk9VeHBaanlHQVhyTHRvaHZfMU5McGZCV3M1cG5odlBlbURyQWEwbmlIakRBUUltQmF2cllQaFlaSWZyQzgxaWNYMll6LVFHTUpWV3ZGZ2V1NXhWT0lOWDk0d2tYbkJfb01aOEx5ZlZid0pELWhRcG9tRlkzMGdWcUNPRDhCSndJY1VnLS1RT0RYLQ?oc=5",
+      "published_at": "2026-11-06T10:01:54Z",
+      "published_date": "2026-11-06",
+      "metro": "Tshwane"
     },
     {
       "title": "ANC's dominance challenged as opposition parties make gains in local polls",
@@ -40,46 +80,6 @@
       "publisher": "EWN",
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPdF9iYVRLVmZadUF1M1NEc3ItVHJRTEtWa0pzeWlBZ29nRlUtVmwzRzNGODEyNG5TWlFTZVNkeWs3ck1CMTNYMFFrQUZVYWFRQmxFV3RLUUwtQWRuNXhCc2owNGF3NWpIcXpHeFp0Vk1wdjdmb1ZDNHVvMUJBYXlhWGotRHNwSE96M3RuMGdBYW9yZS1MWHNDRVJMWk5jVEppN1F5aUYwbkhOTE0zQ3c?oc=5",
       "published_at": "2026-11-06T08:14:57Z",
-      "published_date": "2026-11-06",
-      "metro": "South Africa"
-    },
-    {
-      "title": "LGE 2026: ANC only garners 13% support in WC with ¾ of the vote captured",
-      "publisher": "EWN",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQYjd6Q3o2cGZQYkFlLUhNcXN0ZVdTanl3X2g3UDNRMUY0MXU5ZGtkQlpjcmYtQmt1eldJdGtnUWl3cjNvMFdWY2gyWTduMmFkVnJyUktYcHlYUHRRN2wwUVNIaUpCOEU5WVk0Qk5lSkl2dUhjZHNTZmNGb25FY0JHd1dOd1lQeXBoNW01cDVhWkVzNUdxZkNHUzFyVUtySFZEZjV3?oc=5",
-      "published_at": "2026-11-06T08:10:56Z",
-      "published_date": "2026-11-06",
-      "metro": "South Africa"
-    },
-    {
-      "title": "Two brothers, two parties: DA's Ashwin Jansen takes Ward 56 from his brother",
-      "publisher": "EWN",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPWU42OGItUUhRckhWTjVSZVNiT2ZlOVY5WXkzRmVwWlV5c3FHUUJpMXdFT3lvR1VlcGxBLWRNTlh5SGFrS3ozOXBRRUxqb25NRzBicHFES20zU3JVakVUY1lsOTQyWDI4VjItZVdzalN4ZTE0TUdQb2M3cHFCVVJlRGxYazBKZDlKamdZUmpMNnNqMFhrMUQzTGV0QndVcHJQTFk0UjlSeDVEdw?oc=5",
-      "published_at": "2026-11-06T07:33:04Z",
-      "published_date": "2026-11-06",
-      "metro": "South Africa"
-    },
-    {
-      "title": "#2026Localelections: Who does what in local government? Understanding the roles of councillors, the mayor and MMCs",
-      "publisher": "The Citizen",
-      "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxQYnlhSE9FemFmTkV5NU5JYnNCV1M4ZDN4RnRGc1A0SW5FbFdvdXBfdDJyT0t6bGRfWjBlZHVvbzBqWkU2djVaSkROWkhGanF5dXJRR0s2M0RfVVl1aVlCUDVjQ2VDQURSSFFoQVRHZVZjV1FKZzQ5S1RRRnhWS1RreUhiUHRYTlJMRDRTT0FlOXRyQ1pmLU1wanZXNkVndS05cDNMZlpMNWU4Rnh2bDVIc1pGVW5uZGw1a0dFLXVqNUZSb2RkZmw2QzYwMG8ydVhCUGVsWVdLb2FaeE1Lbi1UOU01YjRtdnNQMFVFcGJYU0ZaUlZkT1UyUFdWUzl2ZnVDdG1Wa0Y5THFJVHZMRHcwajlTVGRvZ3VPMU1B?oc=5",
-      "published_at": "2026-11-06T07:19:50Z",
-      "published_date": "2026-11-06",
-      "metro": "South Africa"
-    },
-    {
-      "title": "DA leads Tshwane vote count as ActionSA wins key wards",
-      "publisher": "The Citizen",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPTnBNdzY1SlhmVjZ3NnBNeDk0M1VUaUU2T3V5VUVoVVRSTmRuVTVBaEROc0NhMVpCRDZTUVp3ODBZcHl6bXRteFJOTC16TVJqYnJaamxkNnV1ZWRIaVk1dGYwRVpEVHRhNFVyRWFWQVRRNkxNbzV2N3d6M2JST1B2eWxtbDltWDRybGszTFNwNFB0ZjJWYlpzb294VFhUYktFNmVfOGhlMXlDQ1hvb1Z4QU9IZw?oc=5",
-      "published_at": "2026-11-06T07:16:06Z",
-      "published_date": "2026-11-06",
-      "metro": "Tshwane"
-    },
-    {
-      "title": "South Africa's ANC on track for big drop in voter support in municipal vote",
-      "publisher": "Reuters",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOeFRweVVpZ3lOU2xYS3BSakV3SDBYdGFacTdwMnRZS3B6U1pySWM1cksxeUZVSFVtUVRnZVVYMHlhZWlTQUlBX1N6MThNd19DRFJYMzN4RUduaUxHLW0xc2FEMEpldWVGcjJwbXlxQlp4WGVBZklJRVpyU2NRaUhFb2plbXBCb2dfNmlORk9XbHQ1XzNyakl0bjNlVHAyaUtvc05NanRsNW4wdXV5emNZ?oc=5",
-      "published_at": "2026-11-06T06:41:00Z",
       "published_date": "2026-11-06",
       "metro": "South Africa"
     }
