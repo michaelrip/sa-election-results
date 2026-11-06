@@ -1,0 +1,30 @@
+name: Update Nelson Mandela Bay municipal PR results
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/update_nelson_pr.py'
+      - '.github/workflows/update-nelson-pr.yml'
+  workflow_dispatch:
+  schedule:
+    - cron: '8,23,38,53 * * * *'
+permissions:
+  contents: write
+concurrency:
+  group: nelson-mandela-bay-pr
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch validated Nelson Mandela Bay municipal PR ballot
+        run: python scripts/update_nelson_pr.py
+      - name: Publish verified PR figures
+        run: |
+          bash scripts/publish_generated_data.sh nelson-pr-status.json "Update Nelson Mandela Bay municipal PR votes" \
+            ballots.json nelson-pr-status.json
