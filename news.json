@@ -1,8 +1,16 @@
 {
-  "checked_at": "2026-11-06T14:13:55.731510Z",
+  "checked_at": "2026-11-06T15:05:46.984706Z",
   "source": "Publisher-attributed headlines discovered through Google News RSS",
   "feed_status": "ok",
   "articles": [
+    {
+      "title": "ANC faces worst-ever election result as support slumps",
+      "publisher": "eNCA",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNeEtXV0o3MUdSX2FYTWFRMWFMNmRSS0hlSUt1bk8tUmxUX2N5eVdSeGc5UlI3azktNkNUbWJyNnVncUxnZzZCUUVHcW1HREFBbHZ1ODlMNzZhRzZBS0t2dzg5cmFSZjdVZGlzUVBnOHByYjByN1VpX3FqRmZ4S0lYVkxrU01zUHkzTkZTTDBia0NyWjQ?oc=5",
+      "published_at": "2026-11-06T14:28:14Z",
+      "published_date": "2026-11-06",
+      "metro": "South Africa"
+    },
     {
       "title": "FF+ secures 3.5% in Cape Town metro, staying in the mix for council representation",
       "publisher": "EWN",
@@ -60,28 +68,20 @@
       "metro": "South Africa"
     },
     {
+      "title": "ANC leads Tshwane council race with seats as early results trickle in",
+      "publisher": "The Citizen",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPM1d3N1hLa0tCdkhtUDFEcDB5ZS12TjdndXR0VUJGN3VFNmFDRGc0MTQ2Y1Rmd29PaG1Vc2RVUk9VeHBaanlHQVhyTHRvaHZfMU5McGZCV3M1cG5odlBlbURyQWEwbmlIakRBUUltQmF2cllQaFlaSWZyQzgxaWNYMll6LVFHTUpWV3ZGZ2V1NXhWT0lOWDk0d2tYbkJfb01aOEx5ZlZid0pELWhRcG9tRlkzMGdWcUNPRDhCSndJY1VnLS1RT0RYLQ?oc=5",
+      "published_at": "2026-11-06T10:56:21Z",
+      "published_date": "2026-11-06",
+      "metro": "Tshwane"
+    },
+    {
       "title": "ANC leads Tshwane council race as early results trickle in",
       "publisher": "The Citizen",
       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPM1d3N1hLa0tCdkhtUDFEcDB5ZS12TjdndXR0VUJGN3VFNmFDRGc0MTQ2Y1Rmd29PaG1Vc2RVUk9VeHBaanlHQVhyTHRvaHZfMU5McGZCV3M1cG5odlBlbURyQWEwbmlIakRBUUltQmF2cllQaFlaSWZyQzgxaWNYMll6LVFHTUpWV3ZGZ2V1NXhWT0lOWDk0d2tYbkJfb01aOEx5ZlZid0pELWhRcG9tRlkzMGdWcUNPRDhCSndJY1VnLS1RT0RYLQ?oc=5",
       "published_at": "2026-11-06T10:01:54Z",
       "published_date": "2026-11-06",
       "metro": "Tshwane"
-    },
-    {
-      "title": "ANC's dominance challenged as opposition parties make gains in local polls",
-      "publisher": "EWN",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNVmpGanRYaFhacGJheXdrVk9PdzMyb0d2Y3ByTWhTcDA3dVpjTk1sZmlmem9mRmxyQk9iaGdrdGMtSzBEVWlGTkN5VFlITllxZkdnMU5SWGJBcGpRZW9IdGJVUVpWQ1BtWURXVFhTZUVUTERyQTFLOEJ3Vi1hNE9uTFBkbWFnNEsyUjdhZk5YWVV3LUZ0ODRNa2VTZVVjT1dWMEtkODVyUncxdw?oc=5",
-      "published_at": "2026-11-06T09:55:11Z",
-      "published_date": "2026-11-06",
-      "metro": "South Africa"
-    },
-    {
-      "title": "DA ready for coalition talks",
-      "publisher": "SABC News",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPbXN2d1l3S212NlA0REVuQi0wdGljQlZocU1ieVQxc1Bkbnp4dnpCdmxxNHdyaFpfUTdINjNnYXNhM3lLMGF5Y3JFc2M3emgwazZQa1A2M1l5R29kQzVtd25Bckp5aW1NRUVIME53V2tGcHlYeGpNVU1lLUh2ODUwcHgxY0dDNUExTVpRSkdNSVN2UzllYWlwTTFEMlFyYlBKQjFtWXNR?oc=5",
-      "published_at": "2026-11-06T09:38:34Z",
-      "published_date": "2026-11-06",
-      "metro": "South Africa"
     }
   ]
 }
