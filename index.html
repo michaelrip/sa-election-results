@@ -343,7 +343,6 @@ try{
  if(metros.includes(city))selectedMetro=city;
  if(['all','pr','ward','dc'].includes(ballot))selectedBallot=ballot;
  if(selectedBallot==='dc'&&selectedMetro!=='Hermanus')selectedBallot='all';
- if(selectedMetro==='Nelson Mandela Bay'&&selectedBallot==='all')selectedBallot='ward';
 }catch(_){}
 window.initialMetro=selectedMetro;
 el('metro').value=selectedMetro;
@@ -530,7 +529,6 @@ function selectMetro(name,fromMap=false){
  const changed=selectedMetro!==name;
  selectedMetro=name;
  if(name!=='Hermanus'&&selectedBallot==='dc')selectedBallot='all';
- if(name==='Nelson Mandela Bay'&&selectedBallot==='all')selectedBallot='ward';
  const capeWatch=el('cape-majority');if(capeWatch)capeWatch.hidden=name!=='Cape Town';
  document.querySelectorAll('[data-vote-metro]').forEach(button=>button.setAttribute('aria-pressed',String(button.getAttribute('data-vote-metro')===name)));
  const wardMetro=el('metro');
