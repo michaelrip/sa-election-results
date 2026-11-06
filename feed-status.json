@@ -1,24 +1,24 @@
 {
-  "checked_at": "2026-11-06T17:12:27.667956+00:00",
+  "checked_at": "2026-11-06T17:57:15.253820+00:00",
   "source": "ESP public pages (IEC-derived, unofficial; not direct IEC API)",
   "checks": {
     "Cape Town": {
       "status": "ok",
-      "districts_reported": 638,
+      "districts_reported": 648,
       "wards_with_data": 66,
-      "snapshot_at": "2026-11-06T17:09:00+00:00"
+      "snapshot_at": "2026-11-06T17:53:00+00:00"
     },
     "Tshwane": {
       "status": "ok",
-      "districts_reported": 663,
-      "wards_with_data": 52,
-      "snapshot_at": "2026-11-06T17:08:00+00:00"
+      "districts_reported": 672,
+      "wards_with_data": 51,
+      "snapshot_at": "2026-11-06T17:53:00+00:00"
     },
     "Johannesburg": {
       "status": "ok",
-      "districts_reported": 568,
-      "wards_with_data": 79,
-      "snapshot_at": "2026-11-06T17:08:00+00:00"
+      "districts_reported": 580,
+      "wards_with_data": 74,
+      "snapshot_at": "2026-11-06T17:53:00+00:00"
     },
     "Hermanus": {
       "status": "error",
@@ -26,9 +26,9 @@
     },
     "Nelson Mandela Bay": {
       "status": "ok",
-      "districts_reported": 242,
-      "wards_with_data": 18,
-      "snapshot_at": "2026-11-06T17:08:00+00:00"
+      "districts_reported": 247,
+      "wards_with_data": 14,
+      "snapshot_at": "2026-11-06T17:53:00+00:00"
     }
   },
   "results_updated": true,

@@ -1,52 +1,50 @@
 {
-  "checked_at": "2026-11-06T17:12:39.081719+00:00",
+  "checked_at": "2026-11-06T17:57:25.115054+00:00",
   "metros": {
     "Cape Town": {
-      "cached": 50,
-      "enriched": 11,
+      "cached": 54,
+      "enriched": 7,
       "not_reported": 52,
       "pending": 0,
       "errors": 5,
       "example_errors": [
-        "Unrecognised or repeated party among first three",
         "Fewer than two ranked ballot rows",
+        "Unrecognised or repeated party among first three",
         "Fewer than two ranked ballot rows"
       ],
       "top_three_available": 61
     },
     "Tshwane": {
-      "cached": 40,
-      "enriched": 12,
-      "not_reported": 55,
+      "cached": 44,
+      "enriched": 7,
+      "not_reported": 56,
       "pending": 0,
       "errors": 0,
       "example_errors": [],
-      "top_three_available": 52
+      "top_three_available": 51
     },
     "Johannesburg": {
-      "cached": 69,
-      "enriched": 8,
-      "not_reported": 56,
+      "cached": 66,
+      "enriched": 7,
+      "not_reported": 61,
+      "pending": 0,
+      "errors": 1,
+      "example_errors": [
+        "Unrecognised or repeated party among first three"
+      ],
+      "top_three_available": 73
+    },
+    "Nelson Mandela Bay": {
+      "cached": 12,
+      "enriched": 0,
+      "not_reported": 46,
       "pending": 0,
       "errors": 2,
       "example_errors": [
-        "Unrecognised or repeated party among first three",
-        "Unrecognised or repeated party among first three"
-      ],
-      "top_three_available": 77
-    },
-    "Nelson Mandela Bay": {
-      "cached": 15,
-      "enriched": 0,
-      "not_reported": 42,
-      "pending": 0,
-      "errors": 3,
-      "example_errors": [
-        "Unrecognised or repeated party among first three",
         "Fewer than two ranked ballot rows",
         "Unrecognised or repeated party among first three"
       ],
-      "top_three_available": 15
+      "top_three_available": 12
     },
     "Hermanus": {
       "cached": 0,
