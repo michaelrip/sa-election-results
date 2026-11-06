@@ -1,26 +1,26 @@
 {
-  "checked_at": "2026-11-06T12:25:33.993008+00:00",
+  "checked_at": "2026-11-06T13:42:30.356756+00:00",
   "source": "ESP individual 2026 PR and DC 40% ballot pages",
   "checks": {
     "Cape Town": {
       "pr": {
         "status": "ok",
-        "valid_votes": 771959,
-        "snapshot_at": "2026-11-06T12:21:00+00:00"
+        "valid_votes": 796884,
+        "snapshot_at": "2026-11-06T13:36:00+00:00"
       }
     },
     "Tshwane": {
       "pr": {
         "status": "ok",
-        "valid_votes": 661590,
-        "snapshot_at": "2026-11-06T12:21:00+00:00"
+        "valid_votes": 674088,
+        "snapshot_at": "2026-11-06T13:36:00+00:00"
       }
     },
     "Johannesburg": {
       "pr": {
         "status": "ok",
-        "valid_votes": 691012,
-        "snapshot_at": "2026-11-06T12:21:00+00:00"
+        "valid_votes": 760190,
+        "snapshot_at": "2026-11-06T13:36:00+00:00"
       }
     },
     "Hermanus": {
@@ -38,8 +38,8 @@
     "Nelson Mandela Bay": {
       "pr": {
         "status": "ok",
-        "valid_votes": 281394,
-        "snapshot_at": "2026-11-06T10:39:00+00:00"
+        "valid_votes": 294071,
+        "snapshot_at": "2026-11-06T13:28:00+00:00"
       }
     }
   },
