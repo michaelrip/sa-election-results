@@ -1,8 +1,16 @@
 {
-  "checked_at": "2026-11-06T11:00:34.123714Z",
+  "checked_at": "2026-11-06T11:53:56.593605Z",
   "source": "Publisher-attributed headlines discovered through Google News RSS",
   "feed_status": "ok",
   "articles": [
+    {
+      "title": "Local Elections 2026: DA surges, ANC slides and metros face massive coalition test",
+      "publisher": "EWN",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQbDFsMW1SbXZRV19tLThqeTIzT1FJem5oU2JKSkJUMktMS0lWNTdnNVRINk85QmJXUXpqSnBiZHZybWVtNmhpTmdTbUFjcTI0VjU3bnFXZW9uOV9YSXpPXzQ2bjB4U0Z6eWNHcElaV0tYYTlGZFhXdzNOUEo2aFJvejI2TFNaUWM1ci0zOGhSZ3R0MG9Vdm80NEdwc1o4OWN5VzA1X3NSdWktbFEwcUxMczk0dw?oc=5",
+      "published_at": "2026-11-06T11:33:13Z",
+      "published_date": "2026-11-06",
+      "metro": "South Africa"
+    },
     {
       "title": "DA draws coalition red line as Western Cape faces hung councils",
       "publisher": "IOL",
@@ -72,14 +80,6 @@
       "publisher": "Reuters",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOeFRweVVpZ3lOU2xYS3BSakV3SDBYdGFacTdwMnRZS3B6U1pySWM1cksxeUZVSFVtUVRnZVVYMHlhZWlTQUlBX1N6MThNd19DRFJYMzN4RUduaUxHLW0xc2FEMEpldWVGcjJwbXlxQlp4WGVBZklJRVpyU2NRaUhFb2plbXBCb2dfNmlORk9XbHQ1XzNyakl0bjNlVHAyaUtvc05NanRsNW4wdXV5emNZ?oc=5",
       "published_at": "2026-11-06T06:41:00Z",
-      "published_date": "2026-11-06",
-      "metro": "South Africa"
-    },
-    {
-      "title": "EFF, ActionSA urge calm as coalition talks follow 2026 local election",
-      "publisher": "IOL",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOVzlpMXNQemM0ajlMZDMxQ0JDWHRDS2p5bnJ0QjF6VGJRZ1NhTnJMMWZXMmxOQnhWRGhaUVVWSFNVZGp4a0t2cEJ2YVI4YnNtNmVuU0tBZDhKUGFoZld3cHZxclhWemFIdHc1Q014WWFOUW9pVHMwbnRfTFpRaUFDRWZGT3VKU00wT2gyYzU4Ym9DaDBJVkFabzJjd05qd3A5RE5DMnJ5QWJLOUFzZXlHMzBR?oc=5",
-      "published_at": "2026-11-06T05:50:16Z",
       "published_date": "2026-11-06",
       "metro": "South Africa"
     }
