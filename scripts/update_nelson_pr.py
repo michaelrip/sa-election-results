@@ -25,13 +25,13 @@ def parse(url, now):
     s = get(url)
     if "Nelson Mandela Bay" not in s or "2026" not in s:
         raise ValueError("Unexpected municipality")
-    header = re.search(r"\\bPR ballot\\s*\\??\\s*[·•]?\\s*([\\d\\s]+)\\s+valid votes\\b", s, re.I)
+    header = re.search(r"\bPR ballot\s*\??\s*[·•]?\s*([\d\s]+)\s+valid votes\b", s, re.I)
     if not header:
         raise ValueError("Municipal PR ballot vote table unavailable")
-    votes = int(re.sub(r"\\D", "", header.group(1)))
+    votes = int(re.sub(r"\D", "", header.group(1)))
     if votes <= 0:
         raise ValueError("No valid PR votes")
-    tm = re.search(r"IEC data last fetched\\s+(\\d{1,2}\\s+\\w+\\s+2026,\\s*\\d{2}:\\d{2})\\s*SAST",s)
+    tm = re.search(r"IEC data last fetched\s+(\d{1,2}\s+\w+\s+2026,\s*\d{2}:\d{2})\s*SAST",s)
     if not tm:
         raise ValueError("IEC source timestamp missing")
     stamp = None
@@ -44,15 +44,15 @@ def parse(url, now):
     if stamp is None or stamp > now + timedelta(minutes=10) or now-stamp > timedelta(hours=24):
         raise ValueError("Source timestamp invalid")
     section = s[header.end():]
-    stop = re.search(r"\\b(?:How did Nelson Mandela Bay vote|Wards\\s*[·•]|About these figures)\\b",section)
+    stop = re.search(r"\b(?:How did Nelson Mandela Bay vote|Wards\s*[·•]|About these figures)\b",section)
     section = section[:stop.start()] if stop else section[:14000]
     parties = []
     prev = 0
-    for match in re.finditer(r"(?<!\\d)(\\d{1,3}(?:\\s+\\d{3})*)\\s+(\\d{1,3}\\.\\d)\\s*%",section):
+    for match in re.finditer(r"(?<!\d)(\d{1,3}(?:\s+\d{3})*)\s+(\d{1,3}\.\d)\s*%",section):
         fragment = section[prev:match.start()][-200:]
         prev = match.end()
         name = next((code for label,code in sorted(NAMES.items(),key=lambda x:-len(x[0])) if re.search(r"(?<![A-Za-z])"+re.escape(label)+r"(?![A-Za-z])",fragment,re.I)),None)
-        count = int(re.sub(r"\\s","",match.group(1)))
+        count = int(re.sub(r"\s","",match.group(1)))
         share = float(match.group(2))
         if not name or any(x["name"]==name for x in parties):
             continue
@@ -82,12 +82,12 @@ def main():
                 raise ValueError("Valid PR vote count regressed")
             data.setdefault("metros",{}).setdefault("Nelson Mandela Bay",{})["pr"]=incoming
             data["updated_at"]=now.isoformat()
-            DEST.write_text(json.dumps(data,indent=2,ensure_ascii=False)+"\\n",encoding="utf-8")
+            DEST.write_text(json.dumps(data,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
             status.update(status="ok",source_url=url,snapshot_at=incoming["snapshot_at"],valid_votes=incoming["valid_votes"])
             break
         except Exception as exc:
             status["detail"]=str(exc)[:180]
-    STATUS.write_text(json.dumps(status,indent=2)+"\\n",encoding="utf-8")
+    STATUS.write_text(json.dumps(status,indent=2)+"\n",encoding="utf-8")
     print(json.dumps(status,indent=2))
 if __name__=="__main__":
     main()
