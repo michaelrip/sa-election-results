@@ -1,74 +1,74 @@
 {
-  "updated_at": "2026-11-06T12:55:00+00:00",
+  "updated_at": "2026-11-06T14:12:00+00:00",
   "source": "Provisional IEC-derived national ward-ballot results via ESP (unofficial)",
   "source_url": "https://go.esp.info/elections/local/2026",
-  "districts_reported": 20414,
+  "districts_reported": 21006,
   "districts_total": 23696,
-  "valid_votes": 11602594,
+  "valid_votes": 12010227,
   "parties": [
     {
       "name": "ANC",
-      "votes": 3672306,
-      "share": 31.7
+      "votes": 3797657,
+      "share": 31.6
     },
     {
       "name": "DA",
-      "votes": 2790739,
-      "share": 24.1
+      "votes": 2873413,
+      "share": 23.9
     },
     {
       "name": "MK",
-      "votes": 1077014,
-      "share": 9.3
+      "votes": 1125023,
+      "share": 9.4
     },
     {
       "name": "EFF",
-      "votes": 719410,
+      "votes": 746885,
       "share": 6.2
     },
     {
       "name": "IFP",
-      "votes": 572522,
-      "share": 4.9
+      "votes": 603175,
+      "share": 5.0
     },
     {
       "name": "ActionSA",
-      "votes": 543879,
+      "votes": 565981,
       "share": 4.7
     },
     {
       "name": "FF+",
-      "votes": 350946,
+      "votes": 360292,
       "share": 3.0
     },
     {
       "name": "SACP",
-      "votes": 299240,
+      "votes": 307940,
       "share": 2.6
     },
     {
       "name": "PA",
-      "votes": 244065,
+      "votes": 248737,
       "share": 2.1
     },
     {
       "name": "UDM",
-      "votes": 113267,
+      "votes": 117783,
       "share": 1.0
     },
     {
       "name": "ATM",
-      "votes": 108201,
+      "votes": 112617,
       "share": 0.9
     },
     {
       "name": "RISE",
-      "votes": 26855,
+      "votes": 28320,
       "share": 0.2
     },
     {
       "name": "CCC",
-      "votes": 23251,
+      "votes": 23399,
       "share": 0.2
     }
   ]
