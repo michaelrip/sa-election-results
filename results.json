@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T04:29:46.161301+00:00",
+  "updated_at": "2026-11-06T05:28:01.904040+00:00",
   "source": "Provisional IEC-derived ward-ballot results via ESP (unofficial)",
   "metros": {
     "Cape Town": {
@@ -1732,59 +1732,59 @@
       "status": "Preliminary · IEC-derived via ESP",
       "municipality": null,
       "ballot_type": "Ward",
-      "districts_reported": 491,
+      "districts_reported": 494,
       "districts_total": 796,
-      "valid_votes": 554220,
+      "valid_votes": 557317,
       "parties": [
         {
           "name": "DA",
-          "share": 33.4,
-          "votes": 185290
+          "share": 33.3,
+          "votes": 185597
         },
         {
           "name": "ANC",
-          "share": 21.6,
-          "votes": 119904
+          "share": 21.7,
+          "votes": 120920
         },
         {
           "name": "ActionSA",
           "share": 21.1,
-          "votes": 117125
+          "votes": 117800
         },
         {
           "name": "FF+",
           "share": 7.0,
-          "votes": 38733
+          "votes": 38756
         },
         {
           "name": "EFF",
           "share": 6.1,
-          "votes": 33939
+          "votes": 34158
         },
         {
           "name": "MK",
           "share": 2.3,
-          "votes": 12952
+          "votes": 12990
         },
         {
           "name": "SACP",
           "share": 1.4,
-          "votes": 7743
+          "votes": 7764
         },
         {
           "name": "PA",
-          "share": 0.6,
-          "votes": 3507
+          "share": 0.7,
+          "votes": 3977
         },
         {
           "name": "RISE",
           "share": 0.6,
-          "votes": 3190
+          "votes": 3197
         },
         {
           "name": "BOSA",
           "share": 0.2,
-          "votes": 1310
+          "votes": 1319
         },
         {
           "name": "ATM",
@@ -1799,17 +1799,17 @@
         {
           "name": "IFP",
           "share": 0.2,
-          "votes": 1080
+          "votes": 1082
         },
         {
           "name": "UDM",
           "share": 0.1,
-          "votes": 527
+          "votes": 529
         },
         {
           "name": "Al Jama-ah",
           "share": 0.1,
-          "votes": 498
+          "votes": 499
         },
         {
           "name": "CCC",
@@ -1831,7 +1831,7 @@
               "share": 59.0
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-1"
         },
         {
@@ -1846,22 +1846,16 @@
               "share": 68.3
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-2"
         },
         {
           "number": 3,
-          "status": "Partly counted",
+          "status": "Not yet reported",
           "ballot_type": "Ward",
-          "reporting": "5 of 6 districts",
-          "winner": "ActionSA",
-          "parties": [
-            {
-              "name": "ActionSA",
-              "share": 34.4
-            }
-          ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-3"
         },
         {
@@ -1876,7 +1870,7 @@
               "share": 49.6
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-4"
         },
         {
@@ -1891,7 +1885,7 @@
               "share": 68.8
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-5"
         },
         {
@@ -1906,7 +1900,7 @@
               "share": 31.9
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-6"
         },
         {
@@ -1921,7 +1915,7 @@
               "share": 31.2
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-7"
         },
         {
@@ -1936,22 +1930,16 @@
               "share": 37.9
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-8"
         },
         {
           "number": 9,
-          "status": "Partly counted",
+          "status": "Not yet reported",
           "ballot_type": "Ward",
-          "reporting": "3 of 7 districts",
-          "winner": "ANC",
-          "parties": [
-            {
-              "name": "ANC",
-              "share": 47.1
-            }
-          ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-9"
         },
         {
@@ -1966,7 +1954,7 @@
               "share": 28.0
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-10"
         },
         {
@@ -1981,22 +1969,16 @@
               "share": 35.1
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-11"
         },
         {
           "number": 12,
-          "status": "Partly counted",
+          "status": "Not yet reported",
           "ballot_type": "Ward",
-          "reporting": "3 of 8 districts",
-          "winner": "ANC",
-          "parties": [
-            {
-              "name": "ANC",
-              "share": 62.1
-            }
-          ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-12"
         },
         {
@@ -2011,7 +1993,7 @@
               "share": 42.9
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-13"
         },
         {
@@ -2026,22 +2008,16 @@
               "share": 38.2
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-14"
         },
         {
           "number": 15,
-          "status": "Partly counted",
+          "status": "Not yet reported",
           "ballot_type": "Ward",
-          "reporting": "4 of 14 districts",
-          "winner": "ANC",
-          "parties": [
-            {
-              "name": "ANC",
-              "share": 33.4
-            }
-          ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-15"
         },
         {
@@ -2056,7 +2032,7 @@
               "share": 39.6
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-16"
         },
         {
@@ -2071,7 +2047,7 @@
               "share": 35.3
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-17"
         },
         {
@@ -2086,91 +2062,67 @@
               "share": 37.6
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-18"
         },
         {
           "number": 19,
-          "status": "Partly counted",
-          "ballot_type": "Ward",
-          "reporting": "5 of 7 districts",
-          "winner": "ANC",
-          "parties": [
-            {
-              "name": "ANC",
-              "share": 52.5
-            }
-          ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
-          "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-19"
-        },
-        {
-          "number": 20,
-          "status": "Partly counted",
-          "ballot_type": "Ward",
-          "reporting": "4 of 8 districts",
-          "winner": "ActionSA",
-          "parties": [
-            {
-              "name": "ActionSA",
-              "share": 32.2
-            }
-          ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
-          "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-20"
-        },
-        {
-          "number": 21,
-          "status": "Partly counted",
-          "ballot_type": "Ward",
-          "reporting": "1 of 8 districts",
-          "winner": "ANC",
-          "parties": [
-            {
-              "name": "ANC",
-              "share": 38.0
-            }
-          ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
-          "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-21"
-        },
-        {
-          "number": 22,
           "status": "Not yet reported",
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
+          "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-19"
+        },
+        {
+          "number": 20,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
+          "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-20"
+        },
+        {
+          "number": 21,
+          "status": "Not yet reported",
+          "ballot_type": "Ward",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
+          "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-21"
+        },
+        {
+          "number": 22,
+          "status": "Partly counted",
+          "ballot_type": "Ward",
+          "reporting": "1 of 5 districts",
+          "winner": "ANC",
+          "parties": [
+            {
+              "name": "ANC",
+              "share": 39.3
+            }
+          ],
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-22"
         },
         {
           "number": 23,
-          "status": "Partly counted",
+          "status": "Not yet reported",
           "ballot_type": "Ward",
-          "reporting": "6 of 7 districts",
-          "winner": "ANC",
-          "parties": [
-            {
-              "name": "ANC",
-              "share": 40.7
-            }
-          ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-23"
         },
         {
           "number": 24,
-          "status": "Partly counted",
+          "status": "Not yet reported",
           "ballot_type": "Ward",
-          "reporting": "5 of 10 districts",
-          "winner": "ANC",
-          "parties": [
-            {
-              "name": "ANC",
-              "share": 50.2
-            }
-          ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-24"
         },
         {
@@ -2185,7 +2137,7 @@
               "share": 37.2
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-25"
         },
         {
@@ -2200,7 +2152,7 @@
               "share": 37.6
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-26"
         },
         {
@@ -2215,7 +2167,7 @@
               "share": 40.0
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-27"
         },
         {
@@ -2230,7 +2182,7 @@
               "share": 32.7
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-28"
         },
         {
@@ -2239,7 +2191,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-29"
         },
         {
@@ -2248,7 +2200,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-30"
         },
         {
@@ -2257,7 +2209,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-31"
         },
         {
@@ -2272,7 +2224,7 @@
               "share": 33.4
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-32"
         },
         {
@@ -2281,7 +2233,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-33"
         },
         {
@@ -2296,7 +2248,7 @@
               "share": 37.8
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-34"
         },
         {
@@ -2305,7 +2257,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-35"
         },
         {
@@ -2320,22 +2272,16 @@
               "share": 43.1
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-36"
         },
         {
           "number": 37,
-          "status": "Partly counted",
+          "status": "Not yet reported",
           "ballot_type": "Ward",
-          "reporting": "7 of 9 districts",
-          "winner": "ActionSA",
-          "parties": [
-            {
-              "name": "ActionSA",
-              "share": 34.3
-            }
-          ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-37"
         },
         {
@@ -2350,22 +2296,16 @@
               "share": 30.1
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-38"
         },
         {
           "number": 39,
-          "status": "Partly counted",
+          "status": "Not yet reported",
           "ballot_type": "Ward",
-          "reporting": "3 of 6 districts",
-          "winner": "ANC",
-          "parties": [
-            {
-              "name": "ANC",
-              "share": 33.8
-            }
-          ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-39"
         },
         {
@@ -2380,7 +2320,7 @@
               "share": 40.3
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-40"
         },
         {
@@ -2395,7 +2335,7 @@
               "share": 61.4
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-41"
         },
         {
@@ -2410,7 +2350,7 @@
               "share": 73.6
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-42"
         },
         {
@@ -2425,7 +2365,7 @@
               "share": 42.4
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-43"
         },
         {
@@ -2440,7 +2380,7 @@
               "share": 81.6
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-44"
         },
         {
@@ -2455,7 +2395,7 @@
               "share": 75.4
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-45"
         },
         {
@@ -2470,7 +2410,7 @@
               "share": 76.9
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-46"
         },
         {
@@ -2485,7 +2425,7 @@
               "share": 76.6
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-47"
         },
         {
@@ -2500,7 +2440,7 @@
               "share": 38.7
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-48"
         },
         {
@@ -2515,7 +2455,7 @@
               "share": 39.4
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-49"
         },
         {
@@ -2530,7 +2470,7 @@
               "share": 59.5
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-50"
         },
         {
@@ -2539,7 +2479,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-51"
         },
         {
@@ -2554,7 +2494,7 @@
               "share": 68.2
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-52"
         },
         {
@@ -2563,7 +2503,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-53"
         },
         {
@@ -2572,7 +2512,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-54"
         },
         {
@@ -2587,7 +2527,7 @@
               "share": 47.4
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-55"
         },
         {
@@ -2596,7 +2536,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-56"
         },
         {
@@ -2611,7 +2551,7 @@
               "share": 45.9
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-57"
         },
         {
@@ -2626,7 +2566,7 @@
               "share": 36.8
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-58"
         },
         {
@@ -2641,7 +2581,7 @@
               "share": 42.8
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-59"
         },
         {
@@ -2656,7 +2596,7 @@
               "share": 33.9
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-60"
         },
         {
@@ -2671,22 +2611,16 @@
               "share": 39.9
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-61"
         },
         {
           "number": 62,
-          "status": "Partly counted",
+          "status": "Not yet reported",
           "ballot_type": "Ward",
-          "reporting": "5 of 6 districts",
-          "winner": "ActionSA",
-          "parties": [
-            {
-              "name": "ActionSA",
-              "share": 35.6
-            }
-          ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-62"
         },
         {
@@ -2695,7 +2629,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-63"
         },
         {
@@ -2710,7 +2644,7 @@
               "share": 53.6
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-64"
         },
         {
@@ -2725,7 +2659,7 @@
               "share": 48.2
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-65"
         },
         {
@@ -2740,7 +2674,7 @@
               "share": 73.0
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-66"
         },
         {
@@ -2755,7 +2689,7 @@
               "share": 42.5
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-67"
         },
         {
@@ -2764,7 +2698,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-68"
         },
         {
@@ -2779,7 +2713,7 @@
               "share": 77.0
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-69"
         },
         {
@@ -2794,7 +2728,7 @@
               "share": 73.7
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-70"
         },
         {
@@ -2803,7 +2737,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-71"
         },
         {
@@ -2812,7 +2746,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-72"
         },
         {
@@ -2827,7 +2761,7 @@
               "share": 34.7
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-73"
         },
         {
@@ -2842,7 +2776,7 @@
               "share": 43.3
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-74"
         },
         {
@@ -2851,7 +2785,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-75"
         },
         {
@@ -2866,7 +2800,7 @@
               "share": 32.1
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-76"
         },
         {
@@ -2881,7 +2815,7 @@
               "share": 40.0
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-77"
         },
         {
@@ -2896,7 +2830,7 @@
               "share": 61.2
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-78"
         },
         {
@@ -2905,7 +2839,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-79"
         },
         {
@@ -2920,7 +2854,7 @@
               "share": 43.8
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-80"
         },
         {
@@ -2935,7 +2869,7 @@
               "share": 45.2
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-81"
         },
         {
@@ -2950,7 +2884,7 @@
               "share": 82.3
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-82"
         },
         {
@@ -2959,7 +2893,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-83"
         },
         {
@@ -2974,7 +2908,7 @@
               "share": 65.7
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-84"
         },
         {
@@ -2983,7 +2917,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-85"
         },
         {
@@ -2998,7 +2932,7 @@
               "share": 51.4
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-86"
         },
         {
@@ -3007,7 +2941,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-87"
         },
         {
@@ -3016,7 +2950,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-88"
         },
         {
@@ -3031,7 +2965,7 @@
               "share": 36.1
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-89"
         },
         {
@@ -3046,7 +2980,7 @@
               "share": 49.5
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-90"
         },
         {
@@ -3055,7 +2989,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-91"
         },
         {
@@ -3070,7 +3004,7 @@
               "share": 33.6
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-92"
         },
         {
@@ -3085,7 +3019,7 @@
               "share": 34.3
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-93"
         },
         {
@@ -3094,7 +3028,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-94"
         },
         {
@@ -3109,7 +3043,7 @@
               "share": 41.9
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-95"
         },
         {
@@ -3124,7 +3058,7 @@
               "share": 54.9
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-96"
         },
         {
@@ -3139,7 +3073,7 @@
               "share": 35.9
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-97"
         },
         {
@@ -3154,7 +3088,7 @@
               "share": 51.3
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-98"
         },
         {
@@ -3169,7 +3103,7 @@
               "share": 51.6
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-99"
         },
         {
@@ -3184,7 +3118,7 @@
               "share": 51.0
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-100"
         },
         {
@@ -3193,7 +3127,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-101"
         },
         {
@@ -3202,7 +3136,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-102"
         },
         {
@@ -3217,7 +3151,7 @@
               "share": 42.5
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-103"
         },
         {
@@ -3232,7 +3166,7 @@
               "share": 34.3
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-104"
         },
         {
@@ -3241,7 +3175,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-105"
         },
         {
@@ -3256,7 +3190,7 @@
               "share": 34.8
             }
           ],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-106"
         },
         {
@@ -3265,70 +3199,70 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T04:20:00+00:00",
+          "snapshot_at": "2026-11-06T04:47:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane/ward-107"
         }
       ],
-      "snapshot_at": "2026-11-06T04:20:00+00:00",
+      "snapshot_at": "2026-11-06T04:47:00+00:00",
       "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane"
     },
     "Johannesburg": {
       "status": "Preliminary · IEC-derived via ESP",
       "municipality": null,
       "ballot_type": "Ward",
-      "districts_reported": 356,
+      "districts_reported": 360,
       "districts_total": 862,
-      "valid_votes": 575702,
+      "valid_votes": 581302,
       "parties": [
         {
           "name": "DA",
-          "share": 41.6,
-          "votes": 239474
+          "share": 41.4,
+          "votes": 240412
         },
         {
           "name": "ANC",
           "share": 16.8,
-          "votes": 96461
+          "votes": 97861
         },
         {
           "name": "ActionSA",
           "share": 14.6,
-          "votes": 84182
+          "votes": 84977
         },
         {
           "name": "EFF",
-          "share": 6.9,
-          "votes": 39536
+          "share": 7.0,
+          "votes": 40613
         },
         {
           "name": "MK",
           "share": 4.9,
-          "votes": 28161
+          "votes": 28398
         },
         {
           "name": "RISE",
           "share": 2.5,
-          "votes": 14243
+          "votes": 14271
         },
         {
           "name": "FF+",
-          "share": 2.2,
-          "votes": 12424
+          "share": 2.1,
+          "votes": 12477
         },
         {
           "name": "IFP",
           "share": 1.9,
-          "votes": 10729
+          "votes": 10859
         },
         {
           "name": "PA",
           "share": 1.2,
-          "votes": 6770
+          "votes": 6824
         },
         {
           "name": "ATM",
           "share": 1.0,
-          "votes": 5556
+          "votes": 5597
         },
         {
           "name": "Al Jama-ah",
@@ -3338,22 +3272,22 @@
         {
           "name": "ACDP",
           "share": 0.8,
-          "votes": 4623
+          "votes": 4635
         },
         {
           "name": "SACP",
           "share": 0.5,
-          "votes": 2658
+          "votes": 2689
         },
         {
           "name": "BOSA",
           "share": 0.5,
-          "votes": 2653
+          "votes": 2661
         },
         {
           "name": "UDM",
           "share": 0.2,
-          "votes": 1278
+          "votes": 1287
         },
         {
           "name": "CCC",
@@ -3369,7 +3303,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-1"
         },
         {
@@ -3378,7 +3312,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-2"
         },
         {
@@ -3387,7 +3321,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-3"
         },
         {
@@ -3396,7 +3330,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-4"
         },
         {
@@ -3405,7 +3339,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-5"
         },
         {
@@ -3414,7 +3348,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-6"
         },
         {
@@ -3423,7 +3357,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-7"
         },
         {
@@ -3432,7 +3366,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-8"
         },
         {
@@ -3441,7 +3375,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-9"
         },
         {
@@ -3456,7 +3390,7 @@
               "share": 36.6
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-10"
         },
         {
@@ -3471,7 +3405,7 @@
               "share": 49.6
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-11"
         },
         {
@@ -3486,7 +3420,7 @@
               "share": 31.5
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-12"
         },
         {
@@ -3501,7 +3435,7 @@
               "share": 27.5
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-13"
         },
         {
@@ -3516,7 +3450,7 @@
               "share": 31.0
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-14"
         },
         {
@@ -3531,7 +3465,7 @@
               "share": 32.4
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-15"
         },
         {
@@ -3546,7 +3480,7 @@
               "share": 40.3
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-16"
         },
         {
@@ -3561,7 +3495,7 @@
               "share": 36.3
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-17"
         },
         {
@@ -3576,7 +3510,7 @@
               "share": 40.5
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-18"
         },
         {
@@ -3591,7 +3525,7 @@
               "share": 33.1
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-19"
         },
         {
@@ -3606,7 +3540,7 @@
               "share": 38.9
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-20"
         },
         {
@@ -3621,7 +3555,7 @@
               "share": 31.6
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-21"
         },
         {
@@ -3630,7 +3564,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-22"
         },
         {
@@ -3645,7 +3579,7 @@
               "share": 71.6
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-23"
         },
         {
@@ -3660,7 +3594,7 @@
               "share": 28.8
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-24"
         },
         {
@@ -3669,7 +3603,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-25"
         },
         {
@@ -3684,7 +3618,7 @@
               "share": 29.7
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-26"
         },
         {
@@ -3699,7 +3633,7 @@
               "share": 35.8
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-27"
         },
         {
@@ -3708,7 +3642,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-28"
         },
         {
@@ -3717,7 +3651,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-29"
         },
         {
@@ -3732,7 +3666,7 @@
               "share": 39.1
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-30"
         },
         {
@@ -3747,7 +3681,7 @@
               "share": 31.7
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-31"
         },
         {
@@ -3756,7 +3690,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-32"
         },
         {
@@ -3771,7 +3705,7 @@
               "share": 34.0
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-33"
         },
         {
@@ -3786,7 +3720,7 @@
               "share": 36.3
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-34"
         },
         {
@@ -3801,7 +3735,7 @@
               "share": 33.1
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-35"
         },
         {
@@ -3816,7 +3750,7 @@
               "share": 26.8
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-36"
         },
         {
@@ -3831,7 +3765,7 @@
               "share": 30.0
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-37"
         },
         {
@@ -3846,7 +3780,7 @@
               "share": 37.1
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-38"
         },
         {
@@ -3855,7 +3789,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-39"
         },
         {
@@ -3870,7 +3804,7 @@
               "share": 63.0
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-40"
         },
         {
@@ -3885,7 +3819,7 @@
               "share": 35.4
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-41"
         },
         {
@@ -3900,7 +3834,7 @@
               "share": 38.6
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-42"
         },
         {
@@ -3915,7 +3849,7 @@
               "share": 46.7
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-43"
         },
         {
@@ -3930,7 +3864,7 @@
               "share": 33.2
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-44"
         },
         {
@@ -3945,7 +3879,7 @@
               "share": 37.6
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-45"
         },
         {
@@ -3960,7 +3894,7 @@
               "share": 27.9
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-46"
         },
         {
@@ -3975,7 +3909,7 @@
               "share": 26.6
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-47"
         },
         {
@@ -3990,7 +3924,7 @@
               "share": 23.9
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-48"
         },
         {
@@ -4005,7 +3939,7 @@
               "share": 30.1
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-49"
         },
         {
@@ -4014,7 +3948,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-50"
         },
         {
@@ -4029,7 +3963,7 @@
               "share": 29.0
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-51"
         },
         {
@@ -4044,7 +3978,7 @@
               "share": 36.1
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-52"
         },
         {
@@ -4059,7 +3993,7 @@
               "share": 31.8
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-53"
         },
         {
@@ -4068,7 +4002,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-54"
         },
         {
@@ -4077,7 +4011,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-55"
         },
         {
@@ -4086,7 +4020,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-56"
         },
         {
@@ -4095,7 +4029,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-57"
         },
         {
@@ -4110,7 +4044,7 @@
               "share": 33.4
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-58"
         },
         {
@@ -4119,7 +4053,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-59"
         },
         {
@@ -4134,7 +4068,7 @@
               "share": 28.0
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-60"
         },
         {
@@ -4149,7 +4083,7 @@
               "share": 29.2
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-61"
         },
         {
@@ -4158,7 +4092,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-62"
         },
         {
@@ -4173,7 +4107,7 @@
               "share": 19.1
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-63"
         },
         {
@@ -4188,7 +4122,7 @@
               "share": 27.4
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-64"
         },
         {
@@ -4203,7 +4137,7 @@
               "share": 23.6
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-65"
         },
         {
@@ -4218,7 +4152,7 @@
               "share": 52.4
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-66"
         },
         {
@@ -4233,7 +4167,7 @@
               "share": 22.9
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-67"
         },
         {
@@ -4248,7 +4182,7 @@
               "share": 20.6
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-68"
         },
         {
@@ -4257,7 +4191,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-69"
         },
         {
@@ -4272,7 +4206,7 @@
               "share": 57.5
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-70"
         },
         {
@@ -4287,7 +4221,7 @@
               "share": 42.2
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-71"
         },
         {
@@ -4296,7 +4230,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-72"
         },
         {
@@ -4311,7 +4245,7 @@
               "share": 62.5
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-73"
         },
         {
@@ -4320,7 +4254,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-74"
         },
         {
@@ -4335,7 +4269,7 @@
               "share": 27.4
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-75"
         },
         {
@@ -4350,22 +4284,22 @@
               "share": 29.8
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-76"
         },
         {
           "number": 77,
           "status": "Partly counted",
           "ballot_type": "Ward",
-          "reporting": "2 of 4 districts",
+          "reporting": "3 of 4 districts",
           "winner": "EFF",
           "parties": [
             {
               "name": "EFF",
-              "share": 48.4
+              "share": 38.1
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-77"
         },
         {
@@ -4374,7 +4308,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-78"
         },
         {
@@ -4389,7 +4323,7 @@
               "share": 34.4
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-79"
         },
         {
@@ -4404,7 +4338,7 @@
               "share": 37.0
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-80"
         },
         {
@@ -4419,7 +4353,7 @@
               "share": 51.5
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-81"
         },
         {
@@ -4434,7 +4368,7 @@
               "share": 31.0
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-82"
         },
         {
@@ -4449,7 +4383,7 @@
               "share": 75.3
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-83"
         },
         {
@@ -4464,7 +4398,7 @@
               "share": 67.4
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-84"
         },
         {
@@ -4479,7 +4413,7 @@
               "share": 67.7
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-85"
         },
         {
@@ -4488,7 +4422,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-86"
         },
         {
@@ -4503,7 +4437,7 @@
               "share": 59.4
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-87"
         },
         {
@@ -4518,7 +4452,7 @@
               "share": 71.5
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-88"
         },
         {
@@ -4533,7 +4467,7 @@
               "share": 78.7
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-89"
         },
         {
@@ -4542,7 +4476,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-90"
         },
         {
@@ -4557,7 +4491,7 @@
               "share": 66.7
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-91"
         },
         {
@@ -4572,7 +4506,7 @@
               "share": 33.6
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-92"
         },
         {
@@ -4587,7 +4521,7 @@
               "share": 78.3
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-93"
         },
         {
@@ -4602,7 +4536,7 @@
               "share": 41.4
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-94"
         },
         {
@@ -4617,7 +4551,7 @@
               "share": 48.8
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-95"
         },
         {
@@ -4632,7 +4566,7 @@
               "share": 61.0
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-96"
         },
         {
@@ -4647,7 +4581,7 @@
               "share": 58.7
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-97"
         },
         {
@@ -4662,7 +4596,7 @@
               "share": 84.8
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-98"
         },
         {
@@ -4677,7 +4611,7 @@
               "share": 76.0
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-99"
         },
         {
@@ -4692,16 +4626,22 @@
               "share": 30.2
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-100"
         },
         {
           "number": 101,
-          "status": "Not yet reported",
+          "status": "Partly counted",
           "ballot_type": "Ward",
-          "reporting": "Not yet reported",
-          "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "reporting": "1 of 4 districts",
+          "winner": "DA",
+          "parties": [
+            {
+              "name": "DA",
+              "share": 74.3
+            }
+          ],
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-101"
         },
         {
@@ -4710,7 +4650,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-102"
         },
         {
@@ -4725,7 +4665,7 @@
               "share": 67.4
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-103"
         },
         {
@@ -4740,7 +4680,7 @@
               "share": 66.2
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-104"
         },
         {
@@ -4749,7 +4689,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-105"
         },
         {
@@ -4764,7 +4704,7 @@
               "share": 83.2
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-106"
         },
         {
@@ -4773,7 +4713,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-107"
         },
         {
@@ -4788,7 +4728,7 @@
               "share": 33.1
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-108"
         },
         {
@@ -4797,22 +4737,22 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-109"
         },
         {
           "number": 110,
           "status": "Partly counted",
           "ballot_type": "Ward",
-          "reporting": "2 of 4 districts",
+          "reporting": "3 of 4 districts",
           "winner": "ActionSA",
           "parties": [
             {
               "name": "ActionSA",
-              "share": 34.5
+              "share": 29.2
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-110"
         },
         {
@@ -4827,7 +4767,7 @@
               "share": 28.0
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-111"
         },
         {
@@ -4842,7 +4782,7 @@
               "share": 38.5
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-112"
         },
         {
@@ -4857,7 +4797,7 @@
               "share": 43.6
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-113"
         },
         {
@@ -4872,7 +4812,7 @@
               "share": 39.5
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-114"
         },
         {
@@ -4887,7 +4827,7 @@
               "share": 52.7
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-115"
         },
         {
@@ -4896,7 +4836,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-116"
         },
         {
@@ -4911,7 +4851,7 @@
               "share": 79.8
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-117"
         },
         {
@@ -4926,7 +4866,7 @@
               "share": 64.1
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-118"
         },
         {
@@ -4941,7 +4881,7 @@
               "share": 46.6
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-119"
         },
         {
@@ -4950,7 +4890,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-120"
         },
         {
@@ -4959,7 +4899,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-121"
         },
         {
@@ -4974,7 +4914,7 @@
               "share": 30.6
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-122"
         },
         {
@@ -4989,7 +4929,7 @@
               "share": 24.1
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-123"
         },
         {
@@ -5004,7 +4944,7 @@
               "share": 25.1
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-124"
         },
         {
@@ -5013,7 +4953,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-125"
         },
         {
@@ -5028,7 +4968,7 @@
               "share": 80.3
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-126"
         },
         {
@@ -5043,7 +4983,7 @@
               "share": 29.4
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-127"
         },
         {
@@ -5058,7 +4998,7 @@
               "share": 40.5
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-128"
         },
         {
@@ -5073,22 +5013,22 @@
               "share": 39.5
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-129"
         },
         {
           "number": 130,
           "status": "Partly counted",
           "ballot_type": "Ward",
-          "reporting": "4 of 7 districts",
-          "winner": "ActionSA",
+          "reporting": "5 of 7 districts",
+          "winner": "ANC",
           "parties": [
             {
-              "name": "ActionSA",
-              "share": 32.3
+              "name": "ANC",
+              "share": 26.6
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-130"
         },
         {
@@ -5097,7 +5037,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-131"
         },
         {
@@ -5112,7 +5052,7 @@
               "share": 60.5
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-132"
         },
         {
@@ -5127,7 +5067,7 @@
               "share": 38.3
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-133"
         },
         {
@@ -5142,7 +5082,7 @@
               "share": 30.0
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-134"
         },
         {
@@ -5157,11 +5097,11 @@
               "share": 34.2
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:24:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg/ward-135"
         }
       ],
-      "snapshot_at": "2026-11-06T03:45:00+00:00",
+      "snapshot_at": "2026-11-06T05:24:00+00:00",
       "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg"
     },
     "Hermanus": {
@@ -5374,74 +5314,74 @@
       "status": "Preliminary · IEC-derived via ESP",
       "municipality": "Nelson Mandela Bay Metropolitan Municipality",
       "ballot_type": "Ward",
-      "districts_reported": 212,
+      "districts_reported": 213,
       "districts_total": 268,
-      "valid_votes": 256626,
+      "valid_votes": 260166,
       "parties": [
         {
           "name": "DA",
-          "share": 44.4,
-          "votes": 113936
+          "share": 44.6,
+          "votes": 116026
         },
         {
           "name": "ANC",
-          "share": 25.9,
-          "votes": 66354
+          "share": 25.7,
+          "votes": 66899
         },
         {
           "name": "EFF",
           "share": 5.1,
-          "votes": 13183
+          "votes": 13255
         },
         {
           "name": "SACP",
           "share": 3.3,
-          "votes": 8446
+          "votes": 8464
         },
         {
           "name": "PA",
           "share": 3.0,
-          "votes": 7647
+          "votes": 7681
         },
         {
           "name": "FF+",
           "share": 2.5,
-          "votes": 6432
+          "votes": 6551
         },
         {
           "name": "UDM",
           "share": 2.5,
-          "votes": 6331
+          "votes": 6401
         },
         {
           "name": "ActionSA",
           "share": 1.6,
-          "votes": 4122
+          "votes": 4155
+        },
+        {
+          "name": "ACDP",
+          "share": 1.1,
+          "votes": 2786
         },
         {
           "name": "MK",
           "share": 1.0,
-          "votes": 2642
-        },
-        {
-          "name": "ACDP",
-          "share": 0.9,
-          "votes": 2385
+          "votes": 2653
         },
         {
           "name": "ATM",
           "share": 0.8,
-          "votes": 1960
+          "votes": 1972
         },
         {
           "name": "GOOD",
           "share": 0.2,
-          "votes": 622
+          "votes": 626
         },
         {
           "name": "Al Jama-ah",
           "share": 0.2,
-          "votes": 513
+          "votes": 538
         }
       ],
       "seats": [],
@@ -5452,7 +5392,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-1"
         },
         {
@@ -5467,7 +5407,7 @@
               "share": 80.1
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-2"
         },
         {
@@ -5482,7 +5422,7 @@
               "share": 87.5
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-3"
         },
         {
@@ -5491,7 +5431,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-4"
         },
         {
@@ -5506,7 +5446,7 @@
               "share": 43.2
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-5"
         },
         {
@@ -5521,7 +5461,7 @@
               "share": 89.1
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-6"
         },
         {
@@ -5530,7 +5470,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-7"
         },
         {
@@ -5539,7 +5479,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-8"
         },
         {
@@ -5554,7 +5494,7 @@
               "share": 79.5
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-9"
         },
         {
@@ -5569,7 +5509,7 @@
               "share": 71.4
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-10"
         },
         {
@@ -5584,7 +5524,7 @@
               "share": 72.3
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-11"
         },
         {
@@ -5599,7 +5539,7 @@
               "share": 74.7
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-12"
         },
         {
@@ -5614,7 +5554,7 @@
               "share": 77.9
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-13"
         },
         {
@@ -5629,7 +5569,7 @@
               "share": 47.0
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-14"
         },
         {
@@ -5638,7 +5578,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-15"
         },
         {
@@ -5653,7 +5593,7 @@
               "share": 49.9
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-16"
         },
         {
@@ -5668,7 +5608,7 @@
               "share": 53.6
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-17"
         },
         {
@@ -5683,7 +5623,7 @@
               "share": 55.9
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-18"
         },
         {
@@ -5698,7 +5638,7 @@
               "share": 54.9
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-19"
         },
         {
@@ -5713,7 +5653,7 @@
               "share": 56.2
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-20"
         },
         {
@@ -5722,7 +5662,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-21"
         },
         {
@@ -5737,7 +5677,7 @@
               "share": 44.7
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-22"
         },
         {
@@ -5752,22 +5692,16 @@
               "share": 52.7
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-23"
         },
         {
           "number": 24,
-          "status": "Partly counted",
+          "status": "Not yet reported",
           "ballot_type": "Ward",
-          "reporting": "5 of 6 districts",
-          "winner": "ANC",
-          "parties": [
-            {
-              "name": "ANC",
-              "share": 58.7
-            }
-          ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "reporting": "Not yet reported",
+          "parties": [],
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-24"
         },
         {
@@ -5776,7 +5710,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-25"
         },
         {
@@ -5785,7 +5719,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-26"
         },
         {
@@ -5800,7 +5734,7 @@
               "share": 55.0
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-27"
         },
         {
@@ -5815,7 +5749,7 @@
               "share": 57.6
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-28"
         },
         {
@@ -5824,7 +5758,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-29"
         },
         {
@@ -5839,7 +5773,7 @@
               "share": 32.4
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-30"
         },
         {
@@ -5848,7 +5782,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-31"
         },
         {
@@ -5863,7 +5797,7 @@
               "share": 68.3
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-32"
         },
         {
@@ -5878,7 +5812,7 @@
               "share": 46.3
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-33"
         },
         {
@@ -5893,7 +5827,7 @@
               "share": 63.3
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-34"
         },
         {
@@ -5908,7 +5842,7 @@
               "share": 72.9
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-35"
         },
         {
@@ -5923,7 +5857,7 @@
               "share": 60.5
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-36"
         },
         {
@@ -5932,7 +5866,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-37"
         },
         {
@@ -5947,7 +5881,7 @@
               "share": 42.6
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-38"
         },
         {
@@ -5956,7 +5890,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-39"
         },
         {
@@ -5971,7 +5905,7 @@
               "share": 62.9
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-40"
         },
         {
@@ -5980,7 +5914,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-41"
         },
         {
@@ -5995,7 +5929,7 @@
               "share": 48.3
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-42"
         },
         {
@@ -6004,7 +5938,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-43"
         },
         {
@@ -6013,7 +5947,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-44"
         },
         {
@@ -6022,7 +5956,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-45"
         },
         {
@@ -6031,7 +5965,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-46"
         },
         {
@@ -6040,7 +5974,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-47"
         },
         {
@@ -6049,7 +5983,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-48"
         },
         {
@@ -6064,7 +5998,7 @@
               "share": 73.5
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-49"
         },
         {
@@ -6073,7 +6007,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-50"
         },
         {
@@ -6082,7 +6016,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-51"
         },
         {
@@ -6091,7 +6025,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-52"
         },
         {
@@ -6100,7 +6034,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-53"
         },
         {
@@ -6115,7 +6049,7 @@
               "share": 61.7
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-54"
         },
         {
@@ -6130,7 +6064,7 @@
               "share": 68.6
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-55"
         },
         {
@@ -6145,7 +6079,7 @@
               "share": 49.9
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-56"
         },
         {
@@ -6160,7 +6094,7 @@
               "share": 50.7
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-57"
         },
         {
@@ -6169,7 +6103,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-58"
         },
         {
@@ -6178,7 +6112,7 @@
           "ballot_type": "Ward",
           "reporting": "Not yet reported",
           "parties": [],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-59"
         },
         {
@@ -6193,11 +6127,11 @@
               "share": 54.7
             }
           ],
-          "snapshot_at": "2026-11-06T03:45:00+00:00",
+          "snapshot_at": "2026-11-06T05:02:00+00:00",
           "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay/ward-60"
         }
       ],
-      "snapshot_at": "2026-11-06T03:45:00+00:00",
+      "snapshot_at": "2026-11-06T05:02:00+00:00",
       "source_url": "https://go.esp.info/elections/local/2026/eastern-cape/nelson-mandela-bay"
     }
   }
