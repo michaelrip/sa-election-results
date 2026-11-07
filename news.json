@@ -1,8 +1,16 @@
 {
-  "checked_at": "2026-11-07T05:21:29.087553Z",
+  "checked_at": "2026-11-07T06:20:23.024554Z",
   "source": "Publisher-attributed headlines discovered through Google News RSS",
   "feed_status": "ok",
   "articles": [
+    {
+      "title": "LIVE | IEC reports 97% of vote counting complete",
+      "publisher": "IOL",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPWWhoaHg2bHNzeF9qcXNsOHBpcWFVeldnY0hpLU0wUVRoRjU4LUFsaWdFOEdXM2tULXJIQVc5N204U25ob3BJUHg3UzI5UVZQdmZVdUotbE5xTzJwaDhvSXFKbk9YbzFjenE4NmUxQnd4M3FVeTFYTFFvRTFyemtnQzFsWEFyRVRzLXc?oc=5",
+      "published_at": "2026-11-07T05:22:00Z",
+      "published_date": "2026-11-07",
+      "metro": "South Africa"
+    },
     {
       "title": "Here’s how the eight metros stand as the IEC begins to wrap up results",
       "publisher": "The Citizen",
@@ -72,14 +80,6 @@
       "publisher": "eNCA",
       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNeEtXV0o3MUdSX2FYTWFRMWFMNmRSS0hlSUt1bk8tUmxUX2N5eVdSeGc5UlI3azktNkNUbWJyNnVncUxnZzZCUUVHcW1HREFBbHZ1ODlMNzZhRzZBS0t2dzg5cmFSZjdVZGlzUVBnOHByYjByN1VpX3FqRmZ4S0lYVkxrU01zUHkzTkZTTDBia0NyWjQ?oc=5",
       "published_at": "2026-11-06T14:28:14Z",
-      "published_date": "2026-11-06",
-      "metro": "South Africa"
-    },
-    {
-      "title": "UDM shakes up Eastern Cape politics in historic vote as ANC loses majority",
-      "publisher": "Business Day",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNQ3U5VmdYWFJxZUlpa1gxaExCd3lUOEczRTRwNEFpMnc5T21CbWRkWC1xV014WkZJb1VsU0ZCeG9vejg5U1dwYUlLTXN0TDdnc21lM2NlNktRRFlvM29mMFA5d2ZjaGY0aEx1bF9QeE92cERRYW9nNXp4dDI3YS1CM1hibkVya0ZYWnFsa2EtUjFXeWxlaVd2THJYWHU5T2pKOFNBZnlvemtHemh1b3g1WFl5ZnhYWEZGZjJSMlV3?oc=5",
-      "published_at": "2026-11-06T14:23:36Z",
       "published_date": "2026-11-06",
       "metro": "South Africa"
     }
