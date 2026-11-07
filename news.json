@@ -1,8 +1,16 @@
 {
-  "checked_at": "2026-11-07T12:23:18.571806Z",
+  "checked_at": "2026-11-07T13:28:29.980613Z",
   "source": "Publisher-attributed headlines discovered through Google News RSS",
   "feed_status": "ok",
   "articles": [
+    {
+      "title": "DA and ActionSA face crucial coalition test across hung Gauteng metros",
+      "publisher": "Mail & Guardian",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNZWhrdG1FM3NQVTdmWDRXMkg3cV9VdG9TY1pqX2dvbmJIVHluc2p3dWJ5dXFsNHNHbXl3QWgzX2JzSVBnLTZhWHZ6blM4bHlPdXA4NVNyX1hVNHZaUTBqakFCMndBSVRkc1dNTy1RYVNfTkFYUGhQTzhvWTRjbDRPNE03UlhLVWdXSTFkcnA5c0g5bmdXSnlMd3pTcUxJNmV1cnViX3YzNUZJUXFZN3o1WA?oc=5",
+      "published_at": "2026-11-07T12:24:36Z",
+      "published_date": "2026-11-07",
+      "metro": "South Africa"
+    },
     {
       "title": "Election observers commend local government polls",
       "publisher": "EWN",
@@ -72,14 +80,6 @@
       "publisher": "EWN",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxORFBiRnlpYzZKTUtKbFg1ZFF0TzFJNy1CVktmS053NXJyNmgtcU53eGNjdmNrR3RockVlcTJiYXB1M0RoMjNXTkVTVVF3VEJlTUk2cXMxcFhJQnRHaXlxS0UzTWwzd3l4aWt3WmcyOG5RNXNGeFE1Qzh1TXhvMnJMTzhnWDh6bGNyQmRNREZFUUhUQ3I5S1dzNHJEVElFR0JiR1BmZG5R?oc=5",
       "published_at": "2026-11-06T20:51:32Z",
-      "published_date": "2026-11-06",
-      "metro": "South Africa"
-    },
-    {
-      "title": "DA to begin Western Cape coalition talks in councils it has not obtained outright majority",
-      "publisher": "EWN",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPN1gxSkoyOXZLdGFkRXlDS2RPMUZwRXFlcXlQSERDN204b2JNdUtCbDdvWUpsaDFsQmdmWS1kZEUwSm5OUTJHOUliT1FkWXFDNWhHTUZrMTdka3MzZm9fX2FvQmwtS1V0ZWtHdGJIeF9DemhzSVEzTzIzdktTQW9KMk14MjAxRFE5SnAtV3lNRVVxQ25xVTlHbWNlWXFmT2FjeU04XzlQaXl0bGx6SEg3cXptTQ?oc=5",
-      "published_at": "2026-11-06T20:51:31Z",
       "published_date": "2026-11-06",
       "metro": "South Africa"
     }
