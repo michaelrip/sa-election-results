@@ -1,40 +1,43 @@
 {
-  "checked_at": "2026-11-07T04:48:06.248750+00:00",
+  "checked_at": "2026-11-07T05:31:39.846221+00:00",
   "metros": {
     "Cape Town": {
-      "cached": 53,
+      "cached": 12,
       "enriched": 2,
-      "not_reported": 59,
+      "not_reported": 93,
       "pending": 0,
-      "errors": 4,
+      "errors": 11,
       "example_errors": [
-        "Unrecognised or repeated party among first three",
-        "Fewer than two ranked ballot rows",
-        "Fewer than two ranked ballot rows"
+        "HTTP Error 503: Service Unavailable",
+        "HTTP Error 503: Service Unavailable",
+        "HTTP Error 503: Service Unavailable"
       ],
-      "top_three_available": 55
+      "top_three_available": 14
     },
     "Tshwane": {
-      "cached": 37,
-      "enriched": 0,
-      "not_reported": 69,
+      "cached": 2,
+      "enriched": 1,
+      "not_reported": 102,
       "pending": 0,
-      "errors": 1,
+      "errors": 2,
       "example_errors": [
-        "Fewer than two ranked ballot rows"
+        "HTTP Error 503: Service Unavailable",
+        "HTTP Error 503: Service Unavailable"
       ],
-      "top_three_available": 37
+      "top_three_available": 3
     },
     "Johannesburg": {
-      "cached": 53,
-      "enriched": 3,
-      "not_reported": 78,
+      "cached": 11,
+      "enriched": 11,
+      "not_reported": 99,
       "pending": 0,
-      "errors": 1,
+      "errors": 14,
       "example_errors": [
-        "Unrecognised or repeated party among first three"
+        "HTTP Error 503: Service Unavailable",
+        "HTTP Error 503: Service Unavailable",
+        "HTTP Error 503: Service Unavailable"
       ],
-      "top_three_available": 56
+      "top_three_available": 22
     },
     "Nelson Mandela Bay": {
       "cached": 5,
@@ -43,9 +46,9 @@
       "pending": 0,
       "errors": 3,
       "example_errors": [
-        "Unrecognised or repeated party among first three",
-        "Fewer than two ranked ballot rows",
-        "Unrecognised or repeated party among first three"
+        "HTTP Error 504: Gateway Timeout",
+        "HTTP Error 504: Gateway Timeout",
+        "HTTP Error 503: Service Unavailable"
       ],
       "top_three_available": 5
     },
