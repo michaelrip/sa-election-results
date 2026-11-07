@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-07T00:22:29.449221+00:00",
+  "checked_at": "2026-11-07T01:33:28.397409+00:00",
   "source": "ESP public pages (IEC-derived, unofficial; not direct IEC API)",
   "checks": {
     "Cape Town": {
@@ -10,15 +10,15 @@
     },
     "Tshwane": {
       "status": "ok",
-      "districts_reported": 737,
+      "districts_reported": 738,
       "wards_with_data": 38,
-      "snapshot_at": "2026-11-07T00:03:00+00:00"
+      "snapshot_at": "2026-11-07T00:47:00+00:00"
     },
     "Johannesburg": {
       "status": "ok",
-      "districts_reported": 665,
+      "districts_reported": 668,
       "wards_with_data": 65,
-      "snapshot_at": "2026-11-07T00:16:00+00:00"
+      "snapshot_at": "2026-11-07T01:02:00+00:00"
     },
     "Hermanus": {
       "status": "error",
