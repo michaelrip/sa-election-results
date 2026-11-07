@@ -409,7 +409,7 @@ function ballotDetails(city){
 function combinedBallots(ward,pr){
  if(!verifiedSupplement(pr)||!verifiedSupplement(ward))return null;
  const wardTime=Date.parse(ward.snapshot_at||''),prTime=Date.parse(pr.snapshot_at||'');
- if(!Number.isFinite(wardTime)||!Number.isFinite(prTime)||Math.abs(wardTime-prTime)>90*60000)return null;
+ if(!Number.isFinite(wardTime)||!Number.isFinite(prTime))return null;
  const n=ward.valid_votes+pr.valid_votes;
  if(!votesValid(n)||n<=0)return null;
  const sums=new Map();
@@ -463,7 +463,11 @@ function renderMetroCard(){
   label='All local council ballots · Ward + PR';
   explanation='Ballot-paper totals from the ward-candidate and municipal party-list ballots. These are NOT distinct people, and the combined percentages are NOT council-seat projections.';
   if(!all)warning=name==='Hermanus'&&!pr?'Overstrand municipal PR votes are currently missing from the verified source data. Ward + PR cannot be calculated safely. Select Ward vote for the latest verified ward count; the Overberg district PR ballot is a separate election and must not be substituted.':'A verified, reasonably synchronized PR and ward snapshot is needed to combine the ballots. The last validated ward result remains available under Ward vote.';
-  if(all)src=[['Ward ballot',m.source_url],['Municipal PR ballot',pr.source_url]];
+  if(all){
+   src=[['Ward ballot',m.source_url],['Municipal PR ballot',pr.source_url]];
+   const gap=Math.abs(Date.parse(m.snapshot_at)-Date.parse(pr.snapshot_at))/60000;
+   if(gap>90)warning='Ward and PR ballots are independently verified but were last updated at different times ('+Math.round(gap/60*10)/10+' hours apart). Combined figures are provisional ballot-paper totals from different reporting snapshots, not a synchronized count.';
+  }
  }
  const valid=selected&&votesValid(selected.valid_votes);
  const partyRows=valid&&Array.isArray(selected.parties)?[...selected.parties]:[];
