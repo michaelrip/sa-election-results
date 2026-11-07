@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-07T08:31:52.993437Z",
+  "checked_at": "2026-11-07T09:23:58.850986Z",
   "source": "Publisher-attributed headlines discovered through Google News RSS",
   "feed_status": "ok",
   "articles": [
@@ -36,6 +36,14 @@
       "metro": "South Africa"
     },
     {
+      "title": "Electoral battle nears finality as ANC counts casualties",
+      "publisher": "News24",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSWxNc0g5R1d1ZmlSRW9nWXZwN0FLaUVOY3E2RUQ5UXdTQWFMZjl4TzV5aWh6VlpUWlVheURENUQwRUt3SWpTbTgzRU9FQldmVk5ROExkQTlZajZrb1NzTFhzSTlpNWJ5Zk9PdVM4a1ZjZlZXT09vMTJacWQ0WFhuczk4YlpORjBEX1YxcnlBNWc2bG9qREtQc3cwZnJLNGk3dE9HZ3Vab0V1N0JvM0FNLVJn?oc=5",
+      "published_at": "2026-11-07T02:04:14Z",
+      "published_date": "2026-11-07",
+      "metro": "South Africa"
+    },
+    {
       "title": "PHOTO ESSAY: Candid moments of politicians captured at the IEC Results Operations Centres around SA",
       "publisher": "IOL",
       "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQNmlTSEZOZW50cTdfZTVvck1TS2M1Q0tsOTVpQVRCcTFILV9uX1JJWTZFYWFsZ1ZRSndZWHJwRDdSSDd4RXJkUzNyOXNjYnNBblhCSWZ3emE5Um9JZWZ2d2ozc1doang4VUloVWhvTnIxdGxYdjNldmRRZFFBRDU3bkVEN2lVc1U4aVFRN0FPbDZuMVBlZ1hNWDlqRGhwdXdodXN3TDlENkI5NlZzRDVPME8zdWdsYVphaUVJRk9waXVwQm9ESnJ3ekVLOUVGVGo5ekE?oc=5",
@@ -68,18 +76,10 @@
       "metro": "South Africa"
     },
     {
-      "title": "From ActionSA to MK, what Gauteng’s top parties will demand in coalition talks",
-      "publisher": "Daily Maverick",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOd21vTmdxaHRLU0NSNHlhU1FuOE50T0xyZGdWVTdtWmhKQlFqVFlZd1htWVdHb1B0bzhDUzRjcDBKZ0xRd3V6bGxIVWZoTmQ2OG54WDA1anl3WTBXYWtMQlpOMUltWXZiNkhVdHRUVjVjYmNScllGa3JXLXlEWFBLb0htZFNjRnNxdFJ5SjFWbmZhOVF0NEhRLUZERF9vNmVFcmY5VWtoc2RNZHBZUXJoVEkzcHV5Y1hXeU9PSWdxRkgzaUZkY1Fr?oc=5",
-      "published_at": "2026-11-06T18:20:29Z",
-      "published_date": "2026-11-06",
-      "metro": "South Africa"
-    },
-    {
-      "title": "IEC confirms 150 of 213 municipalities have finalised the results",
-      "publisher": "SABC News",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPZjNZdV9paHBILXpvdnpfSjVFXzQtd250YTVmNjMxUHVvUE9SZy1INXBLcEpWM2NSdWx4RnlUajJ2bTZkdGUyVG5nSE1uNzVIYVZWb1VreUVpdGlEMDJiZDNzQURHX05ZaXlYZ1U4LUFjcmFDV0kzRjh2eGt2UlZjd1NGZEpHSzV0WnpFcmNhalhZR3dYVDFvanczM2FoekVZUFE?oc=5",
-      "published_at": "2026-11-06T18:10:55Z",
+      "title": "KwaDukuza election results: MKP leads hung council as ANC loses ground",
+      "publisher": "The Citizen",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNUUxGeFN4X0JRVHEzYmk2a2NBQWgxVTBOT0Zva2VzVUxZTUhPWHhNLXNfZWIzVTVFT3Y3NnlON1hBcG1PQUVabGpiMEdUV1RuZDJ6OVFoLXljMGlQWnNGNFIyUUhNUXVfOG9pNjNFdW9yaV9ibFN5bExCQmFTYTBWWHlnT1M5UG9qQ1dXNGNKUWpCZ3lNWTZGd3EwcUQzeFlmbVRCa1ZnOEI4UTc0RzRSTXVfZ1FCWXRlWE5nRUI3SzVhOHQ4NmFiZGh6V2hjSUVESF96WGJEOVhiTlZ5Y1A5TkFyN2Fwd3gwN3o4Vlc5SzVPTUtDS0E?oc=5",
+      "published_at": "2026-11-06T18:58:03Z",
       "published_date": "2026-11-06",
       "metro": "South Africa"
     }
