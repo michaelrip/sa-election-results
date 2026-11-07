@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-07T05:31:11.166748+00:00",
+  "updated_at": "2026-11-07T06:17:44.299398+00:00",
   "source": "IEC-derived via ESP: separate validated ballot pages",
   "metros": {
     "Cape Town": {
       "pr": {
         "ballot_type": "PR",
         "source_url": "https://go.esp.info/elections/local/2026/western-cape/city-of-cape-town?ballot=pr",
-        "snapshot_at": "2026-11-07T05:28:00+00:00",
+        "snapshot_at": "2026-11-07T05:41:00+00:00",
         "valid_votes": 1105863,
         "parties": [
           {
@@ -173,82 +173,82 @@
       "pr": {
         "ballot_type": "PR",
         "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-tshwane?ballot=pr",
-        "snapshot_at": "2026-11-07T05:28:00+00:00",
-        "valid_votes": 885081,
+        "snapshot_at": "2026-11-07T06:15:00+00:00",
+        "valid_votes": 888152,
         "parties": [
           {
             "name": "DA",
-            "votes": 303288,
-            "share": 34.3
+            "votes": 303545,
+            "share": 34.2
           },
           {
             "name": "ActionSA",
-            "votes": 207436,
-            "share": 23.4
+            "votes": 208569,
+            "share": 23.5
           },
           {
             "name": "ANC",
-            "votes": 177642,
+            "votes": 178622,
             "share": 20.1
           },
           {
             "name": "FF+",
-            "votes": 67179,
+            "votes": 67221,
             "share": 7.6
           },
           {
             "name": "EFF",
-            "votes": 49481,
+            "votes": 49680,
             "share": 5.6
           },
           {
             "name": "MK",
-            "votes": 15969,
+            "votes": 16037,
             "share": 1.8
           },
           {
             "name": "SACP",
-            "votes": 8819,
+            "votes": 8840,
             "share": 1.0
           },
           {
             "name": "PA",
-            "votes": 5245,
+            "votes": 5248,
             "share": 0.6
           },
           {
             "name": "RISE",
-            "votes": 4760,
+            "votes": 4779,
             "share": 0.5
           },
           {
             "name": "ACDP",
-            "votes": 3538,
+            "votes": 3557,
             "share": 0.4
           },
           {
             "name": "ATM",
-            "votes": 2960,
+            "votes": 2991,
             "share": 0.3
           },
           {
             "name": "AIC",
-            "votes": 2870,
+            "votes": 2908,
             "share": 0.3
           },
           {
             "name": "BOSA",
-            "votes": 1748,
+            "votes": 1756,
             "share": 0.2
           },
           {
             "name": "IFP",
-            "votes": 1578,
+            "votes": 1580,
             "share": 0.2
           },
           {
             "name": "PAC",
-            "votes": 1441,
+            "votes": 1446,
             "share": 0.2
           },
           {
@@ -258,7 +258,7 @@
           },
           {
             "name": "COPE",
-            "votes": 607,
+            "votes": 609,
             "share": 0.1
           },
           {
@@ -268,7 +268,7 @@
           },
           {
             "name": "OD",
-            "votes": 313,
+            "votes": 314,
             "share": 0.0
           },
           {
@@ -283,7 +283,7 @@
           },
           {
             "name": "LAND",
-            "votes": 167,
+            "votes": 168,
             "share": 0.0
           },
           {
@@ -293,11 +293,11 @@
           },
           {
             "name": "CCC",
-            "votes": 97,
+            "votes": 99,
             "share": 0.0
           }
         ],
-        "unlisted_votes": 27825,
+        "unlisted_votes": 28065,
         "note": "Other/unlisted votes equal source total minus individually validated named party votes."
       }
     },
@@ -305,102 +305,102 @@
       "pr": {
         "ballot_type": "PR",
         "source_url": "https://go.esp.info/elections/local/2026/gauteng/city-of-johannesburg?ballot=pr",
-        "snapshot_at": "2026-11-07T05:23:00+00:00",
-        "valid_votes": 1139947,
+        "snapshot_at": "2026-11-07T06:15:00+00:00",
+        "valid_votes": 1144310,
         "parties": [
           {
             "name": "DA",
-            "votes": 408024,
-            "share": 35.8
+            "votes": 408964,
+            "share": 35.7
           },
           {
             "name": "ANC",
-            "votes": 225429,
+            "votes": 226550,
             "share": 19.8
           },
           {
             "name": "ActionSA",
-            "votes": 198646,
+            "votes": 199227,
             "share": 17.4
           },
           {
             "name": "EFF",
-            "votes": 74423,
+            "votes": 74667,
             "share": 6.5
           },
           {
             "name": "MK",
-            "votes": 61344,
+            "votes": 61824,
             "share": 5.4
           },
           {
             "name": "IFP",
-            "votes": 27528,
+            "votes": 27670,
             "share": 2.4
           },
           {
             "name": "FF+",
-            "votes": 22382,
+            "votes": 22441,
             "share": 2.0
           },
           {
             "name": "RISE",
-            "votes": 19955,
-            "share": 1.8
+            "votes": 19975,
+            "share": 1.7
           },
           {
             "name": "PA",
-            "votes": 17358,
-            "share": 1.5
+            "votes": 17768,
+            "share": 1.6
           },
           {
             "name": "ATM",
-            "votes": 12794,
+            "votes": 12853,
             "share": 1.1
           },
           {
             "name": "Al Jama-ah",
-            "votes": 9059,
+            "votes": 9062,
             "share": 0.8
           },
           {
             "name": "ACDP",
-            "votes": 7720,
+            "votes": 7755,
             "share": 0.7
           },
           {
             "name": "SACP",
-            "votes": 5710,
+            "votes": 5748,
             "share": 0.5
           },
           {
             "name": "BOSA",
-            "votes": 4698,
+            "votes": 4706,
             "share": 0.4
           },
           {
             "name": "PMC",
-            "votes": 3175,
+            "votes": 3180,
             "share": 0.3
           },
           {
             "name": "AIC",
-            "votes": 3001,
+            "votes": 3022,
             "share": 0.3
           },
           {
             "name": "PAC",
-            "votes": 2233,
+            "votes": 2249,
             "share": 0.2
           },
           {
             "name": "COPE",
-            "votes": 1196,
+            "votes": 1209,
             "share": 0.1
           },
           {
             "name": "LAND",
-            "votes": 528,
+            "votes": 533,
             "share": 0.0
           },
           {
@@ -420,12 +420,12 @@
           },
           {
             "name": "CCC",
-            "votes": 268,
+            "votes": 273,
             "share": 0.0
           },
           {
             "name": "UIM",
-            "votes": 222,
+            "votes": 224,
             "share": 0.0
           },
           {
@@ -434,11 +434,96 @@
             "share": 0.0
           }
         ],
-        "unlisted_votes": 32920,
+        "unlisted_votes": 33076,
         "note": "Other/unlisted votes equal source total minus individually validated named party votes."
       }
     },
     "Hermanus": {
+      "pr": {
+        "ballot_type": "PR",
+        "source_url": "https://go.esp.info/elections/local/2026/western-cape/overstrand?ballot=pr",
+        "snapshot_at": "2026-11-06T08:05:00+00:00",
+        "valid_votes": 43283,
+        "parties": [
+          {
+            "name": "DA",
+            "votes": 26599,
+            "share": 61.5
+          },
+          {
+            "name": "ANC",
+            "votes": 5799,
+            "share": 13.4
+          },
+          {
+            "name": "FF+",
+            "votes": 3749,
+            "share": 8.7
+          },
+          {
+            "name": "LAND",
+            "votes": 2004,
+            "share": 4.6
+          },
+          {
+            "name": "PA",
+            "votes": 1695,
+            "share": 3.9
+          },
+          {
+            "name": "ACDP",
+            "votes": 770,
+            "share": 1.8
+          },
+          {
+            "name": "MK",
+            "votes": 668,
+            "share": 1.5
+          },
+          {
+            "name": "ATM",
+            "votes": 516,
+            "share": 1.2
+          },
+          {
+            "name": "EFF",
+            "votes": 464,
+            "share": 1.1
+          },
+          {
+            "name": "OHM",
+            "votes": 287,
+            "share": 0.7
+          },
+          {
+            "name": "SACP",
+            "votes": 179,
+            "share": 0.4
+          },
+          {
+            "name": "CCC",
+            "votes": 176,
+            "share": 0.4
+          },
+          {
+            "name": "CAPEXIT",
+            "votes": 129,
+            "share": 0.3
+          },
+          {
+            "name": "PMC",
+            "votes": 54,
+            "share": 0.1
+          },
+          {
+            "name": "PAC",
+            "votes": 28,
+            "share": 0.1
+          }
+        ],
+        "unlisted_votes": 166,
+        "note": "Other/unlisted votes equal source total minus individually validated named party votes."
+      },
       "dc": {
         "ballot_type": "District PR",
         "source_url": "https://go.esp.info/elections/local/2026/western-cape/overstrand?ballot=dc",

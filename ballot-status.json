@@ -1,32 +1,33 @@
 {
-  "checked_at": "2026-11-07T05:31:11.166748+00:00",
+  "checked_at": "2026-11-07T06:17:44.299398+00:00",
   "source": "ESP individual 2026 PR and DC 40% ballot pages",
   "checks": {
     "Cape Town": {
       "pr": {
         "status": "ok",
         "valid_votes": 1105863,
-        "snapshot_at": "2026-11-07T05:28:00+00:00"
+        "snapshot_at": "2026-11-07T05:41:00+00:00"
       }
     },
     "Tshwane": {
       "pr": {
         "status": "ok",
-        "valid_votes": 885081,
-        "snapshot_at": "2026-11-07T05:28:00+00:00"
+        "valid_votes": 888152,
+        "snapshot_at": "2026-11-07T06:15:00+00:00"
       }
     },
     "Johannesburg": {
       "pr": {
         "status": "ok",
-        "valid_votes": 1139947,
-        "snapshot_at": "2026-11-07T05:23:00+00:00"
+        "valid_votes": 1144310,
+        "snapshot_at": "2026-11-07T06:15:00+00:00"
       }
     },
     "Hermanus": {
       "pr": {
-        "status": "unavailable",
-        "detail": "go.esp.info: HTTP Error 503: Service Unavailable; esp.info: HTTP Error 503: Service Unavailable; zero.esp.info: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is n"
+        "status": "ok",
+        "valid_votes": 43283,
+        "snapshot_at": "2026-11-06T08:05:00+00:00"
       },
       "dc": {
         "status": "ok",
@@ -42,5 +43,5 @@
       }
     }
   },
-  "status": "partial"
+  "status": "ok"
 }

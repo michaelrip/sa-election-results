@@ -1,43 +1,32 @@
 {
-  "checked_at": "2026-11-07T05:31:39.846221+00:00",
+  "checked_at": "2026-11-07T06:17:47.910183+00:00",
   "metros": {
     "Cape Town": {
-      "cached": 12,
-      "enriched": 2,
+      "cached": 14,
+      "enriched": 11,
       "not_reported": 93,
       "pending": 0,
-      "errors": 11,
-      "example_errors": [
-        "HTTP Error 503: Service Unavailable",
-        "HTTP Error 503: Service Unavailable",
-        "HTTP Error 503: Service Unavailable"
-      ],
-      "top_three_available": 14
+      "errors": 0,
+      "example_errors": [],
+      "top_three_available": 25
     },
     "Tshwane": {
       "cached": 2,
-      "enriched": 1,
-      "not_reported": 102,
+      "enriched": 2,
+      "not_reported": 103,
       "pending": 0,
-      "errors": 2,
-      "example_errors": [
-        "HTTP Error 503: Service Unavailable",
-        "HTTP Error 503: Service Unavailable"
-      ],
-      "top_three_available": 3
+      "errors": 0,
+      "example_errors": [],
+      "top_three_available": 4
     },
     "Johannesburg": {
-      "cached": 11,
-      "enriched": 11,
+      "cached": 21,
+      "enriched": 15,
       "not_reported": 99,
       "pending": 0,
-      "errors": 14,
-      "example_errors": [
-        "HTTP Error 503: Service Unavailable",
-        "HTTP Error 503: Service Unavailable",
-        "HTTP Error 503: Service Unavailable"
-      ],
-      "top_three_available": 22
+      "errors": 0,
+      "example_errors": [],
+      "top_three_available": 36
     },
     "Nelson Mandela Bay": {
       "cached": 5,
@@ -46,9 +35,9 @@
       "pending": 0,
       "errors": 3,
       "example_errors": [
-        "HTTP Error 504: Gateway Timeout",
-        "HTTP Error 504: Gateway Timeout",
-        "HTTP Error 503: Service Unavailable"
+        "Unrecognised or repeated party among first three",
+        "Unrecognised or repeated party among first three",
+        "Fewer than two ranked ballot rows"
       ],
       "top_three_available": 5
     },
