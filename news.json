@@ -1,8 +1,32 @@
 {
-  "checked_at": "2026-11-07T07:37:05.873589Z",
+  "checked_at": "2026-11-07T08:31:52.993437Z",
   "source": "Publisher-attributed headlines discovered through Google News RSS",
   "feed_status": "ok",
   "articles": [
+    {
+      "title": "DA shows ANC dust in Johannesburg vote count as coalition talks begin",
+      "publisher": "IOL",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQWkFXa1g0QXo2Qkxrb1ZQcUpZQ3hCWUxCWTJfT1phNDlJRU01Y1BQVEd2ZDBkU01ra3JQakd6cnNvRmJ4MkhYVHh5RThYRklQNnk3NVFNall1VG5QZW1ERjVjeWc4TGhIMFhaRGl3bDFNenRwbGt4SXpmMTVNUWNHeXh6YnFhQk1aSHlIcWhYWmFfSTY2SGU0UGp4TDRsSFl6aWVZZERGZS1CNEE?oc=5",
+      "published_at": "2026-11-07T08:03:00Z",
+      "published_date": "2026-11-07",
+      "metro": "Johannesburg"
+    },
+    {
+      "title": "Final Western Cape election results expected as Cape Town count nears completion",
+      "publisher": "EWN",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNOHZHRnNFcGFES0hMUUMzOGxSSUpwb3E3dk5qTVFVN3VZbkJyVFc5cGk0SV8wdU5icXk1MmNXYWFnQVVrOFB4QnNLYlBNUDZGemd3Z2tRcG10Y1c5azN5UU5Wb2hicGZUcW9hUjF3X3NqMW5Ua0JmTi04M3piWVRiYkRsLW96am5GWGk4cHJrbEdfRTNXRl9lTFI2SG41Tjk3S2VNRDRQOGJSWHpqeld5NmhTaw?oc=5",
+      "published_at": "2026-11-07T07:38:40Z",
+      "published_date": "2026-11-07",
+      "metro": "Cape Town"
+    },
+    {
+      "title": "The ANC must rebuild from the voting district upwards",
+      "publisher": "IOL",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPVlJXaUduM2lEcVB4bjhaakJaejZQRDY5TTE3QkgyRHF2QXY3OXBWSmpINEZ1eUNadFlYYkNTeWFQRjg0eUJWaDZaT0cwN29OYzZZRDhVcUVEbDI2ZU9lUnRpOUFSUFhvZzhFYWpXazZSbjljdmxqcFJjODZMSGgxV0FHbVYtSG93UlcwZUlobWtqeGpnWUpjaVg4a2VOeEtkdU9Z?oc=5",
+      "published_at": "2026-11-07T07:00:00Z",
+      "published_date": "2026-11-07",
+      "metro": "South Africa"
+    },
     {
       "title": "LIVE | IEC reports 97% of vote counting complete",
       "publisher": "IOL",
@@ -56,30 +80,6 @@
       "publisher": "SABC News",
       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPZjNZdV9paHBILXpvdnpfSjVFXzQtd250YTVmNjMxUHVvUE9SZy1INXBLcEpWM2NSdWx4RnlUajJ2bTZkdGUyVG5nSE1uNzVIYVZWb1VreUVpdGlEMDJiZDNzQURHX05ZaXlYZ1U4LUFjcmFDV0kzRjh2eGt2UlZjd1NGZEpHSzV0WnpFcmNhalhZR3dYVDFvanczM2FoekVZUFE?oc=5",
       "published_at": "2026-11-06T18:10:55Z",
-      "published_date": "2026-11-06",
-      "metro": "South Africa"
-    },
-    {
-      "title": "IEC rejects false claims about municipal official allegedly voting 4 times - LNN - Network News",
-      "publisher": "The Citizen",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNRWxYeEZyeVhNM0drVTFYNlg2MERrWnZqU08tTUh5X1ZTcFJZaEg1RWliMk9XazVHbzJ4dnRHc1ZLRXh6RUdNTXVUOE15cDJVOGJtekpqM3JmTTdvZ2FWb2NQaVRQYzM3S20tNHVBX1RYaVVIbGItN2xnZW10SDQtNHRJcnhWOGNteVFReDBsY1BWeTJiY012d3NqRHBLTEFMMVVYdV8xWElxNmZFbnhOSmFJbVJjaWFYVmRmWVhQNlRVT25F?oc=5",
-      "published_at": "2026-11-06T17:36:25Z",
-      "published_date": "2026-11-06",
-      "metro": "South Africa"
-    },
-    {
-      "title": "EFF concedes electoral decline as municipal vote counting nears finish line",
-      "publisher": "EWN",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNTk9rcjdrd1g3eWV5VDlMakFoY2lsYnJmbWtoWHNrcVpJV3dneGhzaFpRQUMzZ0U2NTQ3cnVyZE91VGpMeVV5VTVpM2lpeUh2TnkyVnh0bmxyOGZBSmdUR20xYnlTcHRDaUVKMWVSOVpyWEEyQmRULVk4bjNCQjVuZ0MzZjhEdWtlalZvd0QydGN5a0w2a2lRWnl4WlRMeUJlNVNRaG43TDd4WG1j?oc=5",
-      "published_at": "2026-11-06T16:28:16Z",
-      "published_date": "2026-11-06",
-      "metro": "South Africa"
-    },
-    {
-      "title": "ANC’s vote share falls from 48.9% to 33.9% in Merafong",
-      "publisher": "SABC News",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQVGQwbEt2Zi1vYWwzQ1g5TVhKZXgzbmNaZGZfQm0yeXpZZ1NmblBmVDZTZUg5QzljUWFyQUtWdFhYNEFYOEpfSlJZTUs5WkJiRXk0bE9vMFhaSERGRW9nVnRSdkdjMWVMWjI3Vi1DUDJmMzc0QmMyWVI4a0ZZbHVMNXNFZlhBbXNYRGJPaWJNcw?oc=5",
-      "published_at": "2026-11-06T16:17:15Z",
       "published_date": "2026-11-06",
       "metro": "South Africa"
     }
