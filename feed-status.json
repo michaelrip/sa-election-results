@@ -1,24 +1,24 @@
 {
-  "checked_at": "2026-11-07T09:42:02.879841+00:00",
+  "checked_at": "2026-11-07T10:24:14.734914+00:00",
   "source": "ESP public pages (IEC-derived, unofficial; not direct IEC API)",
   "checks": {
     "Cape Town": {
       "status": "ok",
-      "districts_reported": 808,
-      "wards_with_data": 17,
-      "snapshot_at": "2026-11-07T09:33:00+00:00"
+      "districts_reported": 812,
+      "wards_with_data": 14,
+      "snapshot_at": "2026-11-07T10:17:00+00:00"
     },
     "Tshwane": {
       "status": "ok",
       "districts_reported": 795,
       "wards_with_data": 1,
-      "snapshot_at": "2026-11-07T08:51:00+00:00"
+      "snapshot_at": "2026-11-07T10:17:00+00:00"
     },
     "Johannesburg": {
       "status": "ok",
-      "districts_reported": 801,
-      "wards_with_data": 29,
-      "snapshot_at": "2026-11-07T09:33:00+00:00"
+      "districts_reported": 808,
+      "wards_with_data": 28,
+      "snapshot_at": "2026-11-07T10:18:00+00:00"
     },
     "Hermanus": {
       "status": "error",
