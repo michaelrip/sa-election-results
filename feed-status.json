@@ -1,24 +1,22 @@
 {
-  "checked_at": "2026-11-07T10:24:14.734914+00:00",
+  "checked_at": "2026-11-07T11:12:13.795312+00:00",
   "source": "ESP public pages (IEC-derived, unofficial; not direct IEC API)",
   "checks": {
     "Cape Town": {
       "status": "ok",
-      "districts_reported": 812,
-      "wards_with_data": 14,
-      "snapshot_at": "2026-11-07T10:17:00+00:00"
+      "districts_reported": 819,
+      "wards_with_data": 9,
+      "snapshot_at": "2026-11-07T11:01:00+00:00"
     },
     "Tshwane": {
-      "status": "ok",
-      "districts_reported": 795,
-      "wards_with_data": 1,
-      "snapshot_at": "2026-11-07T10:17:00+00:00"
+      "status": "error",
+      "detail": "Metro voting-district count missing"
     },
     "Johannesburg": {
       "status": "ok",
-      "districts_reported": 808,
-      "wards_with_data": 28,
-      "snapshot_at": "2026-11-07T10:18:00+00:00"
+      "districts_reported": 824,
+      "wards_with_data": 18,
+      "snapshot_at": "2026-11-07T11:02:00+00:00"
     },
     "Hermanus": {
       "status": "error",
