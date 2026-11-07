@@ -1,14 +1,14 @@
 {
-  "checked_at": "2026-11-07T09:00:44.518449+00:00",
+  "checked_at": "2026-11-07T09:42:14.791728+00:00",
   "metros": {
     "Cape Town": {
-      "cached": 19,
-      "enriched": 0,
-      "not_reported": 99,
+      "cached": 16,
+      "enriched": 1,
+      "not_reported": 101,
       "pending": 0,
       "errors": 0,
       "example_errors": [],
-      "top_three_available": 19
+      "top_three_available": 17
     },
     "Tshwane": {
       "cached": 1,
