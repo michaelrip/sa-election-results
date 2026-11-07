@@ -1,13 +1,13 @@
 {
-  "checked_at": "2026-11-07T11:41:47.824876Z",
+  "checked_at": "2026-11-07T12:23:18.571806Z",
   "source": "Publisher-attributed headlines discovered through Google News RSS",
   "feed_status": "ok",
   "articles": [
     {
       "title": "Election observers commend local government polls",
       "publisher": "EWN",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOVkVwNVBDV081eWpQRTFiYTlITzVKemYwWjQ5TnE2VE9MVUhBVjNEOUdqUnZSYlBUN0tmb2pTZG9uT2hKakNDRnEyenpETmtvUWJDOUlBa01oMVZJRjJRdUU2ZnJ5Y2VwcXR4c1gxT2h0b2p6eUdaSjRaLVpOTENCdElaal9LTnNQV0E?oc=5",
-      "published_at": "2026-11-07T09:47:14Z",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9WQWE5RFlqdld0ZFFkZmlLQk03V2dfOXI1bkNJbVBoVkU5RHNJTHRhUlE5VTFRM0oxWE9LTVdaTTlwMkt0QnFqX09sUktqMG5uemoycmNMb0R4a3ItZnZnZUxpYXhzaUtJNm1pblctd0hxNWw5TE54b0kwbkY?oc=5",
+      "published_at": "2026-11-07T11:46:31Z",
       "published_date": "2026-11-07",
       "metro": "South Africa"
     },
@@ -36,6 +36,14 @@
       "metro": "South Africa"
     },
     {
+      "title": "FF+ secures 3.5% in Cape Town metro, staying in the mix for council representation",
+      "publisher": "EWN",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPR0xYeW9lQ3l5TWtDLUNYUWl0MlUxYXFTV09XMk9fYTc3cUd5LVkzanNtTkRBWUROa3JmVXpKc0xwU3RfT21xaU1vYXk3bGZJakhZTjI4NjVLWk8wdjhNUTlMNWtyMTBJQ0RyRXVOWERjZWZBbUxsWXdvTTZxN2xacVhFQXRlVlBubmdkWGxMX1dVZFREMS1rLWlLVS1tRGcwN09tSFR5OEI?oc=5",
+      "published_at": "2026-11-07T06:53:37Z",
+      "published_date": "2026-11-07",
+      "metro": "Cape Town"
+    },
+    {
       "title": "LIVE | IEC reports 97% of vote counting complete",
       "publisher": "IOL",
       "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPWWhoaHg2bHNzeF9qcXNsOHBpcWFVeldnY0hpLU0wUVRoRjU4LUFsaWdFOEdXM2tULXJIQVc5N204U25ob3BJUHg3UzI5UVZQdmZVdUotbE5xTzJwaDhvSXFKbk9YbzFjenE4NmUxQnd4M3FVeTFYTFFvRTFyemtnQzFsWEFyRVRzLXc?oc=5",
@@ -47,7 +55,7 @@
       "title": "Electoral battle nears finality as ANC counts casualties",
       "publisher": "News24",
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSWxNc0g5R1d1ZmlSRW9nWXZwN0FLaUVOY3E2RUQ5UXdTQWFMZjl4TzV5aWh6VlpUWlVheURENUQwRUt3SWpTbTgzRU9FQldmVk5ROExkQTlZajZrb1NzTFhzSTlpNWJ5Zk9PdVM4a1ZjZlZXT09vMTJacWQ0WFhuczk4YlpORjBEX1YxcnlBNWc2bG9qREtQc3cwZnJLNGk3dE9HZ3Vab0V1N0JvM0FNLVJn?oc=5",
-      "published_at": "2026-11-07T02:34:14Z",
+      "published_at": "2026-11-07T02:57:11Z",
       "published_date": "2026-11-07",
       "metro": "South Africa"
     },
@@ -72,14 +80,6 @@
       "publisher": "EWN",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPN1gxSkoyOXZLdGFkRXlDS2RPMUZwRXFlcXlQSERDN204b2JNdUtCbDdvWUpsaDFsQmdmWS1kZEUwSm5OUTJHOUliT1FkWXFDNWhHTUZrMTdka3MzZm9fX2FvQmwtS1V0ZWtHdGJIeF9DemhzSVEzTzIzdktTQW9KMk14MjAxRFE5SnAtV3lNRVVxQ25xVTlHbWNlWXFmT2FjeU04XzlQaXl0bGx6SEg3cXptTQ?oc=5",
       "published_at": "2026-11-06T20:51:31Z",
-      "published_date": "2026-11-06",
-      "metro": "South Africa"
-    },
-    {
-      "title": "Here’s how the eight metros stand as the IEC begins to wrap up results",
-      "publisher": "The Citizen",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPd2RhWlRWaWNpeEhMdGZ1dTZmYVpEUVlIRUxWMzMtbmRRZTFScG9YbVNkM2p3eVBKV1lCZTl6aHc4NFM2V3VPVzVmdS1OQWxkY2JaLTBWT0sycExoVWJnVFdGSThLU0RKRnQ0MGhZOXV6bzUxY2lDbHo4bjRPM1llWHZzYnRtZGtYakY5b2h4eXFWbXdaLXoydEhkUnNfQzI3dnUxWjVXdmdOOV8zS3JBZGlwbG9uQmFvc0h0cndMakJvdw?oc=5",
-      "published_at": "2026-11-06T19:05:29Z",
       "published_date": "2026-11-06",
       "metro": "South Africa"
     }
