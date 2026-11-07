@@ -1,14 +1,14 @@
 {
-  "checked_at": "2026-11-07T07:18:06.922973+00:00",
+  "checked_at": "2026-11-07T08:13:08.261347+00:00",
   "metros": {
     "Cape Town": {
-      "cached": 22,
+      "cached": 21,
       "enriched": 1,
-      "not_reported": 95,
+      "not_reported": 96,
       "pending": 0,
       "errors": 0,
       "example_errors": [],
-      "top_three_available": 23
+      "top_three_available": 22
     },
     "Tshwane": {
       "cached": 1,
@@ -20,13 +20,15 @@
       "top_three_available": 1
     },
     "Johannesburg": {
-      "cached": 32,
-      "enriched": 4,
-      "not_reported": 99,
+      "cached": 27,
+      "enriched": 3,
+      "not_reported": 104,
       "pending": 0,
-      "errors": 0,
-      "example_errors": [],
-      "top_three_available": 36
+      "errors": 1,
+      "example_errors": [
+        "Unrecognised or repeated party among first three"
+      ],
+      "top_three_available": 30
     },
     "Nelson Mandela Bay": {
       "cached": 5,

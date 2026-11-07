@@ -1,38 +1,36 @@
 {
-  "checked_at": "2026-11-07T07:18:01.916429+00:00",
+  "checked_at": "2026-11-07T08:13:01.797395+00:00",
   "source": "ESP individual 2026 PR and DC 40% ballot pages",
   "checks": {
     "Cape Town": {
       "pr": {
         "status": "ok",
-        "valid_votes": 1110374,
-        "snapshot_at": "2026-11-07T07:16:00+00:00"
+        "valid_votes": 1113692,
+        "snapshot_at": "2026-11-07T08:08:00+00:00"
       }
     },
     "Tshwane": {
       "pr": {
         "status": "ok",
         "valid_votes": 891059,
-        "snapshot_at": "2026-11-07T07:01:00+00:00"
+        "snapshot_at": "2026-11-07T08:08:00+00:00"
       }
     },
     "Johannesburg": {
       "pr": {
         "status": "ok",
-        "valid_votes": 1148223,
-        "snapshot_at": "2026-11-07T07:10:00+00:00"
+        "valid_votes": 1164911,
+        "snapshot_at": "2026-11-07T08:08:00+00:00"
       }
     },
     "Hermanus": {
       "pr": {
-        "status": "ok",
-        "valid_votes": 43283,
-        "snapshot_at": "2026-11-06T08:05:00+00:00"
+        "status": "unavailable",
+        "detail": "go.esp.info: Source timestamp is stale or in the future; esp.info: Source timestamp is stale or in the future; zero.esp.info: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is n"
       },
       "dc": {
-        "status": "ok",
-        "valid_votes": 43386,
-        "snapshot_at": "2026-11-06T08:05:00+00:00"
+        "status": "unavailable",
+        "detail": "go.esp.info: Source timestamp is stale or in the future; esp.info: Source timestamp is stale or in the future; zero.esp.info: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is n"
       }
     },
     "Nelson Mandela Bay": {
@@ -43,5 +41,5 @@
       }
     }
   },
-  "status": "ok"
+  "status": "partial"
 }
